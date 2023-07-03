@@ -10,4 +10,4 @@ https://huggingface.co/DeepLearning101
 ## PaddleNLP
 https://github.com/PaddlePaddle/PaddleNLP
 ## 醫囑分析v1@UIE-PaddleNLP
-![醫囑分析v1@UIE-PaddleNLP](image.png)
+![醫囑分析v1@UIE-PaddleNLP](Medical-Advice_PaddleNLP-UIE.gif)
