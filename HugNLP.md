@@ -7,3 +7,4 @@ In this paper, we introduce HugNLP, a unified and comprehensive library for natu
 
 ![HugNLP 框架概覽](image.png)
 
+[HugIE: A Unified Chinese Information Extraction Framework via Extractive Instruction Prompting](https://github.com/HugAILab/HugNLP/blob/main/documents/information_extraction/HugIE.md)
