@@ -1,5 +1,7 @@
 # ERNIE-Layout
 
+2023/07/24 使用心得：效果不算非常好，主要還是很依賴 OCR 的結果，而且多個實體無法一同擷取，prompt需特別設計並分開擷取。
+
 [Qiming Peng, Yinxu Pan, Wenjin Wang, Bin Luo, Zhenyu Zhang, Zhengjie Huang, Teng Hu, Weichong Yin, Yongfeng Chen, Yin Zhang, Shikun Feng, Yu Sun, Hao Tian, Hua Wu, Haifeng Wang, "ERNIE-Layout: Layout Knowledge Enhanced Pre-training for Visually-rich Document Understanding", arXiv preprint, arXiv:2210.06155, 2022](https://arxiv.org/pdf/2210.06155.pdf)
 
 [github](https://github.com/PaddlePaddle/PaddleNLP/blob/develop/model_zoo/ernie-layout/README_ch.md)
