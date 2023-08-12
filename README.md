@@ -1,6 +1,7 @@
 # Natural Language Processing (自然語言處理)
 
 [那些自然語言處理 (Natural Language Processing, NLP) 踩的坑](https://blog.twman.org/2021/04/NLP.html)
+[大型語言模型(Large Language Model，LLM)，想要嗎？](https://blog.twman.org/2023/04/GPT.html)
 
 ### **開發心得：**
 
