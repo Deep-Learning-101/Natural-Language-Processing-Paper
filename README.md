@@ -51,18 +51,18 @@ https://github.com/PaddlePaddle/PaddleNLP
 
 [大型語言模型(Large Language Model，LLM)，想要嗎？](https://blog.twman.org/2023/04/GPT.html)
 
-### **相關論文**
+## **相關論文**
 
-* [UnIVAL: Unified Model for Image, Video, Audio and Language Tasks](https://unival-model.github.io/)：https://arxiv.org/pdf/2307.16184.pdf
-
-* [Revisiting Relation Extraction in the era of Large Language Models](https://arxiv.org/abs/2305.05003)
+* UnIVAL: Unified Model for Image, Video, Audio and Language Tasks：https://arxiv.org/pdf/2307.16184.pdf
+    *  https://unival-model.github.io
+* Revisiting Relation Extraction in the era of Large Language Models：https://arxiv.org/abs/2305.05003
     * [用LLM(大模型)進行關係抽取](https://mp.weixin.qq.com/s/eQL-yvz7JIuObY1CUe2gsw)
 
-### **相關連結**
+## **相關連結**
 
-* [transformers_tasks](https://github.com/HarderThenHarder/transformers_tasks/tree/main/LLM)
+* [transformers_tasks](https://github.com/HarderThenHarder/transformers_tasks/tree/main/LLM)  
 
-#### LangChain
+### LangChain
 * [LangChain 入門：構建LLM 支持的應用程序的初學者指南](https://zhuanlan.zhihu.com/p/631948940)
 * [LangChain中文入門教程](https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide)
 * [大語言模型集成工具LangChain](https://zhuanlan.zhihu.com/p/599688026)
@@ -72,7 +72,7 @@ https://github.com/PaddlePaddle/PaddleNLP
 * [LlamaIndex：輕鬆構建索引查詢本地文檔的神器](https://zhuanlan.zhihu.com/p/638827267)
 * [langchain大模型外掛知識庫問答系統核心部件：如何更好地解析、分割複雜非結構化文本](https://mp.weixin.qq.com/s/rOWfCQuUPohatMF_dU2nIA)
 
-#### LLM 部署相關
+### LLM 部署相關
 * [LMDeploy](https://github.com/InternLM/lmdeploy/blob/main/README_zh-CN.md)：[使用LMDeploy 輕鬆部署Llama-2 系列模型！](https://zhuanlan.zhihu.com/p/645877584)
 * [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory)
 * [AutoChain : LangChain 的替代品](https://mp.weixin.qq.com/s/v4c4JzXiVEJfwi9CQbJ2Tg)
@@ -83,70 +83,44 @@ https://github.com/PaddlePaddle/PaddleNLP
     * https://docs.dify.ai/v/zh-hans/getting-started/intro-to-dify
 
 
-#### LLM 模型匯整
+### LLM 模型匯整
 * [大型語言模型綜述全新出爐：從T5到GPT-4最全盤點！](https://zhuanlan.zhihu.com/p/619526209)
 * [現有開源中文LLM整理](https://zhuanlan.zhihu.com/p/630577059)
 * [大模型LLM-微調經驗分享&總結](https://zhuanlan.zhihu.com/p/620885226)
 * [Hugging Face 的文本生成和大語言模型的開源生態](https://huggingface.co/blog/zh/os-llms)
 
-#### LLM 模型介紹
-* [Meta Llama 2](https://ai.meta.com/llama)：https://github.com/facebookresearch/llama
+### LLM 模型介紹
+
+* [**Meta Llama 2**](https://ai.meta.com/llama)：https://github.com/facebookresearch/llama
     * [Llama 2：開放式基礎和微調聊天模型](https://zhuanlan.zhihu.com/p/648030318)
     * [Llama 2 來襲 - 在 Hugging Face 上玩轉它](https://huggingface.co/blog/zh/llama2)
-
-</br>
-
-* Chinese Llama 2 7B：https://github.com/LinkSoul-AI/Chinese-Llama-2-7b
+* **Chinese Llama 2 7B**：https://github.com/LinkSoul-AI/Chinese-Llama-2-7b
     * [中文版開源Llama 2同時有了語言、多模態大模型，完全可商用](https://developer.aliyun.com/article/1301101)
-
-</br>
-
-* 通義千問：https://github.com/QwenLM/Qwen-7B
+* **通義千問**：https://github.com/QwenLM/Qwen-7B
     * [免費、可商用，阿里雲開源70億參數通義千問大模型](https://www.jiqizhixin.com/articles/2023-08-04-6)
-
-</br>
-
-* XVERSE：https://github.com/xverse-ai/XVERSE-13B
+* **XVERSE**：https://github.com/xverse-ai/XVERSE-13B
     * [130億參數大模型免費商用！性能超Llama2-13B，支持8k上下文](https://zhuanlan.zhihu.com/p/649643798)
-
-</br>
-
-* [MPT-7B](https://www.mosaicml.com/blog/mpt-7b)：A New Standard for Open-Source, Commercially Usable LLMs
+* [**MPT-7B**](https://www.mosaicml.com/blog/mpt-7b)：A New Standard for Open-Source, Commercially Usable LLMs
     * https://huggingface.co/mosaicml/mpt-7b
     * https://huggingface.co/spaces/mosaicml/mpt-7b-instruct
     * [MosaicML 推出70 億參數模型MPT-7B-8，號稱一次處理8000 字長文本、可商用](https://mp.weixin.qq.com/s/ZLotkvr9IEl91cLeu6jC6w)
     * [最新發布！截止目前最強大的最高支持65k輸入的開源可商用AI大模型：MPT-7B！](https://www.datalearner.com/blog/1051683422426508)
+* [**HuggingChat**](http://hf.co/chat)：Powered by Open Assistant's latest model – the best open source chat model right now – and Hugging Face Inference API.
 
-</br>
-
-* [HuggingChat](http://hf.co/chat)：Powered by Open Assistant's latest model – the best open source chat model right now – and Hugging Face Inference API.
-
-* OpenBMB/CPM-Bee：https://github.com/OpenBMB/CPM-Bee
+* **OpenBMB/CPM-Bee**：https://github.com/OpenBMB/CPM-Bee
     * [VisCPM：SOTA 開源中文多模態大模型](https://zhuanlan.zhihu.com/p/640750889)
-
-</br>
-
-* [Open Assistant](https://projects.laion.ai/Open-Assistant/)：https://github.com/LAION-AI/Open-Assistant
+* [**Open Assistant**](https://projects.laion.ai/Open-Assistant/)：https://github.com/LAION-AI/Open-Assistant
     * [Open Assistant： 創造一場開源革命](https://zhuanlan.zhihu.com/p/62259607)
     * [AI趨勢周報第208期：AI趨勢周報第208期：AI社群發起Open Assistant專案，要打造與第三方互動的AI助理](https://www.ithome.com.tw/news/155472)
     * [OpenAssistant 12B(pythia-based)本地部署快速體驗(ChatGPT開源、可商用的平替)](https://zhuanlan.zhihu.com/p/622358878)
     * [OpenAssistant  對話- 民主化大型語言模型對齊（Open-Assistant）](https://zhuanlan.zhihu.com/p/624051115)
     * [全球最大ChatGPT開源平替來了！支持35種語言，寫代碼、講笑話全拿捏](https://zhuanlan.zhihu.com/p/616917667)
-
-</br>
-
-* [Dolly](https://github.com/databrickslabs/dolly)
+* [**Dolly**](https://github.com/databrickslabs/dolly)
     * [Databricks公布生成性AI模型Dolly，強調比ChatGPT更容易訓練](https://www.ithome.com.tw/news/156128)
     * [全球首個完全開源的大語言模型Dolly，性能堪比 GPT3.5！](https://www.techbang.com/posts/105519-open-source-dolly-gpt)
-
-</br>
-
-* OpenBuddy
+* **OpenBuddy**
     * [OpenBuddy - 面向全球用户的开源多语言聊天机器人](https://github.com/OpenBuddy/OpenBuddy/blob/main/README.zh.md)
     * [OpenBuddy 發布基於Llama 2 的新一代跨語言對話模型，開源可商用](https://www.oschina.net/news/250986)
     * [OpenBuddy發布650億參數的大型跨語言對話模型](https://mp.weixin.qq.com/s/xZ0ejXwLcjGTurQFOws8lQ)
-
-</br>
-
-* h2oGPT：https://github.com/h2oai/h2ogpt
+* **h2oGPT**：https://github.com/h2oai/h2ogpt
     * [基於H2O.ai生態系統的開源可商用大語言模型](https://zhuanlan.zhihu.com/p/645600655)
