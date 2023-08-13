@@ -8,3 +8,7 @@ In this paper, we introduce HugNLP, a unified and comprehensive library for natu
 ![HugNLP 框架概覽](image.png)
 
 [HugIE: A Unified Chinese Information Extraction Framework via Extractive Instruction Prompting](https://github.com/HugAILab/HugNLP/blob/main/documents/information_extraction/HugIE.md)
+
+[基於機器閱讀理解(MRC)的指令微調(Instruction-tuning)的統一信息抽取框架之診斷書醫囑擷取分析](https://blog.twman.org/2023/07/HugIE.html)
+
+![醫囑分析v4@JugIE@HugNLP](./images/CathayIE.gif)
