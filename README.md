@@ -62,12 +62,18 @@ https://github.com/PaddlePaddle/PaddleNLP
 
 * [transformers_tasks](https://github.com/HarderThenHarder/transformers_tasks/tree/main/LLM)  
 
+### RAG
+* [Graph RAG：知識圖譜結合LLM的檢索增強](https://mp.weixin.qq.com/s/VJRG0MUaEGR6iM_xFRroyg)
+* [Graph RAG: 知識圖譜結合LLM 的檢索增強](https://siwei.io/graph-rag/)
+* [一文讀懂RAG和LLM微調，教你結合業務場景落地LLM應用](https://mp.weixin.qq.com/s/NcWyI00m2RrnibdzXqy_qQ)
+* [LangChain - RAG：線上系統多文檔要頻繁更新](https://mp.weixin.qq.com/s/Klz0ddtqa08_5q7MqX8HXg)
+
 ### LangChain
 * [LangChain 入門：構建LLM 支持的應用程序的初學者指南](https://zhuanlan.zhihu.com/p/631948940)
 * [LangChain中文入門教程](https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide)
 * [大語言模型集成工具LangChain](https://zhuanlan.zhihu.com/p/599688026)
 * [LangChain-ChatGLM-Webui](https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui)
-* [langchain-ChatGLM](https://github.com/chatchat-space/langchain-ChatGLM)
+* [Langchain-Chatchat/Langchain-ChatGLM](https://github.com/chatchat-space/langchain-ChatGLM)
 * [基於本地知識的問答機器人langchain-ChatGLM](https://zhuanlan.zhihu.com/p/622717995)
 * [LlamaIndex：輕鬆構建索引查詢本地文檔的神器](https://zhuanlan.zhihu.com/p/638827267)
 * [langchain大模型外掛知識庫問答系統核心部件：如何更好地解析、分割複雜非結構化文本](https://mp.weixin.qq.com/s/rOWfCQuUPohatMF_dU2nIA)
