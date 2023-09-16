@@ -79,11 +79,15 @@ https://github.com/PaddlePaddle/PaddleNLP
 * [langchain大模型外掛知識庫問答系統核心部件：如何更好地解析、分割複雜非結構化文本](https://mp.weixin.qq.com/s/rOWfCQuUPohatMF_dU2nIA)
 
 ### LLM 部署相關
+* [用LLaMA 2.0, FAISS and LangChain實現基於知識問答](https://zhuanlan.zhihu.com/p/651428758)
 * [LMDeploy](https://github.com/InternLM/lmdeploy/blob/main/README_zh-CN.md)：[使用LMDeploy 輕鬆部署Llama-2 系列模型！](https://zhuanlan.zhihu.com/p/645877584)
+* [LLMStack：一個用於構建生成式AI 應用、聊天機器人、智能體的無代碼平台](https://mp.weixin.qq.com/s/YhIQJhafdglPLirJBi6LLg)
+    * https://github.com/trypromptly/LLMStack
 * [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory)
 * [AutoChain : LangChain 的替代品](https://mp.weixin.qq.com/s/v4c4JzXiVEJfwi9CQbJ2Tg)
 * [LangFlow：一款可輕鬆實驗和原型化 LangChain 模擬的 AI 項目](https://mp.weixin.qq.com/s/omHZ_IqjISphmdGz3tiMnQ)
 * [Flowise ——通過拖放界面構建定制的LLM流程](https://cloud.tencent.com/developer/article/2296201)
+    * [Flowise｜無代碼ChatBot 構建平台｜LangChain](https://zhuanlan.zhihu.com/p/635304135)
 * [Dify](https://dify.ai/)
     * https://github.com/langgenius/dify
     * https://docs.dify.ai/v/zh-hans/getting-started/intro-to-dify
@@ -94,14 +98,20 @@ https://github.com/PaddlePaddle/PaddleNLP
 * [現有開源中文LLM整理](https://zhuanlan.zhihu.com/p/630577059)
 * [大模型LLM-微調經驗分享&總結](https://zhuanlan.zhihu.com/p/620885226)
 * [Hugging Face 的文本生成和大語言模型的開源生態](https://huggingface.co/blog/zh/os-llms)
+* [構建能夠使用CPU 運行的MetaAI LLaMA2 中文大模型](https://zhuanlan.zhihu.com/p/645426799)
 
 ### LLM 模型介紹
 
+* [Falcon 180B Demo](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
+    * [Falcon 180B Model](https://huggingface.co/tiiuae/falcon-180B)
+    * [Falcon 180B 目前最強大的開源模型](https://zhuanlan.zhihu.com/p/655709522)
 * [**Meta Llama 2**](https://ai.meta.com/llama)：https://github.com/facebookresearch/llama
     * [Llama 2：開放式基礎和微調聊天模型](https://zhuanlan.zhihu.com/p/648030318)
     * [Llama 2 來襲 - 在 Hugging Face 上玩轉它](https://huggingface.co/blog/zh/llama2)
-* **Chinese Llama 2 7B**：https://github.com/LinkSoul-AI/Chinese-Llama-2-7b
+    * [中文LLaMA模型和指令精調的Alpaca大模型：中文數據進行二次預訓練](https://cloud.tencent.com/developer/article/2306028)
+* **Chinese Llama 2**：https://github.com/LinkSoul-AI/Chinese-Llama-2-7b
     * [中文版開源Llama 2同時有了語言、多模態大模型，完全可商用](https://developer.aliyun.com/article/1301101)
+    * [llama2 Chinese chat：全網首個中文llama2 13b對話模型](https://mdnice.com/writing/bad27054f9714e2b8ccd472c5e1ba5e6)
 * **通義千問**：https://github.com/QwenLM/Qwen-7B
     * [免費、可商用，阿里雲開源70億參數通義千問大模型](https://www.jiqizhixin.com/articles/2023-08-04-6)
 * **XVERSE**：https://github.com/xverse-ai/XVERSE-13B
@@ -130,3 +140,6 @@ https://github.com/PaddlePaddle/PaddleNLP
     * [OpenBuddy發布650億參數的大型跨語言對話模型](https://mp.weixin.qq.com/s/xZ0ejXwLcjGTurQFOws8lQ)
 * **h2oGPT**：https://github.com/h2oai/h2ogpt
     * [基於H2O.ai生態系統的開源可商用大語言模型](https://zhuanlan.zhihu.com/p/645600655)
+* **Bloom**：
+    * https://huggingface.co/spaces/sambanovasystems/BLOOMChat
+    * [176B竟然可以辣麼快，效果直逼chatgpt-4直接hf在線體驗，還可以商用](https://mp.weixin.qq.com/s/9ero7t8WRyehpVRdD0rZWA)
