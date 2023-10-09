@@ -53,7 +53,9 @@ https://github.com/PaddlePaddle/PaddleNLP
 # 大語言模型 (Large Language Model)
 
 [大型語言模型(Large Language Model，LLM)，想要嗎？](https://blog.twman.org/2023/04/GPT.html)
+
 [人工智慧大語言模型微調技術：SFT 監督微調、LoRA 微調方法、P-tuning v2 微調方法、Freeze 監督微調方法](https://zhuanlan.zhihu.com/p/643941480)
+
 [【LLM】從零開始訓練大模型](https://zhuanlan.zhihu.com/p/636270877)
 
 ## **相關論文**
