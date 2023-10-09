@@ -28,6 +28,9 @@ https://huggingface.co/DeepLearning101
 
 ![醫囑分析v4@JugIE@HugNLP](./images/CathayIE.gif)
 
+## zero nlp
+[超級AI助理：全新提升！中文NLP訓練框架，快速上手，海量訓練數據，ChatGLM-v2、中文Bloom、Dolly助您實現更智能的應用！](https://zhuanlan.zhihu.com/p/652256798)
+
 ## DeepKE
 [Ningyu Zhang, Xin Xu, Liankuan Tao, Haiyang Yu, Hongbin Ye, Shuofei Qiao, Xin Xie, Xiang Chen, Zhoubo Li, Lei Li, Xiaozhuan Liang, Yunzhi Yao, Shumin Deng, Peng Wang, Wen Zhang, Zhenru Zhang, Chuanqi Tan, Qiang Chen, Feiyu Xiong, Fei Huang, Guozhou Zheng, Huajun Chen, "DeepKE: A Deep Learning Based Knowledge Extraction Toolkit for Knowledge Base Population", arXiv preprint, arXiv:2201.03335, 2022](./DeepKE.md)
 
@@ -50,6 +53,8 @@ https://github.com/PaddlePaddle/PaddleNLP
 # 大語言模型 (Large Language Model)
 
 [大型語言模型(Large Language Model，LLM)，想要嗎？](https://blog.twman.org/2023/04/GPT.html)
+[人工智慧大語言模型微調技術：SFT 監督微調、LoRA 微調方法、P-tuning v2 微調方法、Freeze 監督微調方法](https://zhuanlan.zhihu.com/p/643941480)
+[【LLM】從零開始訓練大模型](https://zhuanlan.zhihu.com/p/636270877)
 
 ## **相關論文**
 
@@ -76,9 +81,13 @@ https://github.com/PaddlePaddle/PaddleNLP
 * [Langchain-Chatchat/Langchain-ChatGLM](https://github.com/chatchat-space/langchain-ChatGLM)
 * [基於本地知識的問答機器人langchain-ChatGLM](https://zhuanlan.zhihu.com/p/622717995)
 * [LlamaIndex：輕鬆構建索引查詢本地文檔的神器](https://zhuanlan.zhihu.com/p/638827267)
+* [LlamaIndex——与LangChain类似但更专注于数据处理的LLM框架](https://cloud.tencent.com/developer/article/2333511)
 * [langchain大模型外掛知識庫問答系統核心部件：如何更好地解析、分割複雜非結構化文本](https://mp.weixin.qq.com/s/rOWfCQuUPohatMF_dU2nIA)
+* [一文詳解最熱的LLM 應用框架LangChain](https://zhuanlan.zhihu.com/p/651151321)
+* [LangChain：打造自己的LLM 落地場景實作！](https://zhuanlan.zhihu.com/p/651150077)
 
 ### LLM 部署相關
+* AutoGen：https://github.com/microsoft/autogen
 * [用LLaMA 2.0, FAISS and LangChain實現基於知識問答](https://zhuanlan.zhihu.com/p/651428758)
 * [LMDeploy](https://github.com/InternLM/lmdeploy/blob/main/README_zh-CN.md)：[使用LMDeploy 輕鬆部署Llama-2 系列模型！](https://zhuanlan.zhihu.com/p/645877584)
 * [LLMStack：一個用於構建生成式AI 應用、聊天機器人、智能體的無代碼平台](https://mp.weixin.qq.com/s/YhIQJhafdglPLirJBi6LLg)
@@ -99,6 +108,8 @@ https://github.com/PaddlePaddle/PaddleNLP
 * [大模型LLM-微調經驗分享&總結](https://zhuanlan.zhihu.com/p/620885226)
 * [Hugging Face 的文本生成和大語言模型的開源生態](https://huggingface.co/blog/zh/os-llms)
 * [構建能夠使用CPU 運行的MetaAI LLaMA2 中文大模型](https://zhuanlan.zhihu.com/p/645426799)
+* [復旦NLP團隊發表80頁大模型Agent綜述，一文綜觀AI智能體的現況與未來](https://www.jiqizhixin.com/articles/2023-09-19-8)
+
 
 ### LLM 模型介紹
 
@@ -109,11 +120,11 @@ https://github.com/PaddlePaddle/PaddleNLP
     * [Llama 2：開放式基礎和微調聊天模型](https://zhuanlan.zhihu.com/p/648030318)
     * [Llama 2 來襲 - 在 Hugging Face 上玩轉它](https://huggingface.co/blog/zh/llama2)
     * [中文LLaMA模型和指令精調的Alpaca大模型：中文數據進行二次預訓練](https://cloud.tencent.com/developer/article/2306028)
+    * [千元預算半天訓練，效果媲美主流大模型，開源可商用中文LLaMA-2](https://www.jiqizhixin.com/articles/2023-09-25-16)
+    * [所有基準測試都優於Llama 2 13B，最好的7B模型來了，免費用](https://www.jiqizhixin.com/articles/2023-09-29-2)
 * **Chinese Llama 2**：https://github.com/LinkSoul-AI/Chinese-Llama-2-7b
     * [中文版開源Llama 2同時有了語言、多模態大模型，完全可商用](https://developer.aliyun.com/article/1301101)
     * [llama2 Chinese chat：全網首個中文llama2 13b對話模型](https://mdnice.com/writing/bad27054f9714e2b8ccd472c5e1ba5e6)
-* **通義千問**：https://github.com/QwenLM/Qwen-7B
-    * [免費、可商用，阿里雲開源70億參數通義千問大模型](https://www.jiqizhixin.com/articles/2023-08-04-6)
 * **XVERSE**：https://github.com/xverse-ai/XVERSE-13B
     * [130億參數大模型免費商用！性能超Llama2-13B，支持8k上下文](https://zhuanlan.zhihu.com/p/649643798)
 * [**MPT-7B**](https://www.mosaicml.com/blog/mpt-7b)：A New Standard for Open-Source, Commercially Usable LLMs
@@ -122,7 +133,6 @@ https://github.com/PaddlePaddle/PaddleNLP
     * [MosaicML 推出70 億參數模型MPT-7B-8，號稱一次處理8000 字長文本、可商用](https://mp.weixin.qq.com/s/ZLotkvr9IEl91cLeu6jC6w)
     * [最新發布！截止目前最強大的最高支持65k輸入的開源可商用AI大模型：MPT-7B！](https://www.datalearner.com/blog/1051683422426508)
 * [**HuggingChat**](http://hf.co/chat)：Powered by Open Assistant's latest model – the best open source chat model right now – and Hugging Face Inference API.
-
 * **OpenBMB/CPM-Bee**：https://github.com/OpenBMB/CPM-Bee
     * [VisCPM：SOTA 開源中文多模態大模型](https://zhuanlan.zhihu.com/p/640750889)
 * [**Open Assistant**](https://projects.laion.ai/Open-Assistant/)：https://github.com/LAION-AI/Open-Assistant
@@ -143,3 +153,12 @@ https://github.com/PaddlePaddle/PaddleNLP
 * **Bloom**：
     * https://huggingface.co/spaces/sambanovasystems/BLOOMChat
     * [176B竟然可以辣麼快，效果直逼chatgpt-4直接hf在線體驗，還可以商用](https://mp.weixin.qq.com/s/9ero7t8WRyehpVRdD0rZWA)
+    * [逼近GPT-4！BLOOMChat: 开源可商用支持多语言的大语言模型](https://zhuanlan.zhihu.com/p/631036519)
+* **文心@百度**：
+    * https://wenxin.baidu.com
+* **通義@阿里**：
+    * https://github.com/QwenLM/Qwen-7B
+    * https://tongyi.aliyun.com/
+    * [免費、可商用，阿里雲開源70億參數通義千問大模型](https://www.jiqizhixin.com/articles/2023-08-04-6)
+* **騰訊混元大模型**：
+    * https://cloud.tencent.com/product/hunyuan
