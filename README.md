@@ -12,6 +12,7 @@
 
 [超詳細圖解Self-Attention](https://zhuanlan.zhihu.com/p/410776234)
 
+[NLP Course @ HuggingFace](https://huggingface.co/learn/nlp-course/zh-TW/chapter1/1)
 
 ### **開發心得：**
 
@@ -117,6 +118,9 @@ https://github.com/PaddlePaddle/PaddleNLP
 * [Falcon 180B Demo](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
     * [Falcon 180B Model](https://huggingface.co/tiiuae/falcon-180B)
     * [Falcon 180B 目前最強大的開源模型](https://zhuanlan.zhihu.com/p/655709522)
+* [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)
+    * https://huggingface.co/baichuan-inc/Baichuan-13B-Base
+    * https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
 * [**Meta Llama 2**](https://ai.meta.com/llama)：https://github.com/facebookresearch/llama
     * [Llama 2：開放式基礎和微調聊天模型](https://zhuanlan.zhihu.com/p/648030318)
     * [Llama 2 來襲 - 在 Hugging Face 上玩轉它](https://huggingface.co/blog/zh/llama2)
@@ -126,6 +130,15 @@ https://github.com/PaddlePaddle/PaddleNLP
 * **Chinese Llama 2**：https://github.com/LinkSoul-AI/Chinese-Llama-2-7b
     * [中文版開源Llama 2同時有了語言、多模態大模型，完全可商用](https://developer.aliyun.com/article/1301101)
     * [llama2 Chinese chat：全網首個中文llama2 13b對話模型](https://mdnice.com/writing/bad27054f9714e2b8ccd472c5e1ba5e6)
+* [**Mistral**](https://huggingface.co/mistralai/Mistral-7B-v0.1)
+    * [Mistral 7B 開箱 — 真正意義上的開源 LLM 模型](https://blog.infuseai.io/mistral-7b-introduction-2f6857f6982b)
+* [**Dolly**](https://github.com/databrickslabs/dolly)
+    * [Databricks公布生成性AI模型Dolly，強調比ChatGPT更容易訓練](https://www.ithome.com.tw/news/156128)
+    * [全球首個完全開源的大語言模型Dolly，性能堪比 GPT3.5！](https://www.techbang.com/posts/105519-open-source-dolly-gpt)
+    * [世界首款真開源類ChatGPT大模型Dolly 2.0，可隨意修改商用](https://zhuanlan.zhihu.com/p/621655147)
+    * [Databricks開源可商用的指令遵循大型語言模型Dolly 2.0](https://www.ithome.com.tw/news/156407)
+* [**MOSS**](https://github.com/OpenLMLab/MOSS)
+    * https://txsun1997.github.io/blogs/moss.html
 * **XVERSE**：https://github.com/xverse-ai/XVERSE-13B
     * [130億參數大模型免費商用！性能超Llama2-13B，支持8k上下文](https://zhuanlan.zhihu.com/p/649643798)
 * [**MPT-7B**](https://www.mosaicml.com/blog/mpt-7b)：A New Standard for Open-Source, Commercially Usable LLMs
@@ -142,9 +155,6 @@ https://github.com/PaddlePaddle/PaddleNLP
     * [OpenAssistant 12B(pythia-based)本地部署快速體驗(ChatGPT開源、可商用的平替)](https://zhuanlan.zhihu.com/p/622358878)
     * [OpenAssistant  對話- 民主化大型語言模型對齊（Open-Assistant）](https://zhuanlan.zhihu.com/p/624051115)
     * [全球最大ChatGPT開源平替來了！支持35種語言，寫代碼、講笑話全拿捏](https://zhuanlan.zhihu.com/p/616917667)
-* [**Dolly**](https://github.com/databrickslabs/dolly)
-    * [Databricks公布生成性AI模型Dolly，強調比ChatGPT更容易訓練](https://www.ithome.com.tw/news/156128)
-    * [全球首個完全開源的大語言模型Dolly，性能堪比 GPT3.5！](https://www.techbang.com/posts/105519-open-source-dolly-gpt)
 * **OpenBuddy**
     * [OpenBuddy - 面向全球用户的开源多语言聊天机器人](https://github.com/OpenBuddy/OpenBuddy/blob/main/README.zh.md)
     * [OpenBuddy 發布基於Llama 2 的新一代跨語言對話模型，開源可商用](https://www.oschina.net/news/250986)
@@ -155,11 +165,14 @@ https://github.com/PaddlePaddle/PaddleNLP
     * https://huggingface.co/spaces/sambanovasystems/BLOOMChat
     * [176B竟然可以辣麼快，效果直逼chatgpt-4直接hf在線體驗，還可以商用](https://mp.weixin.qq.com/s/9ero7t8WRyehpVRdD0rZWA)
     * [逼近GPT-4！BLOOMChat: 开源可商用支持多语言的大语言模型](https://zhuanlan.zhihu.com/p/631036519)
+* [Cerebras-GPT](https://github.com/Cerebras/modelzoo)
+    * [免費可商用開源GPT模型來了，50G權重直接下載，性能不輸GPT-3](https://zhuanlan.zhihu.com/p/618893184)
+    * [Open Compute-Optimal Language Models Trained on the Cerebras Wafer-Scale Cluster](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
 * **文心@百度**：
     * https://wenxin.baidu.com
 * **通義@阿里**：
     * https://github.com/QwenLM/Qwen-7B
     * https://tongyi.aliyun.com/
     * [免費、可商用，阿里雲開源70億參數通義千問大模型](https://www.jiqizhixin.com/articles/2023-08-04-6)
-* **騰訊混元大模型**：
+* **混元@騰訊**：
     * https://cloud.tencent.com/product/hunyuan
