@@ -50,7 +50,8 @@ https://github.com/PaddlePaddle/PaddleNLP
 ![醫囑分析v1@UIE-PaddleNLP](./images/Medical-Advice_PaddleNLP-UIE.gif)
 
 #
-# 大語言模型 (Large Language Model)
+# LLM
+**大語言模型 (Large Language Model)**
 
 [大型語言模型(Large Language Model，LLM)，想要嗎？](https://blog.twman.org/2023/04/GPT.html)
 
