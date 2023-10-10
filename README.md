@@ -28,9 +28,6 @@ https://huggingface.co/DeepLearning101
 
 ![醫囑分析v4@JugIE@HugNLP](./images/CathayIE.gif)
 
-## zero nlp
-[超級AI助理：全新提升！中文NLP訓練框架，快速上手，海量訓練數據，ChatGLM-v2、中文Bloom、Dolly助您實現更智能的應用！](https://zhuanlan.zhihu.com/p/652256798)
-
 ## DeepKE
 [Ningyu Zhang, Xin Xu, Liankuan Tao, Haiyang Yu, Hongbin Ye, Shuofei Qiao, Xin Xie, Xiang Chen, Zhoubo Li, Lei Li, Xiaozhuan Liang, Yunzhi Yao, Shumin Deng, Peng Wang, Wen Zhang, Zhenru Zhang, Chuanqi Tan, Qiang Chen, Feiyu Xiong, Fei Huang, Guozhou Zheng, Huajun Chen, "DeepKE: A Deep Learning Based Knowledge Extraction Toolkit for Knowledge Base Population", arXiv preprint, arXiv:2201.03335, 2022](./DeepKE.md)
 
@@ -69,6 +66,7 @@ https://github.com/PaddlePaddle/PaddleNLP
 ## **相關連結**
 
 * [transformers_tasks](https://github.com/HarderThenHarder/transformers_tasks/tree/main/LLM)  
+* [超級AI助理：全新提升！中文NLP訓練框架，快速上手，海量訓練數據，ChatGLM-v2、中文Bloom、Dolly助您實現更智能的應用！](https://zhuanlan.zhihu.com/p/652256798)
 
 ### RAG
 * [Graph RAG：知識圖譜結合LLM的檢索增強](https://mp.weixin.qq.com/s/VJRG0MUaEGR6iM_xFRroyg)
