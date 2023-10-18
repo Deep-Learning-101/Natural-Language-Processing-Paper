@@ -5,7 +5,7 @@
 In this paper, we introduce HugNLP, a unified and comprehensive library for natural language processing (NLP) with the prevalent backend of HuggingFace Transformers, which is designed for NLP researchers to easily utilize off-the-shelf algorithms and develop novel methods with user-defined models and tasks in real-world scenarios. HugNLP consists of a hierarchical structure including models, processors and applications that unifies the learning process of pre-trained language models (PLMs) on different NLP tasks. Additionally, we present some featured NLP applications to show the effectiveness of HugNLP, such as knowledge-enhanced PLMs, universal information extraction, low-resource mining, and code understanding and generation, etc. The source code will be released on GitHub (https://github.com/wjn1996/HugNLP).
 
 
-![HugNLP 框架概覽](image.png)
+![HugNLP 框架概覽](./images/image.png)
 
 ## HugIE
 
@@ -15,5 +15,5 @@ In this paper, we introduce HugNLP, a unified and comprehensive library for natu
 
 [基於機器閱讀理解(MRC)的指令微調(Instruction-tuning)的統一信息抽取框架之診斷書醫囑擷取分析](https://blog.twman.org/2023/07/HugIE.html)
 
-針對診斷書醫囑文字分析的開發過程記錄，分別嘗試了五種演算法，依序是 PaddleNLP的UIE、ChatGPT 3.5、UniIE、InstructUIE、HugIE等
+
 
