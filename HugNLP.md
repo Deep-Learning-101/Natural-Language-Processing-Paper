@@ -9,11 +9,11 @@ In this paper, we introduce HugNLP, a unified and comprehensive library for natu
 
 ## HugIE
 
-![醫囑分析v4@JugIE@HugNLP](./images/CathayIE.gif)
+![醫囑分析v4@JugIE@HugNLP](./images/HugIE.gif)
 
 [HugIE: A Unified Chinese Information Extraction Framework via Extractive Instruction Prompting](https://github.com/HugAILab/HugNLP/blob/main/documents/information_extraction/HugIE.md)
 
 [基於機器閱讀理解(MRC)的指令微調(Instruction-tuning)的統一信息抽取框架之診斷書醫囑擷取分析](https://blog.twman.org/2023/07/HugIE.html)
 
-
+針對診斷書醫囑文字分析的開發過程記錄，分別嘗試了五種演算法，依序是 PaddleNLP的UIE、ChatGPT 3.5、UniIE、InstructUIE、HugIE
 
