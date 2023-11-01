@@ -134,10 +134,11 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [Xwin-LM-13B-V0.2](https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.2)
 * [**Zephyr**](https://huggingface.co/HuggingFaceH4)
     * [最好7B模型再易主！打敗700億LLaMA2，蘋果電腦就能跑，還開源免費](https://zhuanlan.zhihu.com/p/663816617)
-* [**Mistral**](https://huggingface.co/mistralai/Mistral-7B-v0.1)
-    * [Mistral 7B 開箱 — 真正意義上的開源 LLM 模型](https://blog.infuseai.io/mistral-7b-introduction-2f6857f6982b)
+    * [實戰｜如何低成本訓練一個可以超越70B Llama2 的模型Zephyr-7B](https://zhuanlan.zhihu.com/p/663782256)
 * [**HuggingChat**](http://hf.co/chat)：Powered by Open Assistant's latest model – the best open source chat model right now – and Hugging Face Inference API.
     * [chat ui](https://github.com/huggingface/chat-ui)
+* [**Mistral**](https://huggingface.co/mistralai/Mistral-7B-v0.1)
+    * [Mistral 7B 開箱 — 真正意義上的開源 LLM 模型](https://blog.infuseai.io/mistral-7b-introduction-2f6857f6982b)
 * [Falcon 180B Demo](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
     * [Falcon 180B Model](https://huggingface.co/tiiuae/falcon-180B)
     * [Falcon 180B 目前最強大的開源模型](https://zhuanlan.zhihu.com/p/655709522)
