@@ -133,7 +133,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [Xwin-LM-7B-V0.2](https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.2)
     * [Xwin-LM-13B-V0.2](https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.2)
 * [**Zephyr**](https://huggingface.co/HuggingFaceH4)
-    * [最好7B模型再易主！打敗700億LLaMA2，蘋果電腦就能跑，還開源免費]()
+    * [最好7B模型再易主！打敗700億LLaMA2，蘋果電腦就能跑，還開源免費](https://zhuanlan.zhihu.com/p/663816617)
 * [**Mistral**](https://huggingface.co/mistralai/Mistral-7B-v0.1)
     * [Mistral 7B 開箱 — 真正意義上的開源 LLM 模型](https://blog.infuseai.io/mistral-7b-introduction-2f6857f6982b)
 * [**HuggingChat**](http://hf.co/chat)：Powered by Open Assistant's latest model – the best open source chat model right now – and Hugging Face Inference API.
@@ -141,6 +141,9 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [Falcon 180B Demo](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
     * [Falcon 180B Model](https://huggingface.co/tiiuae/falcon-180B)
     * [Falcon 180B 目前最強大的開源模型](https://zhuanlan.zhihu.com/p/655709522)
+* [天工@崑崙萬維](https://github.com/SkyworkAI/Skywork)
+    * [崑崙萬維開源百億級大語言模型，配套150B開源中文資料集](https://36kr.com/p/2496563965695876)
+    * [中文最強開源大模型來了！130億參數，0門檻商用，來自崑崙萬維](https://zhuanlan.zhihu.com/p/664108647)
 * [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Base
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
