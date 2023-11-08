@@ -1,15 +1,13 @@
-# [Natural Language Processing, NLP (自然語言處理)](https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper)：**[那些自然語言處理踩的坑](https://blog.twman.org/2021/04/NLP.html)**：[針對文檔進行分析與擷取](https://www.twman.org/AI/NLP)。
+# Natural Language Processing, NLP (自然語言處理)
 
-
-#### [大型語言模型(Large Language Model，LLM)，想要嗎？](https://blog.twman.org/2023/04/GPT.html)
 #### [基於機器閱讀理解的指令微調的統一信息抽取框架之診斷書醫囑擷取分析](https://blog.twman.org/2023/07/HugIE.html)：https://huggingface.co/spaces/DeepLearning101/IE101TW
+#### [那些自然語言處理 (Natural Language Processing, NLP) 踩的坑](https://blog.twman.org/2021/04/NLP.html)
+#### [大型語言模型(Large Language Model，LLM)，想要嗎？](https://blog.twman.org/2023/04/GPT.html)
+
 ### ** 2018/07/15-2020/02/29 開發心得：**
 
 自然語言處理（英語：Natural Language Processing，縮寫作 NLP）是人工智慧和語言學領域的分支學科。此領域探討如何處理及運用自然語言；自然語言處理包括多方面和步驟，基本有認知、理解、生成等部分。 自然語言認知和理解是讓電腦把輸入的語言變成有意思的符號和關係，然後根據目的再處理。自然語言生成系統則是把計算機數據轉化為自然語言。最後，放眼望去想入門 Attention、Transformer、Bert 和 李宏毅老師的教學影片等，絕對不能錯過。
-
 雖然分享這些踩過的坑還有免費DEMO跟API其實我想不到有啥好處，但至少不用為了要營利而去亂喊口號也更不用畫大餅，能做多少就是說多少；如同搞 Deep Learning 101 搞那麼久，搬桌椅、直播場佈其實比想像中麻煩，只希望讓想投入的知道 AI 這個坑其實很深，多分享總是比較好 ! 
-
-[那些自然語言處理 (Natural Language Processing, NLP) 踩的坑](https://blog.twman.org/2021/04/NLP.html)
 
 [Transformer - Attention is all you need](https://zhuanlan.zhihu.com/p/311156298)
 
@@ -160,8 +158,6 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 [**AlpacaEval Leaderboard**](https://tatsu-lab.github.io/alpaca_eval/)
 
 [**Open LLM Leaderboard**](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-
-[大型語言模型(Large Language Model，LLM)，想要嗎？](https://blog.twman.org/2023/04/GPT.html)
 
 [人工智慧大語言模型微調技術：SFT 監督微調、LoRA 微調方法、P-tuning v2 微調方法、Freeze 監督微調方法](https://zhuanlan.zhihu.com/p/643941480)
 
