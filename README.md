@@ -202,12 +202,12 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [NVIDIA TensorRT-LLM 增強了 NVIDIA H100 GPU 上大型語言模型的推論能力](https://blogs.nvidia.com.tw/2023/09/11/nvidia-tensorrt-llm-supercharges-large-language-model-inference-on-nvidia-h100-gpus/)
     * [Nvidia開源TensorRT-LLM函式庫強化H100 GPU大型語言模型推論效能](https://www.ithome.com.tw/news/158687)
 * [用LLaMA 2.0, FAISS and LangChain實現基於知識問答](https://zhuanlan.zhihu.com/p/651428758)
-* [FastGPT](https://fastgpt.run)
+* [**FastGPT**](https://fastgpt.run)
     * https://doc.fastgpt.run/docs/intro/
     * [利用Docker Compose快速部署FastGPT知识库问答](https://mp.weixin.qq.com/s/wkQuYtK8iEI-SzHn9ihUKQ)
-* [XAgent](https://github.com/OpenBMB/XAgent)：https://github.com/OpenBMB/XAgent
- * [全面超越AutoGPT，面壁智慧聯合清華NLP實驗室開源大模型「超級英雄」XAgent](https://www.jiqizhixin.com/articles/2023-10-17-7)
- * [驕傲！清華XAgent完勝ChatGPT4.0！](https://www.wehelpwin.com/news/91)
+* [**XAgent**](https://github.com/OpenBMB/XAgent)：https://github.com/OpenBMB/XAgent
+    * [全面超越AutoGPT，面壁智慧聯合清華NLP實驗室開源大模型「超級英雄」XAgent](https://www.jiqizhixin.com/articles/2023-10-17-7)
+    * [驕傲！清華XAgent完勝ChatGPT4.0！](https://www.wehelpwin.com/news/91)
 * [PromptFlow — 微軟最新開源的基於LLM的開發工具集](https://zhuanlan.zhihu.com/p/666139473)：https://github.com/microsoft/promptflow
 * [用bitsandbytes、4 位元量化和QLoRA 打造親民的LLM](https://huggingface.co/blog/zh/4bit-transformers-bitsandbytes)
 * [LMDeploy](https://github.com/InternLM/lmdeploy/blob/main/README_zh-CN.md)：[使用LMDeploy 輕鬆部署Llama-2 系列模型！](https://zhuanlan.zhihu.com/p/645877584)
@@ -249,7 +249,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [Falcon 180B Demo](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
     * [Falcon 180B Model](https://huggingface.co/tiiuae/falcon-180B)
     * [Falcon 180B 目前最強大的開源模型](https://zhuanlan.zhihu.com/p/655709522)
-* [天工@崑崙萬維](https://github.com/SkyworkAI/Skywork)
+* [**天工@崑崙萬維**](https://github.com/SkyworkAI/Skywork)
     * [崑崙萬維開源百億級大語言模型，配套150B開源中文資料集](https://36kr.com/p/2496563965695876)
     * [中文最強開源大模型來了！130億參數，0門檻商用，來自崑崙萬維](https://zhuanlan.zhihu.com/p/664108647)
 * [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)
@@ -257,7 +257,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
     * [實戰！私有化部署RAG大模型，ChatGLM2-6B還是Baichuan2-13B](https://www.luxiangdong.com/2023/10/09/ragllm/#/%E8%AF%95%E7%94%A8Baichuan2-13B)
     * [https://mp.weixin.qq.com/s/7qf4ncRLfdvjpfhKNgqEow](https://mp.weixin.qq.com/s/7qf4ncRLfdvjpfhKNgqEow)
-* [01-ai/Yi-34B](https://huggingface.co/01-ai/Yi-34B)
+* [**01-ai/Yi**](https://huggingface.co/01-ai/Yi-34B)
     * [零一萬物發布大模型Yi-34B，李開復：堅定進軍全球第一梯隊目標](https://www.mittrchina.com/news/detail/12627)
     * [李開復：用大模型創造Super APP是最大的商機](https://www.mittrchina.com/news/detail/12642)
     * [基於LLaMA卻改張量名，李開復公司大模型開源行為引發爭議，官方回應來了](https://www.jiqizhixin.com/articles/2023-11-14-4)
