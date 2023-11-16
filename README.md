@@ -191,6 +191,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [一文詳解最熱的LLM 應用框架LangChain](https://zhuanlan.zhihu.com/p/651151321)
 * [LangChain：打造自己的LLM 落地場景實作！](https://zhuanlan.zhihu.com/p/651150077)
 * [langchain+xray，好玩起来了](https://mp.weixin.qq.com/s/qKFkUdvNWumanqGE6s6jUw)
+* [利用LangSmith和Lilac微調你的大模型](https://mp.weixin.qq.com/s/zOM_5kpkjApDTqt9IcXstA)
 
 ### LLM 部署開發相關
 * [**AutoGen**](https://github.com/microsoft/autogen)
