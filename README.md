@@ -174,8 +174,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [超級AI助理：全新提升！中文NLP訓練框架，快速上手，海量訓練數據，ChatGLM-v2、中文Bloom、Dolly助您實現更智能的應用！](https://zhuanlan.zhihu.com/p/652256798)
 
 ### RAG
-* [Graph RAG：知識圖譜結合LLM的檢索增強](https://mp.weixin.qq.com/s/VJRG0MUaEGR6iM_xFRroyg)
-* [Graph RAG: 知識圖譜結合LLM 的檢索增強](https://siwei.io/graph-rag/)
+* [Graph RAG：知識圖譜結合LLM 的檢索增強](https://siwei.io/graph-rag/)
 * [一文讀懂RAG和LLM微調，教你結合業務場景落地LLM應用](https://mp.weixin.qq.com/s/NcWyI00m2RrnibdzXqy_qQ)
 * [LangChain - RAG：線上系統多文檔要頻繁更新](https://mp.weixin.qq.com/s/Klz0ddtqa08_5q7MqX8HXg)
 
