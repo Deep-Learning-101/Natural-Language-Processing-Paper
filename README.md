@@ -232,7 +232,8 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [Flowise｜無代碼ChatBot 構建平台｜LangChain](https://zhuanlan.zhihu.com/p/635304135)
 * [Dify](https://dify.ai/)
     * https://github.com/langgenius/dify
-    * https://docs.dify.ai/v/zh-hans/getting-started/intro-to-dify
+    * https://docs.dify.ai/v/zh-hans/
+    * [這支十餘人的年輕創業團隊如何在2 個月做出一個 LLMOps 平台](https://zhuanlan.zhihu.com/p/666614787)
 
 
 ### LLM 模型匯整
