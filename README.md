@@ -263,11 +263,12 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [**天工@崑崙萬維**](https://github.com/SkyworkAI/Skywork)
     * [崑崙萬維開源百億級大語言模型，配套150B開源中文資料集](https://36kr.com/p/2496563965695876)
     * [中文最強開源大模型來了！130億參數，0門檻商用，來自崑崙萬維](https://zhuanlan.zhihu.com/p/664108647)
-* [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)
+* [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)：https://huggingface.co/baichuan-inc
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Base
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
     * [實戰！私有化部署RAG大模型，ChatGLM2-6B還是Baichuan2-13B](https://www.luxiangdong.com/2023/10/09/ragllm/#/%E8%AF%95%E7%94%A8Baichuan2-13B)
-    * [https://mp.weixin.qq.com/s/7qf4ncRLfdvjpfhKNgqEow](https://mp.weixin.qq.com/s/7qf4ncRLfdvjpfhKNgqEow)
+    * [Baichuan2-13B 量化及 API 部署](https://mp.weixin.qq.com/s/7qf4ncRLfdvjpfhKNgqEow)
+    * [百川智能發表Baichuan2大模型：全面領先Llama2，訓練切片也開源了](https://www.jiqizhixin.com/articles/2023-09-06-6)
 * [**01-ai/Yi**](https://huggingface.co/01-ai/Yi-34B)
     * [零一萬物發布大模型Yi-34B，李開復：堅定進軍全球第一梯隊目標](https://www.mittrchina.com/news/detail/12627)
     * [李開復：用大模型創造Super APP是最大的商機](https://www.mittrchina.com/news/detail/12642)
