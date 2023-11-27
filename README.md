@@ -230,7 +230,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [LangFlow：一款可輕鬆實驗和原型化 LangChain 模擬的 AI 項目](https://mp.weixin.qq.com/s/omHZ_IqjISphmdGz3tiMnQ)
 * [Flowise ——通過拖放界面構建定制的LLM流程](https://cloud.tencent.com/developer/article/2296201)
     * [Flowise｜無代碼ChatBot 構建平台｜LangChain](https://zhuanlan.zhihu.com/p/635304135)
-* [Dify](https://dify.ai/)
+* [**Dify**](https://dify.ai/)
     * https://github.com/langgenius/dify
     * https://docs.dify.ai/v/zh-hans/
     * [這支十餘人的年輕創業團隊如何在2 個月做出一個 LLMOps 平台](https://zhuanlan.zhihu.com/p/666614787)
@@ -262,16 +262,14 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [Falcon 180B Demo](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
     * [Falcon 180B Model](https://huggingface.co/tiiuae/falcon-180B)
     * [Falcon 180B 目前最強大的開源模型](https://zhuanlan.zhihu.com/p/655709522)
-* [**天工@崑崙萬維**](https://github.com/SkyworkAI/Skywork)
-    * [崑崙萬維開源百億級大語言模型，配套150B開源中文資料集](https://36kr.com/p/2496563965695876)
-    * [中文最強開源大模型來了！130億參數，0門檻商用，來自崑崙萬維](https://zhuanlan.zhihu.com/p/664108647)
 * [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)：https://huggingface.co/baichuan-inc
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Base
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
     * [實戰！私有化部署RAG大模型，ChatGLM2-6B還是Baichuan2-13B](https://www.luxiangdong.com/2023/10/09/ragllm/#/%E8%AF%95%E7%94%A8Baichuan2-13B)
     * [Baichuan2-13B 量化及 API 部署](https://mp.weixin.qq.com/s/7qf4ncRLfdvjpfhKNgqEow)
     * [百川智能發表Baichuan2大模型：全面領先Llama2，訓練切片也開源了](https://www.jiqizhixin.com/articles/2023-09-06-6)
-* [**01-ai/Yi**](https://huggingface.co/01-ai/Yi-34B)
+* [**01-ai/Yi**](https://huggingface.co/01-ai)
+    * [零一萬物Yi-34B-Chat 微調模型及量化版正式上線](https://zhuanlan.zhihu.com/p/668635998)
     * [零一萬物發布大模型Yi-34B，李開復：堅定進軍全球第一梯隊目標](https://www.mittrchina.com/news/detail/12627)
     * [李開復：用大模型創造Super APP是最大的商機](https://www.mittrchina.com/news/detail/12642)
     * [基於LLaMA卻改張量名，李開復公司大模型開源行為引發爭議，官方回應來了](https://www.jiqizhixin.com/articles/2023-11-14-4)
@@ -284,6 +282,10 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [多項長篇文本任務第一，揭秘Ziya-Reader 訓練技術：注意力增強](https://hub.baai.ac.cn/view/32706)
 * [**Chat GLM**](https://github.com/THUDM/ChatGLM3)
     * [當ChatGLM3能用搜尋引擎時](https://mp.weixin.qq.com/s/FAhPO_3hWOdOssssRmVFUQ)
+* [天工@崑崙萬維](https://github.com/SkyworkAI/Skywork)
+    * [天工Skywork-13B開源模型的煉成與思考](https://zhuanlan.zhihu.com/p/664985891)
+    * [崑崙萬維開源百億級大語言模型，配套150B開源中文資料集](https://36kr.com/p/2496563965695876)
+    * [中文最強開源大模型來了！130億參數，0門檻商用，來自崑崙萬維](https://zhuanlan.zhihu.com/p/664108647)
 * [Meta Llama 2](https://ai.meta.com/llama)：https://github.com/facebookresearch/llama
     * [Llama 2：開放式基礎和微調聊天模型](https://zhuanlan.zhihu.com/p/648030318)
     * [Llama 2 來襲 - 在 Hugging Face 上玩轉它](https://huggingface.co/blog/zh/llama2)
@@ -297,7 +299,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [Databricks開源可商用的指令遵循大型語言模型Dolly 2.0](https://www.ithome.com.tw/news/156407)
 * [**MOSS**](https://github.com/OpenLMLab/MOSS)
     * https://txsun1997.github.io/blogs/moss.html
-* [**XVERSE**](https://github.com/xverse-ai/XVERSE-13B)
+* [XVERSE](https://github.com/xverse-ai/XVERSE-13B)
     * [130億參數大模型免費商用！性能超Llama2-13B，支持8k上下文](https://zhuanlan.zhihu.com/p/649643798)
     * [國內最大開源模型發布，無條件免費商用！參數650億，基於2.6兆token訓練](https://zhuanlan.zhihu.com/p/665270135)    
 * [MPT-7B](https://www.mosaicml.com/blog/mpt-7b)：A New Standard for Open-Source, Commercially Usable LLMs
