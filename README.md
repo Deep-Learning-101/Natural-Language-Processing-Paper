@@ -202,10 +202,13 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 ### LLM 部署開發相關
 * [**AutoGen**](https://github.com/microsoft/autogen)
+    * [逐步掌握最佳Ai Agents框架-AutoGen](https://juejin.cn/post/7300779071389663286)：https://github.com/sugarforever/AutoGen-Tutorials
     * [微軟AutoGen框架太火了，智能體聊聊天就把問題解決了](https://www.jiqizhixin.com/articles/2023-10-16-11)
     * [我打通了Autogen和Bing搜尋| AutoGen系列第二篇](https://mp.weixin.qq.com/s/O8s_3K6yRB597i5swCV2Ew)
     * [Streamlit + AutoGen = 基於LLM的多代理網頁應用開發](https://mp.weixin.qq.com/s/nT55YPBviAiU3OWvdnLjjQ)
     * [使用Streamlit建立AutoGen使用者介面](https://zhuanlan.zhihu.com/p/665636978)
+* [Flowise ——通過拖放界面構建定制的LLM流程](https://cloud.tencent.com/developer/article/2296201)
+    * [Flowise｜無代碼ChatBot 構建平台｜LangChain](https://zhuanlan.zhihu.com/p/635304135)    
 * [**NVIDIA AI Foundation Models**](https://developer.nvidia.com/nemotron-3-8b)
     * [NVIDIA AI Foundation Models：使用生產就緒型LLM 建置自訂企業聊天機器人和智慧副駕](https://zhuanlan.zhihu.com/p/667838746)
 * [**TensorRT-LLM**](https://github.com/NVIDIA/TensorRT-LLM)
@@ -232,8 +235,6 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory)
 * [AutoChain : LangChain 的替代品](https://mp.weixin.qq.com/s/v4c4JzXiVEJfwi9CQbJ2Tg)
 * [LangFlow：一款可輕鬆實驗和原型化 LangChain 模擬的 AI 項目](https://mp.weixin.qq.com/s/omHZ_IqjISphmdGz3tiMnQ)
-* [Flowise ——通過拖放界面構建定制的LLM流程](https://cloud.tencent.com/developer/article/2296201)
-    * [Flowise｜無代碼ChatBot 構建平台｜LangChain](https://zhuanlan.zhihu.com/p/635304135)
 
 
 ### LLM 模型匯整
