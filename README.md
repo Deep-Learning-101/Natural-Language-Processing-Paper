@@ -265,9 +265,6 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [**Mistral**](https://huggingface.co/mistralai/Mistral-7B-v0.1)
     * [Mistral 7B 開箱 — 真正意義上的開源 LLM 模型](https://blog.infuseai.io/mistral-7b-introduction-2f6857f6982b)
     * [Mistral AI：歐洲最強模型團隊，打造開源輕量LLM](https://new.qq.com/rain/a/20231123A08N4100)
-* [Falcon 180B Demo](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
-    * [Falcon 180B Model](https://huggingface.co/tiiuae/falcon-180B)
-    * [Falcon 180B 目前最強大的開源模型](https://zhuanlan.zhihu.com/p/655709522)
 * [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)：https://huggingface.co/baichuan-inc
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Base
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
@@ -287,7 +284,11 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [Never Lost in the Middle: Improving Large Language Models via Attention Strengthening Question Answering](https://arxiv.org/abs/2311.09198)
     * [多項長篇文本任務第一，揭秘Ziya-Reader 訓練技術：注意力增強](https://hub.baai.ac.cn/view/32706)
 * [**Chat GLM**](https://github.com/THUDM/ChatGLM3)
+    * [ChatGLM3 使用Demo及效果測試](https://zhuanlan.zhihu.com/p/664036961)
     * [當ChatGLM3能用搜尋引擎時](https://mp.weixin.qq.com/s/FAhPO_3hWOdOssssRmVFUQ)
+* [Falcon 180B Demo](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
+    * [Falcon 180B Model](https://huggingface.co/tiiuae/falcon-180B)
+    * [Falcon 180B 目前最強大的開源模型](https://zhuanlan.zhihu.com/p/655709522)    
 * [天工@崑崙萬維](https://github.com/SkyworkAI/Skywork)
     * [天工Skywork-13B開源模型的煉成與思考](https://zhuanlan.zhihu.com/p/664985891)
     * [崑崙萬維開源百億級大語言模型，配套150B開源中文資料集](https://36kr.com/p/2496563965695876)
@@ -298,9 +299,9 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [中文LLaMA模型和指令精調的Alpaca大模型：中文數據進行二次預訓練](https://cloud.tencent.com/developer/article/2306028)
     * [千元預算半天訓練，效果媲美主流大模型，開源可商用中文LLaMA-2](https://www.jiqizhixin.com/articles/2023-09-25-16)
     * [所有基準測試都優於Llama 2 13B，最好的7B模型來了，免費用](https://www.jiqizhixin.com/articles/2023-09-29-2)
-* [**MOSS**](https://github.com/OpenLMLab/MOSS)
+* [MOSS](https://github.com/OpenLMLab/MOSS)
     * https://txsun1997.github.io/blogs/moss.html
-* **Bloom**：
+* Bloom：
     * https://huggingface.co/spaces/sambanovasystems/BLOOMChat
     * [176B竟然可以辣麼快，效果直逼chatgpt-4直接hf在線體驗，還可以商用](https://mp.weixin.qq.com/s/9ero7t8WRyehpVRdD0rZWA)
     * [逼近GPT-4！BLOOMChat: 开源可商用支持多语言的大语言模型](https://zhuanlan.zhihu.com/p/631036519)    
