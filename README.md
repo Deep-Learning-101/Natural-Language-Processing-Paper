@@ -346,10 +346,11 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [基於H2O.ai生態系統的開源可商用大語言模型](https://zhuanlan.zhihu.com/p/645600655)
 * 文心@百度：
     * https://wenxin.baidu.com
-* 通義@阿里：
+* 混元@騰訊：
+    * https://cloud.tencent.com/product/hunyuan    
+* 通義千問(QWEN)@阿里：
+    * https://huggingface.co/Qwen/Qwen-72B
     * https://github.com/QwenLM/Qwen-7B
     * https://tongyi.aliyun.com/
     * [免費、可商用，阿里雲開源70億參數通義千問大模型](https://www.jiqizhixin.com/articles/2023-08-04-6)
     * [開源語音大語言模型來了！阿里基於Qwen-Chat提出Qwen-Audio!](https://zhuanlan.zhihu.com/p/668608727)
-* 混元@騰訊：
-    * https://cloud.tencent.com/product/hunyuan
