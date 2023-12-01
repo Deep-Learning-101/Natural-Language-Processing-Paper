@@ -211,7 +211,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 ### LLM 部署開發相關
 * [**AutoGen**](https://github.com/microsoft/autogen)
-    * [逐步掌握最佳Ai Agents框架-AutoGen](https://juejin.cn/post/7300779071389663286)：https://github.com/sugarforever/AutoGen-Tutorials
+    * [逐步掌握最佳Ai Agents框架-AutoGen](https://juejin.cn/post/7305230279812218890)：https://github.com/sugarforever/AutoGen-Tutorials
     * [微軟AutoGen框架太火了，智能體聊聊天就把問題解決了](https://www.jiqizhixin.com/articles/2023-10-16-11)
     * [我打通了Autogen和Bing搜尋| AutoGen系列第二篇](https://mp.weixin.qq.com/s/O8s_3K6yRB597i5swCV2Ew)
     * [Streamlit + AutoGen = 基於LLM的多代理網頁應用開發](https://mp.weixin.qq.com/s/nT55YPBviAiU3OWvdnLjjQ)
