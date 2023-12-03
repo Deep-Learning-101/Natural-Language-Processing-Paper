@@ -352,5 +352,6 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * https://huggingface.co/Qwen/Qwen-72B
     * https://github.com/QwenLM/Qwen-7B
     * https://tongyi.aliyun.com/
+    * [720億參數大模型都拿來開源了！通義千問開源全家桶，最小18億模型端側都能跑](https://www.jiqizhixin.com/articles/2023-12-01-5)
     * [免費、可商用，阿里雲開源70億參數通義千問大模型](https://www.jiqizhixin.com/articles/2023-08-04-6)
     * [開源語音大語言模型來了！阿里基於Qwen-Chat提出Qwen-Audio!](https://zhuanlan.zhihu.com/p/668608727)
