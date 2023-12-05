@@ -259,10 +259,10 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 ### Code LLM 代碼大模型介紹
 
-* [DeepSeek Coder]：https://huggingface.co/deepseek-ai
+* DeepSeek Coder：https://huggingface.co/deepseek-ai
     * [深度求索發布67B 大模型，以「開源」加速AGI 時代到來](https://zhuanlan.zhihu.com/p/669595851)
     * [可能是最強的開源程式碼大模型！深度求索發布DeepSeek Coder](https://zhuanlan.zhihu.com/p/664849454)
-* [CodeShell]：https://huggingface.co/WisdomShell
+* CodeShell：https://huggingface.co/WisdomShell
     * [CodeShell-7B：北大開源70億參數代碼大模型，效能領先，IDE插件全面開源](https://zhuanlan.zhihu.com/p/670151914)
 
 ### LLM 模型介紹
