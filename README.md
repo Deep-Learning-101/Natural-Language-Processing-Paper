@@ -164,6 +164,8 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 [**Open LLM Leaderboard**](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 
+[**Big Code Models Leaderboard**](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)
+
 [**Awesome-Chinese-LLM**](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
 
 [人工智慧大語言模型微調技術：SFT 監督微調、LoRA 微調方法、P-tuning v2 微調方法、Freeze 監督微調方法](https://zhuanlan.zhihu.com/p/643941480)
@@ -255,6 +257,13 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [構建能夠使用CPU 運行的MetaAI LLaMA2 中文大模型](https://zhuanlan.zhihu.com/p/645426799)
 * [復旦NLP團隊發表80頁大模型Agent綜述，一文綜觀AI智能體的現況與未來](https://www.jiqizhixin.com/articles/2023-09-19-8)
 
+### Code LLM 代碼大模型介紹
+
+* [DeepSeek Coder]：https://huggingface.co/deepseek-ai
+    * [深度求索發布67B 大模型，以「開源」加速AGI 時代到來](https://zhuanlan.zhihu.com/p/669595851)
+    * [可能是最強的開源程式碼大模型！深度求索發布DeepSeek Coder](https://zhuanlan.zhihu.com/p/664849454)
+* [CodeShell]：https://huggingface.co/WisdomShell
+    * [CodeShell-7B：北大開源70億參數代碼大模型，效能領先，IDE插件全面開源](https://zhuanlan.zhihu.com/p/670151914)
 
 ### LLM 模型介紹
 
