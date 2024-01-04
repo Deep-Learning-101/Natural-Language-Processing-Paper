@@ -281,6 +281,8 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [Intel® Extension for Transformers](https://github.com/intel/intel-extension-for-transformers)
     * [Intel-Optimized Llama.CPP](https://medium.com/@NeuralCompressor/llm-performance-of-intel-extension-for-transformers-f7d061556176)
 * [**Mistral**](https://huggingface.co/mistralai/Mistral-7B-v0.1)
+    * [混合式專家模型(MoE) 詳解](https://huggingface.co/blog/zh/moe)
+    * [Mixtral - 目前 Hugging Face 上最先進的 MoE 模型](https://huggingface.co/blog/zh/mixtral)
     * [Mistral 7B 開箱 — 真正意義上的開源 LLM 模型](https://blog.infuseai.io/mistral-7b-introduction-2f6857f6982b)
     * [Mistral AI：歐洲最強模型團隊，打造開源輕量LLM](https://new.qq.com/rain/a/20231123A08N4100)
 * [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)：https://huggingface.co/baichuan-inc
