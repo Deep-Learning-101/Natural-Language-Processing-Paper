@@ -217,10 +217,14 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 ### LLM 部署開發相關
 * [**AutoGen / AutoGen Studio**](https://github.com/microsoft/autogen)
-    * [https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/](https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/)
+    * https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/
+    * [微軟Agent框架AutoGen論文及原理解讀](https://mp.weixin.qq.com/s/HgdAn2Bp10T7jCf5nZhdkw)
+    * [AutoGen Studio 與本機Mistral AI 模型](https://mp.weixin.qq.com/s/VyOvf2guWH1AXrtVeQ8oYQ)
+    * [AutoGen Studio UI 2.0 : Step By Step Installation Guide](https://gptpluginz.com/autogen-studio-ui/)
     * [體驗AutoGen Studio - 微軟推出的友善多智能體協作框架](https://zhuanlan.zhihu.com/p/678244812)
     * [逐步掌握最佳Ai Agents框架-AutoGen](https://juejin.cn/post/7305230279812218890)：https://github.com/sugarforever/AutoGen-Tutorials
     * [微軟AutoGen框架太火了，智能體聊聊天就把問題解決了](https://www.jiqizhixin.com/articles/2023-10-16-11)
+    * autogen-ui：https://github.com/victordibia/autogen-ui
     * [我打通了Autogen和Bing搜尋| AutoGen系列第二篇](https://mp.weixin.qq.com/s/O8s_3K6yRB597i5swCV2Ew)
     * [Streamlit + AutoGen = 基於LLM的多代理網頁應用開發](https://mp.weixin.qq.com/s/nT55YPBviAiU3OWvdnLjjQ)
     * [使用Streamlit建立AutoGen使用者介面](https://zhuanlan.zhihu.com/p/665636978)
