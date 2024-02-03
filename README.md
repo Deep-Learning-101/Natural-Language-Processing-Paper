@@ -172,6 +172,10 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 [【LLM】從零開始訓練大模型](https://zhuanlan.zhihu.com/p/636270877)
 
+[大模型所需GPU 記憶體筆記](https://mp.weixin.qq.com/s/M_hdtR7mVq14MnaaL0MAUw)
+
+[不同參數規模大語言模型在不同微調方法下所需的顯存總結](https://www.datalearner.com/blog/1051703254378255)
+
 ## **相關論文**
 
 * UnIVAL: Unified Model for Image, Video, Audio and Language Tasks：https://arxiv.org/pdf/2307.16184.pdf
@@ -223,6 +227,8 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [Flowise ——通過拖放界面構建定制的LLM流程](https://cloud.tencent.com/developer/article/2296201)
     * [Flowise｜無代碼ChatBot 構建平台｜LangChain](https://zhuanlan.zhihu.com/p/635304135)    
 * [ollama](https://github.com/ollama/ollama)：https://ollama.ai
+* [QAnything, Question and Answer based on Anything](https://github.com/netease-youdao/QAnything/blob/master/README_zh.md)：https://github.com/netease-youdao/QAnything
+    * [開源、可本地部署的AI知識問答庫來了！有道出品：QAnything](https://new.qq.com/rain/a/20240117A00JGT00)
 * [**NVIDIA AI Foundation Models**](https://developer.nvidia.com/nemotron-3-8b)
     * [NVIDIA AI Foundation Models：使用生產就緒型LLM 建置自訂企業聊天機器人和智慧副駕](https://zhuanlan.zhihu.com/p/667838746)
     * [NVIDIA 透過企業級生成式人工智慧微服務為聊天機器人、Copilot 和摘要工具帶來商業智慧](https://blogs.nvidia.com.tw/2023/11/29/nemo-retriever-generative-ai-microservice/)
@@ -244,7 +250,6 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [非工程師指南: 訓練LLaMA 2 聊天機器人](https://huggingface.co/blog/zh/Llama2-for-non-engineers)
 * [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory)：https://huggingface.co/spaces/hiyouga/LLaMA-Board
     * [單卡3 小時訓練專屬大模型Agent：基於LLaMA Factory 實戰](https://zhuanlan.zhihu.com/p/678989191)
-* [QAnything, Question and Answer based on Anything](https://github.com/netease-youdao/QAnything/blob/master/README_zh.md)：https://github.com/netease-youdao/QAnything
 * [JittorLLMs：計圖大模型推理庫-沒有顯示卡也能跑大模型](https://github.com/Jittor/JittorLLMs/blob/main/README.md)：https://github.com/Jittor/JittorLLMs
 * [PromptFlow — 微軟最新開源的基於LLM的開發工具集](https://zhuanlan.zhihu.com/p/666139473)：https://github.com/microsoft/promptflow
 * [用bitsandbytes、4 位元量化和QLoRA 打造親民的LLM](https://huggingface.co/blog/zh/4bit-transformers-bitsandbytes)
