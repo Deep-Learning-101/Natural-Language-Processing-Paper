@@ -356,7 +356,9 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * https://huggingface.co/spaces/mosaicml/mpt-7b-instruct
     * [MosaicML 推出70 億參數模型MPT-7B-8，號稱一次處理8000 字長文本、可商用](https://mp.weixin.qq.com/s/ZLotkvr9IEl91cLeu6jC6w)
     * [最新發布！截止目前最強大的最高支持65k輸入的開源可商用AI大模型：MPT-7B！](https://www.datalearner.com/blog/1051683422426508)
-* [OpenBMB/CPM-Bee](https://github.com/OpenBMB/CPM-Bee)
+* [OpenBMB]
+    * [清華係發布國產Mistral僅2B，老手機都帶得動，GitHub一天斬獲300+星](https://zhuanlan.zhihu.com/p/681116159)：https://github.com/OpenBMB/MiniCPM
+    * [CPM-Bee](https://github.com/OpenBMB/CPM-Bee)
     * [VisCPM：SOTA 開源中文多模態大模型](https://zhuanlan.zhihu.com/p/640750889)
 * [Open Assistant](https://projects.laion.ai/Open-Assistant/)
     * [Open Assistant： 創造一場開源革命](https://zhuanlan.zhihu.com/p/62259607)
