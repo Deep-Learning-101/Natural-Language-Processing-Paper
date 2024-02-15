@@ -227,12 +227,15 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * autogen-ui：https://github.com/victordibia/autogen-ui
     * [我打通了Autogen和Bing搜尋| AutoGen系列第二篇](https://mp.weixin.qq.com/s/O8s_3K6yRB597i5swCV2Ew)
     * [Streamlit + AutoGen = 基於LLM的多代理網頁應用開發](https://mp.weixin.qq.com/s/nT55YPBviAiU3OWvdnLjjQ)
-    * [使用Streamlit建立AutoGen使用者介面](https://zhuanlan.zhihu.com/p/665636978)
-* [Flowise ——通過拖放界面構建定制的LLM流程](https://cloud.tencent.com/developer/article/2296201)
-    * [Flowise｜無代碼ChatBot 構建平台｜LangChain](https://zhuanlan.zhihu.com/p/635304135)    
+    * [使用Streamlit建立AutoGen使用者介面](https://zhuanlan.zhihu.com/p/665636978) 
+* [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)：https://github.com/Mintplex-Labs/anything-llm
 * [ollama](https://github.com/ollama/ollama)：https://ollama.ai
+* [Flowise ——通過拖放界面構建定制的LLM流程](https://cloud.tencent.com/developer/article/2296201)
+    * [Flowise｜無代碼ChatBot 構建平台｜LangChain](https://zhuanlan.zhihu.com/p/635304135) 
 * [QAnything, Question and Answer based on Anything](https://github.com/netease-youdao/QAnything/blob/master/README_zh.md)：https://github.com/netease-youdao/QAnything
     * [開源、可本地部署的AI知識問答庫來了！有道出品：QAnything](https://new.qq.com/rain/a/20240117A00JGT00)
+* [CrewAI](https://github.com/joaomdmoura/crewAI)：[CrewAI與AutoGen相比](https://zhuanlan.zhihu.com/p/681218725)
+* [Phidata](https://github.com/phidatahq/phidata)：[Phidata補齊大模型短板，輕鬆建構RAG AI助理！](https://zhuanlan.zhihu.com/p/682123580)
 * [**NVIDIA AI Foundation Models**](https://developer.nvidia.com/nemotron-3-8b)
     * [NVIDIA AI Foundation Models：使用生產就緒型LLM 建置自訂企業聊天機器人和智慧副駕](https://zhuanlan.zhihu.com/p/667838746)
     * [NVIDIA 透過企業級生成式人工智慧微服務為聊天機器人、Copilot 和摘要工具帶來商業智慧](https://blogs.nvidia.com.tw/2023/11/29/nemo-retriever-generative-ai-microservice/)
