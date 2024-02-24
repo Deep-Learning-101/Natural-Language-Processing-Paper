@@ -196,11 +196,13 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 
 ### RAG
+
 * [Graph RAG：知識圖譜結合LLM 的檢索增強](https://siwei.io/graph-rag/)
 * [一文讀懂RAG和LLM微調，教你結合業務場景落地LLM應用](https://mp.weixin.qq.com/s/NcWyI00m2RrnibdzXqy_qQ)
 * [LangChain - RAG：線上系統多文檔要頻繁更新](https://mp.weixin.qq.com/s/Klz0ddtqa08_5q7MqX8HXg)
 
 ### LangChain
+
 * [LangChain 入門：構建LLM 支持的應用程序的初學者指南](https://zhuanlan.zhihu.com/p/631948940)
 * [LangChain中文入門教程](https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide)
 * [大語言模型集成工具LangChain](https://zhuanlan.zhihu.com/p/599688026)
@@ -216,6 +218,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [利用LangSmith和Lilac微調你的大模型](https://mp.weixin.qq.com/s/zOM_5kpkjApDTqt9IcXstA)
 
 ### LLM 部署開發相關
+
 * [**AutoGen / AutoGen Studio**](https://github.com/microsoft/autogen)
     * https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/
     * [微軟Agent框架AutoGen論文及原理解讀](https://mp.weixin.qq.com/s/HgdAn2Bp10T7jCf5nZhdkw)
@@ -270,6 +273,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 
 ### LLM 模型匯整
+
 * [大型語言模型綜述全新出爐：從T5到GPT-4最全盤點！](https://zhuanlan.zhihu.com/p/619526209)
 * [現有開源中文LLM整理](https://zhuanlan.zhihu.com/p/630577059)
 * [大模型LLM-微調經驗分享&總結](https://zhuanlan.zhihu.com/p/620885226)
@@ -279,6 +283,10 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 ### Code LLM 代碼大模型介紹
 
+* [個人程式設計助理: 訓練你自己的編碼助手](https://huggingface.co/blog/zh/personal-copilot)
+* [Code Llama](https://huggingface.co/codellama/CodeLlama-70b-hf)：https://github.com/facebookresearch/codellama
+    * [Introducing Code Llama, a state-of-the-art large language model for coding](https://ai.meta.com/blog/code-llama-large-language-model-coding/)
+    * [Meta 公佈最新大型開源程式碼模型 Code Llama 70B！能力直逼 GPT-4](https://www.inside.com.tw/article/34063-meta-releases-code-llama-70b-an-open-source-behemoth-to-rival-private-ai-development)
 * DeepSeek Coder：https://huggingface.co/deepseek-ai
     * [深度求索發布67B 大模型，以「開源」加速AGI 時代到來](https://zhuanlan.zhihu.com/p/669595851)
     * [可能是最強的開源程式碼大模型！深度求索發布DeepSeek Coder](https://zhuanlan.zhihu.com/p/664849454)
@@ -287,6 +295,13 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 ### LLM 模型介紹
 
+* [Gemma: Google 最新推出開放大語言模型](https://huggingface.co/models?search=google/gemma)
+    * [Gemma: Google 最新推出開放大語言模型](https://huggingface.co/blog/zh/gemma)
+* [**Mistral**](https://huggingface.co/mistralai/Mistral-7B-v0.1)
+    * [混合式專家模型(MoE) 詳解](https://huggingface.co/blog/zh/moe)
+    * [Mixtral - 目前 Hugging Face 上最先進的 MoE 模型](https://huggingface.co/blog/zh/mixtral)
+    * [Mistral 7B 開箱 — 真正意義上的開源 LLM 模型](https://blog.infuseai.io/mistral-7b-introduction-2f6857f6982b)
+    * [Mistral AI：歐洲最強模型團隊，打造開源輕量LLM](https://new.qq.com/rain/a/20231123A08N4100)
 * [**Xwin-LM**](https://github.com/Xwin-LM/Xwin-LM)
     * [首次擊敗GPT-4？700億參數Xwin-LM登頂史丹佛AlpacaEval，13B模型吊打ChatGPT](https://www.kuxai.com/article/1449)
     * [Xwin-LM-7B-V0.2](https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.2)
@@ -300,11 +315,6 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [Efficient LLM inference on CPUs](https://hackmd.io/@VitasLu/r1BoroKVa)
     * [Intel® Extension for Transformers](https://github.com/intel/intel-extension-for-transformers)
     * [Intel-Optimized Llama.CPP](https://medium.com/@NeuralCompressor/llm-performance-of-intel-extension-for-transformers-f7d061556176)
-* [**Mistral**](https://huggingface.co/mistralai/Mistral-7B-v0.1)
-    * [混合式專家模型(MoE) 詳解](https://huggingface.co/blog/zh/moe)
-    * [Mixtral - 目前 Hugging Face 上最先進的 MoE 模型](https://huggingface.co/blog/zh/mixtral)
-    * [Mistral 7B 開箱 — 真正意義上的開源 LLM 模型](https://blog.infuseai.io/mistral-7b-introduction-2f6857f6982b)
-    * [Mistral AI：歐洲最強模型團隊，打造開源輕量LLM](https://new.qq.com/rain/a/20231123A08N4100)
 * [**Baichuan**](https://github.com/Baichuan-inc/Baichuan-13B)：https://huggingface.co/baichuan-inc
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Base
     * https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
@@ -337,6 +347,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 * [Meta Llama 2](https://ai.meta.com/llama)：https://github.com/facebookresearch/llama
     * [Llama 2：開放式基礎和微調聊天模型](https://zhuanlan.zhihu.com/p/648030318)
     * [Llama 2 來襲 - 在 Hugging Face 上玩轉它](https://huggingface.co/blog/zh/llama2)
+    * [使用PyTorch FSDP 微調Llama 2 70B](https://huggingface.co/blog/zh/ram-efficient-pytorch-fsdp)
     * [中文LLaMA模型和指令精調的Alpaca大模型：中文數據進行二次預訓練](https://cloud.tencent.com/developer/article/2306028)
     * [千元預算半天訓練，效果媲美主流大模型，開源可商用中文LLaMA-2](https://www.jiqizhixin.com/articles/2023-09-25-16)
     * [所有基準測試都優於Llama 2 13B，最好的7B模型來了，免費用](https://www.jiqizhixin.com/articles/2023-09-29-2)
