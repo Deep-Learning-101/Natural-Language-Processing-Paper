@@ -27,14 +27,7 @@ https://huggingface.co/DeepLearning101
 </details>
 
 # Natural Language Processing, NLP (自然語言處理)
-- [👥 LLM  (Large Language Model) 大語言模型簡介](#llm)
-- [🥇 LLM  (Large Language Model) 相關論文](#相關論文)
-- [📜 LLM  (Large Language Model) 相關連結](#相關連結)
-- [📖 檢索增強生成（Retrieval-Augmented Generation, RAG）](#rag)
-- [📊 LangChain](#langchain )
-- [👥 LLM (Large Language Model) 部署開發相關](#llm-部署開發相關)
-- [🥇 LLM (Large Language Model) 模型匯整](#llm-模型匯整)
-- [📜 LLM (Large Language Model) 模型介紹](#llm-模型介紹)
+- [👥 LLM  (Large Language Model) 大語言模型](#llm)
 
 ### ** 2018/07/15-2020/02/29 開發心得：**
 
@@ -77,7 +70,6 @@ https://huggingface.co/DeepLearning101
     - https://github.com/PaddlePaddle/PaddleNLP/tree/develop/model_zoo/uie
 
   </details>
-
   <details close>
 
 ### ** 2018/10/15-2019/02/10 開發心得：**
@@ -95,7 +87,6 @@ https://huggingface.co/DeepLearning101
     - [什麼是機器閱讀理解？跟自然語言處理有什麼關係？](https://communeit.medium.com/%E4%BB%80%E9%BA%BC%E6%98%AF%E6%A9%9F%E5%99%A8%E9%96%B1%E8%AE%80%E7%90%86%E8%A7%A3-%E8%B7%9F%E8%87%AA%E7%84%B6%E8%AA%9E%E8%A8%80%E8%99%95%E7%90%86%E6%9C%89%E4%BB%80%E9%BA%BC%E9%97%9C%E4%BF%82-b02fb6ccb6e9)
 
   </details>
-
   <details close>
 
 ### ** 2019/12/02-2020/02/29 開發心得：**
@@ -174,8 +165,7 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 ![醫囑分析v1@UIE-PaddleNLP](./images/Medical-Advice_PaddleNLP-UIE.gif)
 
 #
-# LLM
-**大語言模型 (Large Language Model) 簡介**
+# LLM (Large Language Model) 大語言模型
 
 [**AlpacaEval Leaderboard**](https://tatsu-lab.github.io/alpaca_eval/)
 
@@ -193,31 +183,39 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
 
 [不同參數規模大語言模型在不同微調方法下所需的顯存總結](https://www.datalearner.com/blog/1051703254378255)
 
+<details 過往資訊 close>
+<summary><strong>過往資訊</strong></summary>
+   
 ## **相關論文**
 
-* UnIVAL: Unified Model for Image, Video, Audio and Language Tasks：https://arxiv.org/pdf/2307.16184.pdf
+- UnIVAL: Unified Model for Image, Video, Audio and Language Tasks：https://arxiv.org/pdf/2307.16184.pdf
     *  https://unival-model.github.io
-* Revisiting Relation Extraction in the era of Large Language Models：https://arxiv.org/abs/2305.05003
+      
+- Revisiting Relation Extraction in the era of Large Language Models：https://arxiv.org/abs/2305.05003
     * [用LLM(大模型)進行關係抽取](https://mp.weixin.qq.com/s/eQL-yvz7JIuObY1CUe2gsw)
-* [A Survey on Language Models for Code](https://arxiv.org/abs/2311.07989)
+      
+- [A Survey on Language Models for Code](https://arxiv.org/abs/2311.07989)
     * [首篇程式碼產生大模型論文綜述](https://zhuanlan.zhihu.com/p/667402546)
     * [涵蓋500多項研究、50多個模型，代碼大模型綜述來了](https://www.jiqizhixin.com/articles/2023-11-22-8)
-* [Source Code Data Augmentation for Deep Learning: A Survey](https://arxiv.org/abs/2305.19915)
+      
+- [Source Code Data Augmentation for Deep Learning: A Survey](https://arxiv.org/abs/2305.19915)
     * [Data Augmentation Approaches for Source Code Models](https://github.com/terryyz/DataAug4Code)
     * [歷數5年89篇研究，這篇綜述告訴我們深度學習中的程式碼資料增強怎麼樣了](https://www.jiqizhixin.com/articles/2023-11-23-3)
 
 ## **相關連結**
-
-* [transformers_tasks](https://github.com/HarderThenHarder/transformers_tasks/tree/main/LLM)  
+   
+* [transformers_tasks](https://github.com/HarderThenHarder/transformers_tasks/tree/main/LLM)
+  
 * [超級AI助理：全新提升！中文NLP訓練框架，快速上手，海量訓練數據，ChatGLM-v2、中文Bloom、Dolly助您實現更智能的應用！](https://zhuanlan.zhihu.com/p/652256798)
-
-
+  
 ### RAG
-
+   
 * [Graph RAG：知識圖譜結合LLM 的檢索增強](https://siwei.io/graph-rag/)
+  
 * [一文讀懂RAG和LLM微調，教你結合業務場景落地LLM應用](https://mp.weixin.qq.com/s/NcWyI00m2RrnibdzXqy_qQ)
+  
 * [LangChain - RAG：線上系統多文檔要頻繁更新](https://mp.weixin.qq.com/s/Klz0ddtqa08_5q7MqX8HXg)
-
+  
 ### LangChain
 
 * [LangChain 入門：構建LLM 支持的應用程序的初學者指南](https://zhuanlan.zhihu.com/p/631948940)
@@ -417,3 +415,5 @@ https://huggingface.co/spaces/DeepLearning101/PaddleNLP-UIE
     * [720億參數大模型都拿來開源了！通義千問開源全家桶，最小18億模型端側都能跑](https://www.jiqizhixin.com/articles/2023-12-01-5)
     * [免費、可商用，阿里雲開源70億參數通義千問大模型](https://www.jiqizhixin.com/articles/2023-08-04-6)
     * [開源語音大語言模型來了！阿里基於Qwen-Chat提出Qwen-Audio!](https://zhuanlan.zhihu.com/p/668608727)
+
+</details>
