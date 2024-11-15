@@ -163,7 +163,7 @@ https://huggingface.co/DeepLearning101
   - 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models}(https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
   - 2024-09-19：[阿里國際發表最新開源多模態模型Ovis，多模態能力再升級](https://www.qbitai.com/2024/09/192045.html)：https://huggingface.co/AIDC-AI/Ovis1.6-Gemma2-9B
   - 2024-09-20：[Reader-LM：用於清理和將 HTML 轉換為 Markdown 的小型語言模型](https://jina.ai/zh-TW/news/reader-lm-small-language-models-for-cleaning-and-converting-html-to-markdown/)
-
+  - 2024-06-28：[谷歌最新Gemma 2 模型來了](https://www.53ai.com/news/qianyanjishu/2024062821674.html)
 
   </details>
 
