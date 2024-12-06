@@ -204,7 +204,7 @@ https://huggingface.co/DeepLearning101
   - 2024-04-11：[視覺語言模型詳解](https://huggingface.co/blog/zh/vlms)
   - 2024-09-26：[Llama 3.2：開源可自訂視覺模型](https://mp.weixin.qq.com/s/gOuEQB9-CYc71nT1aTHpFQ)：[Ollama](https://ollama.com/library/llama3.2-vision:90b)
   - Mistral AI Pixtral 
-     - 2024-09-14：[Pixtral 12B：本地部署、映像分析和OCR功能全解析](https://www.53ai.com/news/OpenSourceLLM/2024091412863.html)
+     - 2024-09-14：[Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) / []DEMO](https://huggingface.co/spaces/ethux/Mistral-Pixtral-Demo)：[本地部署、映像分析和OCR功能全解析](https://www.53ai.com/news/OpenSourceLLM/2024091412863.html)
      - 2024-09-12：[Mistral AI推出多模態模型Pixtral 12B](https://www.mittrchina.com/news/detail/13767)
   - MiniCPM：https://github.com/OpenBMB
      - 2024-09-11：[升級Ollama！ MiniCPM-V2_6影像辨識模型上線](https://mp.weixin.qq.com/s/6N-u8PcGEX6e4rryeqXglQ)
