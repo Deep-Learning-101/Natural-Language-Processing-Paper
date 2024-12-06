@@ -155,6 +155,8 @@ https://huggingface.co/DeepLearning101
 
 **<summary>工具</summary>**
 
+  - [HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
+  - [ten-agent](https://github.com/TEN-framework/TEN-Agent):[又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
   - [Docling](https://github.com/DS4SD/docling)：[IBM 最新開源文件處理利器，完美整合 LLM 應用](https://most.tw/posts/ainews/introducedocling202411/)
      - 2024-11-21： [IBM開源一站式文件解析工具！輕鬆解析PDF、PPT、圖片及網頁等多種格式文檔](https://mp.weixin.qq.com/s/jTqFm5WzmitaxpyKowiBSA)
   - 2024-11-11：[LoRA、完全微調到底有何不同？ MIT 21頁論文講懂了](https://www.jiqizhixin.com/articles/2024-11-11-5)
@@ -193,7 +195,7 @@ https://huggingface.co/DeepLearning101
      - DEMO：[https://playground.allenai.org/](https://playground.allenai.org/)
      - MODEL：[https://huggingface.co/allenai](https://huggingface.co/allenai)
   - 2024-11-9：[Ai2 OpenScholar](https://allenai.org/blog/openscholar)：[https://openscholar.allen.ai/](https://openscholar.allen.ai/)
-  - 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models}(https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
+  - 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
   - 2024-09-19：[阿里國際發表最新開源多模態模型Ovis，多模態能力再升級](https://www.qbitai.com/2024/09/192045.html)：https://huggingface.co/AIDC-AI/Ovis1.6-Gemma2-9B
   - 2024-09-20：[Reader-LM：用於清理和將 HTML 轉換為 Markdown 的小型語言模型](https://jina.ai/zh-TW/news/reader-lm-small-language-models-for-cleaning-and-converting-html-to-markdown/)
   - 2024-06-28：[谷歌最新Gemma 2 模型來了](https://www.53ai.com/news/qianyanjishu/2024062821674.html)
@@ -204,8 +206,9 @@ https://huggingface.co/DeepLearning101
 
   - 2024-04-11：[視覺語言模型詳解](https://huggingface.co/blog/zh/vlms)
   - 2024-09-26：[Llama 3.2：開源可自訂視覺模型](https://mp.weixin.qq.com/s/gOuEQB9-CYc71nT1aTHpFQ)：[Ollama](https://ollama.com/library/llama3.2-vision:90b)
+  - 2024-09-20：[LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni)：[Llama 3.1 Omni：顛覆性的文字與語音雙輸出模型](https://mp.weixin.qq.com/s/HhE2tsLxKaqymj3xWxbRjA)
   - Mistral AI Pixtral 
-     - 2024-09-14：[Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) / []DEMO](https://huggingface.co/spaces/ethux/Mistral-Pixtral-Demo)：[本地部署、映像分析和OCR功能全解析](https://www.53ai.com/news/OpenSourceLLM/2024091412863.html)
+     - 2024-09-14：[Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) / [DEMO](https://huggingface.co/spaces/ethux/Mistral-Pixtral-Demo)：[本地部署、映像分析和OCR功能全解析](https://www.53ai.com/news/OpenSourceLLM/2024091412863.html)
      - 2024-09-12：[Mistral AI推出多模態模型Pixtral 12B](https://www.mittrchina.com/news/detail/13767)
   - MiniCPM：https://github.com/OpenBMB
      - 2024-09-11：[升級Ollama！ MiniCPM-V2_6影像辨識模型上線](https://mp.weixin.qq.com/s/6N-u8PcGEX6e4rryeqXglQ)
