@@ -188,6 +188,7 @@ https://huggingface.co/DeepLearning101
      - 2024-09-13：[解析Llama-Factory：從微調到推理的架構](https://mp.weixin.qq.com/s/eJqKc_2nHBYzDFAp2AYdWQ)
      - [單卡3 小時訓練專屬大模型Agent：基於LLaMA Factory 實戰](https://zhuanlan.zhihu.com/p/678989191)
    
+  - 2024-12-05：[InternVL2.5](https://github.com/OpenGVLab/InternVL)
   - 2024-11-23：[Ai2 Tülu 3](https://github.com/allenai/open-instruct)：[這才是真・開源模型！公開「後訓練」一切，性能超越Llama 3.1 Instruct](https://www.jiqizhixin.com/articles/2024-11-23-5)
      - DEMO：[https://playground.allenai.org/](https://playground.allenai.org/)
      - MODEL：[https://huggingface.co/allenai](https://huggingface.co/allenai)
