@@ -155,19 +155,41 @@ https://huggingface.co/DeepLearning101
 
 **<summary>工具</summary>**
 
-  - [HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
-  - [ten-agent](https://github.com/TEN-framework/TEN-Agent):[又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
+  - 2024-12-15：[markitdown](https://github.com/microsoft/markitdown)
   - [Docling](https://github.com/DS4SD/docling)：[IBM 最新開源文件處理利器，完美整合 LLM 應用](https://most.tw/posts/ainews/introducedocling202411/)
      - 2024-11-21： [IBM開源一站式文件解析工具！輕鬆解析PDF、PPT、圖片及網頁等多種格式文檔](https://mp.weixin.qq.com/s/jTqFm5WzmitaxpyKowiBSA)
   - 2024-11-11：[LoRA、完全微調到底有何不同？ MIT 21頁論文講懂了](https://www.jiqizhixin.com/articles/2024-11-11-5)
   - [PyMuPDF ](https://github.com/pymupdf/PyMuPDF)
   - 2024-09-23：[STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking](https://github.com/stanford-oval/storm)
      - [STORM：一个基于LLM的知识整理系统](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
+  - torchtune：[https://github.com/pytorch/torchtune](https://github.com/pytorch/torchtune)
+     - [https://pytorch.dev.org.tw/torchtune/stable/index.html](https://pytorch.dev.org.tw/torchtune/stable/index.html)
+     - [使用知識蒸餾將Llama3.1 8B 蒸餾到Llama3.2 1B](https://pytorch.ac.cn/torchtune/stable/tutorials/llama_kd_tutorial.html)
+  - [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory)：https://huggingface.co/spaces/hiyouga/LLaMA-Board
+     - [官方 README_zh.md](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
+     - 2024-09-13：[解析Llama-Factory：從微調到推理的架構](https://mp.weixin.qq.com/s/eJqKc_2nHBYzDFAp2AYdWQ)
+     - [單卡3 小時訓練專屬大模型Agent：基於LLaMA Factory 實戰](https://zhuanlan.zhihu.com/p/678989191)
 
   </details>
 
+**<summary>端到端語音大模型</summary>**
+
+  - 開源不限學術用，2024-12-11：[Ultravox](https://github.com/fixie-ai/ultravox)
+     - [端對端多模態大模型，能直接理解文字和語音內容，無需依賴語音辨識](https://developer.aliyun.com/article/1645173)
+     - [GPT-4o語音互動的開源實現，一個端到端可以直接理解音訊的多模態大模型](https://mp.weixin.qq.com/s/VgCeu1mctNx7c2JUdkzj2Q)，[Demo](https://demo.ultravox.ai/)
+  - 開源學術用，商用需申請，[GLM-4-Voice](https://github.com/THUDM/GLM-4-Voice)：[嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
+  - 開源限學術用，2024-12-06：[Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni)
+     - [準確性超Moshi和GLM-4-Voice！端對端語音雙工模型Freeze-Omni](https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/144302903)
+     - [嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
+  - 開源不限學術用，[HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
+  - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent):[又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
+
+  </details>
+
+
   **<summary>混合專家(Mixture of Experts, MoE)模型</summary>**
 
+  - 2024-12-13：[DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2)：[DeepSeek-VL2開源，VLM邁入MoE時代](https://mp.weixin.qq.com/s/s832KUgixNuX4GUkvY7_Ag)，[DeepSeek-VL2 先進視覺語言模型，在多模態理解方面取得了顯著進展](https://mp.weixin.qq.com/s/p6r_b-k4UnSJED5cBTedZg)
   - [騰訊混元](https://github.com/Tencent/Hunyuan-Large)：[騰訊混元又來開源，一出手就是最大MoE大模型](https://www.jiqizhixin.com/articles/2024-11-06-6)
      - 2024-11-06： [DEMO](https://huggingface.co/spaces/tencent/Hunyuan-Large)
      - 2024-11-06：[MODEL](https://huggingface.co/tencent/Hunyuan-Large)
@@ -177,20 +199,15 @@ https://huggingface.co/DeepLearning101
 
 **<summary>小型語言模型</summary>**
 
-  - SmolLM2：[https://github.com/hiyouga/LLaMA-Factory](https://github.com/huggingface/smollm/)
-     - 2024-11-04： [Hugging Face公布手機執行的小型語言模型SmolLM2](https://www.ithome.com.tw/news/165832)
+  - 2024-12-13：[Phi-4](https://huggingface.co/NyxKrage/Microsoft_Phi-4)：[以小博大，微軟Phi-4正式發表~](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
+  - 2024-11-18：[MobileLLM-1.5B](https://huggingface.co/facebook/MobileLLM-1.5B)：[Meta MobileLLM：深度架構與最佳化技術打造的行動裝置超強語言模型](https://mp.weixin.qq.com/s/hjY6L69pqN4GvybCuHesTA)
+  - 2024-11-04：SmolLM2：[https://github.com/hiyouga/LLaMA-Factory](https://github.com/huggingface/smollm/)
+     - [Hugging Face公布手機執行的小型語言模型SmolLM2](https://www.ithome.com.tw/news/165832)
   - 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
 
   </details>
 
 **<summary>大型語言模型</summary>**
-
-  - torchtune：[https://github.com/pytorch/torchtune](https://github.com/pytorch/torchtune)
-     - [https://pytorch.dev.org.tw/torchtune/stable/index.html](https://pytorch.dev.org.tw/torchtune/stable/index.html)
-  - [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory)：https://huggingface.co/spaces/hiyouga/LLaMA-Board
-     - [官方 README_zh.md](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
-     - 2024-09-13：[解析Llama-Factory：從微調到推理的架構](https://mp.weixin.qq.com/s/eJqKc_2nHBYzDFAp2AYdWQ)
-     - [單卡3 小時訓練專屬大模型Agent：基於LLaMA Factory 實戰](https://zhuanlan.zhihu.com/p/678989191)
    
   - 2024-12-05：[InternVL2.5](https://github.com/OpenGVLab/InternVL)
   - 2024-11-23：[Ai2 Tülu 3](https://github.com/allenai/open-instruct)：[這才是真・開源模型！公開「後訓練」一切，性能超越Llama 3.1 Instruct](https://www.jiqizhixin.com/articles/2024-11-23-5)
