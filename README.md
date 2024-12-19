@@ -180,7 +180,6 @@ https://huggingface.co/DeepLearning101
   - 開源學術用，商用需申請，[GLM-4-Voice](https://github.com/THUDM/GLM-4-Voice)：[嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
   - 開源限學術用，2024-12-06：[Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni)
      - [準確性超Moshi和GLM-4-Voice！端對端語音雙工模型Freeze-Omni](https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/144302903)
-     - [嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
   - 開源不限學術用，[HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
   - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent):[又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
 
