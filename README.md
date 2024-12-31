@@ -155,6 +155,13 @@ https://huggingface.co/DeepLearning101
 
 **<summary>工具</summary>**
 
+| 工具名稱     | 功能範疇                     | 集成能力                                  | 適用場景                                   | 建議選擇                                   |
+|--------------|------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|
+| **[Flowise](https://github.com/FlowiseAI/Flowise/blob/main/i18n/README-ZH.md)**  | 簡單可視化流程建構           | 支持 LangChain 和 GPT，多平台部署         | 快速構建簡單 LLM 流程應用                 | 適合需要快速構建和部署 LLM 應用的用戶      |
+| **[Langflow](https://github.com/langflow-ai/langflow/blob/main/README.zh_CN.md)** | 多智能體與 RAG 應用構建      | 外部工具、API 與資料庫集成               | 複雜任務鏈與多智能體應用開發              | 適合構建複雜任務鏈的技術型開發者           |
+| **[Dify](https://github.com/langgenius/dify/blob/main/README_CN.md)**     | 全面應用開發與管理           | 多模型支持，全面工作流與模型管理          | 全生命周期管理與複雜應用開發              | 適合需要全面管理 LLM 應用的開發者或企業    |
+| **[New API](https://github.com/Calcium-Ion/new-api)**  | 模型接口統一與分發           | OpenAI 格式統一，支持多支付協議與分發管理 | 多模型接口管理與分發                     | 適合需要統一管理多種 AI 模型接口的用戶     |
+
   - 2024-12-15：[markitdown](https://github.com/microsoft/markitdown)
   - [Docling](https://github.com/DS4SD/docling)：[IBM 最新開源文件處理利器，完美整合 LLM 應用](https://most.tw/posts/ainews/introducedocling202411/)
      - 2024-11-21： [IBM開源一站式文件解析工具！輕鬆解析PDF、PPT、圖片及網頁等多種格式文檔](https://mp.weixin.qq.com/s/jTqFm5WzmitaxpyKowiBSA)
