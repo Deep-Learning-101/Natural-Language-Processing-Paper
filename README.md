@@ -161,12 +161,15 @@ https://huggingface.co/DeepLearning101
 | **[Langflow](https://github.com/langflow-ai/langflow/blob/main/README.zh_CN.md)** | 多智能體與 RAG 應用構建      | 外部工具、API 與資料庫集成               | 複雜任務鏈與多智能體應用開發              | 適合構建複雜任務鏈的技術型開發者           |
 | **[Dify](https://github.com/langgenius/dify/blob/main/README_CN.md)**     | 全面應用開發與管理           | 多模型支持，全面工作流與模型管理          | 全生命周期管理與複雜應用開發              | 適合需要全面管理 LLM 應用的開發者或企業    |
 | **[New API](https://github.com/Calcium-Ion/new-api)**  | 模型接口統一與分發           | OpenAI 格式統一，支持多支付協議與分發管理 | 多模型接口管理與分發                     | 適合需要統一管理多種 AI 模型接口的用戶     |
+| **[XORBITS Inference](https://github.com/xorbitsai/inference/blob/main/README_zh_CN.md)** | 分散式推理與部署           | 與 Hugging Face 等模型相容，支援雲端及本地等多種部署環境                        | 大規模模型推理與雲端部署，需快速搭建可擴展的推理服務時 | 適合需要高效擴展能力、進行大規模模型推理的團隊或企業     |
+| **[Ollama](https://github.com/jmorganca/ollama)**        | 本地模型推理與管理           | 提供命令列介面，支援多種 Llama 模型於本地運行 | 在有隱私或離線需求的場景下進行本地推理     | 適合想在本地快速配置 Llama 系列模型的個人或中小型團隊     |
 
+
+  - 2025-01-03：[smolagents](https://github.com/huggingface/smolagents)：[新年禮物，Huggingface捲了一個Agent專案開源](https://blog.csdn.net/m0_59163425/article/details/144917058)
   - 2024-12-15：[markitdown](https://github.com/microsoft/markitdown)
-  - [Docling](https://github.com/DS4SD/docling)：[IBM 最新開源文件處理利器，完美整合 LLM 應用](https://most.tw/posts/ainews/introducedocling202411/)
-     - 2024-11-21： [IBM開源一站式文件解析工具！輕鬆解析PDF、PPT、圖片及網頁等多種格式文檔](https://mp.weixin.qq.com/s/jTqFm5WzmitaxpyKowiBSA)
+  - 2024-11-21： [IBM開源一站式文件解析工具！輕鬆解析PDF、PPT、圖片及網頁等多種格式文檔](https://mp.weixin.qq.com/s/jTqFm5WzmitaxpyKowiBSA)
+     - [Docling](https://github.com/DS4SD/docling)：[IBM 最新開源文件處理利器，完美整合 LLM 應用](https://most.tw/posts/ainews/introducedocling202411/)
   - 2024-11-11：[LoRA、完全微調到底有何不同？ MIT 21頁論文講懂了](https://www.jiqizhixin.com/articles/2024-11-11-5)
-  - [PyMuPDF ](https://github.com/pymupdf/PyMuPDF)
   - 2024-09-23：[STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking](https://github.com/stanford-oval/storm)
      - [STORM：一个基于LLM的知识整理系统](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
   - torchtune：[https://github.com/pytorch/torchtune](https://github.com/pytorch/torchtune)
@@ -176,6 +179,8 @@ https://huggingface.co/DeepLearning101
      - [官方 README_zh.md](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
      - 2024-09-13：[解析Llama-Factory：從微調到推理的架構](https://mp.weixin.qq.com/s/eJqKc_2nHBYzDFAp2AYdWQ)
      - [單卡3 小時訓練專屬大模型Agent：基於LLaMA Factory 實戰](https://zhuanlan.zhihu.com/p/678989191)
+  - [PyMuPDF ](https://github.com/pymupdf/PyMuPDF)：[PyMuPDF的安裝與使用](https://zhuanlan.zhihu.com/p/517737462)
+
 
   </details>
 
