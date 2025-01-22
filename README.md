@@ -184,16 +184,19 @@ https://huggingface.co/DeepLearning101
 
   </details>
 
-**<summary>端到端語音大模型</summary>**
+**<summary>端到端語音大模型Agent框架</summary>**
 
+  - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent):[又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
+  - 開源不限學術用，[pipecat](https://github.com/pipecat-ai/pipecat)
+  - 開源不限學術用，[HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
+  - 開源不限學術用，[bailing](https://github.com/wwbin2017/bailing)
+  - 開源不限學術用，[OmAgent](https://github.com/om-ai-lab/OmAgent)：[OmAgent框架強勢開源！業界應用已全面開花](https://www.qbitai.com/2024/07/163100.html)
   - 開源不限學術用，2024-12-11：[Ultravox](https://github.com/fixie-ai/ultravox)
      - [端對端多模態大模型，能直接理解文字和語音內容，無需依賴語音辨識](https://developer.aliyun.com/article/1645173)
      - [GPT-4o語音互動的開源實現，一個端到端可以直接理解音訊的多模態大模型](https://mp.weixin.qq.com/s/VgCeu1mctNx7c2JUdkzj2Q)，[Demo](https://demo.ultravox.ai/)
   - 開源學術用，商用需申請，[GLM-4-Voice](https://github.com/THUDM/GLM-4-Voice)：[嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
   - 開源限學術用，2024-12-06：[Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni)
      - [準確性超Moshi和GLM-4-Voice！端對端語音雙工模型Freeze-Omni](https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/144302903)
-  - 開源不限學術用，[HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
-  - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent):[又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
 
   </details>
 
