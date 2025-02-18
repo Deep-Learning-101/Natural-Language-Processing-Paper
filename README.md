@@ -187,7 +187,7 @@ https://huggingface.co/DeepLearning101
 **<summary>端到端語音大模型Agent框架</summary>**
 
   - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent):[又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
-  - 開源不限學術用，[pipecat](https://github.com/pipecat-ai/pipecat)
+  - 開源不限學術用，[pipecat](https://github.com/pipecat-ai/pipecat)：[OpenAI工程師親自修訂：用ChatGPT即時語音API建立應用](https://www.jiqizhixin.com/articles/2025-01-10-4)
   - 開源不限學術用，[HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
   - 開源不限學術用，[bailing](https://github.com/wwbin2017/bailing)
   - 開源不限學術用，[OmAgent](https://github.com/om-ai-lab/OmAgent)：[OmAgent框架強勢開源！業界應用已全面開花](https://www.qbitai.com/2024/07/163100.html)
