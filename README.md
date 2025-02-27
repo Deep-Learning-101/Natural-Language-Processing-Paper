@@ -267,7 +267,11 @@ https://huggingface.co/DeepLearning101
 - [ESP-AI](https://espai.fun/)
 - [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32)
    - [購買連結](https://rcnv1t9vps13.feishu.cn/wiki/LdCrw9neaiGgzrkrFyjclllynYd)
+   - [小智 AI 聊天機器人百科全書](https://ccnphfhqs21z.feishu.cn/wiki/F5krwD16viZoF0kKkvDcrZNYnhb)
 - [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server)：為xiaozhi-esp32提供後台服務，協助您快速建置ESP32設備控制伺服器
+- [py-xiaozhi](https://github.com/Huang-junsen/py-xiaozhi)：python 版本小智ai，主要幫助那些沒有硬體的人體驗小智功能
+- [xiaozhi-web-client](https://github.com/TOM88812/xiaozhi-web-client)
+- [xiaozhi-android-client](https://github.com/TOM88812/xiaozhi-android-client)
 - [OpenVoiceOS](https://github.com/OpenVoiceOS/ovos-core)
 - [fast-voice-assistant](https://github.com/dsa/fast-voice-assistant)
 - [gptspeaker](https://github.com/jackwuwei/gptspeaker)
