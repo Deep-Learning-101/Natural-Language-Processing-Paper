@@ -184,9 +184,12 @@ https://huggingface.co/DeepLearning101
 
   </details>
 
-**<summary>端到端語音大模型Agent框架</summary>**
+**<summary>語音到語音大模型的Agent和框架</summary>**
 
-  - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent):[又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
+  - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent)
+     - [又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
+     - [TEN Framework 入坑记](https://mp.weixin.qq.com/s/ZVZHNP0XPwzGapWWqTk1kw)
+     - [使用 TEN Agent 搭建 Conversation AI Agent](https://uy6npdpeoi.feishu.cn/docx/EAWYdWWO7ormNPxUhyVcO3GSnUc)
   - 開源不限學術用，[pipecat](https://github.com/pipecat-ai/pipecat)：[OpenAI工程師親自修訂：用ChatGPT即時語音API建立應用](https://www.jiqizhixin.com/articles/2025-01-10-4)
   - 開源不限學術用，[HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
   - 開源不限學術用，[bailing](https://github.com/wwbin2017/bailing)
@@ -197,6 +200,9 @@ https://huggingface.co/DeepLearning101
   - 開源學術用，商用需申請，[GLM-4-Voice](https://github.com/THUDM/GLM-4-Voice)：[嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
   - 開源限學術用，2024-12-06：[Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni)
      - [準確性超Moshi和GLM-4-Voice！端對端語音雙工模型Freeze-Omni](https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/144302903)
+  - 開源不限學術用，[weebo](https://github.com/amanvirparhar/weebo)
+  - 開源不限學術用，[OpenVoiceChat](https://github.com/Finity-Alpha/OpenVoiceChat)
+
 
   </details>
 
@@ -211,8 +217,9 @@ https://huggingface.co/DeepLearning101
   </details>
 
 
-**<summary>小型語言模型</summary>**
+**<summary>小型語言模型Agent和框架</summary>**
 
+  - 2025-01-07：[Smolagents](https://github.com/huggingface/smolagents)：[Hugging Face開源全新AI智能體框架支援工具呼叫與程式碼執行！](https://zhuanlan.zhihu.com/p/16417392406)
   - 2024-12-13：[Phi-4](https://huggingface.co/NyxKrage/Microsoft_Phi-4)：[以小博大，微軟Phi-4正式發表~](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
   - 2024-11-18：[MobileLLM-1.5B](https://huggingface.co/facebook/MobileLLM-1.5B)：[Meta MobileLLM：深度架構與最佳化技術打造的行動裝置超強語言模型](https://mp.weixin.qq.com/s/hjY6L69pqN4GvybCuHesTA)
   - 2024-11-04：SmolLM2：[https://github.com/hiyouga/LLaMA-Factory](https://github.com/huggingface/smollm/)
@@ -243,6 +250,8 @@ https://huggingface.co/DeepLearning101
   - Mistral AI Pixtral 
      - 2024-09-14：[Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) / [DEMO](https://huggingface.co/spaces/ethux/Mistral-Pixtral-Demo)：[本地部署、映像分析和OCR功能全解析](https://www.53ai.com/news/OpenSourceLLM/2024091412863.html)
      - 2024-09-12：[Mistral AI推出多模態模型Pixtral 12B](https://www.mittrchina.com/news/detail/13767)
+  - 2024-12-12：[InternLM-XComposer-2.5](https://github.com/InternLM/InternLM-XComposer)
+     - [書生·浦語靈筆2.5-OL多模態即時互動大模型全面開源](https://zhuanlan.zhihu.com/p/12454860021)
   - MiniCPM：https://github.com/OpenBMB
      - 2025-01-16：[MiniCPM-o 2.6：流式全模態，端到端，多模態端側大模型來了！](https://mp.weixin.qq.com/s/bTRirDr-MCscYF88KmK5qw)；[文件](https://github.com/OpenBMB/MiniCPM-o/blob/main/README_zh.md#minicpm-o-26)
      - 2024-09-11：[升級Ollama！ MiniCPM-V2_6影像辨識模型上線](https://mp.weixin.qq.com/s/6N-u8PcGEX6e4rryeqXglQ)
@@ -254,6 +263,14 @@ https://huggingface.co/DeepLearning101
 
   </details>
 
+**<summary>語音助手工具</summary>**
+- [ESP-AI](https://espai.fun/)
+- [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32)
+   - [購買連結](https://rcnv1t9vps13.feishu.cn/wiki/LdCrw9neaiGgzrkrFyjclllynYd)
+- [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server)：為xiaozhi-esp32提供後台服務，協助您快速建置ESP32設備控制伺服器
+- [OpenVoiceOS](https://github.com/OpenVoiceOS/ovos-core)
+- [fast-voice-assistant](https://github.com/dsa/fast-voice-assistant)
+- [gptspeaker](https://github.com/jackwuwei/gptspeaker)
 
 <details 過往資訊 close>
 <summary><strong>過往資訊</strong></summary>
