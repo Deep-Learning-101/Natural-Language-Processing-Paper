@@ -165,6 +165,7 @@ https://huggingface.co/DeepLearning101
 | **[Ollama](https://github.com/jmorganca/ollama)**        | 本地模型推理與管理           | 提供命令列介面，支援多種 Llama 模型於本地運行 | 在有隱私或離線需求的場景下進行本地推理     | 適合想在本地快速配置 Llama 系列模型的個人或中小型團隊     |
 
 
+  - 2025-02-25：[PySpur](https://www.pyspur.dev/)：[拖曳式開發AI工作流程！這款開源神器，讓LangChain也黯然失色！](https://zhuanlan.zhihu.com/p/26161709083)
   - 2025-01-03：[smolagents](https://github.com/huggingface/smolagents)：[新年禮物，Huggingface捲了一個Agent專案開源](https://blog.csdn.net/m0_59163425/article/details/144917058)
   - 2024-12-15：[markitdown](https://github.com/microsoft/markitdown)
   - 2024-11-21： [IBM開源一站式文件解析工具！輕鬆解析PDF、PPT、圖片及網頁等多種格式文檔](https://mp.weixin.qq.com/s/jTqFm5WzmitaxpyKowiBSA)
