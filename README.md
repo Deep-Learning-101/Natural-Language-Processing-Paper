@@ -165,7 +165,16 @@ https://huggingface.co/DeepLearning101
 | **[Ollama](https://github.com/jmorganca/ollama)**        | 本地模型推理與管理           | 提供命令列介面，支援多種 Llama 模型於本地運行 | 在有隱私或離線需求的場景下進行本地推理     | 適合想在本地快速配置 Llama 系列模型的個人或中小型團隊     |
 
 
+
   - 2025-02-25：[PySpur](https://www.pyspur.dev/)：[拖曳式開發AI工作流程！這款開源神器，讓LangChain也黯然失色！](https://zhuanlan.zhihu.com/p/26161709083)
+  - [OmniParser](https://github.com/microsoft/OmniParser)
+     - 2025-02-12：[微軟發表OmniParser V2，讓大語言模式秒變“電腦操作高手”，親測有效！](https://zhuanlan.zhihu.com/p/25172465914)
+     - 2025-02-08：[OmniParser，微軟的用於純視覺GUI 分析的Agent](https://zhuanlan.zhihu.com/p/14320518948)
+     - 2024-10-26：[控制電腦手機的智慧體人人都能造，微軟開源OmniParser](https://zhuanlan.zhihu.com/p/3343331861)
+  - 2024-02-01：[MobileAgent](https://github.com/X-PLUG/MobileAgent/blob/main/README_zh.md)：[一句指示幫你操作手機，最新多模態手機助理Mobile-Agent來了！](https://zhuanlan.zhihu.com/p/680871671)
+  - 2025-01-23：[browser-use](https://github.com/browser-use/browser-use)：[Browser Use – 讓AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
+  - 2025-01-23：[Upsonic](https://github.com/Upsonic/Upsonic)：[5.9K Star！全能高效的AI代理框架，打造企業級AI電腦助手，辦公任務一鍵完成！](https://www.53ai.com/news/zhinengyingjian/2025012363519.html)
+  - 2025-01-13：[DocAligner](https://github.com/ZZZHANG-jx/DocAligner)：[拍照文件復原：校正扭曲、光照陰暗、版面定位](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
   - 2025-01-03：[smolagents](https://github.com/huggingface/smolagents)：[新年禮物，Huggingface捲了一個Agent專案開源](https://blog.csdn.net/m0_59163425/article/details/144917058)
   - 2024-12-15：[markitdown](https://github.com/microsoft/markitdown)
   - 2024-11-21： [IBM開源一站式文件解析工具！輕鬆解析PDF、PPT、圖片及網頁等多種格式文檔](https://mp.weixin.qq.com/s/jTqFm5WzmitaxpyKowiBSA)
@@ -245,6 +254,15 @@ https://huggingface.co/DeepLearning101
 
 **<summary>多模態大語言模型 (Multimodal)</summary>**
 
+  - 2025-02-28：[HumanOmni](https://github.com/HumanMLLM/HumanOmni)
+    - [阿里通義開源業界首個第一視角大模型，超強的視訊理解效能！](https://mp.weixin.qq.com/s/acn16cvE8N4tMegKuGHAKQ)
+    - [首個專注於人類中心場景的多模態大模型，視覺與聽覺融合的突破！](https://mp.weixin.qq.com/s/cO6xEAOCRUsLmoiDbq12tw)
+  - [Phi](https://huggingface.co/collections/microsoft/phi-4-677e9380e514feb5577a40e4)
+    - [Phi-4-multimodal-instruct](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
+    - 2025-02-27
+       - [微軟首個多模態Phi-4問世，56億參數秒殺GPT-4o！ LoRA華人大佬帶隊](https://zhuanlan.zhihu.com/p/26984226500)
+       - [微軟發表Phi-4-Mini系列模型：小身材，大智慧－語言與多模態AI的新突破](https://zhuanlan.zhihu.com/p/26678433652)
+    - 2024-09-12：[微軟AI發布Phi 3.5 mini、MoE 和Vision](https://mp.weixin.qq.com/s/EeALIBrvGWKtEBGnroZIvg)  
   - 2024-04-11：[視覺語言模型詳解](https://huggingface.co/blog/zh/vlms)
   - 2024-09-26：[Llama 3.2：開源可自訂視覺模型](https://mp.weixin.qq.com/s/gOuEQB9-CYc71nT1aTHpFQ)：[Ollama](https://ollama.com/library/llama3.2-vision:90b)
   - 2024-09-20：[LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni)：[Llama 3.1 Omni：顛覆性的文字與語音雙輸出模型](https://mp.weixin.qq.com/s/HhE2tsLxKaqymj3xWxbRjA)
@@ -258,7 +276,6 @@ https://huggingface.co/DeepLearning101
      - 2024-09-11：[升級Ollama！ MiniCPM-V2_6影像辨識模型上線](https://mp.weixin.qq.com/s/6N-u8PcGEX6e4rryeqXglQ)
      - 2024-09-06：[MiniCPM 3.0 開源！ 4B參數超GPT3.5性能，無限長文本，超強RAG三件套！模型推理、微調實戰來啦！](https://53ai.com/news/OpenSourceLLM/2024090659871.html)：https://github.com/OpenBMB/MiniCPM
      - 2024-09-05：[零碼基礎都敢去魔改MiniCPM-V了？是我飄了，也是Cursor 太強了](https://mp.weixin.qq.com/s/DjDznmtKZoJNKXYz0X4zog)：https://github.com/OpenBMB/MiniCPM-V/
-  - 2024-09-12：[微軟AI發布Phi 3.5 mini、MoE 和Vision](https://mp.weixin.qq.com/s/EeALIBrvGWKtEBGnroZIvg)
   - 2024-09-12：[LLaVA-OneVision 震撼登場！字節跳動](https://mp.weixin.qq.com/s/Jl9Tcs8nRIEjj5ySm1tUcA)：https://cloud.tencent.com/developer/article/2444463
   - 2024-06-24：[微調Florence-2 - 微軟的尖端視覺語言模型](https://huggingface.co/blog/zh/finetune-florence2)
 
