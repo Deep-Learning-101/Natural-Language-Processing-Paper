@@ -155,14 +155,17 @@ https://huggingface.co/DeepLearning101
 
 **<summary>工具</summary>**
 
-| 工具名稱     | 功能範疇                     | 集成能力                                  | 適用場景                                   | 建議選擇                                   |
-|--------------|------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|
-| **[Flowise](https://github.com/FlowiseAI/Flowise/blob/main/i18n/README-ZH.md)**  | 簡單可視化流程建構           | 支持 LangChain 和 GPT，多平台部署         | 快速構建簡單 LLM 流程應用                 | 適合需要快速構建和部署 LLM 應用的用戶      |
-| **[Langflow](https://github.com/langflow-ai/langflow/blob/main/README.zh_CN.md)** | 多智能體與 RAG 應用構建      | 外部工具、API 與資料庫集成               | 複雜任務鏈與多智能體應用開發              | 適合構建複雜任務鏈的技術型開發者           |
-| **[Dify](https://github.com/langgenius/dify/blob/main/README_CN.md)**     | 全面應用開發與管理           | 多模型支持，全面工作流與模型管理          | 全生命周期管理與複雜應用開發              | 適合需要全面管理 LLM 應用的開發者或企業    |
-| **[New API](https://github.com/Calcium-Ion/new-api)**  | 模型接口統一與分發           | OpenAI 格式統一，支持多支付協議與分發管理 | 多模型接口管理與分發                     | 適合需要統一管理多種 AI 模型接口的用戶     |
-| **[XORBITS Inference](https://github.com/xorbitsai/inference/blob/main/README_zh_CN.md)** | 分散式推理與部署           | 與 Hugging Face 等模型相容，支援雲端及本地等多種部署環境                        | 大規模模型推理與雲端部署，需快速搭建可擴展的推理服務時 | 適合需要高效擴展能力、進行大規模模型推理的團隊或企業     |
-| **[Ollama](https://github.com/jmorganca/ollama)**        | 本地模型推理與管理           | 提供命令列介面，支援多種 Llama 模型於本地運行 | 在有隱私或離線需求的場景下進行本地推理     | 適合想在本地快速配置 Llama 系列模型的個人或中小型團隊     |
+| 工具名稱 | 功能範疇 | 集成能力 | 適用場景 | 建議選擇 | 知識庫技術 |
+|--------------|------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|
+| **[Flowise](https://github.com/FlowiseAI/Flowise/blob/main/i18n/README-ZH.md)** | 簡單可視化流程建構 | 支持 LangChain 和 GPT，多平台部署 | 快速構建簡單 LLM 流程應用 | 適合需要快速構建和部署 LLM 應用的用戶 | （暫無相關資料） |
+| **[Langflow](https://github.com/langflow-ai/langflow/blob/main/README.zh_CN.md)** | 多智能體與 RAG 應用構建 | 外部工具、API 與資料庫集成 | 複雜任務鏈與多智能體應用開發 | 適合構建複雜任務鏈的技術型開發者 | （暫無相關資料） |
+| **[Dify](https://github.com/langgenius/dify/blob/main/README_CN.md)** | 全面應用開發與管理 | 多模型支持，全面工作流與模型管理 | 全生命周期管理與複雜應用開發 | 適合需要全面管理 LLM 應用的開發者或企業 | 基於 Pinecone 的向量數據庫、Notion API 同步（增量更新）、支持 Rerank 模型（bge-reranker-base）、提供行業模板庫 |
+| **[New API](https://github.com/Calcium-Ion/new-api)** | 模型接口統一與分發 | OpenAI 格式統一，支持多支付協議與分發管理 | 多模型接口管理與分發 | 適合需要統一管理多種 AI 模型接口的用戶 | （暫無相關資料） |
+| **[XORBITS Inference](https://github.com/xorbitsai/inference/blob/main/README_zh_CN.md)** | 分散式推理與部署 | 與 Hugging Face 等模型相容，支援雲端及本地等多種部署環境 | 大規模模型推理與雲端部署，需快速搭建可擴展的推理服務時 | 適合需要高效擴展能力、進行大規模模型推理的團隊或企業 | （暫無相關資料） |
+| **[Ollama](https://github.com/jmorganca/ollama)** | 本地模型推理與管理 | 提供命令列介面，支援多種 Llama 模型於本地運行 | 在有隱私或離線需求的場景下進行本地推理 | 適合想在本地快速配置 Llama 系列模型的個人或中小型團隊 | （暫無相關資料） |
+| **[FastGPT](https://github.com/labring/FastGPT)** | 知識庫問答系統與工作流編排 | 提供開箱即用的數據處理、模型調用，支持可視化工作流編排 | 快速構建智能問答系統與複雜問答場景 | 適合需要快速部署知識庫問答系統的用戶 | 混合索引（Elasticsearch + FAISS）、支援 PDF 表格解析（PyMuPDF 集成）、BM25 權重可調、需人工標註種子數據 |
+| **[Coze](https://www.coze.cn/)** | AI 智能體開發平台 | 整合插件、長短期記憶、工作流、卡片等功能，支持多平台發布 | 低門檻快速搭建個性化或具備商業價值的智能體 | 適合無需編程即可創建智能體的用戶 | 自研分佈式索引、電商數據結構化抽取、基於用戶行為的反饋學習、自動生成示例對話 |
+
 
 
 
