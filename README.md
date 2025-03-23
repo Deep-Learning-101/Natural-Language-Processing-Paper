@@ -5,7 +5,7 @@ https://huggingface.co/DeepLearning101
 #
 
 <details open>
-<summary><strong>手把手帶你一起踩AI坑：https://reurl.cc/g6GlZX</strong></summary>
+<summary><strong>手把手帶你一起踩AI坑：https://blog.twman.org/p/deeplearning101.html</strong></summary>
    
 - [那些 AI Agent 要踩的坑 (試用及體驗、持續更新)](https://blog.twman.org/2025/03/AIAgent.html)  
 - [白話文手把手帶你科普 GenAI](https://blog.twman.org/2024/08/LLM.html)   
