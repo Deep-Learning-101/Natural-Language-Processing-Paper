@@ -171,7 +171,8 @@ https://huggingface.co/DeepLearning101
 </details>
 
 #
-# LLM  (Large Language Model) 大語言模型
+# LLM  
+大語言模型 (Large Language Model)
 
 [**AlpacaEval Leaderboard**](https://tatsu-lab.github.io/alpaca_eval/)
 
