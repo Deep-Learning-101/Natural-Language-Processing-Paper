@@ -63,7 +63,11 @@ https://huggingface.co/DeepLearning101
    - 文章還介紹了作者在硬體升級方面的經驗，展示了從 GIGABYTE GTX 960 4G 到 RTX 6000 Ada 48 GB 等顯卡的演進過程。
 </details>
 
-# Natural Language Processing, NLP (自然語言處理)
+# Natural Language Processing (NLP)
+
+<details close> 
+   
+<summary>自然語言處理</summary>
 
 ### ** 2018/07/15-2020/02/29 開發心得：**
 
@@ -191,15 +195,6 @@ https://huggingface.co/DeepLearning101
 [不同參數規模大語言模型在不同微調方法下所需的顯存總結](https://www.datalearner.com/blog/1051703254378255)
 
 
-**<summary>工具</summary>**
-
-|  Agent 名稱 | 功能範疇 | 集成能力 | 適用場景 | 建議選擇 |  |
-|------------------|----------|----------|----------|----------|------------|
-| **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** | 自主 AI 代理構建與運行 | 使用 OpenAI 的 GPT-4 和 GPT-3.5 大型語言模型，允許為各種個人和商業項目構建代理 | 適合需要自動化完成多目標複雜任務的用戶 | 適合希望利用 GPT 模型自動執行任務的開發者 | |
-| **[MetaGPT](https://github.com/geekan/MetaGPT)** | 多智能體協作框架，專注於軟體開發 | 採用多智能體框架，模擬人類軟體開發團隊，包括產品經理、架構師、項目經理、工程師等角色 | 適合需要模擬軟體開發流程，提高開發效率和質量的場景 | 適合希望利用 AI 模擬軟體開發流程的團隊或企業 | |
-| **[AgentGPT](https://github.com/reworkd/AgentGPT)** | 基於網頁的自主 AI 代理配置與部署 | 支持在瀏覽器中配置和部署自主 AI 代理，並讓其完成任何目標 | 適合需要快速構建和部署自主 AI 代理的用戶 | 適合希望在瀏覽器中快速配置 AI 代理的開發者 | |
-| **[HuggingGPT](https://github.com/microsoft/JARVIS)** | 多模型協作的 AI 系統 | 包含一個大型語言模型作為控制器和許多專家模型作為協作執行者 | 適合需要多模型協作處理複雜任務的場景 | 適合希望利用多模型協作提高任務處理能力的團隊或企業 | |
-
 |  Tool 名稱 | 功能範疇 | 集成能力 | 適用場景 | 建議選擇 | 知識庫技術 |
 |------------------|----------|----------|----------|----------|------------|
 | **[Flowise](https://github.com/FlowiseAI/Flowise)** | 簡單可視化流程建構 | 支持 LangChain 和 GPT，多平台部署 | 快速構建簡單 LLM 流程應用 | 適合需要快速構建和部署 LLM 應用的用戶 | |
@@ -213,17 +208,32 @@ https://huggingface.co/DeepLearning101
 | **[FastGPT](https://github.com/labring/FastGPT)** | 知識庫問答系統與工作流編排 | 提供開箱即用的數據處理、模型調用，支持可視化工作流編排 | 快速構建智能問答系統與複雜問答場景 | 適合需要快速部署知識庫問答系統的用戶 | 混合索引（Elasticsearch + FAISS）、支援 PDF 表格解析（PyMuPDF 集成）、BM25 權重可調、需人工標註種子數據 |
 | **[Coze](https://github.com/cozeshow/coze)** | AI 智能體開發平台 | 整合插件、長短期記憶、工作流、卡片等功能，支持多平台發布 | 低門檻快速搭建個性化或具備商業價值的智能體 | 適合無需編程即可創建智能體的用戶 | 自研分佈式索引、電商數據結構 |
 
- 
+ **<summary>AI Agent 框架</summary>**
 
+|  Agent 名稱 | 功能範疇 | 集成能力 | 適用場景 | 建議選擇 |
+|------------------|----------|----------|----------|----------|
+| **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** | 自主 AI 代理構建與運行 | 使用 OpenAI 的 GPT-4 和 GPT-3.5 大型語言模型，允許為各種個人和商業項目構建代理 | 適合需要自動化完成多目標複雜任務的用戶 | 適合希望利用 GPT 模型自動執行任務的開發者 |
+| **[MetaGPT](https://github.com/geekan/MetaGPT)** | 多智能體協作框架，專注於軟體開發 | 採用多智能體框架，模擬人類軟體開發團隊，包括產品經理、架構師、項目經理、工程師等角色 | 適合需要模擬軟體開發流程，提高開發效率和質量的場景 | 適合希望利用 AI 模擬軟體開發流程的團隊或企業 |
+| **[AgentGPT](https://github.com/reworkd/AgentGPT)** | 基於網頁的自主 AI 代理配置與部署 | 支持在瀏覽器中配置和部署自主 AI 代理，並讓其完成任何目標 | 適合需要快速構建和部署自主 AI 代理的用戶 | 適合希望在瀏覽器中快速配置 AI 代理的開發者 |
+| **[HuggingGPT](https://github.com/microsoft/JARVIS)** | 多模型協作的 AI 系統 | 包含一個大型語言模型作為控制器和許多專家模型作為協作執行者 | 適合需要多模型協作處理複雜任務的場景 | 適合希望利用多模型協作提高任務處理能力的團隊或企業 |
 
-
-
-
+  - 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)
+     - [Space@HuggingFace](https://huggingface.co/spaces/enzostvs/deepsite)     
+     - [網頁版Cursor 發佈](https://mp.weixin.qq.com/s/uyIAH93_AUf-dd7AC2TBxA)
+     - [DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
+  - 2025-03-30：[DeepGemini](https://github.com/sligter/DeepGemini)：[AI界的'搭積木'神器，10分鐘打造你的專屬智慧團隊！](https://mp.weixin.qq.com/s/F2U7rWOMvfTyiRai-kfL_A)
   - 2025-03-20：[LangManus](https://github.com/langmanus/langmanus/blob/main/README_zh.md)：[LangManus：程式碼庫解析|多智能體｜工具呼叫｜browser use](https://zhuanlan.zhihu.com/p/31444867693)
   - 2025-03-11：[autoMate](https://github.com/yuruotong1/autoMate)：[autoMate:基於OmniParser 所建構的革命性AI自動化助手](https://mp.weixin.qq.com/s/7W0xL3EBJM9mmNZbdZCiiQ)
   - 2025-03-10：[OWL](https://github.com/camel-ai/owl)：[另一個開源版本的“Manus”](https://mp.weixin.qq.com/s/8jQnE5NPy9nqYHArMUegxw)
   - 2025-03-10：[OpenManus](https://github.com/mannaandpoem/OpenManus)：[一文讀懂：OpenManus](https://zhuanlan.zhihu.com/p/30090038284)
   - 2025-02-25：[PySpur](https://www.pyspur.dev/)：[拖曳式開發AI工作流程！這款開源神器，讓LangChain也黯然失色！](https://zhuanlan.zhihu.com/p/26161709083)
+  - 2025-01-21：[UI-TARS](https://github.com/bytedance/UI-TARS)：[端對端GUI Agent：UI-TARS 如何以純視覺驅動GUI 自動化](https://zhuanlan.zhihu.com/p/20352074884)
+
+
+**<summary>工具</summary>**
+
+  - 2025-03-26：[pdf-craft](https://github.com/oomol-lab/pdf-craft)：[PDF秒轉Markdown/EPUB](https://zhuanlan.zhihu.com/p/1888288260171744707)
+  - 2025-03-14：[playwright-mcp](https://github.com/microsoft/playwright-mcp)：[MCP-Playwright：AI自動化神器](https://zhuanlan.zhihu.com/p/30178146112)
   - [OmniParser](https://github.com/microsoft/OmniParser)
      - 2025-02-12：[微軟發表OmniParser V2，讓大語言模式秒變“電腦操作高手”，親測有效！](https://zhuanlan.zhihu.com/p/25172465914)
      - 2025-02-08：[OmniParser，微軟的用於純視覺GUI 分析的Agent](https://zhuanlan.zhihu.com/p/14320518948)
@@ -231,7 +241,6 @@ https://huggingface.co/DeepLearning101
   - 2024-02-01：[MobileAgent](https://github.com/X-PLUG/MobileAgent/blob/main/README_zh.md)：[一句指示幫你操作手機，最新多模態手機助理Mobile-Agent來了！](https://zhuanlan.zhihu.com/p/680871671)
   - 2025-01-23：[browser-use](https://github.com/browser-use/browser-use)：[Browser Use – 讓AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
   - 2025-01-23：[Upsonic](https://github.com/Upsonic/Upsonic)：[5.9K Star！全能高效的AI代理框架，打造企業級AI電腦助手，辦公任務一鍵完成！](https://www.53ai.com/news/zhinengyingjian/2025012363519.html)
-  - 2025-01-21：[UI-TARS](https://github.com/bytedance/UI-TARS)：[端對端GUI Agent：UI-TARS 如何以純視覺驅動GUI 自動化](https://zhuanlan.zhihu.com/p/20352074884)
   - 2025-01-13：[DocAligner](https://github.com/ZZZHANG-jx/DocAligner)：[拍照文件復原：校正扭曲、光照陰暗、版面定位](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
   - 2025-01-03：[smolagents](https://github.com/huggingface/smolagents)：[新年禮物，Huggingface捲了一個Agent專案開源](https://blog.csdn.net/m0_59163425/article/details/144917058)
   - 2024-12-15：[markitdown](https://github.com/microsoft/markitdown)
@@ -252,7 +261,10 @@ https://huggingface.co/DeepLearning101
 
   </details>
 
-**<summary>語音到語音大模型的Agent和框架</summary>**
+
+
+
+**<summary>語音到語音大模型</summary>**
 
   - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent)
      - [又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
@@ -285,7 +297,7 @@ https://huggingface.co/DeepLearning101
   </details>
 
 
-**<summary>小型語言模型Agent和框架</summary>**
+**<summary>小型語言模型</summary>**
 
   - 2025-01-07：[Smolagents](https://github.com/huggingface/smolagents)：[Hugging Face開源全新AI智能體框架支援工具呼叫與程式碼執行！](https://zhuanlan.zhihu.com/p/16417392406)
   - 2024-12-13：[Phi-4](https://huggingface.co/NyxKrage/Microsoft_Phi-4)：[以小博大，微軟Phi-4正式發表~](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
