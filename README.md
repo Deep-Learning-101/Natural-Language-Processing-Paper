@@ -241,7 +241,7 @@ https://huggingface.co/DeepLearning101
 
   </details>
 
- **<summary>AI Agent 框架</summary>**
+ **<summary>AI Agent 開源框架</summary>**
 
 |  Agent 名稱 | 功能範疇 | 集成能力 | 適用場景 | 建議選擇 |
 |------------------|----------|----------|----------|----------|
@@ -250,6 +250,11 @@ https://huggingface.co/DeepLearning101
 | **[AgentGPT](https://github.com/reworkd/AgentGPT)** | 基於網頁的自主 AI 代理配置與部署 | 支持在瀏覽器中配置和部署自主 AI 代理，並讓其完成任何目標 | 適合需要快速構建和部署自主 AI 代理的用戶 | 適合希望在瀏覽器中快速配置 AI 代理的開發者 |
 | **[HuggingGPT](https://github.com/microsoft/JARVIS)** | 多模型協作的 AI 系統 | 包含一個大型語言模型作為控制器和許多專家模型作為協作執行者 | 適合需要多模型協作處理複雜任務的場景 | 適合希望利用多模型協作提高任務處理能力的團隊或企業 |
 
+  - [從AI Agent到Agent工作流程，一文詳細了解代理程式工作流程](https://zhuanlan.zhihu.com/p/32491596217)
+  - [萬字長文，帶你綜觀大模型Agent，涉及研究痛點、應用場景、發展方向](https://zhuanlan.zhihu.com/p/29833831482)
+  - [什麼是「Agentic 工作流程」？](https://zhuanlan.zhihu.com/p/32709535995)
+  - [什麼是Agentic AI？什麼是Agentic Workflow？與AI Agent有什麼區別和關聯？](https://zhuanlan.zhihu.com/p/705935464)
+  
   - 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)
      - [Space@HuggingFace](https://huggingface.co/spaces/enzostvs/deepsite)     
      - [網頁版Cursor 發佈](https://mp.weixin.qq.com/s/uyIAH93_AUf-dd7AC2TBxA)
