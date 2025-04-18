@@ -245,7 +245,7 @@ https://huggingface.co/DeepLearning101
 
   </details>
 
- **<summary>AI Agent 開源框架</summary>**
+ **<summary>[AI Agent 開源框架](https://blog.twman.org/2025/03/AIAgent.html)</summary>**
 
 |  Agent 名稱 | 功能範疇 | 集成能力 | 適用場景 | 建議選擇 |
 |------------------|----------|----------|----------|----------|
