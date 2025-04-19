@@ -287,7 +287,7 @@ https://huggingface.co/DeepLearning101
      - [DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
   - 2025-03-30：[DeepGemini](https://github.com/sligter/DeepGemini)：[AI界的'搭積木'神器，10分鐘打造你的專屬智慧團隊！](https://mp.weixin.qq.com/s/F2U7rWOMvfTyiRai-kfL_A)
   - 2025-03-24：[agenticSeek](https://github.com/Fosowl/agenticSeek)：[又一個“Manus”開源，完全本地化替代品AgenticSeek](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
-  - 2025-03-20：[LangManus](https://github.com/langmanus/langmanus/blob/main/README_zh.md)：[LangManus：程式碼庫解析|多智能體｜工具呼叫｜browser use](https://zhuanlan.zhihu.com/p/31444867693)
+  - ~~2025-03-20：[LangManus](https://github.com/langmanus/langmanus/blob/main/README_zh.md)：[LangManus：程式碼庫解析|多智能體｜工具呼叫｜browser use](https://zhuanlan.zhihu.com/p/31444867693)~~
   - 2025-03-11：[autoMate](https://github.com/yuruotong1/autoMate)：[autoMate:基於OmniParser 所建構的革命性AI自動化助手](https://mp.weixin.qq.com/s/7W0xL3EBJM9mmNZbdZCiiQ)
   - 2025-03-10：[OWL](https://github.com/camel-ai/owl)：[另一個開源版本的“Manus”](https://mp.weixin.qq.com/s/8jQnE5NPy9nqYHArMUegxw)
   - 2025-03-10：[OpenManus](https://github.com/mannaandpoem/OpenManus)：[一文讀懂：OpenManus](https://zhuanlan.zhihu.com/p/30090038284)
