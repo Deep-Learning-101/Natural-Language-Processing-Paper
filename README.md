@@ -278,7 +278,7 @@ https://huggingface.co/DeepLearning101
      - 2025-02-08：[OmniParser，微軟的用於純視覺GUI 分析的Agent](https://zhuanlan.zhihu.com/p/14320518948)
      - 2024-10-26：[控制電腦手機的智慧體人人都能造，微軟開源OmniParser](https://zhuanlan.zhihu.com/p/3343331861)   
   - 2025-04-14：[MDocAgent](https://github.com/aiming-lab/MDocAgent)：[Adobe首發多Agent、跨模態框架MDocAgent：複雜文件理解效能爆炸12%，錯誤率直降21%](https://www.51cto.com/aigc/5029.html)
-  - 2025-04-08：[CortexON](https://github.com/TheAgenticAI/CortexON)：[CortexON：開源通用AI Agent，另一個取代Manus產品](https://mp.weixin.qq.com/s/G4gzlzpwlnfGD4AdbYBwjQ)
+  - 2025-04-08：[CortexON](https://github.com/TheAgenticAI/CortexON)：[CortexON：開源通用AI Agent，另一個取代Manus產品](https://mp.weixin.qq.com/s/G4gzlzpwlnfGD4AdbYBwjQ) **(只支援 Anthropic ?)**
   - 2025-04-08：[oliva](https://github.com/Deluxer/oliva)：[Oliva：一個多智能體，開源語音RAG 助手](https://mp.weixin.qq.com/s/hzhsPz8pdwngysg2YxDs-w)
   - 2025-04-03：[AutoAgent](https://github.com/HKUDS/AutoAgent)：[一句話全自動創建AI智能體，港大AutoAgent打造開源最強Deep Research](https://mp.weixin.qq.com/s/oATCuzI4BJ6JcwJkazinCA)
   - 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)
