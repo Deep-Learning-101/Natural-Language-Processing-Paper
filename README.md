@@ -191,10 +191,7 @@ https://huggingface.co/DeepLearning101
 | DeepSeek | deepseek-reasoner (R1) | $0.55 | $2.19 | 64K | ❌ | 不公開 | ❌ | 高階邏輯推理與數據分析能力 | 同上 |
 | Qwen | Qwen-Max | $1.60 | $6.40 | ~32K | ❌ | 不公開 | ❌ | 強推理型，偏向高品質產出 | [Qwen Chat](https://chat.qwen.ai/) |
 | Qwen | Qwen-Plus | $0.40 | $1.20 | ~131K | ❌ | 不公開 | ❌ | 均衡型模型，支援較長上下文 | 同上 |
-| Qwen | Qwen-Turbo | $0.05 | $0.20 | ~1M | ❌ | 不公開 | ❌ | 成本超低，適合大規模推理與應用 | 同上 |
 | Grok | grok-3 | $3.00 | $15.00 | 131k | ✅ | 不公開 | ❌ | 支援思考模式、有限搜尋功能 | [Grok 官網](https://grok.com/) |
-| Grok | grok-3-fast | $5.00 | $25.00 | 131k | ✅ | 不公開 | ❌ | 高速版本，反應快 | 同上 |
-| Grok | grok-3-mini | $0.30 | $0.50 | 131k | ✅ | 不公開 | ❌ | 價格超低，適合大規模部署 | 同上 |
 | 百度 | 文心一言（ERNIE Bot） | 不公開（免費使用） | 不公開（免費使用） | 不公開 | ✅ | 不公開 | ✅（圖像/語音） | 支援中文語境與多模態任務 | [文心一言](https://yiyan.baidu.com/X1) |
 
 
