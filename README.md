@@ -180,17 +180,19 @@ https://huggingface.co/DeepLearning101
 
 ## ✨ 大型語言模型API平台價格比較
 
-| 平台 | 模型 | 輸入費用 (USD/1M Tokens) | 輸出費用 (USD/1M Tokens) | 上下文窗口 | 特點 / 說明 | 定價連結 |
-|------|------|---------------------------|---------------------------|-------------|----------------|-----------|
-| OpenAI | OpenAI o1 | $15.00 | $60.00 | 200k | Frontier 模型，支援 Vision/Tools/結構化輸出 | [OpenAI Pricing](https://openai.com/api/pricing/) |
-| OpenAI | OpenAI o3-mini | $1.10 | $4.40 | 200k | 成本效益模型，為編碼/數學優化，支援 Tools/結構化輸出 | 同上 |
-| Google | Gemini 2.5 Pro (Prev) | $1.25 | $10.00 | >200k (大) | 預覽版！價格按輸入長度分級 | [Gemini API Pricing](https://ai.google.dev/gemini-api/docs/pricing) |
-| Google | Gemini 2.0 Flash | $0.10（文字） | $0.40（文字） | 1M | 多模態（音/影輸入較貴）、Live API 有免費層級 | 同上 |
-| DeepSeek | deepseek-chat (V3) | $0.27 | $1.10 | 64K | 標準價（Cache Miss），有折扣時段/快取價 | [DeepSeek Pricing](https://api-docs.deepseek.com/quick_start/pricing) |
-| DeepSeek | deepseek-reasoner (R1) | $0.55 | $2.19 | 64K | 同上 | 同上 |
-| Qwen（阿里） | Qwen-Max | $1.60 | $6.40 | ~32k | 最強能力模型（基於截圖） | [Alibaba Model Studio](https://www.alibabacloud.com/help/tc/model-studio/models?spm=a2c63.p38356.0.i3#1661c27c01ccs) |
-| Qwen（阿里） | Qwen-Plus | $0.40 | $1.20 | ~131k | 均衡型模型，上下文較大 | 同上 |
-| Qwen（阿里） | Qwen-Turbo | $0.05 | $0.20 | ~1M | 極低成本，簡單任務，超長上下文 | 同上 |
+| 平台 | 模型 | 輸入費用 (USD/1M Tokens) | 輸出費用 (USD/1M Tokens) | 上下文窗口 | 免費層級 | 上下文快取 | Grounding 支援 | 最大速率限制 (RPM / TPM) | 多模態能力 | 特點 / 說明 | 定價連結 |
+|------|------|---------------------------|---------------------------|-------------|-----------|----------------|-------------------|---------------------------|----------------|----------------|-----------|
+| OpenAI | OpenAI o1 | $15.00 | $60.00 | 200k | ❌ | ✅（部分功能） | ❌ | 不公開 | ✅（文字＋圖像） | Frontier 模型，支援 Vision/Tools/結構化輸出 | [OpenAI Pricing](https://openai.com/api/pricing/) |
+| OpenAI | OpenAI o3-mini | $1.10 | $4.40 | 200k | ❌ | ✅（部分功能） | ❌ | 不公開 | ❌ | 成本效益模型，適合編碼與數學 | 同上 |
+| Google | Gemini 2.5 Pro (Preview) | $1.25（≤200k），$2.50（>200k） | $10.00（≤200k），$15.00（>200k） | >200k | ✅（指定模型） | ✅（$0.31~$0.625） | ✅（$35/1k） | 150 RPM / 2M TPM（Tier 1） | ✅（文字＋圖像） | 高階推理力，企業級用途 | [Gemini API Pricing](https://ai.google.dev/gemini-api/docs/pricing) |
+| Google | Gemini 2.0 Flash | $0.10（圖文影），$0.70（音訊） | $0.40 | 1M | ✅（15 RPM） | ❌ | ✅（$35/1k） | 2,000 RPM / 4M TPM | ✅（文字＋圖＋影＋音） | 多模態支援，企業級速率與穩定性 | 同上 |
+| Google | Gemini 2.0 Flash Lite | $0.075（全模態） | $0.30 | 1M | ✅（30 RPM） | ❌ | ❌ | 4,000 RPM / 4M TPM | ✅（全模態） | 超高速率、經濟型多模態模型 | 同上 |
+| DeepSeek | deepseek-chat (V3) | $0.27 | $1.10 | 64K | ❌ | ✅（快取價） | ❌ | 不公開 | ❌ | 標準價，推理速度佳 | [DeepSeek Pricing](https://api-docs.deepseek.com/quick_start/pricing) |
+| DeepSeek | deepseek-reasoner (R1) | $0.55 | $2.19 | 64K | ❌ | ✅（快取價） | ❌ | 不公開 | ❌ | 高階邏輯推理與數據分析能力 | 同上 |
+| Qwen | Qwen-Max | $1.60 | $6.40 | ~32K | ❌ | ❌ | ❌ | 不公開 | ❌ | 強推理型，偏向高品質產出 | [Alibaba Model Studio](https://www.alibabacloud.com/help/tc/model-studio/models?spm=a2c63.p38356.0.i3#1661c27c01ccs) |
+| Qwen | Qwen-Plus | $0.40 | $1.20 | ~131K | ❌ | ❌ | ❌ | 不公開 | ❌ | 均衡型模型，支援較長上下文 | 同上 |
+| Qwen | Qwen-Turbo | $0.05 | $0.20 | ~1M | ❌ | ❌ | ❌ | 不公開 | ❌ | 成本超低，適合大規模推理與應用 | 同上 |
+
 
 
 [**AlpacaEval Leaderboard**](https://tatsu-lab.github.io/alpaca_eval/)
