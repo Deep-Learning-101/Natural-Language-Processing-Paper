@@ -278,7 +278,7 @@ https://huggingface.co/DeepLearning101
   - [萬字長文，帶你綜觀大模型Agent，涉及研究痛點、應用場景、發展方向](https://zhuanlan.zhihu.com/p/29833831482)
   - [什麼是「Agentic 工作流程」？](https://zhuanlan.zhihu.com/p/32709535995)
   - [什麼是Agentic AI？什麼是Agentic Workflow？與AI Agent有什麼區別和關聯？](https://zhuanlan.zhihu.com/p/705935464)
-  - 2025-05-20：[NLWeb](https://deepwiki.com/microsoft/NLWeb)；[將對話式介面直接引入Web，微軟開源NLWeb，實現ChatGPT等級搜尋](https://zhuanlan.zhihu.com/p/1908217187904226630)
+  - ~2025-05-20：[NLWeb](https://deepwiki.com/microsoft/NLWeb)；[將對話式介面直接引入Web，微軟開源NLWeb，實現ChatGPT等級搜尋](https://zhuanlan.zhihu.com/p/1908217187904226630)~
   - 2025-05-20：[Qwen Web Dev]()
   - 2025-05-18：[Agent-Squad](https://deepwiki.com/awslabs/agent-squad)；[輕量級開源AI多智能體框架！智慧路由+上下文管理，前後端介面支援！](https://mp.weixin.qq.com/s/5Y23EhpHb2_pBOY8XrkMNw)
   - 2025-05-17：[Open Agent Platform](https://deepwiki.com/langchain-ai/open-agent-platform)
@@ -297,10 +297,7 @@ https://huggingface.co/DeepLearning101
   - 2025-04-08：[oliva](https://github.com/Deluxer/oliva)：[Oliva：一個多智能體，開源語音RAG 助手](https://mp.weixin.qq.com/s/hzhsPz8pdwngysg2YxDs-w)
   - 2025-04-03：[AutoAgent](https://github.com/HKUDS/AutoAgent)：[一句話全自動創建AI智能體，港大AutoAgent打造開源最強Deep Research](https://mp.weixin.qq.com/s/oATCuzI4BJ6JcwJkazinCA)
   - 2025-04-03：[Agent Development Kit (ADK)](https://github.com/google/adk-python)：[谷歌發表「智能體開發工具包」ADK，來嚐個鮮](https://www.53ai.com/news/OpenSourceLLM/2025041012369.html)
-  - 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)
-     - [Space@HuggingFace](https://huggingface.co/spaces/enzostvs/deepsite)     
-     - [網頁版Cursor 發佈](https://mp.weixin.qq.com/s/uyIAH93_AUf-dd7AC2TBxA)
-     - [DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
+  - 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)；[DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
   - 2025-03-30：[DeepGemini](https://github.com/sligter/DeepGemini)：[AI界的'搭積木'神器，10分鐘打造你的專屬智慧團隊！](https://mp.weixin.qq.com/s/F2U7rWOMvfTyiRai-kfL_A)
   - 2025-03-24：[agenticSeek](https://github.com/Fosowl/agenticSeek)：[又一個“Manus”開源，完全本地化替代品AgenticSeek](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
   - 2025-03-11：[autoMate](https://github.com/yuruotong1/autoMate)：[autoMate:基於OmniParser 所建構的革命性AI自動化助手](https://mp.weixin.qq.com/s/7W0xL3EBJM9mmNZbdZCiiQ)
@@ -310,8 +307,7 @@ https://huggingface.co/DeepLearning101
   - 2025-01-23：[Upsonic](https://github.com/Upsonic/Upsonic)：[5.9K Star！全能高效的AI代理框架，打造企業級AI電腦助手，辦公任務一鍵完成！](https://www.53ai.com/news/zhinengyingjian/2025012363519.html)     
   - 2025-01-21：[UI-TARS](https://github.com/bytedance/UI-TARS)：[端對端GUI Agent：UI-TARS 如何以純視覺驅動GUI 自動化](https://zhuanlan.zhihu.com/p/20352074884)
   - 2025-01-03：[smolagents](https://github.com/huggingface/smolagents)：[新年禮物，Huggingface捲了一個Agent專案開源](https://blog.csdn.net/m0_59163425/article/details/144917058)
-  - 2024-09-23：[STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking](https://github.com/stanford-oval/storm)
-     - [STORM：一个基于LLM的知识整理系统](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
+  - 2024-09-23：[STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking](https://github.com/stanford-oval/storm)；[STORM：一个基于LLM的知识整理系统](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
   - 2024-10-26：[OmniParser](https://github.com/microsoft/OmniParser)；[控制電腦手機的智慧體人人都能造，微軟開源OmniParser](https://zhuanlan.zhihu.com/p/3343331861) 
 
 
