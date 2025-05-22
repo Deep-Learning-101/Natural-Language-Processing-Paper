@@ -339,7 +339,6 @@ https://huggingface.co/DeepLearning101
 
     
 **大型語言模型**
-  - 2024-12-05：[InternVL2.5](https://github.com/OpenGVLab/InternVL)
   - 2024-11-23：[Ai2 Tülu 3](https://github.com/allenai/open-instruct)：[這才是真・開源模型！公開「後訓練」一切，性能超越Llama 3.1 Instruct](https://www.jiqizhixin.com/articles/2024-11-23-5)
      - DEMO：[https://playground.allenai.org/](https://playground.allenai.org/)
      - MODEL：[https://huggingface.co/allenai](https://huggingface.co/allenai)
@@ -372,7 +371,10 @@ https://huggingface.co/DeepLearning101
 
 
 **多模態大語言模型 (Multimodal)**
-  - 2025-04-21：[(CVPR 2024 Oral) InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://www.alphaxiv.org/zh/overview/2504.10479)；[DeepWiki](https://deepwiki.com/OpenGVLab/InternVL)；[InternVL3：刷新開源多模態大模型效能新紀錄](https://zhuanlan.zhihu.com/p/1897681159359551408)
+  - [InternVL](https://github.com/OpenGVLab/InternVL)
+    - [(CVPR 2024 Oral) InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://www.alphaxiv.org/zh/overview/2504.10479)
+    - [DeepWiki](https://deepwiki.com/OpenGVLab/InternVL)；[InternVL3：刷新開源多模態大模型效能新紀錄](https://zhuanlan.zhihu.com/p/1897681159359551408)
+  - 2025-05-21：[Gemma 3n](https://deepmind.google/models/gemma/?hl=zh-tw)；[Preview](https://huggingface.co/google/gemma-3n-E4B-it-litert-preview)  
   - 2025-03-18：[Mistral Small 3.1](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503)：[Mistral開源多模態小模型3.1：128K上下文+超低延遲，效能碾壓GPT-4o Mini](https://zhuanlan.zhihu.com/p/31138756743)
   - 2025-03-14：[Vision-R1](https://github.com/Osilly/Vision-R1)：[Vision-R1：激發多模態大模型的推理能力](https://zhuanlan.zhihu.com/p/29618155786)
   - 2025-02-28：[HumanOmni](https://github.com/HumanMLLM/HumanOmni)
