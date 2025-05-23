@@ -246,6 +246,7 @@ https://huggingface.co/DeepLearning101
      - 2025-03-28：[browser-use-webui](https://github.com/browser-use/web-ui)
      - 2025-02-16：[browser use webui部署（實現瀏覽器自動化）](https://zhuanlan.zhihu.com/p/24116360552)
      - 2025-01-23：[Browser Use – 讓AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
+  - 2025-05-22：[AingDesk](https://deepwiki.com/aingdesk/AingDesk)；[AingDesk：零门槛本地 AI 部署](https://zhuanlan.zhihu.com/p/29773848356)       
   - 2025-05-20：[news-agents](https://deepwiki.com/eugeneyan/news-agents)
   - 2025-05-16：[Follow](https://deepwiki.com/RSSNext/Folo)；[連續登頂GitHub 的資訊聚合神器：Follow，讓你不再錯過任何重要資訊！](https://zhuanlan.zhihu.com/p/1906505020628795653)
   - 2025-05-11：[SurfSense](https://github.com/MODSetter/SurfSense)：[GitHub 開源專案 打通Notion、GitHub、搜尋引擎的AI超腦](https://mp.weixin.qq.com/s/kMhidgb6GkKEsl-D-u_7iw)，[如何使用](https://deepwiki.com/search/_df4a192b-a253-4155-a2a2-4a6fda9037e9)
@@ -278,8 +279,9 @@ https://huggingface.co/DeepLearning101
   - [萬字長文，帶你綜觀大模型Agent，涉及研究痛點、應用場景、發展方向](https://zhuanlan.zhihu.com/p/29833831482)
   - [什麼是「Agentic 工作流程」？](https://zhuanlan.zhihu.com/p/32709535995)
   - [什麼是Agentic AI？什麼是Agentic Workflow？與AI Agent有什麼區別和關聯？](https://zhuanlan.zhihu.com/p/705935464)
-  - ~2025-05-20：[NLWeb](https://deepwiki.com/microsoft/NLWeb)；[將對話式介面直接引入Web，微軟開源NLWeb，實現ChatGPT等級搜尋](https://zhuanlan.zhihu.com/p/1908217187904226630)~
-  - 2025-05-20：[Qwen Web Dev]()
+  - ~2025-05-22：[Magentic-UI](https://deepwiki.com/microsoft/magentic-ui)~。。。暫不支援使用 Gemini
+  - ~2025-05-20：[NLWeb](https://deepwiki.com/microsoft/NLWeb)~。。。暫不支援使用 Gemini
+  - 2025-05-20：[Qwen Web Dev](https://chat.qwen.ai/?inputFeature=web_dev)
   - 2025-05-18：[Agent-Squad](https://deepwiki.com/awslabs/agent-squad)；[輕量級開源AI多智能體框架！智慧路由+上下文管理，前後端介面支援！](https://mp.weixin.qq.com/s/5Y23EhpHb2_pBOY8XrkMNw)
   - 2025-05-17：[Open Agent Platform](https://deepwiki.com/langchain-ai/open-agent-platform)
   - 2025-05-13：[LocalSite-ai](https://deepwiki.com/weise25/LocalSite-ai)
