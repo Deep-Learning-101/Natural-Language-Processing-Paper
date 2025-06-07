@@ -273,6 +273,7 @@ https://huggingface.co/DeepLearning101
   - [FinRobot](https://www.alphaxiv.org/zh/overview/2405.14767)；[DeepWiki](https://deepwiki.com/AI4Finance-Foundation/FinRobot)；可支援 Gemini-2.5-Pro-preview-05-06，基於 AutoGen    
   - [Jupyter-AI](https://deepwiki.com/jupyterlab/jupyter-ai)；可支援 Gemini-2.5-Pro-preview-05-06
   - 2025-06-03：[Gemini Fullstack LangGraph](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart)；[DEMO](https://deep-learning-101.github.io/gemini-fullstack-langgraph/FinGenAI)；[以為Google只是簡單放個Demo，哪想到是」開源版”Perplexity！](https://www.53ai.com/news/OpenSourceLLM/2025060431620.html)
+  - 2025-05-30：[WebDancer @ Alibaba](https://www.alphaxiv.org/zh/overview/2505.22648)；[DeepWiki](https://deepwiki.com/Alibaba-NLP/WebAgent)
   - 2025-05-22：[Magentic-UI](https://deepwiki.com/microsoft/magentic-ui)。。。暫不支援使用 Gemini
   - 2025-05-20：[NLWeb](https://deepwiki.com/microsoft/NLWeb)。。。暫不支援使用 Gemini
   - 2025-05-20：[Qwen Web Dev](https://chat.qwen.ai/?inputFeature=web_dev)
@@ -281,7 +282,7 @@ https://huggingface.co/DeepLearning101
   - 2025-05-13：[LocalSite-ai](https://deepwiki.com/weise25/LocalSite-ai)
   - 2025-05-10：[FlowGram](https://github.com/bytedance/flowgram.ai)：[字節跳動把Coze 核心開源了！視覺化工作流程引擎FlowGram 上線](https://mp.weixin.qq.com/s/EOtp8j67G5xd6H0qVfOhcw)；[如何使用](https://deepwiki.com/search/-dify-n8n_a61d08fd-2089-4cf3-9253-3275a54b54fa)
   - 2025-05-10：[DeerFlow](https://github.com/bytedance/deer-flow/blob/main/README_zh.md)：[字節跳動開源DeerFlow - Gemini深度研究的開源平替](https://mp.weixin.qq.com/s/1qcdv1DDmWYnAiwYfWO4XA)；[如何使用](https://deepwiki.com/search/_78a54d18-9132-44eb-920a-98618b505c9f)；[跳動深度研究框架DeerFlow提示字解析](https://mp.weixin.qq.com/s/tvf23_o4jIqVRHfnKVSJZw)
-  - 2025-05-09：[OpenDeepWiki](https://github.com/AIDotNet/OpenDeepWiki)：[開源的DeekWiki加入MCP，輕鬆讓AI掌握開源專案使用文件！](https://mp.weixin.qq.com/s/Ux1-cpXdOSnjBrxCslHjtw)；[如何使用](https://deepwiki.com/search/_f9b90674-c6d9-4999-8a72-49cf28a30dca)
+  - 2025-05-09：[OpenDeepWiki](https://github.com/AIDotNet/OpenDeepWiki)：[開源的DeekWiki加入MCP，輕鬆讓AI掌握開源專案使用文件！](https://mp.weixin.qq.com/s/Ux1-cpXdOSnjBrxCslHjtw)；[如何使用](https://deepwiki.com/search/_f9b90674-c6d9-4999-8a72-49cf28a30dca)；[開源DeepWiki版支援根據現有檔案產生微調資料集](https://zhuanlan.zhihu.com/p/1908831694879985815)
   - 2025-05-07：[AI Manus](https://deepwiki.com/Simpleyyt/ai-manus)
   - 2025-04-27：[Rowboat](https://deepwiki.com/rowboatlabs/rowboat)
   - 2025-04-24：[suna](https://github.com/kortix-ai/suna)：[3週時間，就打造出Manus開源平替！貢獻原始碼，免費用](https://www.jiqizhixin.com/articles/2025-04-23-6)
@@ -295,7 +296,7 @@ https://huggingface.co/DeepLearning101
   - 2025-04-03：[Agent Development Kit (ADK)](https://github.com/google/adk-python)：[谷歌發表「智能體開發工具包」ADK，來嚐個鮮](https://www.53ai.com/news/OpenSourceLLM/2025041012369.html)
   - 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)；[DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
   - 2025-03-30：[DeepGemini](https://github.com/sligter/DeepGemini)：[AI界的'搭積木'神器，10分鐘打造你的專屬智慧團隊！](https://mp.weixin.qq.com/s/F2U7rWOMvfTyiRai-kfL_A)
-  - 2025-03-24：[agenticSeek](https://github.com/Fosowl/agenticSeek)：[又一個“Manus”開源，完全本地化替代品AgenticSeek](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
+  - 2025-03-24：[AgenticSeek](https://github.com/Fosowl/agenticSeek)：[又一個“Manus”開源，完全本地化替代品AgenticSeek](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
   - 2025-03-11：[autoMate](https://github.com/yuruotong1/autoMate)：[autoMate:基於OmniParser 所建構的革命性AI自動化助手](https://mp.weixin.qq.com/s/7W0xL3EBJM9mmNZbdZCiiQ)
   - 2025-03-10：[OWL](https://github.com/camel-ai/owl)：[另一個開源版本的“Manus”](https://mp.weixin.qq.com/s/8jQnE5NPy9nqYHArMUegxw)
   - 2025-03-10：[OpenManus](https://github.com/mannaandpoem/OpenManus)：[一文讀懂：OpenManus](https://zhuanlan.zhihu.com/p/30090038284)
