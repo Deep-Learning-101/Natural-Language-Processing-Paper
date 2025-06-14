@@ -4,64 +4,52 @@ https://www.twman.org/AI/NLP
 https://huggingface.co/DeepLearning101
 #
 
-<details open>
-<summary><strong>手把手帶你一起踩AI坑：https://blog.twman.org/p/deeplearning101.html</strong></summary>
-   
-- [避開 AI Agent 開發陷阱：常見問題、挑戰與解決方案](https://blog.twman.org/2025/03/AIAgent.html)：[淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。](https://deep-learning-101.github.io/agent)
-   - 介紹生成式人工智慧（GenAI）的核心概念，包括大型語言模型（LLM）、提示詞設計（Prompt）、檢索增強生成（RAG）、微調（Fine-Tuning）、功能調用（Function Calling）、工作流程（Workflow）、代理人（Agentic）和多模態（Multimodal）等。
-   - 分享這些技術在實際應用中的經驗，並強調了硬體資源和數據在開發過程中的重要性。
-     
-- [白話文手把手帶你科普 GenAI](https://blog.twman.org/2024/08/LLM.html)：[淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。](https://deep-learning-101.github.io/GenAI)
-   - 介紹生成式人工智慧（GenAI）的核心概念，包括大型語言模型（LLM）、提示詞設計（Prompt）、檢索增強生成（RAG）、微調（Fine-Tuning）、功能調用（Function Calling）、工作流程（Workflow）、代理人（Agentic）和多模態（Multimodal）等。
-   - 分享這些技術在實際應用中的經驗，並強調了硬體資源和數據在開發過程中的重要性。
+---
 
-- [大型語言模型直接就打完收工？](https://blog.twman.org/2024/09/LLM.html)：[回顧 LLM 領域探索歷程，討論硬體升級對 AI 開發的重要性。](https://deep-learning-101.github.io/1010LLM)
-   - 回顧在大型語言模型（LLM）領域的探索歷程，分享了在語音識別、文本分類等多個自然語言處理（NLP）任務中的實踐經驗。
-   - 隨著 LLM 的出現，許多過去需要複雜處理的任務變得更加簡單，並討論了硬體升級對 AI 開發的重要性。
+<details>
+<summary>手把手帶你一起踩 AI 坑</summary>
 
-- [檢索增強生成(RAG)不是萬靈丹之優化挑戰技巧](https://blog.twman.org/2024/07/RAG.html)：[探討 RAG 技術應用與挑戰，提供實用經驗分享和工具建議。](https://deep-learning-101.github.io/RAG)
-   - 探討了檢索增強生成（Retrieval-Augmented Generation, RAG）技術的應用與挑戰，特別是結合知識圖譜的 GraphRAG 方法。 ​
-   - 分享在本地端部署大型語言模型（LLM）的經驗，並強調了硬體資源的重要性。
-   - 還介紹如何有效地將文檔拆分為片段（chunk），並使用嵌入模型和重新排序器（Reranker）來提升檢索結果的準確性。 ​
-   - 提供多種開源工具的推薦，如 Ollama、xinference 和 MinerU，來協助處理 PDF 等非結構化資料。
-   - 文章強調了在實施 RAG 技術時需注意的各種挑戰，並提供了實用的經驗分享和工具建議。
-  
-- [大型語言模型 (LLM) 入門完整指南：原理、應用與未來](https://blog.twman.org/2024/02/LLM.html)：探[討多種 LLM 工具的應用與挑戰，強調硬體資源的重要性。](https://deep-learning-101.github.io/0204LLM)
-   - 探討多種大型語言模型（LLM）工具的應用與挑戰，包括 Ollama、Dify、OpenManus、LangFlow、Flowise、RAGFlow、AnythingLLM、CrewAI 和 AutoGen。
-   - 分享這些工具在實際應用中的經驗，並指出部分工具在穩定性和安裝過程中可能遇到的困難。
-   - 強調了硬體資源在 LLM 開發中的重要性，並提供了硬體升級的建議。       
+<h3><a href="https://blog.twman.org/p/deeplearning101.html" target="_blank">手把手帶你一起踩 AI 坑</a>：<a href="https://www.twman.org/AI" target="_blank">https://www.twman.org/AI</a></h3>
 
-- [什麼是大語言模型，它是什麼？想要嗎？(Large Language Model，LLM)](https://blog.twman.org/2023/04/GPT.html)：[探討 LLM 的發展與應用，強調硬體資源在開發中的關鍵作用。](https://deep-learning-101.github.io/GPU)
-   - 探討大型語言模型（LLM）的發展與應用，特別是 OpenAI 的 GPT-3 和 ChatGPT 的影響力。
-   - 詳細說明了訓練這些模型所需的龐大資源，例如，訓練 GPT-3 模型需要使用 1,024 張 A100 GPU，耗時 24 天。
-   - 強調硬體資源在 LLM 開發中的關鍵作用，並分享了作者在硬體升級方面的經驗。
-     
-- [Diffusion Model 完全解析：從原理、應用到實作 (AI 圖像生成)](https://blog.twman.org/2024/11/diffusion.html)：[深入探討影像生成與分割技術的應用，強調硬體資源的重要性。](https://deep-learning-101.github.io/diffusion)
-   - 深入探討了多種影像生成與分割技術的應用與發展，特別是 ComfyUI、Stable Diffusion、FLUX、Segment Anything Model 2（SAM2）等工具的結合使用。
-   - 分享實際應用中的經驗，並強調了硬體資源在影像處理任務中的重要性。
-   - 介紹了多模態模型的應用，展示了如何同時處理文本、影像等多種數據形式，以提升影像生成與分割的效果。
+<ul>
+  <li>
+    <b><a href="https://blog.twman.org/2025/03/AIAgent.html" target="_blank">避開 AI Agent 開發陷阱：常見問題、挑戰與解決方案</a></b>：<a href="https://deep-learning-101.github.io/agent" target="_blank">探討多種 AI 代理人工具的應用經驗與挑戰，分享實用經驗與工具推薦。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/08/LLM.html" target="_blank">白話文手把手帶你科普 GenAI</a></b>：<a href="https://deep-learning-101.github.io/GenAI" target="_blank">淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/09/LLM.html" target="_blank">大型語言模型直接就打完收工？</a></b>：<a href="https://deep-learning-101.github.io/1010LLM" target="_blank">回顧 LLM 領域探索歷程，討論硬體升級對 AI 開發的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/07/RAG.html" target="_blank">檢索增強生成(RAG)不是萬靈丹之優化挑戰技巧</a></b>：<a href="https://deep-learning-101.github.io/RAG" target="_blank">探討 RAG 技術應用與挑戰，提供實用經驗分享和工具建議。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/02/LLM.html" target="_blank">大型語言模型 (LLM) 入門完整指南：原理、應用與未來</a></b>：<a href="https://deep-learning-101.github.io/0204LLM" target="_blank">探討多種 LLM 工具的應用與挑戰，強調硬體資源的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2023/04/GPT.html" target="_blank">解析探索大型語言模型：模型發展歷史、訓練及微調技術的 VRAM 估算</a></b>：<a href="https://deep-learning-101.github.io/GPU" target="_blank">探討 LLM 的發展與應用，強調硬體資源在開發中的關鍵作用。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/11/diffusion.html" target="_blank">Diffusion Model 完全解析：從原理、應用到實作 (AI 圖像生成)</a></b>；<a href="https://deep-learning-101.github.io/diffusion" target="_blank">深入探討影像生成與分割技術的應用，強調硬體資源的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/02/asr-tts.html" target="_blank">ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策</a></b>：<a href="https://deep-learning-101.github.io/asr-tts" target="_blank">探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2021/04/NLP.html" target="_blank">那些 NLP 踩的坑</a></b>：<a href="https://deep-learning-101.github.io/nlp" target="_blank">分享 NLP 領域的實踐經驗，強調數據質量對模型效果的影響。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2021/04/ASR.html" target="_blank">那些語音處理踩的坑</a></b>：<a href="https://deep-learning-101.github.io/speech" target="_blank">分享語音處理領域的實務經驗，強調資料品質對模型效果的影響。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2020/05/DeepLearning.html" target="_blank">手把手學深度學習安裝環境</a></b>：<a href="https://deep-learning-101.github.io/101" target="_blank">詳細介紹在 Ubuntu 上安裝深度學習環境的步驟，分享實際操作經驗。</a>
+  </li>
+</ul>
 
-- [ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策](https://blog.twman.org/2024/02/asr-tts.html)：[探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性。](https://deep-learning-101.github.io/asr-tts)
-   - 探討了在自動語音識別（ASR）和文本轉語音（TTS）技術應用中可能遇到的問題與解決方案。
-   - 分享在實際商業場景中使用 OpenAI 的 Whisper 模型的經驗，並強調了微調模型以提升中文語音識別效果的重要性。
-   - 文章介紹了多種開源工具，如 faster-whisper、WhisperX 和 BELLE-2，這些工具可用於優化 ASR 和 TTS 的性能。
-   - 強調數據質量在模型訓練中的關鍵作用，並提供了處理和訓練數據的工具與技巧。
-     
-- [那些自然語言處理踩的坑](https://blog.twman.org/2021/04/NLP.html)：[分享 NLP 領域的實踐經驗，強調數據質量對模型效果的影響。](https://deep-learning-101.github.io/nlp)
-   - 分享在自然語言處理（NLP）領域的實踐經驗，涵蓋文本糾錯、文本分類、文本相似度、命名實體識別、文本摘要和機器閱讀理解等應用。
-   - 強調數據質量對模型效果的關鍵影響，並指出在深度學習興起前，已有多種演算法可供使用。
-   - 文章提到 BERT 等模型的出現對 NLP 領域的重大影響，並建議讀者了解相關技術。
-
-- [那些語音處理 (Speech Processing) 踩的坑](https://blog.twman.org/2021/04/ASR.html)：[分享語音處理領域的實務經驗，強調資料品質對模型效果的影響。](https://deep-learning-101.github.io/speech)
-   - 分享在語音處理領域的實務經驗，涵蓋了說話者辨識、語音增強、語音分離等多個面向。
-   - 強調資料品質對模型效果的關鍵影響，並指出在深度學習興起之前，已有多種演算法可供使用。
-   - 文章提到硬體資源在語音處理任務中的重要性，分享了作者在硬體升級的經驗。
-     
-- [手把手帶你學 Pytorch、CUDA、NVIDIA-SMI、cuDNN、Ubuntu、NGC、Docker、NVIDIA-Docker 的安裝與設定](https://blog.twman.org/2020/05/DeepLearning.html)：[詳細介紹在 Ubuntu 上安裝深度學習環境的步驟，分享實際操作經驗。](https://deep-learning-101.github.io/101)
-   - 詳細介紹在 Ubuntu 系統上安裝與配置深度學習環境的步驟，包括 TensorFlow、PyTorch、CUDA、NVIDIA-SMI、cuDNN、NGC、Docker 和 NVIDIA-Docker 等組件。
-   - 分享在實際操作中可能遇到的挑戰與解決方案，並強調硬體資源在深度學習開發中的重要性。
-   - 文章還介紹了作者在硬體升級方面的經驗，展示了從 GIGABYTE GTX 960 4G 到 RTX 6000 Ada 48 GB 等顯卡的演進過程。
 </details>
+
+---
 
 # Natural Language Processing (NLP)
 
@@ -195,18 +183,43 @@ https://huggingface.co/DeepLearning101
 | Grok | grok-3 | $3.00 | $15.00 | 131k | ✅ | 不公開 | ❌ | 支援思考模式、有限搜尋功能 | [Grok 官網](https://grok.com/) |
 | 百度 | 文心一言（ERNIE Bot） | 不公開（免費使用） | 不公開（免費使用） | 不公開 | ✅ | 不公開 | ✅（圖像/語音） | 支援中文語境與多模態任務 | [文心一言](https://yiyan.baidu.com/X1) |
 
+---
+
 - [**AlpacaEval Leaderboard**](https://tatsu-lab.github.io/alpaca_eval/)
 - [**Open LLM Leaderboard**](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 - [**Big Code Models Leaderboard**](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)
+---
 - [**Awesome-Chinese-LLM**](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
-- [人工智慧大語言模型微調技術：SFT 監督微調、LoRA 微調方法、P-tuning v2 微調方法、Freeze 監督微調方法](https://zhuanlan.zhihu.com/p/643941480)
-- [【LLM】從零開始訓練大模型](https://zhuanlan.zhihu.com/p/636270877)
+---
 - [大模型所需GPU 記憶體筆記](https://mp.weixin.qq.com/s/M_hdtR7mVq14MnaaL0MAUw)
-- [不同參數規模大語言模型在不同微調方法下所需的顯存總結](https://www.datalearner.com/blog/1051703254378255)
+- [不同參數規模大語言模型在不同微調方法下所需的顯存總結](https://www.datalearner.com/blog/1051703254378255)  
+---
+- [人工智慧大語言模型微調技術：SFT 監督微調、LoRA 微調方法、P-tuning v2 微調方法、Freeze 監督微調方法](https://zhuanlan.zhihu.com/p/643941480)
+- [LoRA、完全微調到底有何不同？ MIT 21頁論文講懂了](https://www.jiqizhixin.com/articles/2024-11-11-5)  
+- [大模型微調（Fine-tuning）全解，需要了解的都在這裡](https://www.53ai.com/news/finetuning/2025022604125.html)
+- [初學者必看大模型微調指南：Unsloth官方微調技巧大公開！](https://mp.weixin.qq.com/s/COZfH_h36nX33TZGBVn0rg)
+- [零代碼！一站式完整資料集準備到模型微調全流程！](https://zhuanlan.zhihu.com/p/1906670241645322809)
+- [把你的De​​ePseek-R1 微調為某個領域的專家？](https://zhuanlan.zhihu.com/p/25054526736)
+- [使用 NVIDIA NeMo 框架進行 LLM 模型剪枝和知識蒸餾](https://developer.nvidia.com/zh-cn/blog/llm-model-pruning-and-knowledge-distillation-with-nvidia-nemo-framework/)
+- [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory)：https://huggingface.co/spaces/hiyouga/LLaMA-Board
+   - [官方 README_zh.md](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
+   - 2024-09-13：[解析Llama-Factory：從微調到推理的架構](https://mp.weixin.qq.com/s/eJqKc_2nHBYzDFAp2AYdWQ)
+   - [單卡3 小時訓練專屬大模型Agent：基於LLaMA Factory 實戰](https://zhuanlan.zhihu.com/p/678989191)  
+- torchtune：[https://github.com/pytorch/torchtune](https://github.com/pytorch/torchtune)
+   - [https://pytorch.dev.org.tw/torchtune/stable/index.html](https://pytorch.dev.org.tw/torchtune/stable/index.html)
+   - [使用知識蒸餾將Llama3.1 8B 蒸餾到Llama3.2 1B](https://pytorch.ac.cn/torchtune/stable/tutorials/llama_kd_tutorial.html)  
+---
+- [微調特定領域的大模型，資料集究竟要怎麼搞？](https://zhuanlan.zhihu.com/p/29522986573)
+- [LLaMA Factory 微調教學：如何建立高品質資料集](https://zhuanlan.zhihu.com/p/1916489160333714285)
+- [大模型微調資料集生產工具 Easy Dataset](https://zhuanlan.zhihu.com/p/1908313086064042177)
+- [開源DeepWiki版支援根據現有檔案產生微調資料集](https://zhuanlan.zhihu.com/p/1908831694879985815)
+- [零一萬物發布COIG-CQIA：高品質且符合人類互動行為的中文指令微調數據](https://zhuanlan.zhihu.com/p/694434197)
+---
 - [AI Search Has A Citation Problem](https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php)
 - [AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges](https://www.alphaxiv.org/abs/2505.10468)
 - [OWASP Agentic AI – Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/)
 
+---
 
 |  Tool 名稱 | 功能範疇 | 集成能力 | 適用場景 | 建議選擇 | 知識庫技術 |
 |------------------|----------|----------|----------|----------|------------|
@@ -223,139 +236,134 @@ https://huggingface.co/DeepLearning101
 
 **工具**
 
-  - [LoRA、完全微調到底有何不同？ MIT 21頁論文講懂了](https://www.jiqizhixin.com/articles/2024-11-11-5)
-  - torchtune：[https://github.com/pytorch/torchtune](https://github.com/pytorch/torchtune)
-     - [https://pytorch.dev.org.tw/torchtune/stable/index.html](https://pytorch.dev.org.tw/torchtune/stable/index.html)
-     - [使用知識蒸餾將Llama3.1 8B 蒸餾到Llama3.2 1B](https://pytorch.ac.cn/torchtune/stable/tutorials/llama_kd_tutorial.html)
-  - [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory)：https://huggingface.co/spaces/hiyouga/LLaMA-Board
-     - [官方 README_zh.md](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
-     - 2024-09-13：[解析Llama-Factory：從微調到推理的架構](https://mp.weixin.qq.com/s/eJqKc_2nHBYzDFAp2AYdWQ)
-     - [單卡3 小時訓練專屬大模型Agent：基於LLaMA Factory 實戰](https://zhuanlan.zhihu.com/p/678989191)
-  - [PyMuPDF ](https://github.com/pymupdf/PyMuPDF)：[PyMuPDF的安裝與使用](https://zhuanlan.zhihu.com/p/517737462)
-  - MCP
-     - 2025-04-15：[automcp](https://github.com/NapthaAI/automcp)：[將任何代理、工具或編排器秒設定 MCP 伺服器](https://mp.weixin.qq.com/s/x-aZEhtnRYPFno81Fb9ttw)
-     - 2025-04-10：[line-bot-mcp-server](https://github.com/line/line-bot-mcp-server)
-     - 2025-04-05：[GitMCP](https://github.com/idosal/git-mcp)：[GitMCP 太神了！一行URL 讓AI 秒懂你的GitHub 項目](https://www.53ai.com/news/RAG/2025040590146.html)
-     - 2025-03-14：[playwright-mcp](https://github.com/microsoft/playwright-mcp)：[MCP-Playwright：AI自動化神器](https://zhuanlan.zhihu.com/p/30178146112)   
-  - [browser-use](https://github.com/browser-use/browser-use)
-     - 2025-04-16：[browser-use/web-ui](https://github.com/browser-use/web-ui)；[如何使用](https://deepwiki.com/search/_bfd33aa8-cd79-4f1d-a1e8-5620d4374329)
-     - 2025-03-28：[browser-use-webui](https://github.com/browser-use/web-ui)
-     - 2025-02-16：[browser use webui部署（實現瀏覽器自動化）](https://zhuanlan.zhihu.com/p/24116360552)
-     - 2025-01-23：[Browser Use – 讓AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
-  - 2025-06-06：[daily-arXiv-ai-enhanced](https://github.com/dw-dengwei/daily-arXiv-ai-enhanced)：每日自動爬取arXiv論文並以LLM產生中文摘要
-  - 2025-05-22：[AingDesk](https://deepwiki.com/aingdesk/AingDesk)；[AingDesk：零门槛本地 AI 部署](https://zhuanlan.zhihu.com/p/29773848356)       
-  - 2025-05-20：[news-agents](https://deepwiki.com/eugeneyan/news-agents)
-  - 2025-05-16：[Follow](https://deepwiki.com/RSSNext/Folo)；[連續登頂GitHub 的資訊聚合神器：Follow，讓你不再錯過任何重要資訊！](https://zhuanlan.zhihu.com/p/1906505020628795653)
-  - 2025-05-11：[SurfSense](https://github.com/MODSetter/SurfSense)：[GitHub 開源專案 打通Notion、GitHub、搜尋引擎的AI超腦](https://mp.weixin.qq.com/s/kMhidgb6GkKEsl-D-u_7iw)，[如何使用](https://deepwiki.com/search/_df4a192b-a253-4155-a2a2-4a6fda9037e9)
-  - 2025-04-28：[PaperCoder](https://deepwiki.com/going-doer/Paper2Code)；[Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning](https://www.alphaxiv.org/overview/2504.17192)；[PaperCoder：利用大型語言模型自動產生機器學習論文程式碼的框架](https://zhuanlan.zhihu.com/p/1904836236419528333)
-  - 2025-04-16：[OneFileLLM](https://github.com/jimmc414/onefilellm)：[這個開源神器終結了AI資料整合的惡夢！一鍵聚合網頁、程式碼、論文到剪貼簿！](https://mp.weixin.qq.com/s/qNYX65fw-IWzEBLZpuaY6Q)
-  - 2025-04-16：[ScrapeGraphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai)：[ScrapeGraphAI －自然語言驅動的智慧爬蟲革命！](https://mp.weixin.qq.com/s/lQukAy12V5K1cH6rTkqxaA)
-  - 2025-04-15：[stagehand](https://github.com/browserbase/stagehand)：[Stagehand：AI驅動的下一代瀏覽器自動化框架](https://mp.weixin.qq.com/s/KF-z67kn4rTjcIBmTvj3nA)
-  - 2025-04-11：[nanobrowser](https://github.com/nanobrowser/nanobrowser)：[AI 驅動的瀏覽器自動化神器](https://mp.weixin.qq.com/s/65SwCtDta1cKvx1_BbaoHQ)
-  - 2025-04-10：[DevDocs](https://github.com/cyberagiinc/DevDocs)：[開發者的文檔收割機來了！這個開源工具讓你一小時幹完一週的活！](https://mp.weixin.qq.com/s/k5fG_L1q_19ylKIJD6PXmw)
-  - 2025-04-06：[sqlchat](https://github.com/sqlchat/sqlchat)：[這款開源神器讓資料庫管理像聊天一樣簡單！](https://mp.weixin.qq.com/s/kieSzWn3QDYvZ5Zx35hr1A)
-  - 2025-03-26：[pdf-craft](https://github.com/oomol-lab/pdf-craft)：[PDF秒轉Markdown/EPUB](https://zhuanlan.zhihu.com/p/1888288260171744707)
-  - 2025-03-12：[AingDesk](https://deepwiki.com/aingdesk/AingDesk)；[零門檻本地AI 部署，DeepSeek、Llama 一鍵直達！](https://zhuanlan.zhihu.com/p/29773848356)    
-  - 2025-03-08：[composio](https://github.com/ComposioHQ/composio)：[AI助理效率神器！ Composio幫你輕鬆整合200+工具](https://mp.weixin.qq.com/s/rRPOmihGzcIXx0HQc3pdoA)
-  - 2025-02-25：[PySpur](https://www.pyspur.dev/)：[拖曳式開發AI工作流程！這款開源神器，讓LangChain也黯然失色！](https://zhuanlan.zhihu.com/p/26161709083)    
-  - 2025-01-13：[DocAligner](https://github.com/ZZZHANG-jx/DocAligner)：[拍照文件復原：校正扭曲、光照陰暗、版面定位](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
-  - 2025-01-07：[activepieces](https://github.com/activepieces/activepieces)：[一個開源的AI自動化工作流程工具](https://mp.weixin.qq.com/s/Z17KtGyAH5YI4R-VY1fgng)
-  - 2024-12-15：[markitdown](https://github.com/microsoft/markitdown)
-  - 2024-11-21： [IBM開源一站式文件解析工具！輕鬆解析PDF、PPT、圖片及網頁等多種格式文檔](https://mp.weixin.qq.com/s/jTqFm5WzmitaxpyKowiBSA)
-     - [Docling](https://github.com/DS4SD/docling)：[IBM 最新開源文件處理利器，完美整合 LLM 應用](https://most.tw/posts/ainews/introducedocling202411/)
+---
+- MCP
+   - 2025-04-15：[automcp](https://github.com/NapthaAI/automcp)：[將任何代理、工具或編排器秒設定 MCP 伺服器](https://mp.weixin.qq.com/s/x-aZEhtnRYPFno81Fb9ttw)
+   - 2025-04-10：[line-bot-mcp-server](https://github.com/line/line-bot-mcp-server)
+   - 2025-04-05：[GitMCP](https://github.com/idosal/git-mcp)：[GitMCP 太神了！一行URL 讓AI 秒懂你的GitHub 項目](https://www.53ai.com/news/RAG/2025040590146.html)
+   - 2025-03-14：[playwright-mcp](https://github.com/microsoft/playwright-mcp)：[MCP-Playwright：AI自動化神器](https://zhuanlan.zhihu.com/p/30178146112)   
+- [Browser-use](https://github.com/browser-use/browser-use)
+   - 2025-04-16：[browser-use/web-ui](https://github.com/browser-use/web-ui)；[如何使用](https://deepwiki.com/search/_bfd33aa8-cd79-4f1d-a1e8-5620d4374329)
+   - 2025-03-28：[browser-use-webui](https://github.com/browser-use/web-ui)
+   - 2025-02-16：[browser use webui部署（實現瀏覽器自動化）](https://zhuanlan.zhihu.com/p/24116360552)
+   - 2025-01-23：[Browser Use – 讓AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
+---     
+- 2025-06-10：[Agentic-Doc](https://github.com/landing-ai/agentic-doc)；[LandingAI開源神器，這個Python庫讓百頁文檔秒變結構化資料！](https://zhuanlan.zhihu.com/p/1914259475306612709)
+- 2025-06-06：[daily-arXiv-ai-enhanced](https://github.com/dw-dengwei/daily-arXiv-ai-enhanced)：每日自動爬取arXiv論文並以LLM產生中文摘要
+- 2025-05-22：[AingDesk](https://deepwiki.com/aingdesk/AingDesk)；[AingDesk：零门槛本地 AI 部署](https://zhuanlan.zhihu.com/p/29773848356)       
+- 2025-05-20：[news-agents](https://deepwiki.com/eugeneyan/news-agents)
+- 2025-05-16：[Follow](https://deepwiki.com/RSSNext/Folo)；[連續登頂GitHub 的資訊聚合神器：Follow，讓你不再錯過任何重要資訊！](https://zhuanlan.zhihu.com/p/1906505020628795653)
+- 2025-05-11：[SurfSense](https://github.com/MODSetter/SurfSense)：[GitHub 開源專案 打通Notion、GitHub、搜尋引擎的AI超腦](https://mp.weixin.qq.com/s/kMhidgb6GkKEsl-D-u_7iw)，[如何使用](https://deepwiki.com/search/_df4a192b-a253-4155-a2a2-4a6fda9037e9)
+- 2025-04-28：[PaperCoder](https://deepwiki.com/going-doer/Paper2Code)；[Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning](https://www.alphaxiv.org/overview/2504.17192)；[PaperCoder：利用大型語言模型自動產生機器學習論文程式碼的框架](https://zhuanlan.zhihu.com/p/1904836236419528333)
+- 2025-04-16：[OneFileLLM](https://github.com/jimmc414/onefilellm)：[這個開源神器終結了AI資料整合的惡夢！一鍵聚合網頁、程式碼、論文到剪貼簿！](https://mp.weixin.qq.com/s/qNYX65fw-IWzEBLZpuaY6Q)
+- 2025-04-16：[ScrapeGraphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai)：[ScrapeGraphAI －自然語言驅動的智慧爬蟲革命！](https://mp.weixin.qq.com/s/lQukAy12V5K1cH6rTkqxaA)
+- 2025-04-15：[stagehand](https://github.com/browserbase/stagehand)：[Stagehand：AI驅動的下一代瀏覽器自動化框架](https://mp.weixin.qq.com/s/KF-z67kn4rTjcIBmTvj3nA)
+- 2025-04-11：[nanobrowser](https://github.com/nanobrowser/nanobrowser)：[AI 驅動的瀏覽器自動化神器](https://mp.weixin.qq.com/s/65SwCtDta1cKvx1_BbaoHQ)
+- 2025-04-10：[DevDocs](https://github.com/cyberagiinc/DevDocs)：[開發者的文檔收割機來了！這個開源工具讓你一小時幹完一週的活！](https://mp.weixin.qq.com/s/k5fG_L1q_19ylKIJD6PXmw)
+- 2025-04-06：[sqlchat](https://github.com/sqlchat/sqlchat)：[這款開源神器讓資料庫管理像聊天一樣簡單！](https://mp.weixin.qq.com/s/kieSzWn3QDYvZ5Zx35hr1A)
+- 2025-03-26：[pdf-craft](https://github.com/oomol-lab/pdf-craft)：[PDF秒轉Markdown/EPUB](https://zhuanlan.zhihu.com/p/1888288260171744707)
+- 2025-03-12：[AingDesk](https://deepwiki.com/aingdesk/AingDesk)；[零門檻本地AI 部署，DeepSeek、Llama 一鍵直達！](https://zhuanlan.zhihu.com/p/29773848356)    
+- 2025-03-08：[composio](https://github.com/ComposioHQ/composio)：[AI助理效率神器！ Composio幫你輕鬆整合200+工具](https://mp.weixin.qq.com/s/rRPOmihGzcIXx0HQc3pdoA)
+- 2025-02-25：[PySpur](https://www.pyspur.dev/)：[拖曳式開發AI工作流程！這款開源神器，讓LangChain也黯然失色！](https://zhuanlan.zhihu.com/p/26161709083)    
+- 2025-01-13：[DocAligner](https://github.com/ZZZHANG-jx/DocAligner)：[拍照文件復原：校正扭曲、光照陰暗、版面定位](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
+- 2025-01-07：[activepieces](https://github.com/activepieces/activepieces)：[一個開源的AI自動化工作流程工具](https://mp.weixin.qq.com/s/Z17KtGyAH5YI4R-VY1fgng)
+- 2024-12-15：[markitdown](https://github.com/microsoft/markitdown)
 
- **[AI Agent 開源框架](https://blog.twman.org/2025/03/AIAgent.html)**
+**[AI Agent 開源框架](https://deep-learning-101.github.io/agent)**
 
-  - [從AI Agent到Agent工作流程，一文詳細了解代理程式工作流程](https://zhuanlan.zhihu.com/p/32491596217)
-  - [萬字長文，帶你綜觀大模型Agent，涉及研究痛點、應用場景、發展方向](https://zhuanlan.zhihu.com/p/29833831482)
-  - [什麼是「Agentic 工作流程」？](https://zhuanlan.zhihu.com/p/32709535995)
-  - [什麼是Agentic AI？什麼是Agentic Workflow？與AI Agent有什麼區別和關聯？](https://zhuanlan.zhihu.com/p/705935464)
-  - [FinRobot](https://www.alphaxiv.org/zh/overview/2405.14767)；[DeepWiki](https://deepwiki.com/AI4Finance-Foundation/FinRobot)；可支援 Gemini-2.5-Pro-preview-05-06，基於 AutoGen    
-  - [Jupyter-AI](https://deepwiki.com/jupyterlab/jupyter-ai)；可支援 Gemini-2.5-Pro-preview-05-06
-  - 2025-06-03：[Gemini Fullstack LangGraph](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart)；[DEMO](https://deep-learning-101.github.io/gemini-fullstack-langgraph/FinGenAI)；[以為Google只是簡單放個Demo，哪想到是」開源版”Perplexity！](https://www.53ai.com/news/OpenSourceLLM/2025060431620.html)
-  - 2025-05-30：[WebDancer @ Alibaba](https://www.alphaxiv.org/zh/overview/2505.22648)；[DeepWiki](https://deepwiki.com/Alibaba-NLP/WebAgent)
-  - 2025-05-22：[Magentic-UI](https://deepwiki.com/microsoft/magentic-ui)。。。暫不支援使用 Gemini
-  - 2025-05-20：[NLWeb](https://deepwiki.com/microsoft/NLWeb)。。。暫不支援使用 Gemini
-  - 2025-05-20：[Qwen Web Dev](https://chat.qwen.ai/?inputFeature=web_dev)
-  - 2025-05-18：[Agent-Squad](https://deepwiki.com/awslabs/agent-squad)；[輕量級開源AI多智能體框架！智慧路由+上下文管理，前後端介面支援！](https://mp.weixin.qq.com/s/5Y23EhpHb2_pBOY8XrkMNw)
-  - 2025-05-17：[Open Agent Platform](https://deepwiki.com/langchain-ai/open-agent-platform)
-  - 2025-05-13：[LocalSite-ai](https://deepwiki.com/weise25/LocalSite-ai)
-  - 2025-05-10：[FlowGram](https://github.com/bytedance/flowgram.ai)：[字節跳動把Coze 核心開源了！視覺化工作流程引擎FlowGram 上線](https://mp.weixin.qq.com/s/EOtp8j67G5xd6H0qVfOhcw)；[如何使用](https://deepwiki.com/search/-dify-n8n_a61d08fd-2089-4cf3-9253-3275a54b54fa)
-  - 2025-05-10：[DeerFlow](https://github.com/bytedance/deer-flow/blob/main/README_zh.md)：[字節跳動開源DeerFlow - Gemini深度研究的開源平替](https://mp.weixin.qq.com/s/1qcdv1DDmWYnAiwYfWO4XA)；[如何使用](https://deepwiki.com/search/_78a54d18-9132-44eb-920a-98618b505c9f)；[跳動深度研究框架DeerFlow提示字解析](https://mp.weixin.qq.com/s/tvf23_o4jIqVRHfnKVSJZw)
-  - 2025-05-09：[OpenDeepWiki](https://github.com/AIDotNet/OpenDeepWiki)：[開源的DeekWiki加入MCP，輕鬆讓AI掌握開源專案使用文件！](https://mp.weixin.qq.com/s/Ux1-cpXdOSnjBrxCslHjtw)；[如何使用](https://deepwiki.com/search/_f9b90674-c6d9-4999-8a72-49cf28a30dca)；[開源DeepWiki版支援根據現有檔案產生微調資料集](https://zhuanlan.zhihu.com/p/1908831694879985815)
-  - 2025-05-07：[AI Manus](https://deepwiki.com/Simpleyyt/ai-manus)
-  - 2025-04-27：[Rowboat](https://deepwiki.com/rowboatlabs/rowboat)
-  - 2025-04-24：[suna](https://github.com/kortix-ai/suna)：[3週時間，就打造出Manus開源平替！貢獻原始碼，免費用](https://www.jiqizhixin.com/articles/2025-04-23-6)
-  - 2025-04-22：[釦子空間 (Coze Space)](https://space.coze.cn/)：[字節版Manus 釦子空間來了！實測效果絕佳，但還有3 個問題](https://zhuanlan.zhihu.com/p/1896900788091090915)
-  - 2025-04-18：[cooragent](https://deepwiki.com/LeapLabTHU/cooragent)
-  - 2025-04-14：[DroidRun](https://www.droidrun.ai/)：[AI也能操作手機了！ DroidRun 讓Agent 實現智慧型手機自動化操作！](https://zhuanlan.zhihu.com/p/1895048285405819071)
-  - 2025-04-14：[MDocAgent](https://github.com/aiming-lab/MDocAgent)：[Adobe首發多Agent、跨模態框架MDocAgent：複雜文件理解效能爆炸12%，錯誤率直降21%](https://www.51cto.com/aigc/5029.html)
-  - 2025-04-08：[CortexON](https://github.com/TheAgenticAI/CortexON)：[CortexON：開源通用AI Agent，另一個取代Manus產品](https://mp.weixin.qq.com/s/G4gzlzpwlnfGD4AdbYBwjQ) **(只支援 Anthropic ?)**
-  - 2025-04-08：[oliva](https://github.com/Deluxer/oliva)：[Oliva：一個多智能體，開源語音RAG 助手](https://mp.weixin.qq.com/s/hzhsPz8pdwngysg2YxDs-w)
-  - 2025-04-03：[AutoAgent](https://github.com/HKUDS/AutoAgent)：[一句話全自動創建AI智能體，港大AutoAgent打造開源最強Deep Research](https://mp.weixin.qq.com/s/oATCuzI4BJ6JcwJkazinCA)
-  - 2025-04-03：[Agent Development Kit (ADK)](https://github.com/google/adk-python)：[谷歌發表「智能體開發工具包」ADK，來嚐個鮮](https://www.53ai.com/news/OpenSourceLLM/2025041012369.html)
-  - 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)；[DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
-  - 2025-03-30：[DeepGemini](https://github.com/sligter/DeepGemini)：[AI界的'搭積木'神器，10分鐘打造你的專屬智慧團隊！](https://mp.weixin.qq.com/s/F2U7rWOMvfTyiRai-kfL_A)
-  - 2025-03-24：[AgenticSeek](https://github.com/Fosowl/agenticSeek)：[又一個“Manus”開源，完全本地化替代品AgenticSeek](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
-  - 2025-03-11：[autoMate](https://github.com/yuruotong1/autoMate)：[autoMate:基於OmniParser 所建構的革命性AI自動化助手](https://mp.weixin.qq.com/s/7W0xL3EBJM9mmNZbdZCiiQ)
-  - 2025-03-10：[OWL](https://github.com/camel-ai/owl)：[另一個開源版本的“Manus”](https://mp.weixin.qq.com/s/8jQnE5NPy9nqYHArMUegxw)
-  - 2025-03-10：[OpenManus](https://github.com/mannaandpoem/OpenManus)：[一文讀懂：OpenManus](https://zhuanlan.zhihu.com/p/30090038284)
-  - 2024-02-01：[MobileAgent](https://github.com/X-PLUG/MobileAgent/blob/main/README_zh.md)：[一句指示幫你操作手機，最新多模態手機助理Mobile-Agent來了！](https://zhuanlan.zhihu.com/p/680871671)
-  - 2025-01-23：[Upsonic](https://github.com/Upsonic/Upsonic)：[5.9K Star！全能高效的AI代理框架，打造企業級AI電腦助手，辦公任務一鍵完成！](https://www.53ai.com/news/zhinengyingjian/2025012363519.html)     
-  - 2025-01-21：[UI-TARS](https://github.com/bytedance/UI-TARS)：[端對端GUI Agent：UI-TARS 如何以純視覺驅動GUI 自動化](https://zhuanlan.zhihu.com/p/20352074884)
-  - 2025-01-03：[smolagents](https://github.com/huggingface/smolagents)：[新年禮物，Huggingface捲了一個Agent專案開源](https://blog.csdn.net/m0_59163425/article/details/144917058)
-  - 2024-09-23：[STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking](https://github.com/stanford-oval/storm)；[STORM：一个基于LLM的知识整理系统](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
-  - 2024-10-26：[OmniParser](https://github.com/microsoft/OmniParser)；[控制電腦手機的智慧體人人都能造，微軟開源OmniParser](https://zhuanlan.zhihu.com/p/3343331861) 
+---
+- [從AI Agent到Agent工作流程，一文詳細了解代理程式工作流程](https://zhuanlan.zhihu.com/p/32491596217)
+- [萬字長文，帶你綜觀大模型Agent，涉及研究痛點、應用場景、發展方向](https://zhuanlan.zhihu.com/p/29833831482)
+- [什麼是「Agentic 工作流程」？](https://zhuanlan.zhihu.com/p/32709535995)
+- [什麼是Agentic AI？什麼是Agentic Workflow？與AI Agent有什麼區別和關聯？](https://zhuanlan.zhihu.com/p/705935464)
+- [FinRobot](https://www.alphaxiv.org/zh/overview/2405.14767)；[DeepWiki](https://deepwiki.com/AI4Finance-Foundation/FinRobot)；可支援 Gemini-2.5-Pro-preview-05-06，基於 AutoGen    
+- [Jupyter-AI](https://deepwiki.com/jupyterlab/jupyter-ai)；可支援 Gemini-2.5-Pro-preview-05-06
+---
+- 2025-06-03：[Gemini Fullstack LangGraph](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart)；[DEMO](https://deep-learning-101.github.io/gemini-fullstack-langgraph/FinGenAI)；[以為Google只是簡單放個Demo，哪想到是」開源版”Perplexity！](https://www.53ai.com/news/OpenSourceLLM/2025060431620.html)
+- 2025-05-30：[WebDancer @ Alibaba](https://www.alphaxiv.org/zh/overview/2505.22648)；[DeepWiki](https://deepwiki.com/Alibaba-NLP/WebAgent)
+- 2025-05-22：[Magentic-UI](https://deepwiki.com/microsoft/magentic-ui)。。。暫不支援使用 Gemini
+- 2025-05-20：[NLWeb](https://deepwiki.com/microsoft/NLWeb)。。。暫不支援使用 Gemini
+- 2025-05-20：[Qwen Web Dev](https://chat.qwen.ai/?inputFeature=web_dev)
+- 2025-05-18：[Agent-Squad](https://deepwiki.com/awslabs/agent-squad)；[輕量級開源AI多智能體框架！智慧路由+上下文管理，前後端介面支援！](https://mp.weixin.qq.com/s/5Y23EhpHb2_pBOY8XrkMNw)
+- 2025-05-17：[Open Agent Platform](https://deepwiki.com/langchain-ai/open-agent-platform)
+- 2025-05-13：[LocalSite-ai](https://deepwiki.com/weise25/LocalSite-ai)
+- 2025-05-10：[FlowGram](https://github.com/bytedance/flowgram.ai)：[字節跳動把Coze 核心開源了！視覺化工作流程引擎FlowGram 上線](https://mp.weixin.qq.com/s/EOtp8j67G5xd6H0qVfOhcw)；[如何使用](https://deepwiki.com/search/-dify-n8n_a61d08fd-2089-4cf3-9253-3275a54b54fa)
+- 2025-05-10：[DeerFlow](https://github.com/bytedance/deer-flow/blob/main/README_zh.md)：[字節跳動開源DeerFlow - Gemini深度研究的開源平替](https://mp.weixin.qq.com/s/1qcdv1DDmWYnAiwYfWO4XA)；[如何使用](https://deepwiki.com/search/_78a54d18-9132-44eb-920a-98618b505c9f)；[跳動深度研究框架DeerFlow提示字解析](https://mp.weixin.qq.com/s/tvf23_o4jIqVRHfnKVSJZw)
+- 2025-05-09：[OpenDeepWiki](https://github.com/AIDotNet/OpenDeepWiki)：[開源的DeekWiki加入MCP，輕鬆讓AI掌握開源專案使用文件！](https://mp.weixin.qq.com/s/Ux1-cpXdOSnjBrxCslHjtw)；[如何使用](https://deepwiki.com/search/_f9b90674-c6d9-4999-8a72-49cf28a30dca)；[開源DeepWiki版支援根據現有檔案產生微調資料集](https://zhuanlan.zhihu.com/p/1908831694879985815)
+- 2025-05-07：[AI Manus](https://deepwiki.com/Simpleyyt/ai-manus)
+- 2025-04-27：[Rowboat](https://deepwiki.com/rowboatlabs/rowboat)
+- 2025-04-24：[suna](https://github.com/kortix-ai/suna)：[3週時間，就打造出Manus開源平替！貢獻原始碼，免費用](https://www.jiqizhixin.com/articles/2025-04-23-6)
+- 2025-04-22：[釦子空間 (Coze Space)](https://space.coze.cn/)：[字節版Manus 釦子空間來了！實測效果絕佳，但還有3 個問題](https://zhuanlan.zhihu.com/p/1896900788091090915)
+- 2025-04-18：[cooragent](https://deepwiki.com/LeapLabTHU/cooragent)
+- 2025-04-14：[DroidRun](https://www.droidrun.ai/)：[AI也能操作手機了！ DroidRun 讓Agent 實現智慧型手機自動化操作！](https://zhuanlan.zhihu.com/p/1895048285405819071)
+- 2025-04-14：[MDocAgent](https://github.com/aiming-lab/MDocAgent)：[Adobe首發多Agent、跨模態框架MDocAgent：複雜文件理解效能爆炸12%，錯誤率直降21%](https://www.51cto.com/aigc/5029.html)
+- 2025-04-08：[CortexON](https://github.com/TheAgenticAI/CortexON)：[CortexON：開源通用AI Agent，另一個取代Manus產品](https://mp.weixin.qq.com/s/G4gzlzpwlnfGD4AdbYBwjQ) **(只支援 Anthropic ?)**
+- 2025-04-08：[oliva](https://github.com/Deluxer/oliva)：[Oliva：一個多智能體，開源語音RAG 助手](https://mp.weixin.qq.com/s/hzhsPz8pdwngysg2YxDs-w)
+- 2025-04-03：[AutoAgent](https://github.com/HKUDS/AutoAgent)：[一句話全自動創建AI智能體，港大AutoAgent打造開源最強Deep Research](https://mp.weixin.qq.com/s/oATCuzI4BJ6JcwJkazinCA)
+- 2025-04-03：[Agent Development Kit (ADK)](https://github.com/google/adk-python)：[谷歌發表「智能體開發工具包」ADK，來嚐個鮮](https://www.53ai.com/news/OpenSourceLLM/2025041012369.html)
+- 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)；[DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
+- 2025-03-30：[DeepGemini](https://github.com/sligter/DeepGemini)：[AI界的'搭積木'神器，10分鐘打造你的專屬智慧團隊！](https://mp.weixin.qq.com/s/F2U7rWOMvfTyiRai-kfL_A)
+- 2025-03-24：[AgenticSeek](https://github.com/Fosowl/agenticSeek)：[又一個“Manus”開源，完全本地化替代品AgenticSeek](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
+- 2025-03-11：[autoMate](https://github.com/yuruotong1/autoMate)：[autoMate:基於OmniParser 所建構的革命性AI自動化助手](https://mp.weixin.qq.com/s/7W0xL3EBJM9mmNZbdZCiiQ)
+- 2025-03-10：[OWL](https://github.com/camel-ai/owl)：[另一個開源版本的“Manus”](https://mp.weixin.qq.com/s/8jQnE5NPy9nqYHArMUegxw)
+- 2025-03-10：[OpenManus](https://github.com/mannaandpoem/OpenManus)：[一文讀懂：OpenManus](https://zhuanlan.zhihu.com/p/30090038284)
+- 2024-02-01：[MobileAgent](https://github.com/X-PLUG/MobileAgent/blob/main/README_zh.md)：[一句指示幫你操作手機，最新多模態手機助理Mobile-Agent來了！](https://zhuanlan.zhihu.com/p/680871671)
+- 2025-01-23：[Upsonic](https://github.com/Upsonic/Upsonic)：[5.9K Star！全能高效的AI代理框架，打造企業級AI電腦助手，辦公任務一鍵完成！](https://www.53ai.com/news/zhinengyingjian/2025012363519.html)     
+- 2025-01-21：[UI-TARS](https://github.com/bytedance/UI-TARS)：[端對端GUI Agent：UI-TARS 如何以純視覺驅動GUI 自動化](https://zhuanlan.zhihu.com/p/20352074884)
+- 2025-01-03：[smolagents](https://github.com/huggingface/smolagents)：[新年禮物，Huggingface捲了一個Agent專案開源](https://blog.csdn.net/m0_59163425/article/details/144917058)
+- 2024-09-23：[STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking](https://github.com/stanford-oval/storm)；[STORM：一个基于LLM的知识整理系统](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
+- 2024-10-26：[OmniParser](https://github.com/microsoft/OmniParser)；[控制電腦手機的智慧體人人都能造，微軟開源OmniParser](https://zhuanlan.zhihu.com/p/3343331861) 
 
 
 **混合專家(Mixture of Experts, MoE)模型**
 
-  - 2024-12-13：[DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2)：[DeepSeek-VL2開源，VLM邁入MoE時代](https://mp.weixin.qq.com/s/s832KUgixNuX4GUkvY7_Ag)，[DeepSeek-VL2 先進視覺語言模型，在多模態理解方面取得了顯著進展](https://mp.weixin.qq.com/s/p6r_b-k4UnSJED5cBTedZg)
-  - [騰訊混元](https://github.com/Tencent/Hunyuan-Large)：[騰訊混元又來開源，一出手就是最大MoE大模型](https://www.jiqizhixin.com/articles/2024-11-06-6)
-     - 2024-11-06： [DEMO](https://huggingface.co/spaces/tencent/Hunyuan-Large)
-     - 2024-11-06：[MODEL](https://huggingface.co/tencent/Hunyuan-Large)
+- 2024-12-13：[DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2)：[DeepSeek-VL2開源，VLM邁入MoE時代](https://mp.weixin.qq.com/s/s832KUgixNuX4GUkvY7_Ag)，[DeepSeek-VL2 先進視覺語言模型，在多模態理解方面取得了顯著進展](https://mp.weixin.qq.com/s/p6r_b-k4UnSJED5cBTedZg)
+- [騰訊混元](https://github.com/Tencent/Hunyuan-Large)：[騰訊混元又來開源，一出手就是最大MoE大模型](https://www.jiqizhixin.com/articles/2024-11-06-6)
+   - 2024-11-06： [DEMO](https://huggingface.co/spaces/tencent/Hunyuan-Large)
+   - 2024-11-06：[MODEL](https://huggingface.co/tencent/Hunyuan-Large)
 
 
 **小型語言模型**
 
-  - 2025-01-07：[Smolagents](https://github.com/huggingface/smolagents)：[Hugging Face開源全新AI智能體框架支援工具呼叫與程式碼執行！](https://zhuanlan.zhihu.com/p/16417392406)
-  - 2024-12-13：[Phi-4](https://huggingface.co/NyxKrage/Microsoft_Phi-4)：[以小博大，微軟Phi-4正式發表~](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
-  - 2024-11-18：[MobileLLM-1.5B](https://huggingface.co/facebook/MobileLLM-1.5B)：[Meta MobileLLM：深度架構與最佳化技術打造的行動裝置超強語言模型](https://mp.weixin.qq.com/s/hjY6L69pqN4GvybCuHesTA)
-  - 2024-11-04：SmolLM2：[https://github.com/hiyouga/LLaMA-Factory](https://github.com/huggingface/smollm/)
-     - [Hugging Face公布手機執行的小型語言模型SmolLM2](https://www.ithome.com.tw/news/165832)
-  - 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
+- 2025-01-07：[Smolagents](https://github.com/huggingface/smolagents)：[Hugging Face開源全新AI智能體框架支援工具呼叫與程式碼執行！](https://zhuanlan.zhihu.com/p/16417392406)
+- 2024-12-13：[Phi-4](https://huggingface.co/NyxKrage/Microsoft_Phi-4)：[以小博大，微軟Phi-4正式發表~](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
+- 2024-11-18：[MobileLLM-1.5B](https://huggingface.co/facebook/MobileLLM-1.5B)：[Meta MobileLLM：深度架構與最佳化技術打造的行動裝置超強語言模型](https://mp.weixin.qq.com/s/hjY6L69pqN4GvybCuHesTA)
+- 2024-11-04：SmolLM2：[https://github.com/hiyouga/LLaMA-Factory](https://github.com/huggingface/smollm/)
+   - [Hugging Face公布手機執行的小型語言模型SmolLM2](https://www.ithome.com.tw/news/165832)
+- 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
 
 **推理模型**
    
-  - 2025-05-06：[Llama-Nemotron](https://www.alphaxiv.org/zh/overview/2505.00949)；[DeepWiki](https://deepwiki.com/NVIDIA/NeMo)；[英偉達發布Llama-Nemotron系列大模型，實現高效推理](https://zhuanlan.zhihu.com/p/1903012593033012833)
-  - 2025-04-16：[Video-R1: Reinforcing Video Reasoning in MLLMs ](https://www.alphaxiv.org/zh/overview/2503.21776)；[Github](https://github.com/tulerfeng/Video-R1)；[影片推理R1時刻，7B模型反超GPT-4o，港中文清華推出首款Video-R1](https://www.36kr.com/p/3252742390655489)
+- 2025-05-06：[Llama-Nemotron](https://www.alphaxiv.org/zh/overview/2505.00949)；[DeepWiki](https://deepwiki.com/NVIDIA/NeMo)；[英偉達發布Llama-Nemotron系列大模型，實現高效推理](https://zhuanlan.zhihu.com/p/1903012593033012833)
+- 2025-04-16：[Video-R1: Reinforcing Video Reasoning in MLLMs ](https://www.alphaxiv.org/zh/overview/2503.21776)；[Github](https://github.com/tulerfeng/Video-R1)；[影片推理R1時刻，7B模型反超GPT-4o，港中文清華推出首款Video-R1](https://www.36kr.com/p/3252742390655489)
 
     
 **大型語言模型**
-  - 2024-11-23：[Ai2 Tülu 3](https://github.com/allenai/open-instruct)：[這才是真・開源模型！公開「後訓練」一切，性能超越Llama 3.1 Instruct](https://www.jiqizhixin.com/articles/2024-11-23-5)
-     - DEMO：[https://playground.allenai.org/](https://playground.allenai.org/)
-     - MODEL：[https://huggingface.co/allenai](https://huggingface.co/allenai)
-  - 2024-11-9：[Ai2 OpenScholar](https://allenai.org/blog/openscholar)：[https://openscholar.allen.ai/](https://openscholar.allen.ai/)
-  - 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
-  - 2024-09-19：[阿里國際發表最新開源多模態模型Ovis，多模態能力再升級](https://www.qbitai.com/2024/09/192045.html)：https://huggingface.co/AIDC-AI/Ovis1.6-Gemma2-9B
-  - 2024-09-20：[Reader-LM：用於清理和將 HTML 轉換為 Markdown 的小型語言模型](https://jina.ai/zh-TW/news/reader-lm-small-language-models-for-cleaning-and-converting-html-to-markdown/)
-  - 2024-06-28：[谷歌最新Gemma 2 模型來了](https://www.53ai.com/news/qianyanjishu/2024062821674.html)
+- 2024-11-23：[Ai2 Tülu 3](https://github.com/allenai/open-instruct)：[這才是真・開源模型！公開「後訓練」一切，性能超越Llama 3.1 Instruct](https://www.jiqizhixin.com/articles/2024-11-23-5)
+   - DEMO：[https://playground.allenai.org/](https://playground.allenai.org/)
+  - MODEL：[https://huggingface.co/allenai](https://huggingface.co/allenai)
+- 2024-11-9：[Ai2 OpenScholar](https://allenai.org/blog/openscholar)：[https://openscholar.allen.ai/](https://openscholar.allen.ai/)
+- 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
+- 2024-09-19：[阿里國際發表最新開源多模態模型Ovis，多模態能力再升級](https://www.qbitai.com/2024/09/192045.html)：https://huggingface.co/AIDC-AI/Ovis1.6-Gemma2-9B
+- 2024-09-20：[Reader-LM：用於清理和將 HTML 轉換為 Markdown 的小型語言模型](https://jina.ai/zh-TW/news/reader-lm-small-language-models-for-cleaning-and-converting-html-to-markdown/)
+- 2024-06-28：[谷歌最新Gemma 2 模型來了](https://www.53ai.com/news/qianyanjishu/2024062821674.html)
 
 
-**語音到語音大模型**
-  - 開源不限學術用，[ten-agent](https://github.com/TEN-framework/TEN-Agent)
-     - [又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
-     - [TEN Framework 入坑记](https://mp.weixin.qq.com/s/ZVZHNP0XPwzGapWWqTk1kw)
-     - [使用 TEN Agent 搭建 Conversation AI Agent](https://uy6npdpeoi.feishu.cn/docx/EAWYdWWO7ormNPxUhyVcO3GSnUc)
-  - 開源不限學術用，[pipecat](https://github.com/pipecat-ai/pipecat)：[OpenAI工程師親自修訂：用ChatGPT即時語音API建立應用](https://www.jiqizhixin.com/articles/2025-01-10-4)
-  - 開源不限學術用，[HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
-  - 開源不限學術用，[bailing](https://github.com/wwbin2017/bailing)
-  - 開源不限學術用，[OmAgent](https://github.com/om-ai-lab/OmAgent)：[OmAgent框架強勢開源！業界應用已全面開花](https://www.qbitai.com/2024/07/163100.html)
-  - 開源不限學術用，2024-12-11：[Ultravox](https://github.com/fixie-ai/ultravox)
-  - 開源學術用，商用需申請，[GLM-4-Voice](https://github.com/THUDM/GLM-4-Voice)：[嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
-  - 開源限學術用，2024-12-06：[Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni)
-  - 開源不限學術用，[weebo](https://github.com/amanvirparhar/weebo)
-  - 開源不限學術用，[OpenVoiceChat](https://github.com/Finity-Alpha/OpenVoiceChat)
+**語音到語音大模型及工具套件**
+- [ten-agent](https://github.com/TEN-framework/TEN-Agent)
+   - [又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
+   - [TEN Framework 入坑记](https://mp.weixin.qq.com/s/ZVZHNP0XPwzGapWWqTk1kw)
+   - [使用 TEN Agent 搭建 Conversation AI Agent](https://uy6npdpeoi.feishu.cn/docx/EAWYdWWO7ormNPxUhyVcO3GSnUc)
+- [pipecat](https://github.com/pipecat-ai/pipecat)：[OpenAI工程師親自修訂：用ChatGPT即時語音API建立應用](https://www.jiqizhixin.com/articles/2025-01-10-4)
+- 2025-05-08：[Voila](https://github.com/maitrix-org/Voila)；[新型開源端對端AI 語音模型！ Voila：195ms 超低延遲引領全雙工對話！](https://zhuanlan.zhihu.com/p/1903776373765547954)
+- [HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
+- [bailing](https://github.com/wwbin2017/bailing)
+- [OmAgent](https://github.com/om-ai-lab/OmAgent)：[OmAgent框架強勢開源！業界應用已全面開花](https://www.qbitai.com/2024/07/163100.html)
+- 2024-12-11：[Ultravox](https://github.com/fixie-ai/ultravox)
+- [GLM-4-Voice](https://github.com/THUDM/GLM-4-Voice)：[嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
+- 2024-12-06：[Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni)
+- [weebo](https://github.com/amanvirparhar/weebo)
+- [OpenVoiceChat](https://github.com/Finity-Alpha/OpenVoiceChat)
 
     
 **視覺大語言模型 (Vision-Language model)**
@@ -364,39 +372,38 @@ https://huggingface.co/DeepLearning101
 
 
 **多模態大語言模型 (Multimodal)**
-  - [InternVL](https://github.com/OpenGVLab/InternVL)
-    - [(CVPR 2024 Oral) InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://www.alphaxiv.org/zh/overview/2504.10479)
-    - [DeepWiki](https://deepwiki.com/OpenGVLab/InternVL)；[InternVL3：刷新開源多模態大模型效能新紀錄](https://zhuanlan.zhihu.com/p/1897681159359551408)
-  - 2025-05-24：[Dolphin](https://www.alphaxiv.org/zh/overview/2505.14059)：[DeepWiki](https://deepwiki.com/bytedance/Dolphin)；[開源多模態複雜文件解析模型！ Dolphin](https://zhuanlan.zhihu.com/p/1911355829485045020)
-  - 2025-05-21：[Gemma 3n](https://deepmind.google/models/gemma/?hl=zh-tw)；[Preview](https://huggingface.co/google/gemma-3n-E4B-it-litert-preview)  
-  - 2025-03-18：[Mistral Small 3.1](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503)：[Mistral開源多模態小模型3.1：128K上下文+超低延遲，效能碾壓GPT-4o Mini](https://zhuanlan.zhihu.com/p/31138756743)
-  - 2025-03-14：[Vision-R1](https://github.com/Osilly/Vision-R1)：[Vision-R1：激發多模態大模型的推理能力](https://zhuanlan.zhihu.com/p/29618155786)
-  - 2025-02-28：[HumanOmni](https://github.com/HumanMLLM/HumanOmni)
-    - [阿里通義開源業界首個第一視角大模型，超強的視訊理解效能！](https://mp.weixin.qq.com/s/acn16cvE8N4tMegKuGHAKQ)
-    - [首個專注於人類中心場景的多模態大模型，視覺與聽覺融合的突破！](https://mp.weixin.qq.com/s/cO6xEAOCRUsLmoiDbq12tw)
-  - [Phi](https://huggingface.co/collections/microsoft/phi-4-677e9380e514feb5577a40e4)
-    - [Phi-4-multimodal-instruct](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
-    - 2025-02-27
-       - [微軟首個多模態Phi-4問世，56億參數秒殺GPT-4o！ LoRA華人大佬帶隊](https://zhuanlan.zhihu.com/p/26984226500)
-       - [微軟發表Phi-4-Mini系列模型：小身材，大智慧－語言與多模態AI的新突破](https://zhuanlan.zhihu.com/p/26678433652)
-    - 2024-09-12：[微軟AI發布Phi 3.5 mini、MoE 和Vision](https://mp.weixin.qq.com/s/EeALIBrvGWKtEBGnroZIvg)  
-  - 2025-02-21：[Magma](https://github.com/microsoft/Magma)：[微軟發表Magma多模態AI代理基礎模型，單一模型就具UI與機器人操作能力](https://www.ithome.com.tw/news/167507)
-  - 2024-04-11：[視覺語言模型詳解](https://huggingface.co/blog/zh/vlms)
-  - 2024-09-26：[Llama 3.2：開源可自訂視覺模型](https://mp.weixin.qq.com/s/gOuEQB9-CYc71nT1aTHpFQ)：[Ollama](https://ollama.com/library/llama3.2-vision:90b)
-  - 2024-09-20：[LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni)：[Llama 3.1 Omni：顛覆性的文字與語音雙輸出模型](https://mp.weixin.qq.com/s/HhE2tsLxKaqymj3xWxbRjA)
-  - Mistral AI Pixtral 
-     - 2024-09-14：[Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) / [DEMO](https://huggingface.co/spaces/ethux/Mistral-Pixtral-Demo)：[本地部署、映像分析和OCR功能全解析](https://www.53ai.com/news/OpenSourceLLM/2024091412863.html)
-     - 2024-09-12：[Mistral AI推出多模態模型Pixtral 12B](https://www.mittrchina.com/news/detail/13767)
-  - 2024-12-12：[InternLM-XComposer-2.5](https://github.com/InternLM/InternLM-XComposer)
-     - [書生·浦語靈筆2.5-OL多模態即時互動大模型全面開源](https://zhuanlan.zhihu.com/p/12454860021)
-  - [MiniCPM](https://github.com/OpenBMB)
-     - 2025-01-16：[MiniCPM-o 2.6：流式全模態，端到端，多模態端側大模型來了！](https://mp.weixin.qq.com/s/bTRirDr-MCscYF88KmK5qw)；[文件](https://github.com/OpenBMB/MiniCPM-o/blob/main/README_zh.md#minicpm-o-26)
-     - 2024-09-11：[升級Ollama！ MiniCPM-V2_6影像辨識模型上線](https://mp.weixin.qq.com/s/6N-u8PcGEX6e4rryeqXglQ)
-     - 2024-09-06：[MiniCPM 3.0 開源！ 4B參數超GPT3.5性能，無限長文本，超強RAG三件套！模型推理、微調實戰來啦！](https://53ai.com/news/OpenSourceLLM/2024090659871.html)：[https://github.com/OpenBMB/MiniCPM](https://github.com/OpenBMB/MiniCPM)
-     - 2024-09-05：[零碼基礎都敢去魔改MiniCPM-V了？是我飄了，也是Cursor 太強了](https://mp.weixin.qq.com/s/DjDznmtKZoJNKXYz0X4zog)：[https://github.com/OpenBMB/MiniCPM-V/](https://github.com/OpenBMB/MiniCPM-V/)
-  - 2024-09-12：[LLaVA-OneVision 震撼登場！字節跳動](https://mp.weixin.qq.com/s/Jl9Tcs8nRIEjj5ySm1tUcA)：[https://cloud.tencent.com/developer/article/2444463](https://cloud.tencent.com/developer/article/2444463)
-  - 2024-06-24：[微調Florence-2 - 微軟的尖端視覺語言模型](https://huggingface.co/blog/zh/finetune-florence2)
-
+- [InternVL](https://github.com/OpenGVLab/InternVL)
+   - [(CVPR 2024 Oral) InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://www.alphaxiv.org/zh/overview/2504.10479)
+   - [DeepWiki](https://deepwiki.com/OpenGVLab/InternVL)；[InternVL3：刷新開源多模態大模型效能新紀錄](https://zhuanlan.zhihu.com/p/1897681159359551408)
+- 2025-05-24：[Dolphin](https://www.alphaxiv.org/zh/overview/2505.14059)：[DeepWiki](https://deepwiki.com/bytedance/Dolphin)；[開源多模態複雜文件解析模型！ Dolphin](https://zhuanlan.zhihu.com/p/1911355829485045020)
+- 2025-05-21：[Gemma 3n](https://deepmind.google/models/gemma/?hl=zh-tw)；[Preview](https://huggingface.co/google/gemma-3n-E4B-it-litert-preview)  
+- 2025-03-18：[Mistral Small 3.1](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503)：[Mistral開源多模態小模型3.1：128K上下文+超低延遲，效能碾壓GPT-4o Mini](https://zhuanlan.zhihu.com/p/31138756743)
+- 2025-03-14：[Vision-R1](https://github.com/Osilly/Vision-R1)：[Vision-R1：激發多模態大模型的推理能力](https://zhuanlan.zhihu.com/p/29618155786)
+- 2025-02-28：[HumanOmni](https://github.com/HumanMLLM/HumanOmni)
+   - [阿里通義開源業界首個第一視角大模型，超強的視訊理解效能！](https://mp.weixin.qq.com/s/acn16cvE8N4tMegKuGHAKQ)
+   - [首個專注於人類中心場景的多模態大模型，視覺與聽覺融合的突破！](https://mp.weixin.qq.com/s/cO6xEAOCRUsLmoiDbq12tw)
+- [Phi](https://huggingface.co/collections/microsoft/phi-4-677e9380e514feb5577a40e4)
+   - [Phi-4-multimodal-instruct](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
+   - 2025-02-27
+      - [微軟首個多模態Phi-4問世，56億參數秒殺GPT-4o！ LoRA華人大佬帶隊](https://zhuanlan.zhihu.com/p/26984226500)
+      - [微軟發表Phi-4-Mini系列模型：小身材，大智慧－語言與多模態AI的新突破](https://zhuanlan.zhihu.com/p/26678433652)
+   - 2024-09-12：[微軟AI發布Phi 3.5 mini、MoE 和Vision](https://mp.weixin.qq.com/s/EeALIBrvGWKtEBGnroZIvg)  
+- 2025-02-21：[Magma](https://github.com/microsoft/Magma)：[微軟發表Magma多模態AI代理基礎模型，單一模型就具UI與機器人操作能力](https://www.ithome.com.tw/news/167507)
+- 2024-04-11：[視覺語言模型詳解](https://huggingface.co/blog/zh/vlms)
+- 2024-09-26：[Llama 3.2：開源可自訂視覺模型](https://mp.weixin.qq.com/s/gOuEQB9-CYc71nT1aTHpFQ)：[Ollama](https://ollama.com/library/llama3.2-vision:90b)
+- 2024-09-20：[LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni)：[Llama 3.1 Omni：顛覆性的文字與語音雙輸出模型](https://mp.weixin.qq.com/s/HhE2tsLxKaqymj3xWxbRjA)
+- Mistral AI Pixtral 
+   - 2024-09-14：[Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) / [DEMO](https://huggingface.co/spaces/ethux/Mistral-Pixtral-Demo)：[本地部署、映像分析和OCR功能全解析](https://www.53ai.com/news/OpenSourceLLM/2024091412863.html)
+  - 2024-09-12：[Mistral AI推出多模態模型Pixtral 12B](https://www.mittrchina.com/news/detail/13767)
+- 2024-12-12：[InternLM-XComposer-2.5](https://github.com/InternLM/InternLM-XComposer)
+   - [書生·浦語靈筆2.5-OL多模態即時互動大模型全面開源](https://zhuanlan.zhihu.com/p/12454860021)
+- [MiniCPM](https://github.com/OpenBMB)
+   - 2025-01-16：[MiniCPM-o 2.6：流式全模態，端到端，多模態端側大模型來了！](https://mp.weixin.qq.com/s/bTRirDr-MCscYF88KmK5qw)；[文件](https://github.com/OpenBMB/MiniCPM-o/blob/main/README_zh.md#minicpm-o-26)
+  - 2024-09-11：[升級Ollama！ MiniCPM-V2_6影像辨識模型上線](https://mp.weixin.qq.com/s/6N-u8PcGEX6e4rryeqXglQ)
+   - 2024-09-06：[MiniCPM 3.0 開源！ 4B參數超GPT3.5性能，無限長文本，超強RAG三件套！模型推理、微調實戰來啦！](https://53ai.com/news/OpenSourceLLM/2024090659871.html)：[https://github.com/OpenBMB/MiniCPM](https://github.com/OpenBMB/MiniCPM)
+  - 2024-09-05：[零碼基礎都敢去魔改MiniCPM-V了？是我飄了，也是Cursor 太強了](https://mp.weixin.qq.com/s/DjDznmtKZoJNKXYz0X4zog)：[https://github.com/OpenBMB/MiniCPM-V/](https://github.com/OpenBMB/MiniCPM-V/)
+- 2024-09-12：[LLaVA-OneVision 震撼登場！字節跳動](https://mp.weixin.qq.com/s/Jl9Tcs8nRIEjj5ySm1tUcA)：[https://cloud.tencent.com/developer/article/2444463](https://cloud.tencent.com/developer/article/2444463)
+- 2024-06-24：[微調Florence-2 - 微軟的尖端視覺語言模型](https://huggingface.co/blog/zh/finetune-florence2)
 
 **語音助手工具**
 - [ESP-AI](https://espai.fun/)
