@@ -272,15 +272,22 @@ https://huggingface.co/DeepLearning101
 **[AI Agent 開源框架](https://deep-learning-101.github.io/agent)**
 
 ---
+
 - [從AI Agent到Agent工作流程，一文詳細了解代理程式工作流程](https://zhuanlan.zhihu.com/p/32491596217)
 - [萬字長文，帶你綜觀大模型Agent，涉及研究痛點、應用場景、發展方向](https://zhuanlan.zhihu.com/p/29833831482)
 - [什麼是「Agentic 工作流程」？](https://zhuanlan.zhihu.com/p/32709535995)
 - [什麼是Agentic AI？什麼是Agentic Workflow？與AI Agent有什麼區別和關聯？](https://zhuanlan.zhihu.com/p/705935464)
 - [FinRobot](https://www.alphaxiv.org/zh/overview/2405.14767)；[DeepWiki](https://deepwiki.com/AI4Finance-Foundation/FinRobot)；可支援 Gemini-2.5-Pro-preview-05-06，基於 AutoGen    
 - [Jupyter-AI](https://deepwiki.com/jupyterlab/jupyter-ai)；可支援 Gemini-2.5-Pro-preview-05-06
+
 ---
-- 2025-06-03：[Gemini Fullstack LangGraph](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart)；[DEMO](https://deep-learning-101.github.io/gemini-fullstack-langgraph/FinGenAI)；[以為Google只是簡單放個Demo，哪想到是」開源版”Perplexity！](https://www.53ai.com/news/OpenSourceLLM/2025060431620.html)
+- 2025-06-06：[PandaWiki](https://github.com/chaitin/PandaWiki)；[新一代AI 大模型驅動的開源知識庫建立系統](https://zhuanlan.zhihu.com/p/1916981702733039060)
+- 2025-06-03：[**Gemini Fullstack LangGraph**](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart)；[DEMO](https://deep-learning-101.github.io/gemini-fullstack-langgraph/FinGenAI)；[以為Google只是簡單放個Demo，哪想到是」開源版”Perplexity！](https://www.53ai.com/news/OpenSourceLLM/2025060431620.html)
+- 2025-06-03：[Perplexica](https://github.com/ItzCrazyKns/Perplexica)；[Perplexity AI，開源替代品](https://www.53ai.com/news/qianyanjishu/2394.html)
+- 2025-06-01：[**Agent Zero**](https://github.com/frdel/agent-zero)；[官網](https://agent-zero.ai/)；[這個自動AI代理可以做任何事！ （產生APP、程式碼、RAG 等）](https://cloud.tencent.com/developer/article/2472836)
 - 2025-05-30：[WebDancer @ Alibaba](https://www.alphaxiv.org/zh/overview/2505.22648)；[DeepWiki](https://deepwiki.com/Alibaba-NLP/WebAgent)
+- 2025-05-28：[**Lemon AI**](https://github.com/hexdocom/lemonai)；[全球首款全端開源通用AI Agent，讓人可以單機部署超級智慧體](https://www.53ai.com/news/OpenSourceLLM/2025052883904.html)
+- 2025-05-25：[OpenHands](https://github.com/All-Hands-AI/OpenHands)；[Demo](https://app.all-hands.dev/)
 - 2025-05-22：[Magentic-UI](https://deepwiki.com/microsoft/magentic-ui)。。。暫不支援使用 Gemini
 - 2025-05-20：[NLWeb](https://deepwiki.com/microsoft/NLWeb)。。。暫不支援使用 Gemini
 - 2025-05-20：[Qwen Web Dev](https://chat.qwen.ai/?inputFeature=web_dev)
@@ -288,8 +295,8 @@ https://huggingface.co/DeepLearning101
 - 2025-05-17：[Open Agent Platform](https://deepwiki.com/langchain-ai/open-agent-platform)
 - 2025-05-13：[LocalSite-ai](https://deepwiki.com/weise25/LocalSite-ai)
 - 2025-05-10：[FlowGram](https://github.com/bytedance/flowgram.ai)：[字節跳動把Coze 核心開源了！視覺化工作流程引擎FlowGram 上線](https://mp.weixin.qq.com/s/EOtp8j67G5xd6H0qVfOhcw)；[如何使用](https://deepwiki.com/search/-dify-n8n_a61d08fd-2089-4cf3-9253-3275a54b54fa)
-- 2025-05-10：[DeerFlow](https://github.com/bytedance/deer-flow/blob/main/README_zh.md)：[字節跳動開源DeerFlow - Gemini深度研究的開源平替](https://mp.weixin.qq.com/s/1qcdv1DDmWYnAiwYfWO4XA)；[如何使用](https://deepwiki.com/search/_78a54d18-9132-44eb-920a-98618b505c9f)；[跳動深度研究框架DeerFlow提示字解析](https://mp.weixin.qq.com/s/tvf23_o4jIqVRHfnKVSJZw)
-- 2025-05-09：[OpenDeepWiki](https://github.com/AIDotNet/OpenDeepWiki)：[開源的DeekWiki加入MCP，輕鬆讓AI掌握開源專案使用文件！](https://mp.weixin.qq.com/s/Ux1-cpXdOSnjBrxCslHjtw)；[如何使用](https://deepwiki.com/search/_f9b90674-c6d9-4999-8a72-49cf28a30dca)；[開源DeepWiki版支援根據現有檔案產生微調資料集](https://zhuanlan.zhihu.com/p/1908831694879985815)
+- 2025-05-10：[**DeerFlow**](https://github.com/bytedance/deer-flow/blob/main/README_zh.md)：[字節跳動位元組DeerFlow深度解析](https://www.53ai.com/news/LargeLanguageModel/2025061552389.html)；[如何使用](https://deepwiki.com/search/_78a54d18-9132-44eb-920a-98618b505c9f)
+- 2025-05-09：[**OpenDeepWiki**](https://github.com/AIDotNet/OpenDeepWiki)：[開源的DeekWiki加入MCP，輕鬆讓AI掌握開源專案使用文件！](https://mp.weixin.qq.com/s/Ux1-cpXdOSnjBrxCslHjtw)；[如何使用](https://deepwiki.com/search/_f9b90674-c6d9-4999-8a72-49cf28a30dca)
 - 2025-05-07：[AI Manus](https://deepwiki.com/Simpleyyt/ai-manus)
 - 2025-04-27：[Rowboat](https://deepwiki.com/rowboatlabs/rowboat)
 - 2025-04-24：[suna](https://github.com/kortix-ai/suna)：[3週時間，就打造出Manus開源平替！貢獻原始碼，免費用](https://www.jiqizhixin.com/articles/2025-04-23-6)
@@ -301,19 +308,19 @@ https://huggingface.co/DeepLearning101
 - 2025-04-08：[oliva](https://github.com/Deluxer/oliva)：[Oliva：一個多智能體，開源語音RAG 助手](https://mp.weixin.qq.com/s/hzhsPz8pdwngysg2YxDs-w)
 - 2025-04-03：[AutoAgent](https://github.com/HKUDS/AutoAgent)：[一句話全自動創建AI智能體，港大AutoAgent打造開源最強Deep Research](https://mp.weixin.qq.com/s/oATCuzI4BJ6JcwJkazinCA)
 - 2025-04-03：[Agent Development Kit (ADK)](https://github.com/google/adk-python)：[谷歌發表「智能體開發工具包」ADK，來嚐個鮮](https://www.53ai.com/news/OpenSourceLLM/2025041012369.html)
-- 2025-04-03：[deepsite](https://huggingface.co/spaces/enzostvs/deepsite)；[DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
+- 2025-04-03：[**Deepsite**](https://huggingface.co/spaces/enzostvs/deepsite)；[DeepSite基於DeepSeek的網頁開發智能體，效果非常不錯](https://zhuanlan.zhihu.com/p/1890332067411243826)
 - 2025-03-30：[DeepGemini](https://github.com/sligter/DeepGemini)：[AI界的'搭積木'神器，10分鐘打造你的專屬智慧團隊！](https://mp.weixin.qq.com/s/F2U7rWOMvfTyiRai-kfL_A)
-- 2025-03-24：[AgenticSeek](https://github.com/Fosowl/agenticSeek)：[又一個“Manus”開源，完全本地化替代品AgenticSeek](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
+- 2025-03-24：[**AgenticSeek**](https://github.com/Fosowl/agenticSeek)：[又一個“Manus”開源，完全本地化替代品AgenticSeek](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
 - 2025-03-11：[autoMate](https://github.com/yuruotong1/autoMate)：[autoMate:基於OmniParser 所建構的革命性AI自動化助手](https://mp.weixin.qq.com/s/7W0xL3EBJM9mmNZbdZCiiQ)
 - 2025-03-10：[OWL](https://github.com/camel-ai/owl)：[另一個開源版本的“Manus”](https://mp.weixin.qq.com/s/8jQnE5NPy9nqYHArMUegxw)
 - 2025-03-10：[OpenManus](https://github.com/mannaandpoem/OpenManus)：[一文讀懂：OpenManus](https://zhuanlan.zhihu.com/p/30090038284)
+- 2025-02-28：[**MoneyPrinterTurbo**](https://github.com/harry0703/MoneyPrinterTurbo)；[Al自動生成高清短視頻](https://zhuanlan.zhihu.com/p/27043978423)
 - 2024-02-01：[MobileAgent](https://github.com/X-PLUG/MobileAgent/blob/main/README_zh.md)：[一句指示幫你操作手機，最新多模態手機助理Mobile-Agent來了！](https://zhuanlan.zhihu.com/p/680871671)
 - 2025-01-23：[Upsonic](https://github.com/Upsonic/Upsonic)：[5.9K Star！全能高效的AI代理框架，打造企業級AI電腦助手，辦公任務一鍵完成！](https://www.53ai.com/news/zhinengyingjian/2025012363519.html)     
 - 2025-01-21：[UI-TARS](https://github.com/bytedance/UI-TARS)：[端對端GUI Agent：UI-TARS 如何以純視覺驅動GUI 自動化](https://zhuanlan.zhihu.com/p/20352074884)
 - 2025-01-03：[smolagents](https://github.com/huggingface/smolagents)：[新年禮物，Huggingface捲了一個Agent專案開源](https://blog.csdn.net/m0_59163425/article/details/144917058)
-- 2024-09-23：[STORM: Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking](https://github.com/stanford-oval/storm)；[STORM：一个基于LLM的知识整理系统](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
-- 2024-10-26：[OmniParser](https://github.com/microsoft/OmniParser)；[控制電腦手機的智慧體人人都能造，微軟開源OmniParser](https://zhuanlan.zhihu.com/p/3343331861) 
-
+- 2024-09-23：[**STORM**](https://github.com/stanford-oval/storm)；[STORM：一个基于LLM的知识整理系统](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
+- 2024-10-26：[OmniParser](https://github.com/microsoft/OmniParser)；[控制電腦手機的智慧體人人都能造，微軟開源OmniParser](https://zhuanlan.zhihu.com/p/3343331861)
 
 **混合專家(Mixture of Experts, MoE)模型**
 
