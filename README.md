@@ -250,6 +250,7 @@ https://huggingface.co/DeepLearning101
 ---     
 - 2025-06-10：[Agentic-Doc](https://github.com/landing-ai/agentic-doc)；[LandingAI開源神器，這個Python庫讓百頁文檔秒變結構化資料！](https://zhuanlan.zhihu.com/p/1914259475306612709)
 - 2025-06-06：[daily-arXiv-ai-enhanced](https://github.com/dw-dengwei/daily-arXiv-ai-enhanced)：每日自動爬取arXiv論文並以LLM產生中文摘要
+- 2025-06-04：[workflow-use](https://github.com/browser-use/workflow-use)：[基於AI 的瀏覽器自動化工具：一次錄製，永久重複使用](https://zhuanlan.zhihu.com/p/1908094875066413718)
 - 2025-05-22：[AingDesk](https://deepwiki.com/aingdesk/AingDesk)；[AingDesk：零门槛本地 AI 部署](https://zhuanlan.zhihu.com/p/29773848356)       
 - 2025-05-20：[news-agents](https://deepwiki.com/eugeneyan/news-agents)
 - 2025-05-16：[Follow](https://deepwiki.com/RSSNext/Folo)；[連續登頂GitHub 的資訊聚合神器：Follow，讓你不再錯過任何重要資訊！](https://zhuanlan.zhihu.com/p/1906505020628795653)
@@ -281,6 +282,9 @@ https://huggingface.co/DeepLearning101
 - [Jupyter-AI](https://deepwiki.com/jupyterlab/jupyter-ai)；可支援 Gemini-2.5-Pro-preview-05-06
 
 ---
+
+- 2025-06-25：[Gemini CLI](https://github.com/google-gemini/gemini-cli)：[Gemini CLI：你的開源 AI 代理](https://blog.google/intl/zh-tw/products/cloud/gemini-cli-your-open-source-ai-agent/)
+- 2025-06-23：[MultiAgentPPT](https://github.com/johnson7788/MultiAgentPPT)：整合了 A2A+MCP+ADK架構的動畫簡報產生系統，支援多智能體協作和串流運行機制
 - 2025-06-06：[PandaWiki](https://github.com/chaitin/PandaWiki)；[新一代AI 大模型驅動的開源知識庫建立系統](https://zhuanlan.zhihu.com/p/1916981702733039060)
 - 2025-06-03：[**Gemini Fullstack LangGraph**](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart)；[DEMO](https://deep-learning-101.github.io/gemini-fullstack-langgraph/FinGenAI)；[以為Google只是簡單放個Demo，哪想到是」開源版”Perplexity！](https://www.53ai.com/news/OpenSourceLLM/2025060431620.html)
 - 2025-06-03：[Perplexica](https://github.com/ItzCrazyKns/Perplexica)；[Perplexity AI，開源替代品](https://www.53ai.com/news/qianyanjishu/2394.html)
