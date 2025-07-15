@@ -345,7 +345,11 @@ https://huggingface.co/DeepLearning101
 - 2024-11-9：[Ai2 OpenScholar](https://allenai.org/blog/openscholar)：[https://openscholar.allen.ai/](https://openscholar.allen.ai/)
 - 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
 
-
+**Embedding & Reranker**
+- 2025-07-14：[gemini-embedding-001	](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings?hl=zh-tw)
+- 2025-06-05：[Qwen3 Embedding：新一代文本表徵與排序模型](https://qwenlm.github.io/zh/blog/qwen3-embedding/)
+   - 2025-06-03：[Qwen3-Embedding](https://huggingface.co/collections/Qwen/qwen3-embedding-6841b2055b99c44d9a4c371f)
+   - 2025-06-03：[Qwen3-Reranker](https://huggingface.co/collections/Qwen/qwen3-reranker-6841b22d0192d7ade9cdefea)
 
 **語音到語音大模型及工具套件**
 - [ten-agent](https://github.com/TEN-framework/TEN-Agent)
