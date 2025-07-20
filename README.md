@@ -250,6 +250,7 @@ https://huggingface.co/DeepLearning101
    - 2025-01-23：[Browser Use – 讓AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
 ---
 
+- 2025-06-28：[docext](https://github.com/NanoNets/docext)：[基於Qwen2.5VL的文檔解析工具](https://zhuanlan.zhihu.com/p/1919760450024879687)
 - 2025-06-10：[Agentic-Doc](https://github.com/landing-ai/agentic-doc)；[LandingAI開源神器，這個Python庫讓百頁文檔秒變結構化資料！](https://zhuanlan.zhihu.com/p/1914259475306612709)
 - 2025-06-06：[daily-arXiv-ai-enhanced](https://github.com/dw-dengwei/daily-arXiv-ai-enhanced)：每日自動爬取arXiv論文並以LLM產生中文摘要
 - 2025-05-22：[AingDesk](https://deepwiki.com/aingdesk/AingDesk)；[AingDesk：零门槛本地 AI 部署](https://zhuanlan.zhihu.com/p/29773848356)
@@ -291,6 +292,7 @@ https://huggingface.co/DeepLearning101
 - 2025-06-06：[PandaWiki](https://github.com/chaitin/PandaWiki)；[新一代AI 大模型驅動的開源知識庫建立系統](https://zhuanlan.zhihu.com/p/1916981702733039060)
 - 2025-06-03：[**Gemini Fullstack LangGraph**](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart)；[DEMO](https://deep-learning-101.github.io/gemini-fullstack-langgraph/FinGenAI)；[以為Google只是簡單放個Demo，哪想到是」開源版”Perplexity！](https://www.53ai.com/news/OpenSourceLLM/2025060431620.html)
 - 2025-06-03：[Perplexica](https://github.com/ItzCrazyKns/Perplexica)；[Perplexity AI，開源替代品](https://www.53ai.com/news/qianyanjishu/2394.html)
+- 2025-06-02：[Paper2Poster](https://paper2poster.github.io/)：[自動為論文產生海報](https://zhuanlan.zhihu.com/p/1912838595510776080)
 - 2025-06-01：[**Agent Zero**](https://github.com/frdel/agent-zero)；[官網](https://agent-zero.ai/)；[這個自動AI代理可以做任何事！ （產生APP、程式碼、RAG 等）](https://cloud.tencent.com/developer/article/2472836)
 - 2025-05-30：[WebDancer @ Alibaba](https://www.alphaxiv.org/zh/overview/2505.22648)；[DeepWiki](https://deepwiki.com/Alibaba-NLP/WebAgent)
 - 2025-05-28：[**Lemon AI**](https://github.com/hexdocom/lemonai)；[全球首款全端開源通用AI Agent，讓人可以單機部署超級智慧體](https://www.53ai.com/news/OpenSourceLLM/2025052883904.html)
