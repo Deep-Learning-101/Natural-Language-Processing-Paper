@@ -337,9 +337,11 @@ https://huggingface.co/DeepLearning101
 - 2024-09-25：[Llama 3.2 90b, 11b, 3b, 1b: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
 
 **推理模型**
-   
-- 2025-05-06：[Llama-Nemotron](https://www.alphaxiv.org/zh/overview/2505.00949)；[DeepWiki](https://deepwiki.com/NVIDIA/NeMo)；[英偉達發布Llama-Nemotron系列大模型，實現高效推理](https://zhuanlan.zhihu.com/p/1903012593033012833)
-- 2025-04-16：[Video-R1: Reinforcing Video Reasoning in MLLMs ](https://www.alphaxiv.org/zh/overview/2503.21776)；[Github](https://github.com/tulerfeng/Video-R1)；[影片推理R1時刻，7B模型反超GPT-4o，港中文清華推出首款Video-R1](https://www.36kr.com/p/3252742390655489)
+
+  - 2025-07-29：[Llama Nemotron Super v1.5](https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5)；[英偉達全新開源模型：三倍吞吐、單卡可跑，還拿下推理SOTA](https://zhuanlan.zhihu.com/p/1933514869279274584)
+  - 2025-07-27：[OpenReasoning-Nemotron](https://huggingface.co/nvidia/OpenReasoning-Nemotron-1.5B)；[英偉達突然開源「數學核武」！ 1.5B 參數秒殺 o3，OpenReasoning-Nemotron 真有這麼猛？](https://mp.weixin.qq.com/s/o7RhRAFzAKkHj2T0y3GVzA)
+  - 2025-05-06：[Llama-Nemotron](https://www.alphaxiv.org/zh/overview/2505.00949)；[DeepWiki](https://deepwiki.com/NVIDIA/NeMo)；[英偉達發布Llama-Nemotron系列大模型，實現高效推理](https://zhuanlan.zhihu.com/p/1903012593033012833)
+  - 2025-04-16：[Video-R1: Reinforcing Video Reasoning in MLLMs ](https://www.alphaxiv.org/zh/overview/2503.21776)；[Github](https://github.com/tulerfeng/Video-R1)；[影片推理R1時刻，7B模型反超GPT-4o，港中文清華推出首款Video-R1](https://www.36kr.com/p/3252742390655489)
 
     
 **大型語言模型**
