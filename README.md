@@ -250,6 +250,7 @@ https://huggingface.co/DeepLearning101
    - 2025-01-23：[Browser Use – 讓AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
 ---
 
+- 2025-07-30：[langextract](https://github.com/google/langextract)；[隆重推出 LangExtract：由 Gemini 驅動的資訊擷取庫](https://developers.googleblog.com/zh-hans/introducing-langextract-a-gemini-powered-information-extraction-library/)
 - 2025-07-26：[presenton](https://github.com/presenton/presenton)；[一款可本地部署的開源AI PPT項目，一鍵生成精美PPT](https://mp.weixin.qq.com/s/QTMVGD_aP41qrwtbjLxV8Q)
 - 2025-06-28：[docext](https://github.com/NanoNets/docext)：[基於Qwen2.5VL的文檔解析工具](https://zhuanlan.zhihu.com/p/1919760450024879687)
 - 2025-06-10：[Agentic-Doc](https://github.com/landing-ai/agentic-doc)；[LandingAI開源神器，這個Python庫讓百頁文檔秒變結構化資料！](https://zhuanlan.zhihu.com/p/1914259475306612709)
@@ -266,6 +267,7 @@ https://huggingface.co/DeepLearning101
 - 2025-04-10：[DevDocs](https://github.com/cyberagiinc/DevDocs)：[開發者的文檔收割機來了！這個開源工具讓你一小時幹完一週的活！](https://mp.weixin.qq.com/s/k5fG_L1q_19ylKIJD6PXmw)
 - 2025-04-06：[sqlchat](https://github.com/sqlchat/sqlchat)：[這款開源神器讓資料庫管理像聊天一樣簡單！](https://mp.weixin.qq.com/s/kieSzWn3QDYvZ5Zx35hr1A)
 - 2025-03-26：[pdf-craft](https://github.com/oomol-lab/pdf-craft)：[PDF秒轉Markdown/EPUB](https://zhuanlan.zhihu.com/p/1888288260171744707)
+- 2025-03-25：[OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)；[OCRmyPDF 能力分析](https://www.zhihu.com/tardis/zm/art/32745781279?source_id=1003)
 - 2025-03-12：[AingDesk](https://deepwiki.com/aingdesk/AingDesk)；[零門檻本地AI 部署，DeepSeek、Llama 一鍵直達！](https://zhuanlan.zhihu.com/p/29773848356)
 - 2025-03-08：[composio](https://github.com/ComposioHQ/composio)：[AI助理效率神器！ Composio幫你輕鬆整合200+工具](https://mp.weixin.qq.com/s/rRPOmihGzcIXx0HQc3pdoA)
 - 2025-02-25：[PySpur](https://www.pyspur.dev/)：[拖曳式開發AI工作流程！這款開源神器，讓LangChain也黯然失色！](https://zhuanlan.zhihu.com/p/26161709083)
@@ -338,6 +340,7 @@ https://huggingface.co/DeepLearning101
 
 **推理模型**
 
+  - 2025-08-05：[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)；[隆重介紹 gpt-oss](https://openai.com/zh-Hant/index/introducing-gpt-oss/)；[OpenAI重新開源！深夜連發兩個推理模型，o4-mini水平](https://www.jiqizhixin.com/articles/2025-08-06-2)
   - 2025-07-29：[Llama Nemotron Super v1.5](https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5)；[英偉達全新開源模型：三倍吞吐、單卡可跑，還拿下推理SOTA](https://zhuanlan.zhihu.com/p/1933514869279274584)
   - 2025-07-27：[OpenReasoning-Nemotron](https://huggingface.co/nvidia/OpenReasoning-Nemotron-1.5B)；[英偉達突然開源「數學核武」！ 1.5B 參數秒殺 o3，OpenReasoning-Nemotron 真有這麼猛？](https://mp.weixin.qq.com/s/o7RhRAFzAKkHj2T0y3GVzA)
   - 2025-05-06：[Llama-Nemotron](https://www.alphaxiv.org/zh/overview/2505.00949)；[DeepWiki](https://deepwiki.com/NVIDIA/NeMo)；[英偉達發布Llama-Nemotron系列大模型，實現高效推理](https://zhuanlan.zhihu.com/p/1903012593033012833)
@@ -345,6 +348,7 @@ https://huggingface.co/DeepLearning101
 
     
 **大型語言模型**
+- 2025-08-05：[Claude Opus 4.1](https://www.jiqizhixin.com/articles/2025-08-06-4)
 - 2024-11-23：[Ai2 Tülu 3](https://github.com/allenai/open-instruct)：[這才是真・開源模型！公開「後訓練」一切，性能超越Llama 3.1 Instruct](https://www.jiqizhixin.com/articles/2024-11-23-5)
   - DEMO：[https://playground.allenai.org/](https://playground.allenai.org/)
   - MODEL：[https://huggingface.co/allenai](https://huggingface.co/allenai)
