@@ -367,6 +367,7 @@ https://huggingface.co/DeepLearning101
    - [TEN Framework 入坑记](https://mp.weixin.qq.com/s/ZVZHNP0XPwzGapWWqTk1kw)
    - [使用 TEN Agent 搭建 Conversation AI Agent](https://uy6npdpeoi.feishu.cn/docx/EAWYdWWO7ormNPxUhyVcO3GSnUc)
 - [pipecat](https://github.com/pipecat-ai/pipecat)：[OpenAI工程師親自修訂：用ChatGPT即時語音API建立應用](https://www.jiqizhixin.com/articles/2025-01-10-4)
+- 2025-07-21：[Audio Flamingo 3 @ NVIDIA](https://github.com/NVIDIA/audio-flamingo)；[NVIDIA 開源多模態音訊模型Audio Flamingo 3](https://www.oschina.net/news/361477/nvidia-audio-flamingo-3)
 - 2025-05-08：[Voila](https://github.com/maitrix-org/Voila)；[新型開源端對端AI 語音模型！ Voila：195ms 超低延遲引領全雙工對話！](https://zhuanlan.zhihu.com/p/1903776373765547954)
 - [HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
 
