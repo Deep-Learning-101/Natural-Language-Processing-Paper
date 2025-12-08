@@ -433,13 +433,15 @@ https://huggingface.co/DeepLearning101
 
 
 **語音到語音大模型及工具套件**
-- [bailing](https://github.com/wwbin2017/bailing)
-- [OmAgent](https://github.com/om-ai-lab/OmAgent)：[OmAgent框架強勢開源！業界應用已全面開花](https://www.qbitai.com/2024/07/163100.html)
-- 2024-12-11：[Ultravox](https://github.com/fixie-ai/ultravox)
-- [GLM-4-Voice](https://github.com/THUDM/GLM-4-Voice)：[嚐鮮評量：智譜AI語音大模型GLM-4-Voice好用不](https://www.53ai.com/news/LargeLanguageModel/2024102571205.html)
-- 2024-12-06：[Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni)
-- [weebo](https://github.com/amanvirparhar/weebo)
-- [OpenVoiceChat](https://github.com/Finity-Alpha/OpenVoiceChat)
+- [ten-agent](https://github.com/TEN-framework/TEN-Agent)
+   - [又一款王炸級的開源端對端語音模型](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ)
+   - [TEN Framework 入坑记](https://mp.weixin.qq.com/s/ZVZHNP0XPwzGapWWqTk1kw)
+   - [使用 TEN Agent 搭建 Conversation AI Agent](https://uy6npdpeoi.feishu.cn/docx/EAWYdWWO7ormNPxUhyVcO3GSnUc)
+- [pipecat](https://github.com/pipecat-ai/pipecat)：[OpenAI工程師親自修訂：用ChatGPT即時語音API建立應用](https://www.jiqizhixin.com/articles/2025-01-10-4)
+- 2025-11-03：[LongCat-Flash-Omni](https://huggingface.co/meituan-longcat/LongCat-Flash-Omni)；[LongCat-Flash-Omni正式發布並開源：開啟全模態即時互動時代](https://zhuanlan.zhihu.com/p/1968699530762491165)
+- 2025-07-21：[Audio Flamingo 3 @ NVIDIA](https://github.com/NVIDIA/audio-flamingo)；[NVIDIA 開源多模態音訊模型Audio Flamingo 3](https://www.oschina.net/news/361477/nvidia-audio-flamingo-3)
+- 2025-05-08：[Voila](https://github.com/maitrix-org/Voila)；[新型開源端對端AI 語音模型！ Voila：195ms 超低延遲引領全雙工對話！](https://zhuanlan.zhihu.com/p/1903776373765547954)
+- [HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)
 
 **多模態大語言模型 (Multimodal)**
 - 2025-02-21：[Magma](https://github.com/microsoft/Magma)：[微軟發表Magma多模態AI代理基礎模型，單一模型就具UI與機器人操作能力](https://www.ithome.com.tw/news/167507)
