@@ -196,7 +196,7 @@ https://huggingface.co/DeepLearning101
 - [🧠 MoE (混合專家模型)](#moe)
 - [📱 Small Language Models (小型語言模型)](#slm)
 - [🤔 Reasoning Models (推理模型)](#reasoning)
-- [🏛️ Large Language Models (大型語言模型)](#llm)
+- [🏛️ Large Language Models (大型語言模型)](#llm-1)
 - [🔎 Embedding & Reranker](#embedding)
 - [🔊 Speech-to-Speech LLM (語音大模型)](#speech)
 - [👁️ Vision-Language Model (視覺大語言模型)](#vision)
