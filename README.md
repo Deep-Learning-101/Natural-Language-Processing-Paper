@@ -461,6 +461,7 @@ https://huggingface.co/DeepLearning101
   - 2025-02-16：[webui 部署教學](https://zhuanlan.zhihu.com/p/24116360552)
   - 2025-01-23：[讓 AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
 
+
 ### 效率工具 (Efficiency Tools)
 - 2025-12-20｜**NVIDIA Nemotron-3-Nano**
   - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16) | [🌐 OpenRouter](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free)
@@ -473,12 +474,6 @@ https://huggingface.co/DeepLearning101
 - 2025-07-30｜**LangExtract**
   - 說明：Gemini 驅動的資訊擷取庫
   - 資源：[🐙 GitHub](https://github.com/google/langextract) | [📝 Google Developers](https://developers.googleblog.com/zh-hans/introducing-langextract-a-gemini-powered-information-extraction-library/)
-- 2025-07-26｜**presenton**
-  - 說明：本地部署一鍵生成精美 PPT
-  - 資源：[🐙 GitHub](https://github.com/presenton/presenton) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/QTMVGD_aP41qrwtbjLxV8Q)
-- 2025-07-03｜**MultiAgentPPT**
-  - 說明：多智能體並發產生 PPT
-  - 資源：[🐙 GitHub](https://github.com/johnson7788/MultiAgentPPT) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1920611446007497267)
 - 2025-06-28｜**docext**
   - 說明：基於 Qwen2.5VL 的文檔解析工具
   - 資源：[🐙 GitHub](https://github.com/NanoNets/docext) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1919760450024879687)
@@ -537,9 +532,6 @@ https://huggingface.co/DeepLearning101
 - 2025-01-13｜**DocAligner**
   - 說明：拍照文件復原 (校正、版面定位)
   - 資源：[🐙 GitHub](https://github.com/ZZZHANG-jx/DocAligner) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
-- 2025-01-13｜**PPTAgent**
-  - 說明：中科院開源 AI 工具，文件轉高品質 PPT
-  - 資源：[🐙 GitHub](https://github.com/icip-cas/PPTAgent) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/18105237248)
 - 2025-01-07｜**activepieces**
   - 說明：開源 AI 自動化工作流程工具
   - 資源：[🐙 GitHub](https://github.com/activepieces/activepieces) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/Z17KtGyAH5YI4R-VY1fgng)
@@ -549,6 +541,40 @@ https://huggingface.co/DeepLearning101
   - 資源：[🐙 GitHub](https://github.com/microsoft/markitdown)
 
 ---
+
+## AI PTT
+**🌍 AI PPT (用AI做PPT)**
+
+-2026-01-04 | **LangChat Slides**
+  - 說明：基於生成式AI 的智慧幻燈片生成工具，由LangChat 團隊開發。
+  - 資源：[🐙 GitHub](https://github.com/langchat/langchat-slides ) | [DEMO](https://slides.langchat.cn/) | [掘金解讀](https://juejin.cn/post/7591861857465778214)
+- 2025-07-26｜**presenton**
+  - 說明：本地部署一鍵生成精美 PPT
+  - 資源：[🐙 GitHub](https://github.com/presenton/presenton) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/QTMVGD_aP41qrwtbjLxV8Q)
+- 2025-07-03｜**MultiAgentPPT**
+  - 說明：多智能體並發產生 PPT
+  - 資源：[🐙 GitHub](https://github.com/johnson7788/MultiAgentPPT) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1920611446007497267)
+  - 2025-01-13｜**PPTAgent**
+  - 說明：中科院開源 AI 工具，文件轉高品質 PPT
+  - 資源：[🐙 GitHub](https://github.com/icip-cas/PPTAgent) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/18105237248)
+
+--
+
+## NotebookLM 平替
+**🌍 NotebookLM 平替**
+
+- 2026-01-04 | **Notex**
+- 說明：一個開源 NotebookLM 替代方案的實現
+  - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65epWwIC7Lqalwh-WuoP3Q)
+  - [DEMO](https://notex.rpcx.io/)
+- 2025-12-06 | **Open NoteBook**
+- 說明：一個開源的、注重隱私的Google Notebook LM 替代方案
+  - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518)
+- 2025-12-06 | **Auto-Slides**
+- 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
+  - 資源：[🐙 GitHub](https://github.com/Westlake-AGI-Lab/Auto-Slides) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
+
+  ---
 
 ## World Models
 **🌍 World Models (世界模型)**
@@ -669,6 +695,11 @@ https://huggingface.co/DeepLearning101
 - 2025-11-03｜**LongCat-Flash-Omni**
   - 說明：開啟全模態即時互動時代
   - 資源：[🤗 HuggingFace](https://huggingface.co/meituan-longcat/LongCat-Flash-Omni) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1968699530762491165)
+
+
+- 2025-09-19 | **Xiaomi-MiMo-Audio**
+  - 說明：小米開源首個原生端對端語音大模式
+  - 資源：[🤗 HuggingFace](https://huggingface.co/XiaomiMiMo/MiMo-Audio-7B-Base) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1991075806194205492)
 
 - 2025-07-21｜**Audio Flamingo 3**
   - 說明：NVIDIA 開源多模態音訊模型
