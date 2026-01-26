@@ -315,6 +315,10 @@ https://huggingface.co/DeepLearning101
   - 說明：開放原始碼開發套件，用於建置 .NET 和 Python 的 AI 代理程式 和 多代理程式工作流程 。
   - 資源：[🐙 GitHub](https://github.com/microsoft/agent-framework) | [📝 官方文件](https://learn.microsoft.com/zh-tw/agent-framework/overview/agent-framework-overview)
 
+- 2025-08-29｜**MiroThinker**
+  - 說明：開源的深度研究代理，針對研究和預測進行了最佳化。
+  - 資源：[🐙 GitHub](https://github.com/MiroMindAI/MiroThinker) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/gRvKoSTpelsDLaUQJb0F3w)
+
 - 2025-07-03｜**multi-modal-researcher**
   - 資源：[🐙 GitHub](https://github.com/langchain-ai/multi-modal-researcher)
 
@@ -545,9 +549,12 @@ https://huggingface.co/DeepLearning101
 ## AI PTT
 **🌍 AI PPT (用AI做PPT)**
 
--2026-01-04 | **LangChat Slides**
+- 2026-01-04 | **LangChat Slides**
   - 說明：基於生成式AI 的智慧幻燈片生成工具，由LangChat 團隊開發。
-  - 資源：[🐙 GitHub](https://github.com/langchat/langchat-slides ) | [DEMO](https://slides.langchat.cn/) | [掘金解讀](https://juejin.cn/post/7591861857465778214)
+  - 資源：[🐙 GitHub](https://github.com/langchat/langchat-slides) | [DEMO](https://slides.langchat.cn/) | [掘金解讀](https://juejin.cn/post/7591861857465778214)
+- 2025-12-13 | **banana-slides**
+  - 說明：基於nanobananapro🍌的原生AI PPT生成應用，邁向真正的「Vibe PPT」。
+  - 資源：[🐙 GitHub](https://github.com/Anionex/banana-slides) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/XXyCnEdrTVoK-m-EAW69nA)
 - 2025-07-26｜**presenton**
   - 說明：本地部署一鍵生成精美 PPT
   - 資源：[🐙 GitHub](https://github.com/presenton/presenton) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/QTMVGD_aP41qrwtbjLxV8Q)
@@ -558,7 +565,7 @@ https://huggingface.co/DeepLearning101
   - 說明：中科院開源 AI 工具，文件轉高品質 PPT
   - 資源：[🐙 GitHub](https://github.com/icip-cas/PPTAgent) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/18105237248)
 
---
+---
 
 ## NotebookLM 平替
 **🌍 NotebookLM 平替**
@@ -567,9 +574,11 @@ https://huggingface.co/DeepLearning101
 - 說明：一個開源 NotebookLM 替代方案的實現
   - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65epWwIC7Lqalwh-WuoP3Q)
   - [DEMO](https://notex.rpcx.io/)
+
 - 2025-12-06 | **Open NoteBook**
 - 說明：一個開源的、注重隱私的Google Notebook LM 替代方案
-  - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518)
+  - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Kncslf0XL1ucdPpQX_-a1g)
+
 - 2025-12-06 | **Auto-Slides**
 - 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
   - 資源：[🐙 GitHub](https://github.com/Westlake-AGI-Lab/Auto-Slides) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
