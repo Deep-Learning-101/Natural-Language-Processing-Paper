@@ -189,7 +189,7 @@ https://huggingface.co/DeepLearning101
 
 ### **文章目錄**
 - [🏆 排行榜 (Leaderboards)](#leaderboards)
-- [🛠️ 微調技術與資源 (Fine-tuning)](#fine-tuning)
+- [🛠️ 微調蒸餾技術與資源 (Fine-tuning)](#fine-tuning)
 - [🧩 AI Agent 開源框架](#ai-agent)
 - [🛠️ 開發工具 (Tools & Protocols)](#tools)
 - [🌍 World Models (世界模型)](#world-models)
@@ -215,7 +215,7 @@ https://huggingface.co/DeepLearning101
 ---
 
 ## Fine-tuning
-**🛠️ 微調技術與資源 (Fine-tuning)**
+**🛠️ 微調蒸餾技術與資源 (Fine-tuning)**
 
 ### 顯存估算 (VRAM)
 - **大模型所需 GPU 記憶體筆記**
@@ -223,7 +223,7 @@ https://huggingface.co/DeepLearning101
 - **不同參數規模在微調方法下所需的顯存總結**
   - 資源：[📝 DataLearner](https://www.datalearner.com/blog/1051703254378255)
 
-### 微調技術與教學
+### 微調/蒸餾技術教學
 - **微調技術全解**
   - 說明：SFT、LoRA、P-tuning v2、Freeze 監督微調方法
   - 資源：[📝 知乎專欄](https://zhuanlan.zhihu.com/p/643941480)
@@ -241,6 +241,9 @@ https://huggingface.co/DeepLearning101
 - **DeepSeek-R1 微調指南**
   - 說明：微調為領域專家
   - 資源：[📝 知乎專欄](https://zhuanlan.zhihu.com/p/25054526736)
+- **EasyDistill**  
+  - 說明：知識蒸餾不再難！阿里開源EasyDistill及DistilQwen模型家族，開源即用、效能強勁！
+  - 資源：[🐙 GitHub](https://github.com/modelscope/easydistill) | [📄 AlphaXiv](https://www.alphaxiv.org/abs/2505.20888)  
 - **NVIDIA NeMo**
   - 說明：模型剪枝和知識蒸餾
   - 資源：[📝 NVIDIA Blog](https://developer.nvidia.com/zh-cn/blog/llm-model-pruning-and-knowledge-distillation-with-nvidia-nemo-framework/)
