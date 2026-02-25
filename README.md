@@ -500,6 +500,9 @@ https://huggingface.co/DeepLearning101
 
 
 ### 效率工具 (Efficiency Tools)
+- 2026-02-24 | **PaperBanana**
+  - 說明：核心思想是參考驅動+多智能體合作。它不會直接產生圖像，而是先理解、再規劃、再美化、最後迭代優化。
+  - 資源：[🐙 GitHub](https://dwzhu-pku.github.io/PaperBanana/) | [📝 arxiv](https://arxiv.org/pdf/2601.23265)
 - 2025-12-20｜**NVIDIA Nemotron-3-Nano**
   - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16) | [🌐 OpenRouter](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free)
 - 2025-11-20｜**LinearRAG**
@@ -540,15 +543,9 @@ https://huggingface.co/DeepLearning101
 - 2025-04-16｜**ScrapeGraphAI**
   - 說明：自然語言驅動的智慧爬蟲
   - 資源：[🐙 GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/lQukAy12V5K1cH6rTkqxaA)
-- 2025-04-15｜**stagehand**
-  - 說明：AI 驅動的下一代瀏覽器自動化框架
-  - 資源：[🐙 GitHub](https://github.com/browserbase/stagehand) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/KF-z67kn4rTjcIBmTvj3nA)
 - 2025-04-11｜**nanobrowser**
   - 說明：AI 驅動的瀏覽器自動化神器
   - 資源：[🐙 GitHub](https://github.com/nanobrowser/nanobrowser) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65SwCtDta1cKvx1_BbaoHQ)
-- 2025-04-10｜**DevDocs**
-  - 說明：開發者的文檔收割機
-  - 資源：[🐙 GitHub](https://github.com/cyberagiinc/DevDocs) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/k5fG_L1q_19ylKIJD6PXmw)
 - 2025-04-06｜**sqlchat**
   - 說明：讓資料庫管理像聊天一樣簡單
   - 資源：[🐙 GitHub](https://github.com/sqlchat/sqlchat) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/kieSzWn3QDYvZ5Zx35hr1A)
@@ -560,18 +557,12 @@ https://huggingface.co/DeepLearning101
   - 資源：[🐙 GitHub](https://github.com/ocrmypdf/OCRmyPDF) | [📝 知乎分析](https://www.zhihu.com/tardis/zm/art/32745781279?source_id=1003)
 - 2025-03-12｜**AingDesk** (同上)
   - 資源：[📚 DeepWiki](https://deepwiki.com/aingdesk/AingDesk) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/29773848356)
-- 2025-03-08｜**composio**
-  - 說明：AI 助理效率神器，整合 200+ 工具
-  - 資源：[🐙 GitHub](https://github.com/ComposioHQ/composio) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/rRPOmihGzcIXx0HQc3pdoA)
 - 2025-02-25｜**PySpur**
   - 說明：拖曳式開發 AI 工作流程
   - 資源：[🌐 官網](https://www.pyspur.dev/) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/26161709083)
 - 2025-01-13｜**DocAligner**
   - 說明：拍照文件復原 (校正、版面定位)
   - 資源：[🐙 GitHub](https://github.com/ZZZHANG-jx/DocAligner) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
-- 2025-01-07｜**activepieces**
-  - 說明：開源 AI 自動化工作流程工具
-  - 資源：[🐙 GitHub](https://github.com/activepieces/activepieces) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/Z17KtGyAH5YI4R-VY1fgng)
 - 2024-12-19｜**LightRAG**
   - 資源：[🐙 GitHub](https://github.com/HKUDS/LightRAG) | [📝 技術框架解讀](https://zhuanlan.zhihu.com/p/13261291813)
 - 2024-12-15｜**markitdown**
@@ -582,6 +573,9 @@ https://huggingface.co/DeepLearning101
 ## AI PTT
 **🌍 AI PPT (用AI做PPT)**
 
+- 2026-02-23 | **Edit-Banana**
+  - 說明：北京理工大學與亞利桑那大學團隊出手，憑藉著像素級逆向還原能力，打通了AIGC 繪圖落地的最後一公里。
+  - 資源：[🐙 GitHub](https://github.com/BIT-DataLab/Edit-Banana)
 - 2026-01-04 | **LangChat Slides**
   - 說明：基於生成式AI 的智慧幻燈片生成工具，由LangChat 團隊開發。
   - 資源：[🐙 GitHub](https://github.com/langchat/langchat-slides) | [DEMO](https://slides.langchat.cn/) | [掘金解讀](https://juejin.cn/post/7591861857465778214)
@@ -607,11 +601,9 @@ https://huggingface.co/DeepLearning101
 - 說明：一個開源 NotebookLM 替代方案的實現
   - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65epWwIC7Lqalwh-WuoP3Q)
   - [DEMO](https://notex.rpcx.io/)
-
 - 2025-12-06 | **Open NoteBook**
 - 說明：一個開源的、注重隱私的Google Notebook LM 替代方案
   - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Kncslf0XL1ucdPpQX_-a1g)
-
 - 2025-12-06 | **Auto-Slides**
 - 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
   - 資源：[🐙 GitHub](https://github.com/Westlake-AGI-Lab/Auto-Slides) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
@@ -643,17 +635,9 @@ https://huggingface.co/DeepLearning101
 ## SLM
 **📱 Small Language Models (小型語言模型)**
 
-- 2025-01-07｜**Smolagents**
-  - 說明：Hugging Face 全新 AI 智能體框架
-  - 資源：[🐙 GitHub](https://github.com/huggingface/smolagents) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/16417392406)
-
 - 2024-12-13｜**Phi-4**
   - 說明：微軟 Phi-4 正式發表，以小博大
   - 資源：[🤗 HuggingFace](https://huggingface.co/NyxKrage/Microsoft_Phi-4) | [📝 公眾號](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
-
-- 2024-11-18｜**MobileLLM-1.5B**
-  - 說明：Meta 打造行動裝置超強語言模型
-  - 資源：[🤗 HuggingFace](https://huggingface.co/facebook/MobileLLM-1.5B) | [📝 公眾號](https://mp.weixin.qq.com/s/hjY6L69pqN4GvybCuHesTA)
 
 - 2024-11-04｜**SmolLM2**
   - 說明：手機執行的小型語言模型
@@ -693,15 +677,15 @@ https://huggingface.co/DeepLearning101
 ## LLM
 **🏛️ Large Language Models (大型語言模型)**
 
+- 2026-02-19 | **Gemini 3.1**
+  - 資源：[🌐 官網](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview?hl=zh-tw)
+
 - 2025-08-05｜**Claude Opus 4.1**
   - 資源：[📝 機器之心](https://www.jiqizhixin.com/articles/2025-08-06-4)
 
 - 2024-11-23｜**Ai2 Tülu 3**
   - 說明：真・開源模型，公開「後訓練」一切
   - 資源：[🐙 GitHub](https://github.com/allenai/open-instruct) | [🌐 Playground](https://playground.allenai.org/) | [🤗 Model](https://huggingface.co/allenai) | [📝 機器之心](https://www.jiqizhixin.com/articles/2024-11-23-5)
-
-- 2024-11-09｜**Ai2 OpenScholar**
-  - 資源：[📝 Blog](https://allenai.org/blog/openscholar) | [🌐 Project](https://openscholar.allen.ai/)
 
 - 2024-09-25｜**Llama 3.2 90b/11b**
   - 資源：[📝 Meta Blog](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
