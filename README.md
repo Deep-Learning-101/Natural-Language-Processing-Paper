@@ -320,9 +320,13 @@ https://huggingface.co/DeepLearning101
 
 ### Agent 框架列表 (按時間排序)
 
+- 2026-02-22 | **ZeroClaw**
+  - 說明：壓成本、低功耗部署、深度客製。
+  - 資源：[🐙 GitHub](https://github.com/zeroclaw-labs/zeroclaw) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/LialztPIJjiYon00zhOM6w)
+  
 - 2026-01-20 | **OpenClaw(MoltBot/Clawdbot)**  
   - 說明：一個跑在你自己電腦上的 AI 助手平台。 | [👉 點此看深度技術分析 ](https://deep-learning-101.github.io/LLM/OpenClaw-Moltbot-Clawdbot) |  [👉 點此看白話文分析 ](https://blog.twman.org/2026/02/OpenClaw.html)
-  - 資源： [🌐 官網](https://openclaw.ai/) | [🐙 GitHub](https://github.com/NVIDIA/personaplex) | [官方簡體中文文件](https://docs.openclaw.ai/zh-CN) | [官方文件](https://docs.openclaw.ai) | [📝 DeepWiki](https://deepwiki.com/openclaw/openclaw) | [[📝 Zread](https://zread.ai/openclaw/openclaw) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/yFi8lWLWp7NPDO-zD6QW_Q) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/1ikfiU_eGnL5FRaPRddA2Q) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/WDEYhOG2tGYau0VAOc_y7A) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1999109634909303005)
+  - 資源： [🌐 官網](https://openclaw.ai/) | [🐙 GitHub](https://github.com/NVIDIA/personaplex) | [官方簡體中文文件](https://docs.openclaw.ai/zh-CN) | [官方文件](https://docs.openclaw.ai) | [📝 DeepWiki](https://deepwiki.com/openclaw/openclaw) | [[📝 Zread](https://zread.ai/openclaw/openclaw) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/yFi8lWLWp7NPDO-zD6QW_Q) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/1ikfiU_eGnL5FRaPRddA2Q) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/WDEYhOG2tGYau0VAOc_y7A) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1999109634909303005) | [📝 2026年OpenClaw Skills排行榜：Top 20必裝清單](https://mp.weixin.qq.com/s/wCoo-h4dEkxLjZo-lOsVmQ)
 
 - 2025-11-15｜**Agno**
   - 說明：高效能 Multi-agent 系統框架
@@ -597,15 +601,21 @@ https://huggingface.co/DeepLearning101
 ## NotebookLM 平替
 **🌍 NotebookLM 平替**
 
+- 2026-01-20 | **notebooklm-py**
+  - 說明：將NotebookLM完整接入命令列環境，讓AI知識處理邁入自動化新紀元
+  - 資源：[🐙 GitHub](https://github.com/teng-lin/notebooklm-py) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/rATp6AhcQOzFe4t2QnA07w)
 - 2026-01-04 | **Notex**
-- 說明：一個開源 NotebookLM 替代方案的實現
+  - 說明：一個開源 NotebookLM 替代方案的實現
   - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65epWwIC7Lqalwh-WuoP3Q)
   - [DEMO](https://notex.rpcx.io/)
+- 2025-12-12 | **PageLM**
+  - 說明：把學習材料丟進去，互動式學習內容就出來
+  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/3o8RcHicjt5FRdSzG_qGUw)
 - 2025-12-06 | **Open NoteBook**
-- 說明：一個開源的、注重隱私的Google Notebook LM 替代方案
-  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Kncslf0XL1ucdPpQX_-a1g)
+  - 說明：一個開源的、注重隱私的Google Notebook LM 替代方案
+  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Kncslf0XL1ucdPpQX_-a1g)
 - 2025-12-06 | **Auto-Slides**
-- 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
+  - 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
   - 資源：[🐙 GitHub](https://github.com/Westlake-AGI-Lab/Auto-Slides) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
 
   ---
