@@ -729,6 +729,14 @@ https://huggingface.co/DeepLearning101
   - 說明：用 ChatGPT 即時語音 API 建立應用
   - 資源：[🐙 GitHub](https://github.com/pipecat-ai/pipecat) | [📝 機器之心](https://www.jiqizhixin.com/articles/2025-01-10-4)
 
+- 2026-01-24 | **FlashLabs-Chroma**
+  - 說明：Speech-to-Speech, S2S
+  - 資源：[🤗 HuggingFace](https://huggingface.co/FlashLabs/Chroma-4B)
+
+- 2026-01-15 | **PersonaPlex-7B-V1**
+  - 說明：重塑實時語音交互的 "全雙工" 黑科技 | [👉 點此看深度技術分析 ](https://deep-learning-101.github.io/LLM/PersonaPlex)
+  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/personaplex-7b-v1) | [🐙 GitHub](https://github.com/NVIDIA/personaplex) | [🌐 Project](https://research.nvidia.com/labs/adlr/personaplex/) | [論文](https://research.nvidia.com/labs/adlr/files/personaplex/personaplex_preprint.pdf) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/dyAoh8hIjNw-LI-hb_1e6A)
+
 - 2025-12-24｜**Fun-Audio-Chat-8B**
   - 資源：[🤗 HuggingFace](https://huggingface.co/FunAudioLLM/Fun-Audio-Chat-8B)
 
