@@ -2,6 +2,8 @@
 https://www.twman.org/AI/NLP
 
 https://huggingface.co/DeepLearning101
+
+https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 #
 
 ---
