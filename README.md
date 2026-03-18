@@ -509,7 +509,18 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 說明：AI 自動化神器
   - 資源：[🐙 GitHub](https://github.com/microsoft/playwright-mcp) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/30178146112)
 
-### Browser Automation (瀏覽器自動化)
+---
+
+### Browser Automation (瀏覽器自動化 / Manus / RPA 開源替代品)
+
+| 框架/工具名稱 | 開發團隊/生態 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **OpenClaw** | 🌐 **開源社群** | **跑在本地的 AI 助手**。強調在地端環境運行，保障隱私與資料安全。 | 本地端資料處理、隱私優先企業<br>`[本地部署]` `[隱私安全]` |
+| **Browser-use** | 🌐 **國際開源社群** | **讓 AI 像人一樣上網**。支援錄製工作流，一次錄製永久自動操作網頁。 | 網頁自動化測試、動態網頁爬蟲<br>`[瀏覽器自動化]` `[可錄製]` |
+| **Gemini Computer Use** | 🇺🇸 **Google** | **直接操控作業系統**。Google 官方推出的代理工具，讓 AI 能直接理解並操作你的電腦介面。 | 跨 APP 自動化操作、系統級 RPA<br>`[Google生態]` `[系統控制]` |
+| **OmniParser** | 🇺🇸 **Microsoft** | **精準解析 UI 元素**。微軟開源的強大視覺智能體，能看懂手機與電腦畫面的按鈕與架構。 | UI 自動化測試、多模態輸入<br>`[微軟開源]` `[UI解析]` |
+| **OpenManus / suna** | 🇨🇳/🌐 **開源社群** | **Manus 的開源平替**。解決商用 Agent 昂貴的問題，提供高度相似的任務執行能力。 | 個人開發者、快速概念驗證<br>`[Manus平替]` `[低成本]` |
+
 - **Browser-use**
   - 資源：[🐙 GitHub](https://github.com/browser-use/browser-use)
   - 2025-06-04：[workflow-use](https://github.com/browser-use/workflow-use) (一次錄製，永久使用)
@@ -517,6 +528,19 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 2025-03-28：[browser-use-webui](https://github.com/browser-use/web-ui)
   - 2025-02-16：[webui 部署教學](https://zhuanlan.zhihu.com/p/24116360552)
   - 2025-01-23：[讓 AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
+
+---
+
+### 深度研究 (Deep Research) 與多智能體工作流
+
+| 框架/工具名稱 | 開發團隊/生態 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **Tongyi DeepResearch** | 🇨🇳 **阿里巴巴** | **開源版深度研究**。通義全面開源，標榜效能超越 OpenAI 的閉源研究框架。 | 學術文獻統整、深度產業報告生成<br>`[大廠開源]` `[深度研究]` |
+| **Agno** | 🌐 **開源社群** | **高效能 Multi-agent**。專注於多個 AI 智能體之間的協作與任務分發。 | 複雜專案拆解、軟體開發協作<br>`[多智能體]` `[高效能]` |
+| **FlowGram** | 🇨🇳 **字節跳動** | **Coze 核心引擎開源**。強大的視覺化工作流引擎，適合構建複雜的邏輯鏈。 | 企業級 AI 服務編排、Chatbot 後台<br>`[工作流引擎]` `[可視化]` |
+| **AutoAgent** | 🇭🇰 **香港大學** | **學術界最強大腦**。港大打造的開源 Deep Research 工具，學術底蘊深厚。 | 大學研究室、論文自動化分析<br>`[學術開源]` `[文獻分析]` |
+
+---
 
 ### 效率工具 (Efficiency Tools)
 - 2026-02-24 | **PaperBanana**
@@ -631,7 +655,18 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 說明：中科院開源 AI 工具，文件轉高品質 PPT
   - 資源：[🐙 GitHub](https://github.com/icip-cas/PPTAgent) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/18105237248)
 
----
+-----
+
+### 🌍 知識管理革命：開源 AI PPT 與 NotebookLM 替代方案
+
+| 專案名稱 | 分類 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **notebooklm-py / Notex** | NotebookLM 平替 | **隱私優先的知識庫**。提供類似 NotebookLM 的互動體驗，但支援命令列操作與本地部署。 | 企業內部文件庫、個人離線筆記本<br>`[開源平替]` `[重視隱私]` |
+| **PageLM** | NotebookLM 平替 | **互動式學習神器**。把學習材料丟進去，自動生成互動式學習內容。 | 教育培訓、長篇報告快速消化<br>`[互動學習]` `[文件分析]` |
+| **Edit-Banana** | AI PPT | **像素級逆向還原**。不直接生圖，而是理解、規劃再優化，打通 AI 簡報落地的最後一哩路。 | 專業商業簡報、學術海報生成<br>`[高質感排版]` `[學術開源]` |
+| **MultiAgentPPT** | AI PPT | **多智能體協作生 PPT**。利用多個 Agent 並發處理大綱、文案與排版，速度極快。 | 急件簡報製作、大綱快速展開<br>`[多智能體]` `[自動排版]` |
+
+-----
 
 ## NotebookLM 平替
 **🌍 NotebookLM 平替**
@@ -696,6 +731,24 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 
 ## Reasoning
 **🤔 Reasoning Models (推理模型)**
+
+### 🧠 次世代 LLM：推理模型 (Reasoning) 與 小型語言模型 (SLM)
+
+| 模型名稱 | 開發團隊 | 💡 核心優勢與突破點 | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **gpt-oss (120B)** | 🇺🇸 **OpenAI** | **o4-mini 級別的開源震撼彈**。OpenAI 重新擁抱開源，提供極強的邏輯推理能力。 | 複雜程式碼生成、高階數學解題<br>`[頂級推理]` `[OpenAI]` |
+| **Llama Nemotron Super v1.5** | 🇺🇸 **NVIDIA** (輝達) | **三倍吞吐，單卡可跑**。49B 的參數兼顧了極高的效能與相對親民的硬體需求。 | 企業內部知識庫、高併發 API 服務<br>`[NVIDIA特化]` `[單卡部署]` |
+| **OpenReasoning-Nemotron** | 🇺🇸 **NVIDIA** (輝達) | **1.5B 參數秒殺 o3**。極小參數卻擁有恐怖的數學運算與邏輯推理能力。 | 邊緣設備即時運算、專精型任務<br>`[極端輕量]` `[數學核武]` |
+
+### 🧠 邊緣運算首選：Small Language Models (SLM)
+
+| 模型名稱 | 開發團隊 | 💡 核心優勢與突破點 | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **Phi-4** | 🇺🇸 **Microsoft** | **以小博大的教科書**。微軟 Phi 家族最新力作，在各項 Benchmark 上經常越級打怪。 | 本地筆電開發、離線文件摘要<br>`[微軟生態]` `[高CP值]` |
+| **Llama 3.2 (1B/3B)** | 🇺🇸 **Meta** | **專為端側與手機設計**。Meta 官方釋出的輕量版本，完美適配行動裝置。 | iOS/Android APP 內建 AI、物聯網設備<br>`[Edge AI]` `[手機可跑]` |
+| **SmolLM2** | 🇺🇸/🇪🇺 **Hugging Face** | **專為手機執行的極小模型**。極致壓縮體積，適合資源極度受限的環境。 | 穿戴式裝置、超低功耗設備<br>`[極小體積]` `[HuggingFace]` |
+
+---
 
 - 2025-08-05｜**gpt-oss**
   - 說明：OpenAI 重新開源，o4-mini 水平
