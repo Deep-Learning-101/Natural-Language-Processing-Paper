@@ -192,14 +192,14 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 ### **文章目錄**
 - [🏆 排行榜 (Leaderboards)](#leaderboards)
 - [🖥️ NVIDIA Nemotron](#nvidia-nemotron)
-- [🛠️ 微調蒸餾技術與資源 (Fine-tuning)](#fine-tuning)
+- [🛠️ 微調技術與資源 (Fine-tuning)](#fine-tuning)
 - [🧩 AI Agent 開源框架](#ai-agent)
 - [🛠️ 開發工具 (Tools & Protocols)](#tools)
 - [🌍 World Models (世界模型)](#world-models)
 - [🧠 MoE (混合專家模型)](#moe)
 - [📱 Small Language Models (小型語言模型)](#slm)
 - [🤔 Reasoning Models (推理模型)](#reasoning)
-- [🏛️ Large Language Models (大型語言模型)](#llm-1)
+- [🏛️ Large Language Models (大型語言模型)](#llm)
 - [🔎 Embedding & Reranker](#embedding)
 - [🔊 Speech-to-Speech LLM (語音大模型)](#speech)
 - [👁️ Vision-Language Model (視覺大語言模型)](#vision)
@@ -218,6 +218,8 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 ---
 
 ## NVIDIA Nemotron
+- 2026-03-11 | **NVIDIA Nemotron 3 Super**
+  - [NVIDIA技術部落格](https://blogs.nvidia.com.tw/blog/nemotron-3-super-agentic-ai/) | [🤗 HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8)
 - 2026-02-04 | **使用Nemotron 為RAG 建立文件處理流程**
   - [NVIDIA技術部落格](https://developer.nvidia.cn/blog/how-to-build-a-document-processing-pipeline-for-rag-with-nemotron/)
   - 實戰操作：如何用最新的 Nemotron 模型處理 PDF、表格和圖表，這是企業最常見的需求。
@@ -227,6 +229,8 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 - 2026-01-05 | **如何使用 RAG 和安全護欄建立語音智能體**
   - [NVIDIA技術部落格](https://developer.nvidia.cn/blog/how-to-build-a-voice-agent-with-rag-and-safety-guardrails/)
   - 語音與安全：展示如何將 Nemotron 結合語音技術，並且加上 Guardrails 防止 AI 亂說話。
+- 2025-12-20｜**NVIDIA Nemotron-3-Nano**
+  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16) | [🌐 OpenRouter](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free)
 - 2025-12-15 | **深入解析 NVIDIA Nemotron 3**
   - [NVIDIA技術部落格](https://developer.nvidia.cn/blog/inside-nvidia-nemotron-3-techniques-tools-and-data-that-make-it-efficient-and-accurate/)
   - 了解 Nemotron-3 (Mamba-Transformer 混合架構) 內部原理
@@ -243,7 +247,7 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 ---
 
 ## Fine-tuning
-**🛠️ 微調蒸餾技術與資源 (Fine-tuning)**
+**🛠️ 微調技術與資源 (Fine-tuning)**
 
 ### 顯存估算 (VRAM)
 - **大模型所需 GPU 記憶體筆記**
@@ -263,18 +267,18 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 - **Unsloth 官方微調技巧**
   - 說明：初學者必看指南
   - 資源：[📝 微信公眾號](https://mp.weixin.qq.com/s/COZfH_h36nX33TZGBVn0rg)
-- **零代碼一站式微調**
+- **零代碼一站式微調 / DeepSeek-R1 微調指南**
   - 說明：從資料集準備到模型微調全流程
-  - 資源：[📝 知乎專欄](https://zhuanlan.zhihu.com/p/1906670241645322809)
-- **DeepSeek-R1 微調指南**
-  - 說明：微調為領域專家
-  - 資源：[📝 知乎專欄](https://zhuanlan.zhihu.com/p/25054526736)
+  - 資源：
+        [📝 知乎專欄-如何把你的De​​ePseek-R1 微調為某個領域的專家？](https://zhuanlan.zhihu.com/p/25054526736)
+        [📝 從零教你微調一個專屬領域大模型，看完小白也能學會煉丹!（完整版）](https://mp.weixin.qq.com/s/YntCYouTa0gbUuXl1wYwWA)
+        [📝 知乎專欄-纯本地！零代码！一站式完整数据集准备到模型微调全流程！（一）](https://zhuanlan.zhihu.com/p/1906670241645322809)
+        [📝 知乎專欄-LLaMA Factory 微調教學（二）：建立高品質資料集](https://zhuanlan.zhihu.com/p/1916489160333714285)
+        [📝 微信公眾號-LLaMA Factory 微調教學（三）：微調參數設置，顯存估算與最佳化](https://mp.weixin.qq.com/s/AbyWaTaPOp9sr5mz5SOVwg)
+        [📝 微信公眾號-LLaMA Factory 微調教學（四）：如何觀測模型的微調過程？微調後的模型如何合併匯出和部署？](https://mp.weixin.qq.com/s/6sNGvqLktPk6AP7kPs9JyA)
 - **EasyDistill**  
   - 說明：知識蒸餾不再難！阿里開源EasyDistill及DistilQwen模型家族，開源即用、效能強勁！
   - 資源：[🐙 GitHub](https://github.com/modelscope/easydistill) | [📄 AlphaXiv](https://www.alphaxiv.org/abs/2505.20888)  
-- **NVIDIA NeMo**
-  - 說明：模型剪枝和知識蒸餾
-  - 資源：[📝 NVIDIA Blog](https://developer.nvidia.com/zh-cn/blog/llm-model-pruning-and-knowledge-distillation-with-nvidia-nemo-framework/)
 
 ### 微調框架 (Frameworks)
 - **LLaMA Factory**
@@ -325,7 +329,7 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 - 2026-02-22 | **ZeroClaw**
   - 說明：壓成本、低功耗部署、深度客製。
   - 資源：[🐙 GitHub](https://github.com/zeroclaw-labs/zeroclaw) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/LialztPIJjiYon00zhOM6w)
-  
+
 - 2026-01-20 | **OpenClaw(MoltBot/Clawdbot)**  
   - 說明：一個跑在你自己電腦上的 AI 助手平台。 | [👉 點此看深度技術分析 ](https://deep-learning-101.github.io/LLM/OpenClaw-Moltbot-Clawdbot) |  [👉 點此看白話文分析 ](https://blog.twman.org/2026/02/OpenClaw.html)
   - 資源： [🌐 官網](https://openclaw.ai/) | [🐙 GitHub](https://github.com/NVIDIA/personaplex) | [官方簡體中文文件](https://docs.openclaw.ai/zh-CN) | [官方文件](https://docs.openclaw.ai) | [📝 DeepWiki](https://deepwiki.com/openclaw/openclaw) | [[📝 Zread](https://zread.ai/openclaw/openclaw) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/yFi8lWLWp7NPDO-zD6QW_Q) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/1ikfiU_eGnL5FRaPRddA2Q) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/WDEYhOG2tGYau0VAOc_y7A) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1999109634909303005) | [📝 2026年OpenClaw Skills排行榜：Top 20必裝清單](https://mp.weixin.qq.com/s/wCoo-h4dEkxLjZo-lOsVmQ)
@@ -470,27 +474,37 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 說明：微軟開源，控制電腦手機的智能體
   - 資源：[🐙 GitHub](https://github.com/microsoft/OmniParser) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/3343331861)
 
-- 2024-09-23｜**STORM**
-  - 說明：基於 LLM 的知識整理系統 (Stanford)
-  - 資源：[🐙 GitHub](https://github.com/stanford-oval/storm) | [📝 公眾號介紹](https://mp.weixin.qq.com/s/x72eW958UbhrscvKghO6og)
 
 ---
 
 ## Tools
 **🛠️ 開發工具 (Tools & Protocols)**
 
+### RAG (Retrieval Augmented Generation)
+- 2026-03-14 | **KohakuRAG** | Apache-2.0
+  - 說明：Kaggle 的 RAG競賽WattBot 2025冠軍方案
+  - 資源：[📝 zread](https://zread.ai/KohakuBlueleaf/KohakuRAG) | [📝 公眾號教學](https://mp.weixin.qq.com/s/hUsr55bXBrHor0kHMo9htg)
+
+- 2026-03-01 | **PageIndex** | MIT License
+  - 說明：不做向量匹配，做推理導航。
+  - 資源：[📝 zread](https://zread.ai/VectifyAI/PageIndex) | [📝 公眾號教學](https://mp.weixin.qq.com/s/iivoQtqzLhFA69N5iaOvzQ)
+
 ### MCP (Model Context Protocol)
 - 2025-08-20｜**FastAPI-MCP**
   - 說明：將 FastAPI 介面升級為 MCP 工具服務
   - 資源：[📝 zread](https://zread.ai/tadata-org/fastapi_mcp) | [📝 公眾號教學](https://mp.weixin.qq.com/s/L568EP2tl2zwmC8vxz8s7w)
+
 - 2025-04-15｜**automcp**
   - 說明：秒設定 MCP 伺服器
   - 資源：[🐙 GitHub](https://github.com/NapthaAI/automcp) | [📝 公眾號介紹](https://mp.weixin.qq.com/s/x-aZEhtnRYPFno81Fb9ttw)
+
 - 2025-04-10｜**line-bot-mcp-server**
   - 資源：[🐙 GitHub](https://github.com/line/line-bot-mcp-server)
+
 - 2025-04-05｜**GitMCP**
   - 說明：讓 AI 秒懂 GitHub 項目
   - 資源：[🐙 GitHub](https://github.com/idosal/git-mcp) | [📝 53AI 報導](https://www.53ai.com/news/RAG/2025040590146.html)
+
 - 2025-03-14｜**playwright-mcp**
   - 說明：AI 自動化神器
   - 資源：[🐙 GitHub](https://github.com/microsoft/playwright-mcp) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/30178146112)
@@ -504,73 +518,92 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 2025-02-16：[webui 部署教學](https://zhuanlan.zhihu.com/p/24116360552)
   - 2025-01-23：[讓 AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
 
-
 ### 效率工具 (Efficiency Tools)
 - 2026-02-24 | **PaperBanana**
   - 說明：核心思想是參考驅動+多智能體合作。它不會直接產生圖像，而是先理解、再規劃、再美化、最後迭代優化。
   - 資源：[🐙 GitHub](https://dwzhu-pku.github.io/PaperBanana/) | [📝 arxiv](https://arxiv.org/pdf/2601.23265)
-- 2025-12-20｜**NVIDIA Nemotron-3-Nano**
-  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16) | [🌐 OpenRouter](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free)
+
 - 2025-11-20｜**LinearRAG**
   - 說明：全新 RAG 框架，無需關係抽取
   - 資源：[🐙 GitHub](https://github.com/DEEP-PolyU/LinearRAG) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1975321777342260763)
+
 - 2025-09-11｜**DeepMCPAgent**
   - 說明：教你讓模型自己「找工具」
   - 資源：[📝 zread](https://zread.ai/cryxnet/DeepMCPAgent) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Sj_7i1mTJ9WYaTlCzIqCFA)
+
 - 2025-07-30｜**LangExtract**
   - 說明：Gemini 驅動的資訊擷取庫
   - 資源：[🐙 GitHub](https://github.com/google/langextract) | [📝 Google Developers](https://developers.googleblog.com/zh-hans/introducing-langextract-a-gemini-powered-information-extraction-library/)
+
 - 2025-06-28｜**docext**
   - 說明：基於 Qwen2.5VL 的文檔解析工具
   - 資源：[🐙 GitHub](https://github.com/NanoNets/docext) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1919760450024879687)
+
 - 2025-06-10｜**Agentic-Doc**
   - 說明：LandingAI 開源，百頁文檔秒變結構化資料
   - 資源：[🐙 GitHub](https://github.com/landing-ai/agentic-doc) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1914259475306612709)
+
 - 2025-06-06｜**daily-arXiv-ai-enhanced**
   - 說明：每日爬取 arXiv 並用 LLM 產生中文摘要
   - 資源：[🐙 GitHub](https://github.com/dw-dengwei/daily-arXiv-ai-enhanced)
+
 - 2025-05-22｜**AingDesk**
   - 說明：零門檻本地 AI 部署
   - 資源：[📚 DeepWiki](https://deepwiki.com/aingdesk/AingDesk) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/29773848356)
+
 - 2025-05-20｜**news-agents**
   - 資源：[📚 DeepWiki](https://deepwiki.com/eugeneyan/news-agents)
+
 - 2025-05-16｜**Follow**
   - 說明：資訊聚合神器
   - 資源：[📚 DeepWiki](https://deepwiki.com/RSSNext/Folo) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/1906505020628795653)
+
 - 2025-05-11｜**SurfSense**
   - 說明：打通 Notion/GitHub 的 AI 超腦
   - 資源：[🐙 GitHub](https://github.com/MODSetter/SurfSense) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/kMhidgb6GkKEsl-D-u_7iw) | [📚 如何使用](https://deepwiki.com/search/_df4a192b-a253-4155-a2a2-4a6fda9037e9)
+
 - 2025-04-28｜**PaperCoder (Paper2Code)**
   - 說明：Automating Code Generation from Scientific Papers
   - 資源：[📚 DeepWiki](https://deepwiki.com/going-doer/Paper2Code) | [📄 AlphaXiv](https://www.alphaxiv.org/overview/2504.17192)
+
 - 2025-04-16｜**OneFileLLM**
   - 說明：一鍵聚合網頁、程式碼、論文到剪貼簿
   - 資源：[🐙 GitHub](https://github.com/jimmc414/onefilellm) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/qNYX65fw-IWzEBLZpuaY6Q)
+
 - 2025-04-16｜**ScrapeGraphAI**
   - 說明：自然語言驅動的智慧爬蟲
   - 資源：[🐙 GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/lQukAy12V5K1cH6rTkqxaA)
+
 - 2025-04-11｜**nanobrowser**
   - 說明：AI 驅動的瀏覽器自動化神器
   - 資源：[🐙 GitHub](https://github.com/nanobrowser/nanobrowser) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65SwCtDta1cKvx1_BbaoHQ)
+
 - 2025-04-06｜**sqlchat**
   - 說明：讓資料庫管理像聊天一樣簡單
   - 資源：[🐙 GitHub](https://github.com/sqlchat/sqlchat) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/kieSzWn3QDYvZ5Zx35hr1A)
+
 - 2025-03-26｜**pdf-craft**
   - 說明：PDF 秒轉 Markdown/EPUB
   - 資源：[🐙 GitHub](https://github.com/oomol-lab/pdf-craft) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/1888288260171744707)
+
 - 2025-03-25｜**OCRmyPDF**
   - 說明：能力分析
   - 資源：[🐙 GitHub](https://github.com/ocrmypdf/OCRmyPDF) | [📝 知乎分析](https://www.zhihu.com/tardis/zm/art/32745781279?source_id=1003)
-- 2025-03-12｜**AingDesk** (同上)
+
+- 2025-03-12｜**AingDesk**
   - 資源：[📚 DeepWiki](https://deepwiki.com/aingdesk/AingDesk) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/29773848356)
+
 - 2025-02-25｜**PySpur**
   - 說明：拖曳式開發 AI 工作流程
   - 資源：[🌐 官網](https://www.pyspur.dev/) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/26161709083)
+
 - 2025-01-13｜**DocAligner**
   - 說明：拍照文件復原 (校正、版面定位)
   - 資源：[🐙 GitHub](https://github.com/ZZZHANG-jx/DocAligner) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
+
 - 2024-12-19｜**LightRAG**
   - 資源：[🐙 GitHub](https://github.com/HKUDS/LightRAG) | [📝 技術框架解讀](https://zhuanlan.zhihu.com/p/13261291813)
+
 - 2024-12-15｜**markitdown**
   - 資源：[🐙 GitHub](https://github.com/microsoft/markitdown)
 
@@ -620,7 +653,7 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
   - 資源：[🐙 GitHub](https://github.com/Westlake-AGI-Lab/Auto-Slides) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
 
-  ---
+---
 
 ## World Models
 **🌍 World Models (世界模型)**
@@ -745,7 +778,6 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 - 2025-11-03｜**LongCat-Flash-Omni**
   - 說明：開啟全模態即時互動時代
   - 資源：[🤗 HuggingFace](https://huggingface.co/meituan-longcat/LongCat-Flash-Omni) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1968699530762491165)
-
 
 - 2025-09-19 | **Xiaomi-MiMo-Audio**
   - 說明：小米開源首個原生端對端語音大模式
