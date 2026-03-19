@@ -493,6 +493,22 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 說明：不做向量匹配，做推理導航。
   - 資源：[📝 zread](https://zread.ai/VectifyAI/PageIndex) | [📝 公眾號教學](https://mp.weixin.qq.com/s/iivoQtqzLhFA69N5iaOvzQ)
 
+- 2025-11-20｜**LinearRAG**
+  - 說明：全新 RAG 框架，無需關係抽取
+  - 資源：[🐙 GitHub](https://github.com/DEEP-PolyU/LinearRAG) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1975321777342260763)
+
+- 2025-07-02 | **RAG-Anything**
+  - 說明：解決傳統 RAG 無法處理複雜文檔的終極痛點！由港大 HKUDS 團隊（LightRAG 原班人馬）開源的「全能多模態 RAG 系統」。它能一鍵自動解析 PDF、Word、PPT 中的文字、圖片、複雜表格與數學公式，並將這些異構內容無縫映射到統一的知識圖譜（Knowledge Graph）中。結合強大的跨模態關係映射與雙層檢索機制，極度適合用於金融財報分析、醫療病歷比對，或是科研文獻的深度推理問答場景。
+  - [RAG-Anything: All-in-One RAG Framework](https://arxiv.org/pdf/2510.12323)
+  - 資源：[🐙 GitHub](https://github.com/HKUDS/RAG-Anything) | [📝 36Kr 深度解讀](https://m.36kr.com/p/3358608090400776) | [📝 架構與資料庫實戰解析](https://milvus.io/zh-hant/blog/multimodal-rag-made-simple-rag-anything-milvus-instead-of-20-separate-tools.md)
+
+- 2024-12-19｜**LightRAG**
+  - 說明：解決傳統 RAG 檢索碎片化與缺乏全局語意理解的痛點。結合圖結構 (Graph) 與雙層檢索機制，能精準提取文件中的實體關聯。極度適合用於建構企業級法律合規知識庫、醫療文獻問答系統等需要高度準確性與防幻覺 (Hallucination) 的場景。
+  - [EMNLP2025 "LightRAG: Simple and Fast Retrieval-Augmented Generation"](https://arxiv.org/pdf/2410.05779)
+  - Beijing University of Posts and Telecommunications、University of Hong Kong
+  - 資源：[🐙 GitHub](https://github.com/HKUDS/LightRAG) | [📝 技術框架解讀](https://zhuanlan.zhihu.com/p/13261291813)
+
+
 ### MCP (Model Context Protocol)
 - 2025-08-20｜**FastAPI-MCP**
   - 說明：將 FastAPI 介面升級為 MCP 工具服務
@@ -628,12 +644,6 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 - 2025-01-13｜**DocAligner**
   - 說明：拍照文件復原 (校正、版面定位)
   - 資源：[🐙 GitHub](https://github.com/ZZZHANG-jx/DocAligner) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
-
-- 2024-12-19｜**LightRAG**
-  - 說明：解決傳統 RAG 檢索碎片化與缺乏全局語意理解的痛點。結合圖結構 (Graph) 與雙層檢索機制，能精準提取文件中的實體關聯。極度適合用於建構企業級法律合規知識庫、醫療文獻問答系統等需要高度準確性與防幻覺 (Hallucination) 的場景。
-  - [EMNLP2025 "LightRAG: Simple and Fast Retrieval-Augmented Generation"](https://arxiv.org/pdf/2410.05779)
-  - Beijing University of Posts and Telecommunications、University of Hong Kong
-  - 資源：[🐙 GitHub](https://github.com/HKUDS/LightRAG) | [📝 技術框架解讀](https://zhuanlan.zhihu.com/p/13261291813)
 
 - 2024-12-15｜**markitdown**
   - 資源：[🐙 GitHub](https://github.com/microsoft/markitdown)
