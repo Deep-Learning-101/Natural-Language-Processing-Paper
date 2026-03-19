@@ -3,6 +3,8 @@ https://www.twman.org/AI/NLP
 
 https://huggingface.co/DeepLearning101
 
+https://deep-learning-101.github.io/Large-Language-Model
+
 https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 #
 
@@ -277,11 +279,12 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
         [📝 微信公眾號-LLaMA Factory 微調教學（三）：微調參數設置，顯存估算與最佳化](https://mp.weixin.qq.com/s/AbyWaTaPOp9sr5mz5SOVwg)
         [📝 微信公眾號-LLaMA Factory 微調教學（四）：如何觀測模型的微調過程？微調後的模型如何合併匯出和部署？](https://mp.weixin.qq.com/s/6sNGvqLktPk6AP7kPs9JyA)
 - **EasyDistill**  
-  - 說明：知識蒸餾不再難！阿里開源EasyDistill及DistilQwen模型家族，開源即用、效能強勁！
+  - 說明：解決大模型落地時「算力成本過高」的致命痛點。阿里開源的這套知識蒸餾管線，能將千億參數巨獸的能力，無損轉移到能在手機或邊緣設備 (Edge AI) 運行的微型模型上，是企業大幅壓縮雲端推論成本、實現端側 AI 部署的必備開源工具。
   - 資源：[🐙 GitHub](https://github.com/modelscope/easydistill) | [📄 AlphaXiv](https://www.alphaxiv.org/abs/2505.20888)  
 
 ### 微調框架 (Frameworks)
 - **LLaMA Factory**
+  - 說明：目前地表最強大、最易用的開源大模型微調大殺器。提供直覺的 WebUI 介面，讓開發者甚至企業業務人員都能透過「零程式碼」操作，輕鬆完成 LoRA、SFT 與 RLHF 微調。支援海量開源模型與多卡平行運算，是企業打造領域專屬大模型的標配工具。
   - 資源：[🐙 GitHub](https://github.com/hiyouga/LLaMA-Factory) | [🤗 Demo](https://huggingface.co/spaces/hiyouga/LLaMA-Board)
   - 延伸：[📝 中文文檔](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md) | [📝 架構解析 (2024-09-13)](https://mp.weixin.qq.com/s/eJqKc_2nHBYzDFAp2AYdWQ) | [📝 單卡訓練 Agent 實戰](https://zhuanlan.zhihu.com/p/678989191)
 
@@ -398,6 +401,7 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 資源：[🐙 GitHub](https://github.com/hexdocom/lemonai) | [📝 53AI 報導](https://www.53ai.com/news/OpenSourceLLM/2025052883904.html)
 
 - 2025-05-25｜**OpenHands**
+  - 說明：目前最強大的開源 AI 軟體工程師 (Devin 平替)。具備完整的沙盒環境執行能力，能自主編寫程式碼、修復 Bug、操作終端機與瀏覽器。適合開發團隊用來打造全自動化的 CI/CD 測試流程，或是輔助工程師進行大規模的舊有程式碼重構。
   - 資源：[🐙 GitHub](https://github.com/All-Hands-AI/OpenHands) | [🌐 Demo](https://app.all-hands.dev/)
 
 - 2025-05-18｜**Agent-Squad**
@@ -467,7 +471,7 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 資源：[🐙 GitHub](https://github.com/X-PLUG/MobileAgent/blob/main/README_zh.md) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/680871671)
 
 - 2025-01-03｜**smolagents**
-  - 說明：Hugging Face 開源 Agent 框架
+  - 說明：Hugging Face 官方推出的極簡 Agent 框架。主打「程式碼即工具 (Code-as-tools)」理念，僅需極少量的 Python 程式碼，就能將任何開源 LLM 轉化為能呼叫外部 API 的智能體。非常適合想要快速打造個人自動化助理、且算力有限的 Python 開發者。
   - 資源：[🐙 GitHub](https://github.com/huggingface/smolagents) | [📝 CSDN 介紹](https://blog.csdn.net/m0_59163425/article/details/144917058)
 
 - 2024-10-26｜**OmniParser**
@@ -595,7 +599,7 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 資源：[🐙 GitHub](https://github.com/jimmc414/onefilellm) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/qNYX65fw-IWzEBLZpuaY6Q)
 
 - 2025-04-16｜**ScrapeGraphAI**
-  - 說明：自然語言驅動的智慧爬蟲
+  - 說明：顛覆傳統爬蟲的痛點！透過 LLM 解析網頁結構，只需輸入自然語言提示（Prompt），就能自動適應網站改版，精準抓取所需資料。非常適合開發用來監控競品電商價格、自動化收集產業新聞，或建立 AI 訓練語料庫的高彈性爬蟲管線。
   - 資源：[🐙 GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/lQukAy12V5K1cH6rTkqxaA)
 
 - 2025-04-11｜**nanobrowser**
@@ -626,6 +630,9 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 資源：[🐙 GitHub](https://github.com/ZZZHANG-jx/DocAligner) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
 
 - 2024-12-19｜**LightRAG**
+  - 說明：解決傳統 RAG 檢索碎片化與缺乏全局語意理解的痛點。結合圖結構 (Graph) 與雙層檢索機制，能精準提取文件中的實體關聯。極度適合用於建構企業級法律合規知識庫、醫療文獻問答系統等需要高度準確性與防幻覺 (Hallucination) 的場景。
+  - [EMNLP2025 "LightRAG: Simple and Fast Retrieval-Augmented Generation"](https://arxiv.org/pdf/2410.05779)
+  - Beijing University of Posts and Telecommunications、University of Hong Kong
   - 資源：[🐙 GitHub](https://github.com/HKUDS/LightRAG) | [📝 技術框架解讀](https://zhuanlan.zhihu.com/p/13261291813)
 
 - 2024-12-15｜**markitdown**
@@ -902,6 +909,7 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 2024-09-11：[📝 升級 Ollama 支援](https://mp.weixin.qq.com/s/6N-u8PcGEX6e4rryeqXglQ)
   - 2024-09-06：[📝 MiniCPM 3.0 開源](https://53ai.com/news/OpenSourceLLM/2024090659871.html) | [🐙 GitHub](https://github.com/OpenBMB/MiniCPM)
   - 2024-09-05：[📝 魔改 MiniCPM-V](https://mp.weixin.qq.com/s/DjDznmtKZoJNKXYz0X4zog) | [🐙 GitHub](https://github.com/OpenBMB/MiniCPM-V/)
+
 
 
 **語音助手工具**
