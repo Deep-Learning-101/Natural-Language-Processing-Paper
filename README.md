@@ -567,6 +567,10 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 說明：核心思想是參考驅動+多智能體合作。它不會直接產生圖像，而是先理解、再規劃、再美化、最後迭代優化。
   - 資源：[🐙 GitHub](https://dwzhu-pku.github.io/PaperBanana/) | [📝 arxiv](https://arxiv.org/pdf/2601.23265)
 
+- 2025-11-26｜**Crawl4AI**
+  - 說明：對LLM 友善的網頁爬蟲和抓取工具，它將網頁內容轉化為乾淨、適合LLM 處理的Markdown 格式，非常適用於RAG (檢索增強生成)、智能代理和資料管道等場景。
+  - 資源：[📝 zread](https://zread.ai/unclecode/crawl4ai) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/5cNfBbKOHHjGin5I7XYlpw)
+
 - 2025-11-20｜**LinearRAG**
   - 說明：全新 RAG 框架，無需關係抽取
   - 資源：[🐙 GitHub](https://github.com/DEEP-PolyU/LinearRAG) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1975321777342260763)
@@ -578,6 +582,10 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 - 2025-07-30｜**LangExtract**
   - 說明：Gemini 驅動的資訊擷取庫
   - 資源：[🐙 GitHub](https://github.com/google/langextract) | [📝 Google Developers](https://developers.googleblog.com/zh-hans/introducing-langextract-a-gemini-powered-information-extraction-library/)
+
+- 2025-07-30｜**EasySpider**
+  - 說明：可視化網頁爬蟲工具，不需要寫程式碼，所有的爬蟲任務都可以透過簡單的圖形化介面完成。
+  - 資源：[🐙 GitHub](https://github.com/NaiboWang/EasySpider) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/9MPKTOXzjzMOC57YU9Pw4w)
 
 - 2025-06-28｜**docext**
   - 說明：基於 Qwen2.5VL 的文檔解析工具
