@@ -283,6 +283,11 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
   - 資源：[🐙 GitHub](https://github.com/modelscope/easydistill) | [📄 AlphaXiv](https://www.alphaxiv.org/abs/2505.20888)  
 
 ### 微調框架 (Frameworks)
+
+- **Unsloth Studio**
+  - 說明：一個開源、免程式碼的Web UI，在一個統一的本機介面中訓練、運行和匯出開源模型。
+  - 資源：[📝 中文文檔](https://unsloth.ai/docs/zh/xin-zeng/studio) | [🐙 GitHub](https://github.com/unslothai/unsloth)
+
 - **LLaMA Factory**
   - 說明：目前地表最強大、最易用的開源大模型微調大殺器。提供直覺的 WebUI 介面，讓開發者甚至企業業務人員都能透過「零程式碼」操作，輕鬆完成 LoRA、SFT 與 RLHF 微調。支援海量開源模型與多卡平行運算，是企業打造領域專屬大模型的標配工具。
   - 資源：[🐙 GitHub](https://github.com/hiyouga/LLaMA-Factory) | [🤗 Demo](https://huggingface.co/spaces/hiyouga/LLaMA-Board)
@@ -291,6 +296,7 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 - **Torchtune**
   - 資源：[🐙 GitHub](https://github.com/pytorch/torchtune) | [📖 官方文件](https://pytorch.dev.org.tw/torchtune/stable/index.html)
   - 延伸：[📝 Llama3.1 知識蒸餾實戰](https://pytorch.ac.cn/torchtune/stable/tutorials/llama_kd_tutorial.html)
+
 
 ### 資料集準備 (Datasets)
 - **微調資料集實戰**
