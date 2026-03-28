@@ -1,4 +1,5 @@
-#
+{% include header.html %}
+
 https://www.twman.org/AI/NLP
 
 https://huggingface.co/DeepLearning101
@@ -6,7 +7,8 @@ https://huggingface.co/DeepLearning101
 https://deep-learning-101.github.io/Large-Language-Model
 
 https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
-#
+
+https://deep-learning-101.github.io/Natural-Language-Processing-Paper/
 
 ---
 
@@ -272,12 +274,13 @@ https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
 - **零代碼一站式微調 / DeepSeek-R1 微調指南**
   - 說明：從資料集準備到模型微調全流程
   - 資源：
-        [📝 知乎專欄-如何把你的De​​ePseek-R1 微調為某個領域的專家？](https://zhuanlan.zhihu.com/p/25054526736)
-        [📝 從零教你微調一個專屬領域大模型，看完小白也能學會煉丹!（完整版）](https://mp.weixin.qq.com/s/YntCYouTa0gbUuXl1wYwWA)
-        [📝 知乎專欄-纯本地！零代码！一站式完整数据集准备到模型微调全流程！（一）](https://zhuanlan.zhihu.com/p/1906670241645322809)
-        [📝 知乎專欄-LLaMA Factory 微調教學（二）：建立高品質資料集](https://zhuanlan.zhihu.com/p/1916489160333714285)
-        [📝 微信公眾號-LLaMA Factory 微調教學（三）：微調參數設置，顯存估算與最佳化](https://mp.weixin.qq.com/s/AbyWaTaPOp9sr5mz5SOVwg)
-        [📝 微信公眾號-LLaMA Factory 微調教學（四）：如何觀測模型的微調過程？微調後的模型如何合併匯出和部署？](https://mp.weixin.qq.com/s/6sNGvqLktPk6AP7kPs9JyA)
+    * [📝 微信公眾號-從0到1微調安全大模型](https://mp.weixin.qq.com/s/hzdcutEL9yH1j8svMcXPGg)  
+    * [📝 知乎專欄-如何把你的De​​ePseek-R1 微調為某個領域的專家？](https://zhuanlan.zhihu.com/p/25054526736)  
+    * [📝 從零教你微調一個專屬領域大模型，看完小白也能學會煉丹!（完整版）](https://mp.weixin.qq.com/s/YntCYouTa0gbUuXl1wYwWA)  
+    * [📝 知乎專欄-纯本地！零代码！一站式完整数据集准备到模型微调全流程！（一）](https://zhuanlan.zhihu.com/p/1906670241645322809)  
+    * [📝 知乎專欄-LLaMA Factory 微調教學（二）：建立高品質資料集](https://zhuanlan.zhihu.com/p/1916489160333714285)  
+    * [📝 微信公眾號-LLaMA Factory 微調教學（三）：微調參數設置，顯存估算與最佳化](https://mp.weixin.qq.com/s/AbyWaTaPOp9sr5mz5SOVwg)  
+    * [📝 微信公眾號-LLaMA Factory 微調教學（四）：如何觀測模型的微調過程？微調後的模型如何合併匯出和部署？](https://mp.weixin.qq.com/s/6sNGvqLktPk6AP7kPs9JyA)  
 - **EasyDistill**  
   - 說明：解決大模型落地時「算力成本過高」的致命痛點。阿里開源的這套知識蒸餾管線，能將千億參數巨獸的能力，無損轉移到能在手機或邊緣設備 (Edge AI) 運行的微型模型上，是企業大幅壓縮雲端推論成本、實現端側 AI 部署的必備開源工具。
   - 資源：[🐙 GitHub](https://github.com/modelscope/easydistill) | [📄 AlphaXiv](https://www.alphaxiv.org/abs/2505.20888)  
