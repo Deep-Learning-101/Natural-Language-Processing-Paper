@@ -1,59 +1,17 @@
 {% include header.html %}
 
-https://www.twman.org/AI/NLP
+# 📚 自然語言處理 (NLP) 與 LLM 大語言模型・全指南
 
-https://huggingface.co/DeepLearning101
-
-https://deep-learning-101.github.io/Large-Language-Model
-
-https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper
-
-https://deep-learning-101.github.io/Natural-Language-Processing-Paper/
+> **編者按：** 本頁面收錄了從傳統 NLP 核心技術（MRC、NER、糾錯、分類）到 2026 年最前沿的 LLM 與 AI Agent 資源。
+>
+> 💡 **為什麼這份清單與眾不同？** > 我們保留了早期開發者的血淚心得，讓你不僅能追逐最新的 Llama 或 Gemini，也能從 BERT 與 Transformer 的根基學起。
+>
+> 歡迎訪問 **GitHub Repository**：
+> 👉 [**GitHub: Natural-Language-Processing-Paper**](https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper) (歡迎 Star ⭐)
 
 ---
 
-<details>
-<summary>手把手帶你一起踩 AI 坑</summary>
-
-<h3><a href="https://blog.twman.org/p/deeplearning101.html" target="_blank">手把手帶你一起踩 AI 坑</a>：<a href="https://www.twman.org/AI" target="_blank">https://www.twman.org/AI</a></h3>
-
-<ul>
-  <li>
-    <b><a href="https://blog.twman.org/2025/03/AIAgent.html" target="_blank">避開 AI Agent 開發陷阱：常見問題、挑戰與解決方案</a></b>：<a href="https://deep-learning-101.github.io/agent" target="_blank">探討多種 AI 代理人工具的應用經驗與挑戰，分享實用經驗與工具推薦。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/08/LLM.html" target="_blank">白話文手把手帶你科普 GenAI</a></b>：<a href="https://deep-learning-101.github.io/GenAI" target="_blank">淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/09/LLM.html" target="_blank">大型語言模型直接就打完收工？</a></b>：<a href="https://deep-learning-101.github.io/1010LLM" target="_blank">回顧 LLM 領域探索歷程，討論硬體升級對 AI 開發的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/07/RAG.html" target="_blank">檢索增強生成(RAG)不是萬靈丹之優化挑戰技巧</a></b>：<a href="https://deep-learning-101.github.io/RAG" target="_blank">探討 RAG 技術應用與挑戰，提供實用經驗分享和工具建議。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/02/LLM.html" target="_blank">大型語言模型 (LLM) 入門完整指南：原理、應用與未來</a></b>：<a href="https://deep-learning-101.github.io/0204LLM" target="_blank">探討多種 LLM 工具的應用與挑戰，強調硬體資源的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2023/04/GPT.html" target="_blank">解析探索大型語言模型：模型發展歷史、訓練及微調技術的 VRAM 估算</a></b>：<a href="https://deep-learning-101.github.io/GPU" target="_blank">探討 LLM 的發展與應用，強調硬體資源在開發中的關鍵作用。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/11/diffusion.html" target="_blank">Diffusion Model 完全解析：從原理、應用到實作 (AI 圖像生成)</a></b>；<a href="https://deep-learning-101.github.io/diffusion" target="_blank">深入探討影像生成與分割技術的應用，強調硬體資源的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/02/asr-tts.html" target="_blank">ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策</a></b>：<a href="https://deep-learning-101.github.io/asr-tts" target="_blank">探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2021/04/NLP.html" target="_blank">那些 NLP 踩的坑</a></b>：<a href="https://deep-learning-101.github.io/nlp" target="_blank">分享 NLP 領域的實踐經驗，強調數據質量對模型效果的影響。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2021/04/ASR.html" target="_blank">那些語音處理踩的坑</a></b>：<a href="https://deep-learning-101.github.io/speech" target="_blank">分享語音處理領域的實務經驗，強調資料品質對模型效果的影響。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2020/05/DeepLearning.html" target="_blank">手把手學深度學習安裝環境</a></b>：<a href="https://deep-learning-101.github.io/101" target="_blank">詳細介紹在 Ubuntu 上安裝深度學習環境的步驟，分享實際操作經驗。</a>
-  </li>
-</ul>
-
-</details>
+{% include ai-share.html %}
 
 ---
 
@@ -1182,3 +1140,44 @@ https://deep-learning-101.github.io/Natural-Language-Processing-Paper/
     * [開源語音大語言模型來了！阿里基於Qwen-Chat提出Qwen-Audio!](https://zhuanlan.zhihu.com/p/668608727)
 
 </details>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://deep-learning-101.github.io/Large-Language-Model"
+  },
+  "headline": "從傳統 NLP 到 LLM 2026：機器閱讀理解、文本糾錯、AI Agent 與推理模型全紀錄",
+  "description": "整合 2018 至今的 NLP 開發心得與 2026 最新 LLM 技術。涵蓋機器閱讀理解(MRC)、命名實體識別(NER)、文本糾錯、RAG 架構、AI Agent 框架與 NVIDIA Nemotron 實戰資源。",
+  "image": "https://raw.githubusercontent.com/Deep-Learning-101/TonTon/refs/heads/main/_includes/DL101-Logo.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Deep Learning 101, Taiwan",
+    "url": "https://deep-learning-101.github.io/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Deep Learning 101, Taiwan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://raw.githubusercontent.com/Deep-Learning-101/TonTon/refs/heads/main/_includes/DL101-Logo.jpg"
+    }
+  },
+  "datePublished": "2026-03-29",
+  "dateModified": "2026-03-29",
+  "keywords": "自然語言處理, NLP, LLM, 機器閱讀理解, MRC, 文本糾錯, NER, 命名實體識別, RAG, AI Agent, Reasoning Models, 中文 NLP 數據集, Transformer, BERT, DeepSeek, NVIDIA Nemotron",
+  "about": [
+    {
+      "@type": "Service",
+      "name": "傳統 NLP 技術開發與心得分享"
+    },
+    {
+      "@type": "Service",
+      "name": "大型語言模型 (LLM) 應用與微調"
+    }
+  ]
+}
+</script>
