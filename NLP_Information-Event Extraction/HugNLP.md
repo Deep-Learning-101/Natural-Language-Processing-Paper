@@ -1,3 +1,30 @@
+---
+layout: default
+title: HugNLP 統一信息抽取框架實戰 | 診斷書醫囑擷取分析與踩坑紀錄
+description: 針對診斷書醫囑文字分析的開發過程紀錄。實測與比較 PaddleNLP UIE, ChatGPT 3.5, EHR_NER, 以及 HugIE 等多種自然語言處理資訊抽取演算法的效果與優劣。
+permalink: /NLP/HugNLP
+lang: zh-Hant
+schema_type: article
+---
+
+{% include header.html %}
+
+---
+
+{% include ai-share.html %}
+
+---
+
+# 🏥 HugNLP 統一信息抽取框架實戰：診斷書醫囑擷取分析
+
+> **文獻參考**：[HugNLP: A Unified and Comprehensive Library for Natural Language Processing (arXiv:2302.14286)](https://arxiv.org/abs/2302.14286)  
+> **開源專案**：[GitHub - HugAILab/HugNLP](https://github.com/HugAILab/HugNLP)
+
+## 📌 什麼是 HugNLP？
+HugNLP 是一個基於 HuggingFace Transformers 的統一且全面的自然語言處理 (NLP) 函式庫。它旨在幫助研究人員輕鬆使用現成的演算法，並在真實場景中開發自定義模型與任務。它統一了預訓練語言模型 (PLMs) 在不同 NLP 任務上的學習過程，並展示了如知識增強、通用資訊抽取、低資源探勘與程式碼理解等特點。
+
+![HugNLP 框架概覽](./images/image.png)
+
 [Jianing Wang, Nuo Chen, Qiushi Sun, Wenkang Huang, Chengyu Wang, Ming Gao, "HugNLP: A Unified and Comprehensive Library for Natural Language Processing", arXiv preprint, 	arXiv:2302.14286, 2023](https://arxiv.org/abs/2302.14286)
 
 [github](https://github.com/HugAILab/HugNLP)

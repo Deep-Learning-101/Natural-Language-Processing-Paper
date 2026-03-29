@@ -1,11 +1,11 @@
-name: Sync All MD Files to Main Site
+name: Sync NLP Content and Assets
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
     paths:
-      - '**/*.md' # 只要任何 markdown 檔案有變動，就觸發執行
+      - '**/*.md'
+      - '**/images/**'
 
 jobs:
   sync:
@@ -23,34 +23,34 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           path: main-repo
 
-      - name: Copy Markdown Files to Main Site
+      - name: Sync and Mirror Structure
         run: |
-          # 1. 處理 NLP 核心：把 README.md 改名並搬過去
+          # 1. 處理 NLP 核心檔案搬至根目錄
           cp sub-repo/README.md main-repo/Natural-Language-Processing.md
-          
-          # 2. 處理 LLM 核心：明確指定搬移 (加上 -f 防呆檢查，確定檔案存在才搬)
           if [ -f "sub-repo/Large-Language-Model.md" ]; then
             cp sub-repo/Large-Language-Model.md main-repo/Large-Language-Model.md
           fi
           
-          # 3. 處理未來新增的其他頁面 (例如 Nemotron.md)：自動批次搬運
+          # 2. 全資源鏡像：掃描所有資料夾並完整複製 (含 md, png, gif)
           cd sub-repo
-          for file in *.md; do
-            # 確保是檔案，且排除掉前面已經手動搬過的兩個核心檔案，剩下的全搬
-            if [ -f "$file" ] && [ "$file" != "README.md" ] && [ "$file" != "Large-Language-Model.md" ]; then
-              cp "$file" ../main-repo/
+          find . -maxdepth 1 -type d | while read dir; do
+            # 排除 git 相關資料夾
+            if [ "$dir" != "." ] && [ "$dir" != "./.github" ] && [ "$dir" != "./.git" ]; then
+              mkdir -p "../main-repo/$dir"
+              cp -a "$dir/." "../main-repo/$dir/"
             fi
           done
 
-      - name: Commit and Push to Main Site
+      - name: Commit and Push
         run: |
           cd main-repo
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
           
-          # 將所有變動的 .md 檔案加入 git 追蹤
-          git add *.md
+          # 擷取子站原始 Commit 訊息
+          ORIGINAL_MSG="${{ github.event.head_commit.message }}"
           
-          # 檢查是否有內容差異，有差異才 commit，避免發生 Nothing to commit 錯誤
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-sync all updated Markdown files from NLP-Paper"
+          # 同步推送至主站
+          git diff --quiet && git diff --staged --quiet || git commit -m "NLP Sync: $ORIGINAL_MSG"
           git push
