@@ -6,6 +6,7 @@ on:
     paths:
       - '**/*.md'
       - '**/images/**'
+      - '.github/workflows/sync.yml' # 關鍵：確保這次改動會觸發同步補救
 
 jobs:
   sync:
@@ -22,35 +23,46 @@ jobs:
           repository: Deep-Learning-101/deep-learning-101.github.io
           token: ${{ secrets.GH_PAT }}
           path: main-repo
+          fetch-depth: 0 
 
       - name: Sync and Mirror Structure
         run: |
-          # 1. 處理 NLP 核心檔案搬至根目錄
+          # 1. 處理 NLP 核心檔案（README -> NLP, LLM -> LLM）
           cp sub-repo/README.md main-repo/Natural-Language-Processing.md
           if [ -f "sub-repo/Large-Language-Model.md" ]; then
             cp sub-repo/Large-Language-Model.md main-repo/Large-Language-Model.md
           fi
           
-          # 2. 全資源鏡像：掃描所有資料夾並完整複製 (含 md, png, gif)
+          # 2. 全資源鏡像：同步子資料夾（如 DeepKE, ERNIE-Layout 等）
           cd sub-repo
-          find . -maxdepth 1 -type d | while read dir; do
-            # 排除 git 相關資料夾
-            if [ "$dir" != "." ] && [ "$dir" != "./.github" ] && [ "$dir" != "./.git" ]; then
-              mkdir -p "../main-repo/$dir"
-              cp -a "$dir/." "../main-repo/$dir/"
-            fi
+          find . -maxdepth 1 -type d ! -name "." ! -name ".github" ! -name ".git" | while read dir; do
+            mkdir -p "../main-repo/$dir"
+            cp -a "$dir/." "../main-repo/$dir/"
           done
 
       - name: Commit and Push
         run: |
           cd main-repo
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          
-          # 擷取子站原始 Commit 訊息
+
+          # 擷取資訊（增加 :- 預設值，防止變數為空）
           ORIGINAL_MSG="${{ github.event.head_commit.message }}"
-          
-          # 同步推送至主站
-          git diff --quiet && git diff --staged --quiet || git commit -m "NLP Sync: $ORIGINAL_MSG"
-          git push
+          AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
+          AUTHOR_EMAIL="${{ github.event.head_commit.author.email }}"
+          SUB_SHA="${{ github.sha }}"
+
+          git config user.name "${AUTHOR_NAME:-github-actions[bot]}"
+          git config user.email "${AUTHOR_EMAIL:-github-actions[bot]@users.noreply.github.com}"
+
+          git add .
+
+          if ! git diff --quiet || ! git diff --staged --quiet; then
+            # 建立 Commit
+            git commit -m "NLP Sync: $ORIGINAL_MSG (From Sub: ${SUB_SHA:0:7})"
+
+            # 關鍵補救：拉取並重排，解決之前 Rejected 的問題
+            git pull --rebase origin main
+
+            git push origin main
+          else
+            echo "No changes detected, skipping sync."
+          fi
