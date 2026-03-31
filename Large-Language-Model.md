@@ -83,88 +83,84 @@ schema_type: article
 ---
 
 ## NVIDIA Nemotron
-- 2026-03-11 | **NVIDIA Nemotron 3 Super**
-  - [NVIDIA技術部落格](https://blogs.nvidia.com.tw/blog/nemotron-3-super-agentic-ai/) | [🤗 HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8)
-- 2026-02-04 | **使用Nemotron 為RAG 建立文件處理流程**
-  - [NVIDIA技術部落格](https://developer.nvidia.cn/blog/how-to-build-a-document-processing-pipeline-for-rag-with-nemotron/)
-  - 實戰操作：如何用最新的 Nemotron 模型處理 PDF、表格和圖表，這是企業最常見的需求。
-- 2026-02-04 | **AI 智能體如何將文件轉化為即時商業智能**
-  - [NVIDIA技術部落格](https://blogs.nvidia.cn/blog/ai-agents-intelligent-document-processing/)
-  - 概念與案例：為什麼要用 AI 處理文檔 (IDP)，以及 Docusign、Justt 等公司是怎麼用的；理解應用場景，適合寫提案或規劃架構時參考。
-- 2026-01-05 | **如何使用 RAG 和安全護欄建立語音智能體**
-  - [NVIDIA技術部落格](https://developer.nvidia.cn/blog/how-to-build-a-voice-agent-with-rag-and-safety-guardrails/)
-  - 語音與安全：展示如何將 Nemotron 結合語音技術，並且加上 Guardrails 防止 AI 亂說話。
-- 2025-12-20｜**NVIDIA Nemotron-3-Nano**
-  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16) | [🌐 OpenRouter](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free)
-- 2025-12-15 | **深入解析 NVIDIA Nemotron 3**
-  - [NVIDIA技術部落格](https://developer.nvidia.cn/blog/inside-nvidia-nemotron-3-techniques-tools-and-data-that-make-it-efficient-and-accurate/)
-  - 了解 Nemotron-3 (Mamba-Transformer 混合架構) 內部原理
-- 2025-12-15 | **使用Unsloth 微調大語言模型(LLM)**
-  - [NVIDIA技術部落格](https://blogs.nvidia.cn/blog/rtx-ai-garage-fine-tuning-unsloth-dgx-spark/)
-  - 低成本微調：如何在本地端 (如 RTX 4090) 使用 Unsloth 工具快速微調模型；如果沒有龐大的算力資源，這篇是首選。
-- 2025-10-28 | **利用NVIDIA Nemotron Vision、RAG 和Guardrail 新模型開發專用AI 智能體**
-  - [NVIDIA技術部落格](https://developer.nvidia.cn/blog/develop-specialized-ai-agents-with-new-nvidia-nemotron-vision-rag-and-guardrail-models/)
-  - 介紹 Nemotron-4 / Llama-Nemotron 時期的視覺與 Guardrail 能力；日期稍早於 Nemotron-3，但其中的 Guardrail (安全護欄) 和 Vision (視覺) 概念依然沿用至今，仍具參考價值。
-- 2025-07-22 | **用NVIDIA NeMo 在一個週末內訓練一個具備推理能力的LLM**
-  - [NVIDIA技術部落格](https://developer.nvidia.cn/blog/train-a-reasoning-capable-llm-in-one-weekend-with-nvidia-nemo/)
-  - 如何用 SFT (監督微調) 讓模型學會「思考鏈 (Chain of Thought)」；方法論極佳。雖然當時可能用的是 Llama 模型，但它教的「數據準備邏輯」和「訓練策略」完全可以套用到現在的 Nemotron-3 上。
+**🟢 NVIDIA Nemotron 企業級 AI 實戰指南**  
+
+NVIDIA 開發的 Nemotron 系列模型，以其極高的推理效率與完整的 NeMo 生態系，成為企業落地生成式 AI 的首選。以下我們將資源依據「開發階段」與「業務場景」進行分類，幫助您快速掌握從模型部署到安全防護的完整技術棧。
+
+### 1. 核心模型發佈與解析 (Core Models)
+了解 Nemotron 系列的核心架構與性能指標，選擇適合您的硬體與應用場景的模型尺寸。
+
+* **[Nemotron 3 Super (最新主力)](https://blogs.nvidia.com.tw/blog/nemotron-3-super-agentic-ai/)** (2026-03)
+  * **特點**：專為 Agentic AI 設計的旗艦模型，強大的邏輯規劃能力。[👉 HuggingFace 權重下載](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8)。
+* **[Nemotron 3 Nano (端側輕量化)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16)** (2025-12)
+  * **特點**：適合資源受限的邊緣設備 (Edge) 或本地端推論。[👉 OpenRouter 免費測試](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free)。
+* **[深入解析 Nemotron 3 內部原理](https://developer.nvidia.cn/blog/inside-nvidia-nemotron-3-techniques-tools-and-data-that-make-it-efficient-and-accurate/)** (2025-12)
+  * **必讀原因**：深度解析 Mamba-Transformer 混合架構，理解為何 Nemotron 能在長文本處理上達到極致的效率與準確度。
+
+### 2. 本地微調與模型訓練 (Fine-tuning & Training)
+沒有龐大的機房算力？教您如何在消費級顯示卡 (如 RTX 4090) 上，打造專屬的領域大模型。
+
+* **[使用 Unsloth 低成本微調 LLM 實戰](https://blogs.nvidia.cn/blog/rtx-ai-garage-fine-tuning-unsloth-dgx-spark/)** (2025-12)
+  * **解決痛點**：算力不足。這篇教學展示了如何在本地端使用 Unsloth 工具快速微調模型，是開發者入門 SFT (監督微調) 的首選。
+* **[週末速成：用 NeMo 訓練具備「推理能力」的 LLM](https://developer.nvidia.cn/blog/train-a-reasoning-capable-llm-in-one-weekend-with-nvidia-nemo/)** (2025-07)
+  * **解決痛點**：模型缺乏邏輯。這篇經典文章提供了極佳的方法論，教導如何準備數據，讓模型學會「思考鏈 (Chain of Thought)」，其策略完全適用於最新的 Nemotron-3。
+
+### 3. RAG 知識庫與文檔處理 (Document Processing)
+如何讓 AI 讀懂企業內部複雜的 PDF、報表與圖表，轉化為即時的商業價值。
+
+* **[使用 Nemotron 為 RAG 建立文件處理流程](https://developer.nvidia.cn/blog/how-to-build-a-document-processing-pipeline-for-rag-with-nemotron/)** (2026-02)
+  * **實戰指南**：企業導入 AI 最常見的需求。一步步教您如何使用最新模型，精準解析 PDF、表格與圖像資訊，解決傳統 RAG 系統「找不到資料」的問題。
+* **[AI 智能體如何將文件轉化為即時商業智能 (IDP)](https://blogs.nvidia.cn/blog/ai-agents-intelligent-document-processing/)** (2026-02)
+  * **架構規劃**：適合架構師或專案經理閱讀。解析 Docusign 等企業如何運用 AI 處理文檔 (IDP)，為您撰寫提案提供強大案例支持。
+
+### 4. 語音智能體與安全護欄 (Voice Agent & Guardrails)
+打造能聽會說、且「不亂說話」的企業級 AI 助理。
+
+* **[如何使用 RAG 和安全護欄建立語音智能體](https://developer.nvidia.cn/blog/how-to-build-a-voice-agent-with-rag-and-safety-guardrails/)** (2026-01)
+  * **整合應用**：展示如何將 Nemotron 與語音辨識技術結合。更重要的是，引入了 Guardrails 機制，確保 AI 的回答符合企業規範，防止幻覺與不當言論。
+* **[開發專用 AI 智能體：視覺、RAG 與 Guardrail 綜合應用](https://developer.nvidia.cn/blog/develop-specialized-ai-agents-with-new-nvidia-nemotron-vision-rag-and-guardrail-models/)** (2025-10)
+  * **進階防護**：雖然日期較早，但其探討的「安全護欄 (Guardrail)」與「視覺 (Vision)」整合概念，至今仍是企業 AI 系統防禦機制的必備參考。
 
 ---
 
 ## Fine-tuning
-**🛠️ 微調技術與資源 (Fine-tuning)**
+**🛠️ LLM 微調技術與實戰指南 (Fine-tuning & Distillation)**
 
-### 顯存估算 (VRAM)
-- **大模型所需 GPU 記憶體筆記**
-  - 資源：[📝 微信公眾號](https://mp.weixin.qq.com/s/M_hdtR7mVq14MnaaL0MAUw)
-- **不同參數規模在微調方法下所需的顯存總結**
-  - 資源：[📝 DataLearner](https://www.datalearner.com/blog/1051703254378255)
+在企業應用場景中，開源大模型往往需要經過「微調 (Fine-tuning)」才能成為特定領域的專家。本區塊為開發者梳理了從顯存估算、底層理論、到零程式碼實作的完整「煉丹」路徑。
 
-### 微調/蒸餾技術教學
-- **微調技術全解**
-  - 說明：SFT、LoRA、P-tuning v2、Freeze 監督微調方法
-  - 資源：[📝 知乎專欄](https://zhuanlan.zhihu.com/p/643941480)
-- **LoRA vs 完全微調**
-  - 說明：MIT 21頁論文講懂了
-  - 資源：[📝 機器之心](https://www.jiqizhixin.com/articles/2024-11-11-5)
-- **大模型微調 (Fine-tuning) 全解**
-  - 資源：[📝 53AI](https://www.53ai.com/news/finetuning/2025022604125.html)
-- **Unsloth 官方微調技巧**
-  - 說明：初學者必看指南
-  - 資源：[📝 微信公眾號](https://mp.weixin.qq.com/s/COZfH_h36nX33TZGBVn0rg)
-- **零代碼一站式微調 / DeepSeek-R1 微調指南**
-  - 說明：從資料集準備到模型微調全流程
-  - 資源：
-    * [📝 微信公眾號-從0到1微調安全大模型](https://mp.weixin.qq.com/s/hzdcutEL9yH1j8svMcXPGg)  
-    * [📝 知乎專欄-如何把你的De​​ePseek-R1 微調為某個領域的專家？](https://zhuanlan.zhihu.com/p/25054526736)  
-    * [📝 從零教你微調一個專屬領域大模型，看完小白也能學會煉丹!（完整版）](https://mp.weixin.qq.com/s/YntCYouTa0gbUuXl1wYwWA)  
-    * [📝 知乎專欄-纯本地！零代码！一站式完整数据集准备到模型微调全流程！（一）](https://zhuanlan.zhihu.com/p/1906670241645322809)  
-    * [📝 知乎專欄-LLaMA Factory 微調教學（二）：建立高品質資料集](https://zhuanlan.zhihu.com/p/1916489160333714285)  
-    * [📝 微信公眾號-LLaMA Factory 微調教學（三）：微調參數設置，顯存估算與最佳化](https://mp.weixin.qq.com/s/AbyWaTaPOp9sr5mz5SOVwg)  
-    * [📝 微信公眾號-LLaMA Factory 微調教學（四）：如何觀測模型的微調過程？微調後的模型如何合併匯出和部署？](https://mp.weixin.qq.com/s/6sNGvqLktPk6AP7kPs9JyA)  
-- **EasyDistill**  
-  - 說明：解決大模型落地時「算力成本過高」的致命痛點。阿里開源的這套知識蒸餾管線，能將千億參數巨獸的能力，無損轉移到能在手機或邊緣設備 (Edge AI) 運行的微型模型上，是企業大幅壓縮雲端推論成本、實現端側 AI 部署的必備開源工具。
-  - 資源：[🐙 GitHub](https://github.com/modelscope/easydistill) | [📄 AlphaXiv](https://www.alphaxiv.org/abs/2505.20888)  
+### 1. 課前必讀：硬體門檻與顯存估算 (VRAM)
+微調模型最常遇到的痛點就是「Out of Memory (OOM)」。在開始訓練前，精準估算所需的顯示卡記憶體是成功的第一步。
+* **[大模型所需 GPU 記憶體筆記](https://mp.weixin.qq.com/s/M_hdtR7mVq14MnaaL0MAUw)**：快速了解參數規模 (7B, 72B) 對應的硬體需求。
+* **[不同微調方法下所需的顯存總結](https://www.datalearner.com/blog/1051703254378255)**：比較全參數微調 (Full-tuning) 與 LoRA 等不同策略對顯存的實際消耗差異。
 
-### 微調框架 (Frameworks)
+### 2. 理論心法：選擇正確的微調策略
+了解底層邏輯，才能選對訓練工具。
+* **[主流微調技術全解](https://zhuanlan.zhihu.com/p/643941480)**：適合初學者的概念掃盲，涵蓋 SFT (監督微調)、LoRA、P-tuning v2 與 Freeze 等主流方法。
+* **[LoRA vs 完全微調差異解析](https://www.jiqizhixin.com/articles/2024-11-11-5)**：進階閱讀。透過 MIT 論文深入探討為何 LoRA 能在大幅降低算力成本的同時，保持極高的模型效能。
+* **[大模型微調全生命週期解析](https://www.53ai.com/news/finetuning/2025022604125.html)**：從資料準備到模型評估的宏觀指南。
 
-- **Unsloth Studio**
-  - 說明：一個開源、免程式碼的Web UI，在一個統一的本機介面中訓練、運行和匯出開源模型。
-  - 資源：[📝 中文文檔](https://unsloth.ai/docs/zh/xin-zeng/studio) | [🐙 GitHub](https://github.com/unslothai/unsloth)
+### 3. 實戰路徑：DeepSeek-R1 與零程式碼微調教學
+想把 DeepSeek-R1 訓練成專屬的領域專家，卻不會寫複雜的訓練代碼？以下是為開發者量身打造的「從零到一」 LLaMA Factory 實戰路徑：
+1. **資料集準備**：[如何建立高品質的微調資料集？](https://zhuanlan.zhihu.com/p/1916489160333714285) (垃圾進，垃圾出，這是最重要的一步)
+2. **參數設定與優化**：[微調參數設置與顯存最佳化技巧](https://mp.weixin.qq.com/s/AbyWaTaPOp9sr5mz5SOVwg)
+3. **訓練觀測與部署**：[如何觀測微調過程？模型如何合併與匯出部署？](https://mp.weixin.qq.com/s/6sNGvqLktPk6AP7kPs9JyA)
+4. **領域專家實戰**：[完整案例：如何把 DeepSeek-R1 微調為領域專家](https://zhuanlan.zhihu.com/p/25054526736) | [從0到1微調安全大模型](https://mp.weixin.qq.com/s/hzdcutEL9yH1j8svMcXPGg)
 
-- **Twinkle**
-  - 說明：輕量級的客戶服務訓練框架，採用規格、高內聚的介面設計。
-  - 資源：[📝 中文文檔](https://twinkle-kit.readthedocs.io/zh-cn/) | [🐙 GitHub](https://github.com/modelscope/twinkle)
+### 4. 必備微調與蒸餾開源框架 (Frameworks)
+依據您的算力資源與技術背景，挑選最適合的訓練武器：
 
-- **LLaMA Factory**
-  - 說明：目前地表最強大、最易用的開源大模型微調大殺器。提供直覺的 WebUI 介面，讓開發者甚至企業業務人員都能透過「零程式碼」操作，輕鬆完成 LoRA、SFT 與 RLHF 微調。支援海量開源模型與多卡平行運算，是企業打造領域專屬大模型的標配工具。
-  - 資源：[🐙 GitHub](https://github.com/hiyouga/LLaMA-Factory) | [🤗 Demo](https://huggingface.co/spaces/hiyouga/LLaMA-Board)
-  - 延伸：[📝 中文文檔](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md) | [📝 架構解析 (2024-09-13)](https://mp.weixin.qq.com/s/eJqKc_2nHBYzDFAp2AYdWQ) | [📝 單卡訓練 Agent 實戰](https://zhuanlan.zhihu.com/p/678989191)
-
-- **Torchtune**
-  - 資源：[🐙 GitHub](https://github.com/pytorch/torchtune) | [📖 官方文件](https://pytorch.dev.org.tw/torchtune/stable/index.html)
-  - 延伸：[📝 Llama3.1 知識蒸餾實戰](https://pytorch.ac.cn/torchtune/stable/tutorials/llama_kd_tutorial.html)
-
+* **[LLaMA Factory (地表最強零代碼微調)](https://github.com/hiyouga/LLaMA-Factory)**
+  * **適用場景**：企業快速導入、無深度 AI 背景的開發者。
+  * **特色亮點**：提供直覺的 WebUI 介面，支援海量開源模型與多卡平行運算，輕鬆完成 LoRA、SFT 與 RLHF 微調。[👉 中文文檔](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md) | [👉 單卡訓練 Agent 實戰](https://zhuanlan.zhihu.com/p/678989191)
+* **[Unsloth / Unsloth Studio (低算力救星)](https://github.com/unslothai/unsloth)**
+  * **適用場景**：算力有限（如單張 RTX 4090）的本地端開發者。
+  * **特色亮點**：極致優化的訓練速度與顯存佔用。提供開源 Web UI，在統一介面中完成訓練與模型匯出。[👉 官方微調技巧](https://mp.weixin.qq.com/s/COZfH_h36nX33TZGBVn0rg)
+* **[EasyDistill (模型落地與端側部署必備)](https://github.com/modelscope/easydistill)**
+  * **適用場景**：需大幅降低雲端推論成本，或實現手機端 AI 部署的企業。
+  * **特色亮點**：阿里開源的知識蒸餾管線。能將千億參數巨獸的能力，無損轉移到微型模型上，解決大模型「算力成本過高」的致命痛點。
+* **[Torchtune (PyTorch 官方原生架構)](https://github.com/pytorch/torchtune)**
+  * **適用場景**：PyTorch 生態系重度使用者、底層研究人員。
+  * **特色亮點**：程式碼極度乾淨、高度模組化，適合進行深度魔改與客製化訓練。[👉 Llama3.1 知識蒸餾實戰](https://pytorch.ac.cn/torchtune/stable/tutorials/llama_kd_tutorial.html)
 
 ### 資料集準備 (Datasets)
 - **微調資料集實戰**
@@ -183,234 +179,179 @@ schema_type: article
 
 ## AI-Agent
 **🧩 AI Agent 開源框架**
-> 完整列表請見：[避開 AI 代理 (AI Agents) 與 代理式人工智慧 (Agentic AI) 開發陷阱](https://deep-learning-101.github.io/agent)
+> 概念說明請見：[避開 AI 代理 (AI Agents) 與 代理式人工智慧 (Agentic AI) 開發陷阱](https://deep-learning-101.github.io/agent)
 
-### 核心概念與必讀文章
-- **AI Search Has A Citation Problem**
-  - 資源：[📝 CJR](https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php)
-- **Agentic AI vs AI Agents**
-  - 說明：A Conceptual Taxonomy, Applications and Challenges
-  - 資源：[📄 AlphaXiv](https://www.alphaxiv.org/abs/2505.10468)
-- **OWASP Agentic AI**
-  - 說明：Threats and Mitigations
-  - 資源：[🛡️ OWASP](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/)
-- **Agent 工作流入門**
-  - 資源：[📝 從 Agent 到 Workflow](https://zhuanlan.zhihu.com/p/32491596217) | [📝 萬字長文綜觀 Agent](https://zhuanlan.zhihu.com/p/29833831482) | [📝 什麼是 Agentic 工作流程？](https://zhuanlan.zhihu.com/p/32709535995) | [📝 Agentic AI 區別](https://zhuanlan.zhihu.com/p/705935464)
-- **FinRobot**
-  - 資源：[📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2405.14767) | [📚 DeepWiki](https://deepwiki.com/AI4Finance-Foundation/FinRobot) (支援 Gemini 2.5)
-- **Jupyter-AI**
-  - 資源：[📚 DeepWiki](https://deepwiki.com/jupyterlab/jupyter-ai) (支援 Gemini 2.5)
+### 🧠 核心概念與必讀文章：看懂 AI Agent 與 Agentic AI
 
-### Agent 框架列表 (按時間排序)
+在開發智能代理之前，理解底層邏輯與安全邊界至關重要。以下文獻涵蓋了從概念釐清、工作流設計到資安防護的必備知識：
 
-- 2026-03-26｜**DeerFlow 2.0**
-  - 說明：字節跳動將第一代的Deep Research直接升級成Super Agent Harness。透過將sub-agents、memory 和sandbox 有機組織在一起，再配合可擴展的skills，讓Agent 幾乎能完成任何複雜任務。
-  - 資源：[字節跳動 開源Harness專案DeerFlow 2.0，讓智能體幾乎能完成任何複雜任務](https://zhuanlan.zhihu.com/p/2020566695719256852) | [📝 公眾號解讀：從Deep Research 到Super Agent：DeerFlow 2.0 全面解析](https://mp.weixin.qq.com/s/v7A10aID_757SBJsINWlFA)
-  - 2025-05-10 [🐙 GitHub](https://github.com/bytedance/deer-flow/blob/main/README_zh.md) | [📝 深度解析](https://www.53ai.com/news/LargeLanguageModel/2025061552389.html) | [📚 DeepWiki](https://deepwiki.com/search/_78a54d18-9132-44eb-920a-98618b505c9f)
+* **[Agentic AI 與 AI Agents 的概念差異解析](https://www.alphaxiv.org/abs/2505.10468)**
+  * **必讀原因**：釐清業界最容易混淆的兩個名詞。探討「AI 代理 (AI Agents)」作為單一執行體，與「代理式人工智慧 (Agentic AI)」作為系統性架構的分類學、應用場景與未來挑戰。
+* **[Agentic AI 的資安威脅與緩解策略 (OWASP 官方指南)](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/)**
+  * **必讀原因**：AI 失控怎麼辦？國際資安權威 OWASP 針對代理式 AI 可能面臨的 Prompt Injection (提示詞注入) 與權限濫用，提供了系統性的防禦與緩解架構 (Mitigations)。
+* **[AI 搜尋引擎的致命傷：引用來源問題 (Citation Problem)](https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php)**
+  * **必讀原因**：當 AI 代理負責搜尋與總結時，如何避免侵權與幻覺？本文評測了八大 AI 搜尋引擎，揭露其在新聞與來源引用上的缺陷，是開發檢索代理 (Search Agent) 的重要借鏡。
 
-- 2026-02-22 | **ZeroClaw**
-  - 說明：壓成本、低功耗部署、深度客製。
-  - 資源：[🐙 GitHub](https://github.com/zeroclaw-labs/zeroclaw) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/LialztPIJjiYon00zhOM6w)
+---
 
-- 2026-01-20 | **OpenClaw(MoltBot/Clawdbot)**  
-  - 說明：一個跑在你自己電腦上的 AI 助手平台。 | [👉 點此看深度技術分析 ](https://deep-learning-101.github.io/LLM/OpenClaw-Moltbot-Clawdbot) |  [👉 點此看白話文分析 ](https://blog.twman.org/2026/02/OpenClaw.html)
-  - 資源： [🌐 官網](https://openclaw.ai/) | [🐙 GitHub](https://github.com/NVIDIA/personaplex) | [官方簡體中文文件](https://docs.openclaw.ai/zh-CN) | [官方文件](https://docs.openclaw.ai) | [📝 DeepWiki](https://deepwiki.com/openclaw/openclaw) | [[📝 Zread](https://zread.ai/openclaw/openclaw) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/yFi8lWLWp7NPDO-zD6QW_Q) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/1ikfiU_eGnL5FRaPRddA2Q) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/WDEYhOG2tGYau0VAOc_y7A) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1999109634909303005) | [📝 2026年OpenClaw Skills排行榜：Top 20必裝清單](https://mp.weixin.qq.com/s/wCoo-h4dEkxLjZo-lOsVmQ)
+### 🔄 Agent 工作流 (Workflow) 入門指南
+AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選教學幫助您從零建構多智能體系統：
+* **基礎掃盲**：[萬字長文綜觀 Agent 發展史](https://zhuanlan.zhihu.com/p/29833831482) | [Agentic AI 的核心區別](https://zhuanlan.zhihu.com/p/705935464)
+* **實戰架構**：[從單一 Agent 到複雜 Workflow 的演進](https://zhuanlan.zhihu.com/p/32491596217) | [什麼是 Agentic 工作流程？](https://zhuanlan.zhihu.com/p/32709535995)
 
-- 2025-11-15｜**Agno**
-  - 說明：高效能 Multi-agent 系統框架
-  - 資源：[🌐 官網](https://zread.ai/agno-agi/agno/) | [📝 架構深度解析](https://zhuanlan.zhihu.com/p/1945395802844410466)
+---
 
-- 2025-10-28｜**Tongyi DeepResearch**
-  - 說明：通義全面開源，超越 OpenAI 閉源框架
-  - 資源：[📝 DeepResearch](https://zread.ai/Alibaba-NLP/DeepResearch) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1951785880655209261)
+### 💼 領域專用 Agent 實戰案例 (Finance & Coding)
+* **[FinRobot (開源金融 AI 代理)](https://deepwiki.com/AI4Finance-Foundation/FinRobot)**
+  * **應用場景**：專為金融分析打造的 Agent 框架，支援最新 Gemini 2.5 模型，能自動化執行財報分析、市場預測等量化任務。[👉 AlphaXiv 論文解析](https://www.alphaxiv.org/zh/overview/2405.14767)
+* **[Jupyter-AI (程式碼編寫代理)](https://deepwiki.com/jupyterlab/jupyter-ai)**
+  * **應用場景**：將生成式 AI 原生接入 Jupyter Notebook，支援 Gemini 2.5，能理解您的數據上下文並自動生成、除錯 Python 程式碼，是數據科學家的最強副駕。
 
-- 2025-10-28｜**DeepAgent**
-  - 說明：首個全自主深度推理智能體
-  - 資源：[📝 RUC-NLPIR](https://zread.ai/RUC-NLPIR/DeepAgent) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1966457879335798713)
+---
 
-- 2025-10-19｜**Gemini Computer Use**
-  - 說明：Google 推出讓 AI 代理操作網頁介面
-  - 資源：[📖 官方文件](https://ai.google.dev/gemini-api/docs/computer-use) | [📝 iThome 報導](https://www.ithome.com.tw/news/171579) | [🐙 GitHub](https://github.com/google-gemini/computer-use-preview)
+### 🧩 2026 必備 AI Agent 開源框架與開發工具 (依據應用場景分類)
 
-- 2025-10-10｜**SurfSense**
-  - 說明：GitHub 萬星王炸，整合 Slack/Notion/Jira
-  - 資源：[📝 MODSetter](https://zread.ai/MODSetter/SurfSense) | [📝 中文解讀](https://mp.weixin.qq.com/s/za_ZQ7OWuvYaN2f0Ml0AgA)
+在 Agentic AI 時代，選擇正確的框架能讓開發事半功倍。以下依據「應用場景」精選目前 GitHub 上最活躍、最具生產力的 AI Agent 開源專案：
 
-- 2025-08-29｜**Microsoft Agent Framework**
-  - 說明：開放原始碼開發套件，用於建置 .NET 和 Python 的 AI 代理程式 和 多代理程式工作流程 。
-  - 資源：[🐙 GitHub](https://github.com/microsoft/agent-framework) | [📝 官方文件](https://learn.microsoft.com/zh-tw/agent-framework/overview/agent-framework-overview)
+#### 1. 個人全自動化助理與通用 Agent (Personal & General Assistants)
+* **[OpenClaw (原 Moltbot/Clawdbot)](https://openclaw.ai/)** `[2026-01-20]` 🔥 *(2026現象級專案)*
+  * **特色**：你電腦上的全天候數位管家。可直接串接 Line、Telegram、WhatsApp 等通訊軟體，接收指令並**實際操作你的電腦**（如整理信箱、操作網頁）。
+  * **必讀資源**：
+    * [官方簡體中文文件](https://docs.openclaw.ai/zh-CN)
+    * [深度技術與資安風險分析](https://deep-learning-101.github.io/LLM/OpenClaw-Moltbot-Clawdbot)
+    * [白話文分析 ](https://blog.twman.org/2026/02/OpenClaw.html)
+    * [ZeroClaw (低功耗部署版)](https://github.com/zeroclaw-labs/zeroclaw)
+    * [DeepWiki](https://deepwiki.com/openclaw/openclaw)
+    * [Zread](https://zread.ai/openclaw/openclaw)
+    * [公眾號解讀 1](https://mp.weixin.qq.com/s/yFi8lWLWp7NPDO-zD6QW_Q)
+    * [公眾號解讀 2](https://mp.weixin.qq.com/s/1ikfiU_eGnL5FRaPRddA2Q)
+    * [知乎解讀](https://zhuanlan.zhihu.com/p/1999109634909303005)
+    * [2026年OpenClaw Skills排行榜：Top 20必裝清單](https://mp.weixin.qq.com/s/wCoo-h4dEkxLjZo-lOsVmQ)
+* **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** `[2025-06-25]`：將 Google Gemini 轉化為終端機 (Terminal) 開源代理，開發者日常指令輔助利器。
+* **[Agent Zero](https://github.com/frdel/agent-zero)** `[2025-06-01]`：主打全能 AI 代理，涵蓋 APP 生成、程式碼編寫與 RAG 應用。
+* **[Lemon AI](https://github.com/hexdocom/lemonai)** `[2025-05-28]`：全球首款全端開源通用 AI Agent 框架。
+* **[smolagents (Hugging Face 出品)](https://github.com/huggingface/smolagents)** `[2025-01-03]`：主打「程式碼即工具」，只需極少 Python 程式碼就能將任何開源 LLM 轉化為智能體。
 
-- 2025-08-29｜**MiroThinker**
-  - 說明：開源的深度研究代理，針對研究和預測進行了最佳化。
-  - 資源：[🐙 GitHub](https://github.com/MiroMindAI/MiroThinker) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/gRvKoSTpelsDLaUQJb0F3w)
+  ---
 
-- 2025-07-03｜**multi-modal-researcher**
-  - 資源：[🐙 GitHub](https://github.com/langchain-ai/multi-modal-researcher)
+#### 2. 複雜工作流與多智能體編排 (Workflow & Multi-Agent)
+* **[DeerFlow 2.0 (字節跳動)](https://github.com/bytedance/deer-flow/blob/main/README_zh.md)** `[2026-03-26]`：從 Deep Research 升級的 Super Agent Harness，將 sub-agents、memory 和 sandbox 有機組織，能處理極度複雜任務。
+* **[Agno](https://zread.ai/agno-agi/agno/)** `[2025-11]`：專注於高效能的多智能體 (Multi-agent) 系統框架。
+* **[Microsoft Agent Framework](https://github.com/microsoft/agent-framework)** `[2025-08-29]`：微軟官方開發套件，專為 .NET 和 Python 開發者設計的企業級工作流。
+* **[Agent-Squad (AWS Labs)](https://deepwiki.com/awslabs/agent-squad)** `[2025-05-18]`：輕量級的開源多智能體框架。
+* **[FlowGram (字節跳動)](https://github.com/bytedance/flowgram.ai)** `[2025-05-10]`：開源版的 Coze 核心視覺化工作流引擎。
+* **[Agent Development Kit (ADK)](https://github.com/google/adk-python)** `[2025-04-03]`：Google 官方釋出的智能體開發工具包。
 
-- 2025-06-25｜**Gemini CLI**
-  - 說明：你的開源 AI 代理
-  - 資源：[🐙 GitHub](https://github.com/google-gemini/gemini-cli) | [📝 Google Blog](https://blog.google/intl/zh-tw/products/cloud/gemini-cli-your-open-source-ai-agent/)
+---
 
-- 2025-06-06｜**PandaWiki**
-  - 說明：新一代 AI 大模型驅動的開源知識庫
-  - 資源：[🐙 GitHub](https://github.com/chaitin/PandaWiki) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1916981702733039060)
+#### 3. 深度研究與開源知識庫 (Deep Research & RAG)
+* **[Tongyi DeepResearch](https://zread.ai/Alibaba-NLP/DeepResearch)** `[2025-10-28]`：阿里通義全面開源的深度研究框架，對標並試圖超越 OpenAI 閉源能力。
+* **[DeepAgent](https://zread.ai/RUC-NLPIR/DeepAgent)** `[2025-10-28]`：業界首個全自主的深度推理智能體。
+* **[SurfSense](https://zread.ai/MODSetter/SurfSense)** `[2025-05-11]`：萬星開源王炸，能完美整合並檢索 Slack、Notion、Jira 等四散的企業知識庫。
+* **[MiroThinker](https://github.com/MiroMindAI/MiroThinker)** `[2025-08-29]`：針對學術研究和趨勢預測進行最佳化的深度研究代理。
+* **開源 Perplexity 替代方案** `[2025-06-03]`：包含 [Gemini Fullstack LangGraph](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart) 與 [Perplexica](https://github.com/ItzCrazyKns/Perplexica)，適合自建 AI 搜尋引擎。
+* **[PandaWiki](https://github.com/chaitin/PandaWiki)** `[2025-06-06]`：新一代 AI 大模型驅動的開源知識庫系統。
+* **[AutoAgent](https://github.com/HKUDS/AutoAgent)** `[2025-04-03]`：港大打造的強大 Deep Research 開源框架。
+* **[DeepSearcher](https://zread.ai/zilliztech/deep-searcher)** `[2025-03-20]`：私有資料庫結合 DeepSeek 打造的本地研究智能體。
 
-- 2025-06-03｜**Gemini Fullstack LangGraph**
-  - 說明：開源版 Perplexity
-  - 資源：[📚 DeepWiki](https://deepwiki.com/google-gemini/gemini-fullstack-langgraph-quickstart) | [🌐 DEMO](https://deep-learning-101.github.io/gemini-fullstack-langgraph/FinGenAI) | [📝 53AI 報導](https://www.53ai.com/news/OpenSourceLLM/2025060431620.html)
+---
 
-- 2025-06-03｜**Perplexica**
-  - 說明：Perplexity AI 開源替代品
-  - 資源：[🐙 GitHub](https://github.com/ItzCrazyKns/Perplexica) | [📝 53AI 報導](https://www.53ai.com/news/qianyanjishu/2394.html)
+#### 4. 電腦操作與軟體工程師 (Computer Use & Coding)
+* **[Gemini Computer Use](https://github.com/google-gemini/computer-use-preview)** `[2025-10]`：Google 預覽版框架，讓 AI 直接操作網頁介面。
+* **[WebDancer](https://www.alphaxiv.org/zh/overview/2505.22648)** `[2025-05-30]`：Alibaba 開源的 WebAgent，專精於網頁資料的自主瀏覽與操作。
+* **[OpenHands (Devin 平替)](https://github.com/All-Hands-AI/OpenHands)** `[2025-05-25]`：具備完整沙盒執行環境，能自主寫 Code、修 Bug。
+* **[Deepsite](https://huggingface.co/spaces/enzostvs/deepsite)** `[2025-04-03]`：基於 DeepSeek 的網頁開發智能體。
+* **[DeepGemini](https://github.com/sligter/DeepGemini)** `[2025-03-30]`：被譽為 AI 界搭積木神器。
+* **[autoMate](https://github.com/yuruotong1/autoMate)** `[2025-03-11]`：基於 OmniParser 的 AI 自動化 GUI 助手。
+* **[OmniParser](https://github.com/microsoft/OmniParser)** `[2024-10-26]`：微軟開源的核心技術，將純視覺輸入轉化為可操作的 UI 元素。
 
-- 2025-06-02｜**Paper2Poster**
-  - 說明：自動為論文產生海報
-  - 資源：[🌐 Project](https://paper2poster.github.io/) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1912838595510776080)
+---
 
-- 2025-06-01｜**Agent Zero**
-  - 說明：全能 AI 代理（產生APP、程式碼、RAG）
-  - 資源：[🐙 GitHub](https://github.com/frdel/agent-zero) | [🌐 官網](https://agent-zero.ai/) | [📝 騰訊雲文章](https://cloud.tencent.com/developer/article/2472836)
+#### 5. Manus 開源平替專區 (Manus Alternatives)
+Manus 在 2025 年掀起了全自動代理狂潮，以下為開源社群的最強復刻版本：
+* **[AI Manus](https://deepwiki.com/Simpleyyt/ai-manus)** `[2025-05-07]`
+* **[suna](https://github.com/kortix-ai/suna)** `[2025-04-24]`：高關注度的輕量級復刻版。
+* **[釦子空間 (Coze Space)](https://space.coze.cn/)** `[2025-04-22]`：字節跳動推出的類 Manus 解決方案。
+* **[AgenticSeek](https://github.com/Fosowl/agenticSeek)** `[2025-03-24]`：主打「完全本地化部署」的 Manus 替代品。
+* **[OpenManus](https://github.com/mannaandpoem/OpenManus)** `[2025-03-10]`：最知名、基礎的開源版。
 
-- 2025-05-30｜**WebDancer**
-  - 說明：Alibaba 開源 WebAgent
-  - 資源：[📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2505.22648) | [📚 DeepWiki](https://deepwiki.com/Alibaba-NLP/WebAgent)
+---
 
-- 2025-05-28｜**Lemon AI**
-  - 說明：全球首款全端開源通用 AI Agent
-  - 資源：[🐙 GitHub](https://github.com/hexdocom/lemonai) | [📝 53AI 報導](https://www.53ai.com/news/OpenSourceLLM/2025052883904.html)
-
-- 2025-05-25｜**OpenHands**
-  - 說明：目前最強大的開源 AI 軟體工程師 (Devin 平替)。具備完整的沙盒環境執行能力，能自主編寫程式碼、修復 Bug、操作終端機與瀏覽器。適合開發團隊用來打造全自動化的 CI/CD 測試流程，或是輔助工程師進行大規模的舊有程式碼重構。
-  - 資源：[🐙 GitHub](https://github.com/All-Hands-AI/OpenHands) | [🌐 Demo](https://app.all-hands.dev/)
-
-- 2025-05-18｜**Agent-Squad**
-  - 說明：輕量級開源 AI 多智能體框架 (AWS Labs)
-  - 資源：[📚 DeepWiki](https://deepwiki.com/awslabs/agent-squad) | [📝 中文解讀](https://mp.weixin.qq.com/s/5Y23EhpHb2_pBOY8XrkMNw)
-
-- 2025-05-10｜**FlowGram (ByteDance)**
-  - 說明：字節跳動開源 Coze 核心工作流引擎
-  - 資源：[🐙 GitHub](https://github.com/bytedance/flowgram.ai) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/EOtp8j67G5xd6H0qVfOhcw) | [📚 DeepWiki](https://deepwiki.com/search/-dify-n8n_a61d08fd-2089-4cf3-9253-3275a54b54fa)
-
-- 2025-05-09｜**OpenDeepWiki**
-  - 說明：加入 MCP，讓 AI 掌握開源專案文件
-  - 資源：[🐙 GitHub](https://github.com/AIDotNet/OpenDeepWiki) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Ux1-cpXdOSnjBrxCslHjtw) | [📚 如何使用](https://deepwiki.com/search/_f9b90674-c6d9-4999-8a72-49cf28a30dca)
-
-- 2025-05-07｜**AI Manus**
-  - 資源：[📚 DeepWiki](https://deepwiki.com/Simpleyyt/ai-manus)
-
-- 2025-04-24｜**suna**
-  - 說明：Manus 開源平替
-  - 資源：[🐙 GitHub](https://github.com/kortix-ai/suna) | [📝 機器之心](https://www.jiqizhixin.com/articles/2025-04-23-6)
-
-- 2025-04-22｜**釦子空間 (Coze Space)**
-  - 說明：字節版 Manus
-  - 資源：[🌐 官網](https://space.coze.cn/) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1896900788091090915)
-
-- 2025-04-03｜**AutoAgent**
-  - 說明：港大打造開源最強 Deep Research
-  - 資源：[🐙 GitHub](https://github.com/HKUDS/AutoAgent) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/oATCuzI4BJ6JcwJkazinCA)
-
-- 2025-04-03｜**Agent Development Kit (ADK)**
-  - 說明：Google 智能體開發工具包
-  - 資源：[🐙 GitHub](https://github.com/google/adk-python) | [📝 53AI 報導](https://www.53ai.com/news/OpenSourceLLM/2025041012369.html)
-
-- 2025-04-03｜**Deepsite**
-  - 說明：基於 DeepSeek 的網頁開發智能體
-  - 資源：[🤗 Space](https://huggingface.co/spaces/enzostvs/deepsite) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/1890332067411243826)
-
-- 2025-03-30｜**DeepGemini**
-  - 說明：AI 界搭積木神器
-  - 資源：[🐙 GitHub](https://github.com/sligter/DeepGemini) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/F2U7rWOMvfTyiRai-kfL_A)
-
-- 2025-03-24｜**AgenticSeek**
-  - 說明：Manus 完全本地化替代品
-  - 資源：[🐙 GitHub](https://github.com/Fosowl/agenticSeek) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/tRZNgG2trzRxScP_fJ29JQ)
-
-- 2025-03-20｜**DeepSearcher**
-  - 說明：私有資料 + Deepseek 打造本地 Deep Research
-  - 資源：[📝 DeepSearcher](https://zread.ai/zilliztech/deep-searcher) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/24273636289)
-
-- 2025-03-11｜**autoMate**
-  - 說明：基於 OmniParser 的 AI 自動化助手
-  - 資源：[🐙 GitHub](https://github.com/yuruotong1/autoMate) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/7W0xL3EBJM9mmNZbdZCiiQ)
-
-- 2025-03-10｜**OpenManus**
-  - 資源：[🐙 GitHub](https://github.com/mannaandpoem/OpenManus) | [📝 一文讀懂](https://zhuanlan.zhihu.com/p/30090038284)
-
-- 2025-02-28｜**MoneyPrinterTurbo**
-  - 說明：AI 自動生成高清短視頻
-  - 資源：[🐙 GitHub](https://github.com/harry0703/MoneyPrinterTurbo) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/27043978423)
-
-- 2024-02-01｜**MobileAgent**
-  - 說明：多模態手機助理
-  - 資源：[🐙 GitHub](https://github.com/X-PLUG/MobileAgent/blob/main/README_zh.md) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/680871671)
-
-- 2025-01-03｜**smolagents**
-  - 說明：Hugging Face 官方推出的極簡 Agent 框架。主打「程式碼即工具 (Code-as-tools)」理念，僅需極少量的 Python 程式碼，就能將任何開源 LLM 轉化為能呼叫外部 API 的智能體。非常適合想要快速打造個人自動化助理、且算力有限的 Python 開發者。
-  - 資源：[🐙 GitHub](https://github.com/huggingface/smolagents) | [📝 CSDN 介紹](https://blog.csdn.net/m0_59163425/article/details/144917058)
-
-- 2024-10-26｜**OmniParser**
-  - 說明：微軟開源，控制電腦手機的智能體
-  - 資源：[🐙 GitHub](https://github.com/microsoft/OmniParser) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/3343331861)
-
+#### 6. 特定場景應用 (Domain-Specific Automation)
+* **[Paper2Poster](https://paper2poster.github.io/)** `[2025-06-02]`：學術利器，自動為 PDF 論文產生精美的發表海報。
+* **[MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)** `[2025-02-28]`：自媒體神器，AI 自動生成高清短影音工作流。
 
 ---
 
 ## Tools
 **🛠️ 開發工具 (Tools & Protocols)**
 
-### RAG (Retrieval Augmented Generation)
-- 2026-03-14 | **KohakuRAG** | Apache-2.0
-  - 說明：Kaggle 的 RAG競賽WattBot 2025冠軍方案
-  - 資源：[📝 zread](https://zread.ai/KohakuBlueleaf/KohakuRAG) | [📝 公眾號教學](https://mp.weixin.qq.com/s/hUsr55bXBrHor0kHMo9htg)
+### 🔍 RAG 檢索增強生成：從入門到次世代架構 (Retrieval-Augmented Generation)
 
-- 2026-03-20 | **OpenDataLoader**
-    - 說明：OpenDataLoader在表格擷取準確率0.93，排第一；屬於那種"不快不慢但很準"的類型。
-    - 資源：[🐙 GitHub](https://github.com/opendataloader-project/opendataloader-pdf) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/mPjH0dTyAMLKL5Hq5KPqCw)
+傳統的 RAG (文本切塊 + 向量檢索) 已無法滿足企業對複雜排版、長文本與精準推理的需求。以下精選 2025-2026 年最具突破性的 RAG 開源框架，依據「技術流派與解決痛點」為您分類：
 
-- 2026-03-01 | **PageIndex** | MIT License
-  - 說明：University College London (UCL) 團隊開發；構建無需切塊向量化的 Agentic RAG，不做向量匹配，做推理導航；拋棄向量庫與切片，98% 準確率重塑長文檔檢索！
-  - 資源：[📝 zread](https://zread.ai/VectifyAI/PageIndex) | [CHAT](https://chat.pageindex.ai/) | [📝 公眾號教學](https://mp.weixin.qq.com/s/iivoQtqzLhFA69N5iaOvzQ) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/wwRJYvRl_jFaiiJkdrJdgw)
+#### 1. 顛覆傳統：無切塊與 Agentic RAG 架構
+放棄傳統向量資料庫，運用 AI 推理能力進行導航，解決長文檔檢索破碎的問題。
 
-- 2025-11-20｜**LinearRAG**
-  - 說明：全新 RAG 框架，無需關係抽取
-  - 資源：[🐙 GitHub](https://github.com/DEEP-PolyU/LinearRAG) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1975321777342260763)
+* **[PageIndex](https://zread.ai/VectifyAI/PageIndex)** `[2026-03-01]` | 授權：MIT
+  * **技術突破**：UCL 團隊開發的 Agentic RAG 革命性開源專案。完全拋棄「向量庫」與「文本切片 (Chunking)」，改用大模型進行推理導航。
+  * **解決痛點**：在超長文檔檢索中達到 98% 的驚人準確率，徹底重塑 RAG 的底層邏輯。[🌐 線上體驗](https://chat.pageindex.ai/) | [📝 公眾號教學](https://mp.weixin.qq.com/s/iivoQtqzLhFA69N5iaOvzQ) | [📝 深度解讀](https://mp.weixin.qq.com/s/wwRJYvRl_jFaiiJkdrJdgw)
+* **[LinearRAG](https://github.com/DEEP-PolyU/LinearRAG)** `[2025-11-20]`
+  * **技術突破**：全新的高效 RAG 框架，主打「無需進行複雜的關係抽取 (Relation Extraction)」，大幅降低構建知識庫的算力與時間成本。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/1975321777342260763)
 
-- 2025-07-02 | **RAG-Anything**
-  - 說明：解決傳統 RAG 無法處理複雜文檔的終極痛點！由港大 HKUDS 團隊（LightRAG 原班人馬）開源的「全能多模態 RAG 系統」。它能一鍵自動解析 PDF、Word、PPT 中的文字、圖片、複雜表格與數學公式，並將這些異構內容無縫映射到統一的知識圖譜（Knowledge Graph）中。結合強大的跨模態關係映射與雙層檢索機制，極度適合用於金融財報分析、醫療病歷比對，或是科研文獻的深度推理問答場景。
-  - [RAG-Anything: All-in-One RAG Framework](https://arxiv.org/pdf/2510.12323)
-  - 資源：[🐙 GitHub](https://github.com/HKUDS/RAG-Anything) | [📝 36Kr 深度解讀](https://m.36kr.com/p/3358608090400776) | [📝 架構與資料庫實戰解析](https://milvus.io/zh-hant/blog/multimodal-rag-made-simple-rag-anything-milvus-instead-of-20-separate-tools.md)
+#### 2. 資料清洗與多模態解析 (Data Parsing & Multi-modal)
+RAG 的成敗取決於資料輸入的品質。這些工具專精於處理複雜表格、圖片與數學公式。
 
-- 2024-12-19｜**LightRAG**
-  - 說明：解決傳統 RAG 檢索碎片化與缺乏全局語意理解的痛點。結合圖結構 (Graph) 與雙層檢索機制，能精準提取文件中的實體關聯。極度適合用於建構企業級法律合規知識庫、醫療文獻問答系統等需要高度準確性與防幻覺 (Hallucination) 的場景。
-  - [EMNLP2025 "LightRAG: Simple and Fast Retrieval-Augmented Generation"](https://arxiv.org/pdf/2410.05779)
-  - Beijing University of Posts and Telecommunications、University of Hong Kong
-  - 資源：[🐙 GitHub](https://github.com/HKUDS/LightRAG) | [📝 技術框架解讀](https://zhuanlan.zhihu.com/p/13261291813)
+* **[OpenDataLoader](https://github.com/opendataloader-project/opendataloader-pdf)** `[2026-03-20]`
+  * **核心優勢**：在極度困難的「表格擷取」任務中拿下 0.93 的超高準確率。主打「不追求極限速度，但精準度無可挑剔」的穩健策略，是企業處理 PDF 財報與數據報表的神兵利器。[📝 公眾號解讀](https://mp.weixin.qq.com/s/mPjH0dTyAMLKL5Hq5KPqCw)
+* **[RAG-Anything](https://github.com/HKUDS/RAG-Anything)** `[2025-07-02]`
+  * **核心優勢**：港大 HKUDS 團隊打造的「全能多模態 RAG 系統」。能一鍵自動解析 PDF、Word、PPT 中的文字、圖片、複雜表格與公式，並無縫映射到知識圖譜 (KG) 中。極度適合金融財報、醫療病歷或科研文獻的深度推理。[📄 論文](https://arxiv.org/pdf/2510.12323) | [📝 36Kr 解讀](https://m.36kr.com/p/3358608090400776) | [📝 Milvus 實戰解析](https://milvus.io/zh-hant/blog/multimodal-rag-made-simple-rag-anything-milvus-instead-of-20-separate-tools.md)
 
+#### 3. 圖譜增強與全局語意 (Graph-RAG)
+解決傳統 RAG「只見樹木，不見森林」的問題，強化實體之間的邏輯關聯。
 
-### MCP (Model Context Protocol)
-- 2025-08-20｜**FastAPI-MCP**
-  - 說明：將 FastAPI 介面升級為 MCP 工具服務
-  - 資源：[📝 zread](https://zread.ai/tadata-org/fastapi_mcp) | [📝 公眾號教學](https://mp.weixin.qq.com/s/L568EP2tl2zwmC8vxz8s7w)
+* **[LightRAG](https://github.com/HKUDS/LightRAG)** `[2024-12-19]` 
+  * **核心優勢**：港大 HKUDS 團隊打造的結合圖結構 (Graph) 與雙層檢索機制，精準提取文件中的實體關聯。極度適合用於建構企業級法律合規知識庫、醫療問答系統等需要「高度準確性」與「防幻覺 (Anti-Hallucination)」的嚴苛場景。[📄 EMNLP2025 論文](https://arxiv.org/pdf/2410.05779) | [📝 技術框架解讀](https://zhuanlan.zhihu.com/p/13261291813)
 
-- 2025-04-15｜**automcp**
-  - 說明：秒設定 MCP 伺服器
-  - 資源：[🐙 GitHub](https://github.com/NapthaAI/automcp) | [📝 公眾號介紹](https://mp.weixin.qq.com/s/x-aZEhtnRYPFno81Fb9ttw)
+#### 4. 實戰與競賽冠軍方案 (Battle-Tested Solutions)
+* **[KohakuRAG](https://zread.ai/KohakuBlueleaf/KohakuRAG)** `[2026-03-14]` | 授權：Apache-2.0
+  * **核心優勢**：經過頂級賽事淬鍊的實戰架構！這是 Kaggle RAG 競賽 (WattBot 2025) 的冠軍開源方案，適合想要直接抄作業、部署高效能 RAG 的開發者。[📝 公眾號教學](https://mp.weixin.qq.com/s/hUsr55bXBrHor0kHMo9htg)
 
-- 2025-04-10｜**line-bot-mcp-server**
-  - 資源：[🐙 GitHub](https://github.com/line/line-bot-mcp-server)
+### 🔌 MCP 協議生態與實戰工具 (Model Context Protocol)
 
-- 2025-04-05｜**GitMCP**
-  - 說明：讓 AI 秒懂 GitHub 項目
-  - 資源：[🐙 GitHub](https://github.com/idosal/git-mcp) | [📝 53AI 報導](https://www.53ai.com/news/RAG/2025040590146.html)
+MCP (Model Context Protocol) 是賦予大語言模型「使用外部工具」與「讀取本地端資料」的關鍵標準協議。以下精選 2025 下半年最具代表性的 MCP 伺服器建置框架與應用模組，幫助開發者快速打通 AI 與外部系統的任督二脈：
 
-- 2025-03-14｜**playwright-mcp**
-  - 說明：AI 自動化神器
-  - 資源：[🐙 GitHub](https://github.com/microsoft/playwright-mcp) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/30178146112)
+#### 1. 基礎設施與伺服器快速建置 (Infrastructure & Server Setup)
+解決傳統手動編寫 MCP 伺服器耗時、繁瑣的痛點，實現快速封裝與部署。
+
+* **[FastAPI-MCP](https://zread.ai/tadata-org/fastapi_mcp)** `[2025-08-20]`
+  * **核心優勢**：將傳統 API 一鍵轉化為 AI 可讀工具！能將現有的 FastAPI 介面無縫、低成本地升級為標準的 MCP 工具服務，極大幅度降低後端開發門檻。[📝 公眾號教學](https://mp.weixin.qq.com/s/L568EP2tl2zwmC8vxz8s7w)
+* **[automcp](https://github.com/NapthaAI/automcp)** `[2025-04-15]`
+  * **核心優勢**：主打「秒級設定」的 MCP 伺服器建構工具，讓開發者跳過繁雜的底層通訊協定配置，直接專注於業務邏輯的開發。[📝 公眾號介紹](https://mp.weixin.qq.com/s/x-aZEhtnRYPFno81Fb9ttw)
+
+#### 2. 自動化測試與網頁操控 (Automation & Web Control)
+賦予大模型「眼睛」與「雙手」，讓 AI 能夠直接與動態網頁互動。
+
+* **[playwright-mcp](https://github.com/microsoft/playwright-mcp)** `[2025-03-14]`
+  * **核心優勢**：微軟開源的 AI 網頁自動化神器！結合強大且穩定的 Playwright 引擎，讓你的 AI Agent 透過 MCP 具備模擬人類點擊、滾動瀏覽器，以及抓取動態網頁資料的能力。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/30178146112)
+
+#### 3. 開發者工具與程式碼理解 (Developer Tools & Codebase)
+讓 AI 成為你的最強 Code Reviewer，直接對接龐大的專案架構。
+
+* **[GitMCP](https://github.com/idosal/git-mcp)** `[2025-04-05]`
+  * **核心優勢**：讓 AI 秒懂 GitHub 龐大專案的利器。不用再辛苦地複製貼上程式碼，透過 GitMCP，AI 能直接存取、檢索並理解整個 Git 儲存庫的架構與歷史紀錄。[📝 53AI 報導](https://www.53ai.com/news/RAG/2025040590146.html)
+
+#### 4. 社群通訊平台串接 (Social Media & Chatbots)
+將大模型的強大能力，無縫接入日常使用的通訊軟體中。
+
+* **[line-bot-mcp-server](https://github.com/line/line-bot-mcp-server)** `[2025-04-10]`
+  * **核心優勢**：LINE 官方專案。將 LINE 官方帳號 (LINE Bot) 直接接入 MCP 生態系，讓開發者能輕鬆打造出可以靈活調用外部工具的「超級 LINE 機器人」。
 
 ---
 
-### Browser Automation (瀏覽器自動化 / Manus / RPA 開源替代品)
+### 🖱️ 深度聚焦：Browser-use 生態系與實戰路徑 (Browser Automation & Manus Alternatives)
+
+從 2025 到 2026 年，AI Agent 正式從「純文本對話」進化為「代替人類操作電腦 (Actionable AI)」。以下精選目前最強大的開源瀏覽器自動化與 RPA (機器人流程自動化) 框架，它們是商用工具（如 Manus）的最佳免費平替方案：
 
 | 框架/工具名稱 | 開發團隊/生態 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
 | :--- | :--- | :--- | :--- |
@@ -420,13 +361,23 @@ schema_type: article
 | **OmniParser** | 🇺🇸 **Microsoft** | **精準解析 UI 元素**。微軟開源的強大視覺智能體，能看懂手機與電腦畫面的按鈕與架構。 | UI 自動化測試、多模態輸入<br>`[微軟開源]` `[UI解析]` |
 | **OpenManus / suna** | 🇨🇳/🌐 **開源社群** | **Manus 的開源平替**。解決商用 Agent 昂貴的問題，提供高度相似的任務執行能力。 | 個人開發者、快速概念驗證<br>`[Manus平替]` `[低成本]` |
 
-- **Browser-use**
-  - 資源：[🐙 GitHub](https://github.com/browser-use/browser-use)
-  - 2025-06-04：[workflow-use](https://github.com/browser-use/workflow-use) (一次錄製，永久使用)
-  - 2025-04-16：[web-ui](https://github.com/browser-use/web-ui) | [📚 如何使用](https://deepwiki.com/search/_bfd33aa8-cd79-4f1d-a1e8-5620d4374329)
-  - 2025-03-28：[browser-use-webui](https://github.com/browser-use/web-ui)
-  - 2025-02-16：[webui 部署教學](https://zhuanlan.zhihu.com/p/24116360552)
-  - 2025-01-23：[讓 AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)
+---
+
+#### 🔍 深度聚焦：Browser-use 生態系與實戰路徑
+在上述框架中，**Browser-use** 因其極高的開源活躍度，已發展出完整的工具鏈。如果您想讓 AI 幫您自動訂票、抓取動態網頁資料或執行重複性任務，請參考以下學習路徑：
+
+* **核心底層與原理解析**
+  * **[Browser-use 官方 GitHub](https://github.com/browser-use/browser-use)**：專案核心庫。
+  * **[原理解析：讓 AI 像人類一樣使用瀏覽器](https://zhuanlan.zhihu.com/p/20038156945)** `[2025-01-23]`：初學者必讀！深入了解其底層邏輯與 DOM 樹解析技術。
+
+* **零程式碼 / 視覺化操作 (WebUI)**
+  * *痛點：不想寫複雜的 Python 腳本來啟動 Agent？*
+  * **[browser-use-webui 部署教學](https://zhuanlan.zhihu.com/p/24116360552)** `[2025-02-16]`：手把手教你在本地端架設視覺化操作介面。
+  * **[官方 Web-UI 專案](https://github.com/browser-use/web-ui)** `[2025-04-16更新]`：提供友善的圖形化介面，點擊即可指派網頁任務。[👉 DeepWiki 實操指南](https://deepwiki.com/search/_bfd33aa8-cd79-4f1d-a1e8-5620d4374329)
+
+* **進階自動化：錄製與重複執行 (Workflow)**
+  * *痛點：每次都要重新下 Prompt 指令太麻煩？*
+  * **[workflow-use (工作流錄製神器)](https://github.com/browser-use/workflow-use)** `[2025-06-04]`：Browser-use 生態系的殺手級應用。主打「一次錄製，永久自動操作」，能將 AI 的執行路徑打包成標準化腳本，是企業打造自動化 RPA 的終極武器。
 
 ---
 
@@ -438,6 +389,70 @@ schema_type: article
 | **Agno** | 🌐 **開源社群** | **高效能 Multi-agent**。專注於多個 AI 智能體之間的協作與任務分發。 | 複雜專案拆解、軟體開發協作<br>`[多智能體]` `[高效能]` |
 | **FlowGram** | 🇨🇳 **字節跳動** | **Coze 核心引擎開源**。強大的視覺化工作流引擎，適合構建複雜的邏輯鏈。 | 企業級 AI 服務編排、Chatbot 後台<br>`[工作流引擎]` `[可視化]` |
 | **AutoAgent** | 🇭🇰 **香港大學** | **學術界最強大腦**。港大打造的開源 Deep Research 工具，學術底蘊深厚。 | 大學研究室、論文自動化分析<br>`[學術開源]` `[文獻分析]` |
+
+---
+
+### 📊 AI 簡報生成神器 (AI PPT & Slides Automation)
+
+傳統的 PPT 製作耗時且高度依賴排版技巧。隨著生成式 AI 的進步，AI 簡報工具已從初期的「套用固定模板」，進化到「無模板自由生成」與「像素級逆向還原」。以下精選目前 GitHub 上最受關注的開源 AI PPT 解決方案：
+
+### 1. 學術前沿與無模板自由生成 (Advanced & Template-Free Generation)
+解決傳統 AI 簡報工具「排版死板、只能套模板」的致命痛點，真正實現高度自由的內容渲染。
+
+* **[PPTAgent V2](https://github.com/icip-cas/PPTAgent)** `[2026-03-03]` 🔥
+  * **核心優勢**：由中科院團隊開發（V1 曾發表於 EMNLP 2025）。V2 版本迎來重磅升級，徹底打破傳統套模板的限制，實現**無模板自由生成**。內建的 DeepPresenter 模組刷新了產業榜單，支援渲染後即時糾錯與修改程式碼，是將長篇文件轉化為高品質 PPT 的學術級首選。
+  * **必讀資源**：[📝 公眾號推薦](https://mp.weixin.qq.com/s/2AEZpsC4wphAcpp5LtGqnw) | [📝 知乎推薦 (2025-01-13)](https://zhuanlan.zhihu.com/p/18105237248)
+* **[Edit-Banana](https://github.com/BIT-DataLab/Edit-Banana)** `[2026-02-23]`
+  * **核心優勢**：北京理工大學與亞利桑那大學團隊聯手打造。具備極強的「像素級逆向還原能力」，成功打通了 AIGC 繪圖與簡報排版落地的最後一哩路，適合對視覺呈現要求極高的專業簡報者。
+
+### 2. 快速生成與本地部署方案 (Local Deployment & Quick Generation)
+適合企業內部使用，解決雲端生成可能帶來的商業機密外洩風險，或追求極致的生成速度。
+
+* **[presenton](https://github.com/presenton/presenton)** `[2025-07-26]`
+  * **核心優勢**：主打**本地部署**的開源神器！確保資料不外流的前提下，只需輸入文本即可一鍵生成精美 PPT，是企業內網使用的最佳平替方案。[📝 公眾號推薦](https://mp.weixin.qq.com/s/QTMVGD_aP41qrwtbjLxV8Q)
+* **[LangChat Slides](https://github.com/langchat/langchat-slides)** `[2026-01-04]`
+  * **核心優勢**：由 LangChat 團隊開發的智慧幻燈片工具，提供流暢的生成式 AI 互動體驗。[🌐 線上 DEMO](https://slides.langchat.cn/) | [📝 掘金深度解讀](https://juejin.cn/post/7591861857465778214)
+* **[banana-slides](https://github.com/Anionex/banana-slides)** `[2025-12-13]`
+  * **核心優勢**：基於 nanobananapro🍌 的原生 AI PPT 應用。主打打造具有氛圍感與設計張力的「Vibe PPT」，適合行銷提案或創意展示。[📝 公眾號推薦](https://mp.weixin.qq.com/s/XXyCnEdrTVoK-m-EAW69nA)
+
+### 3. 多智能體協同架構 (Multi-Agent Workflows)
+將簡報製作拆解為「大綱規劃」、「資料檢索」、「視覺設計」等多個環節，交由不同的 AI 代理並行處理。
+
+* **[MultiAgentPPT](https://github.com/johnson7788/MultiAgentPPT)** `[2025-07-03]`
+  * **核心優勢**：引入 Multi-agent (多智能體) 並發處理機制。透過讓不同的 Agent 分工合作，大幅提升複雜簡報的生成速度與內容邏輯的嚴密性。[📝 知乎原理解讀](https://zhuanlan.zhihu.com/p/1920611446007497267)
+
+---
+
+### 🌍 知識管理革命：開源 AI PPT 與 NotebookLM 替代方案
+
+| 專案名稱 | 分類 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **notebooklm-py / Notex** | NotebookLM 平替 | **隱私優先的知識庫**。提供類似 NotebookLM 的互動體驗，但支援命令列操作與本地部署。 | 企業內部文件庫、個人離線筆記本<br>`[開源平替]` `[重視隱私]` |
+| **PageLM** | NotebookLM 平替 | **互動式學習神器**。把學習材料丟進去，自動生成互動式學習內容。 | 教育培訓、長篇報告快速消化<br>`[互動學習]` `[文件分析]` |
+| **Edit-Banana** | AI PPT | **像素級逆向還原**。不直接生圖，而是理解、規劃再優化，打通 AI 簡報落地的最後一哩路。 | 專業商業簡報、學術海報生成<br>`[高質感排版]` `[學術開源]` |
+| **MultiAgentPPT** | AI PPT | **多智能體協作生 PPT**。利用多個 Agent 並發處理大綱、文案與排版，速度極快。 | 急件簡報製作、大綱快速展開<br>`[多智能體]` `[自動排版]` |
+
+-----
+
+## NotebookLM 平替
+**🌍 NotebookLM 平替**
+
+- 2026-01-20 | **notebooklm-py**
+  - 說明：將NotebookLM完整接入命令列環境，讓AI知識處理邁入自動化新紀元
+  - 資源：[🐙 GitHub](https://github.com/teng-lin/notebooklm-py) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/rATp6AhcQOzFe4t2QnA07w)
+- 2026-01-04 | **Notex**
+  - 說明：一個開源 NotebookLM 替代方案的實現
+  - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65epWwIC7Lqalwh-WuoP3Q)
+  - [DEMO](https://notex.rpcx.io/)
+- 2025-12-12 | **PageLM**
+  - 說明：把學習材料丟進去，互動式學習內容就出來
+  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/3o8RcHicjt5FRdSzG_qGUw)
+- 2025-12-06 | **Open NoteBook**
+  - 說明：一個開源的、注重隱私的Google Notebook LM 替代方案
+  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Kncslf0XL1ucdPpQX_-a1g)
+- 2025-12-06 | **Auto-Slides**
+  - 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
+  - 資源：[🐙 GitHub](https://github.com/Westlake-AGI-Lab/Auto-Slides) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
 
 ---
 
@@ -537,65 +552,6 @@ schema_type: article
 
 ---
 
-## AI PTT
-**🌍 AI PPT (用AI做PPT)**
-
-  - 2026-03-03｜**PPTAgent V2**
-  - 說明：重磅更新：從套模板到無模板自由生成；DeepPresenter 刷新產業榜單，渲染後即時糾錯改程式碼
-    - 2025-01-13，中科院開源 AI 工具，在EMNLP 2025 發表，文件轉高品質 PPT
-    - 資源：[📝 知乎推薦](https://zhuanlan.zhihu.com/p/18105237248)
-  - 資源：[🐙 GitHub](https://github.com/icip-cas/PPTAgent) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/2AEZpsC4wphAcpp5LtGqnw)
-- 2026-02-23 | **Edit-Banana**
-  - 說明：北京理工大學與亞利桑那大學團隊出手，憑藉著像素級逆向還原能力，打通了AIGC 繪圖落地的最後一公里。
-  - 資源：[🐙 GitHub](https://github.com/BIT-DataLab/Edit-Banana)
-- 2026-01-04 | **LangChat Slides**
-  - 說明：基於生成式AI 的智慧幻燈片生成工具，由LangChat 團隊開發。
-  - 資源：[🐙 GitHub](https://github.com/langchat/langchat-slides) | [DEMO](https://slides.langchat.cn/) | [掘金解讀](https://juejin.cn/post/7591861857465778214)
-- 2025-12-13 | **banana-slides**
-  - 說明：基於nanobananapro🍌的原生AI PPT生成應用，邁向真正的「Vibe PPT」。
-  - 資源：[🐙 GitHub](https://github.com/Anionex/banana-slides) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/XXyCnEdrTVoK-m-EAW69nA)
-- 2025-07-26｜**presenton**
-  - 說明：本地部署一鍵生成精美 PPT
-  - 資源：[🐙 GitHub](https://github.com/presenton/presenton) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/QTMVGD_aP41qrwtbjLxV8Q)
-- 2025-07-03｜**MultiAgentPPT**
-  - 說明：多智能體並發產生 PPT
-  - 資源：[🐙 GitHub](https://github.com/johnson7788/MultiAgentPPT) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1920611446007497267)
-
------
-
-### 🌍 知識管理革命：開源 AI PPT 與 NotebookLM 替代方案
-
-| 專案名稱 | 分類 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
-| :--- | :--- | :--- | :--- |
-| **notebooklm-py / Notex** | NotebookLM 平替 | **隱私優先的知識庫**。提供類似 NotebookLM 的互動體驗，但支援命令列操作與本地部署。 | 企業內部文件庫、個人離線筆記本<br>`[開源平替]` `[重視隱私]` |
-| **PageLM** | NotebookLM 平替 | **互動式學習神器**。把學習材料丟進去，自動生成互動式學習內容。 | 教育培訓、長篇報告快速消化<br>`[互動學習]` `[文件分析]` |
-| **Edit-Banana** | AI PPT | **像素級逆向還原**。不直接生圖，而是理解、規劃再優化，打通 AI 簡報落地的最後一哩路。 | 專業商業簡報、學術海報生成<br>`[高質感排版]` `[學術開源]` |
-| **MultiAgentPPT** | AI PPT | **多智能體協作生 PPT**。利用多個 Agent 並發處理大綱、文案與排版，速度極快。 | 急件簡報製作、大綱快速展開<br>`[多智能體]` `[自動排版]` |
-
------
-
-## NotebookLM 平替
-**🌍 NotebookLM 平替**
-
-- 2026-01-20 | **notebooklm-py**
-  - 說明：將NotebookLM完整接入命令列環境，讓AI知識處理邁入自動化新紀元
-  - 資源：[🐙 GitHub](https://github.com/teng-lin/notebooklm-py) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/rATp6AhcQOzFe4t2QnA07w)
-- 2026-01-04 | **Notex**
-  - 說明：一個開源 NotebookLM 替代方案的實現
-  - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65epWwIC7Lqalwh-WuoP3Q)
-  - [DEMO](https://notex.rpcx.io/)
-- 2025-12-12 | **PageLM**
-  - 說明：把學習材料丟進去，互動式學習內容就出來
-  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/3o8RcHicjt5FRdSzG_qGUw)
-- 2025-12-06 | **Open NoteBook**
-  - 說明：一個開源的、注重隱私的Google Notebook LM 替代方案
-  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Kncslf0XL1ucdPpQX_-a1g)
-- 2025-12-06 | **Auto-Slides**
-  - 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
-  - 資源：[🐙 GitHub](https://github.com/Westlake-AGI-Lab/Auto-Slides) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
-
----
-
 ## World Models
 **🌍 World Models (世界模型)**
 
@@ -686,6 +642,7 @@ schema_type: article
 > **編者按：** 隨著 AI 技術迭代，目前市場已明確分為「頂尖閉源商業模型」、「國際開源標竿」以及「專精中文語境的生態系」。以下整理了較具代表性的大語言模型，並解析其適用場景。
 
 ### 📊 主流模型快速比較表  
+
 | 模型系列 | 開源狀態 | 開發機構 | 核心優勢與亮點 | 最佳適用場景 |
 | :--- | :--- | :--- | :--- | :--- |
 | **Gemini 3.1** | 閉源 (API) | Google | 原生多模態、超長上下文處理 | 企業級複雜數據分析、跨模態整合 |
