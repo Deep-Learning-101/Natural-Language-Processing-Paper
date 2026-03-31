@@ -190,6 +190,11 @@ schema_type: article
 
 ### Agent 框架列表 (按時間排序)
 
+- 2026-03-26｜**DeerFlow 2.0**
+  - 說明：字節跳動將第一代的Deep Research直接升級成Super Agent Harness。透過將sub-agents、memory 和sandbox 有機組織在一起，再配合可擴展的skills，讓Agent 幾乎能完成任何複雜任務。
+  - 資源：[字節跳動 開源Harness專案DeerFlow 2.0，讓智能體幾乎能完成任何複雜任務](https://zhuanlan.zhihu.com/p/2020566695719256852) | [📝 公眾號解讀：從Deep Research 到Super Agent：DeerFlow 2.0 全面解析](https://mp.weixin.qq.com/s/v7A10aID_757SBJsINWlFA)
+  - 2025-05-10 [🐙 GitHub](https://github.com/bytedance/deer-flow/blob/main/README_zh.md) | [📝 深度解析](https://www.53ai.com/news/LargeLanguageModel/2025061552389.html) | [📚 DeepWiki](https://deepwiki.com/search/_78a54d18-9132-44eb-920a-98618b505c9f)
+
 - 2026-02-22 | **ZeroClaw**
   - 說明：壓成本、低功耗部署、深度客製。
   - 資源：[🐙 GitHub](https://github.com/zeroclaw-labs/zeroclaw) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/LialztPIJjiYon00zhOM6w)
@@ -273,10 +278,6 @@ schema_type: article
   - 說明：字節跳動開源 Coze 核心工作流引擎
   - 資源：[🐙 GitHub](https://github.com/bytedance/flowgram.ai) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/EOtp8j67G5xd6H0qVfOhcw) | [📚 DeepWiki](https://deepwiki.com/search/-dify-n8n_a61d08fd-2089-4cf3-9253-3275a54b54fa)
 
-- 2025-05-10｜**DeerFlow**
-  - 說明：字節跳動 DeerFlow 解析
-  - 資源：[🐙 GitHub](https://github.com/bytedance/deer-flow/blob/main/README_zh.md) | [📝 深度解析](https://www.53ai.com/news/LargeLanguageModel/2025061552389.html) | [📚 DeepWiki](https://deepwiki.com/search/_78a54d18-9132-44eb-920a-98618b505c9f)
-
 - 2025-05-09｜**OpenDeepWiki**
   - 說明：加入 MCP，讓 AI 掌握開源專案文件
   - 資源：[🐙 GitHub](https://github.com/AIDotNet/OpenDeepWiki) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Ux1-cpXdOSnjBrxCslHjtw) | [📚 如何使用](https://deepwiki.com/search/_f9b90674-c6d9-4999-8a72-49cf28a30dca)
@@ -351,8 +352,8 @@ schema_type: article
   - 資源：[📝 zread](https://zread.ai/KohakuBlueleaf/KohakuRAG) | [📝 公眾號教學](https://mp.weixin.qq.com/s/hUsr55bXBrHor0kHMo9htg)
 
 - 2026-03-01 | **PageIndex** | MIT License
-  - 說明：不做向量匹配，做推理導航。
-  - 資源：[📝 zread](https://zread.ai/VectifyAI/PageIndex) | [📝 公眾號教學](https://mp.weixin.qq.com/s/iivoQtqzLhFA69N5iaOvzQ)
+  - 說明：University College London (UCL) 團隊開發；構建無需切塊向量化的 Agentic RAG，不做向量匹配，做推理導航；拋棄向量庫與切片，98% 準確率重塑長文檔檢索！
+  - 資源：[📝 zread](https://zread.ai/VectifyAI/PageIndex) | [CHAT](https://chat.pageindex.ai/) | [📝 公眾號教學](https://mp.weixin.qq.com/s/iivoQtqzLhFA69N5iaOvzQ) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/wwRJYvRl_jFaiiJkdrJdgw)
 
 - 2025-11-20｜**LinearRAG**
   - 說明：全新 RAG 框架，無需關係抽取
