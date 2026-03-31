@@ -60,12 +60,25 @@ schema_type: article
 ---
 
 ## Leaderboards
-**🏆 排行榜 (Leaderboards)**
+**🏆 LLM 權威排行榜與評測指標 (Leaderboards)**
 
-- [**AlpacaEval Leaderboard**](https://tatsu-lab.github.io/alpaca_eval/)
-- [**Open LLM Leaderboard**](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-- [**Big Code Models Leaderboard**](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)
-- [**Awesome-Chinese-LLM**](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
+在開源模型百家爭鳴的時代，如何挑選最適合特定任務的大語言模型？以下整理了目前 AI 開發者社群中最具公信力的 4 大模型評測榜單與資源庫，幫助您快速定位所需模型：
+
+* **[Open LLM Leaderboard (HuggingFace 官方榜單)](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)**
+  * **適用情境**：尋找綜合能力最強的開源模型。
+  * **特色亮點**：被譽為「開源模型的奧斯卡指標」。涵蓋推理解析、常識問答、數學運算與防幻覺等多項基準測試 (Benchmarks)，是決定本地部署模型前必看的權威榜單。
+
+* **[AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)**
+  * **適用情境**：評估模型「聽不聽得懂人話」。
+  * **特色亮點**：專注於「指令跟隨 (Instruction-following)」能力的勝率榜。透過高速自動化評測，驗證模型在真實對話情境中，是否能精準理解並執行人類的複雜指令。
+
+* **[Big Code Models Leaderboard](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)**
+  * **適用情境**：開發 AI 程式碼助手 (Coding Copilot)。
+  * **特色亮點**：寫 Code 專用模型的專屬競技場。如果您需要尋找能輔助撰寫程式碼、代碼補全 (Code Completion) 或 Debug 的專項模型，請以這份榜單的排名為準。
+
+* **[Awesome-Chinese-LLM](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)**
+  * **適用情境**：開發中文專屬的 AI 應用或 RAG 知識庫。
+  * **特色亮點**：這雖然不是單一的量化排行榜，卻是 GitHub 上最齊全的「中文大語言模型」開源專案、微調數據集與評測總整理。要在地化微調 (Fine-tuning) 中文模型，這是必備的尋寶圖。
 
 ---
 
