@@ -22,22 +22,7 @@ schema_type: article
 
 ---
 
-## ✨LLM API Platform Price Comparison
-大型語言模型API平台價格比較
-
-| 平台 | 模型 | 輸入費用 (USD/1M Tokens) | 輸出費用 (USD/1M Tokens) | 上下文窗口 | 免費層級 | 最大速率限制 (RPM / TPM) | 多模態能力 | 特點 / 說明 | 定價連結 |
-|------|------|---------------------------|---------------------------|-------------|-----------|---------------------------|----------------|----------------|-----------|
-| OpenAI | OpenAI o1 | $15.00 | $60.00 | 200k | ❌ | 不公開 | ✅（文字＋圖像） | Frontier 模型，支援 Vision/Tools/結構化輸出 | [OpenAI Pricing](https://openai.com/api/pricing/) |
-| OpenAI | OpenAI o3-mini | $1.10 | $4.40 | 200k | ❌ | 不公開 | ❌ | 成本效益模型，適合編碼與數學 | 同上 |
-| Google | Gemini 2.5 Pro (Preview) | $1.25（≤200k），$2.50（>200k） | $10.00（≤200k），$15.00（>200k） | >200k | ✅（指定模型） | 150 RPM / 2M TPM（Tier 1） | ✅（文字＋圖像） | 高階推理力，企業級用途 | [Gemini API](https://ai.google.dev/gemini-api/docs/pricing) / [Gemini 網站](https://gemini.google.com/) |
-| Google | Gemini 2.0 Flash | $0.10（圖文影），$0.70（音訊） | $0.40 | 1M | ✅（15 RPM） | 2,000 RPM / 4M TPM | ✅（文字＋圖＋影＋音） | 多模態支援，企業級速率與穩定性 | 同上 |
-| Google | Gemini 2.0 Flash Lite | $0.075（全模態） | $0.30 | 1M | ✅（30 RPM） | 4,000 RPM / 4M TPM | ✅（全模態） | 超高速率、經濟型多模態模型 | 同上 |
-| DeepSeek | deepseek-chat (V3) | $0.27 | $1.10 | 64K | ❌ | 不公開 | ❌ | 標準價，推理速度佳 | [DeepSeek Pricing](https://api-docs.deepseek.com/quick_start/pricing) / [DeepSeek Chat](https://chat.deepseek.com/) |
-| DeepSeek | deepseek-reasoner (R1) | $0.55 | $2.19 | 64K | ❌ | 不公開 | ❌ | 高階邏輯推理與數據分析能力 | 同上 |
-| Qwen | Qwen-Max | $1.60 | $6.40 | ~32K | ❌ | 不公開 | ❌ | 強推理型，偏向高品質產出 | [Qwen Chat](https://chat.qwen.ai/) |
-| Qwen | Qwen-Plus | $0.40 | $1.20 | ~131K | ❌ | 不公開 | ❌ | 均衡型模型，支援較長上下文 | 同上 |
-| Grok | grok-3 | $3.00 | $15.00 | 131k | ✅ | 不公開 | ❌ | 支援思考模式、有限搜尋功能 | [Grok 官網](https://grok.com/) |
-| 百度 | 文心一言（ERNIE Bot） | 不公開（免費使用） | 不公開（免費使用） | 不公開 | ✅ | 不公開 | ✅（圖像/語音） | 支援中文語境與多模態任務 | [文心一言](https://yiyan.baidu.com/X1) |
+{% include price.html %}
 
 ---
 
@@ -378,260 +363,180 @@ MCP (Model Context Protocol) 是賦予大語言模型「使用外部工具」與
 * **進階自動化：錄製與重複執行 (Workflow)**
   * *痛點：每次都要重新下 Prompt 指令太麻煩？*
   * **[workflow-use (工作流錄製神器)](https://github.com/browser-use/workflow-use)** `[2025-06-04]`：Browser-use 生態系的殺手級應用。主打「一次錄製，永久自動操作」，能將 AI 的執行路徑打包成標準化腳本，是企業打造自動化 RPA 的終極武器。
+* **[nanobrowser](https://github.com/nanobrowser/nanobrowser)** `[2025-04-11]`：AI 驅動的瀏覽器自動化神器，透過輕量化架構實現網頁操作自動化。[📝 公眾號推薦](https://mp.weixin.qq.com/s/65SwCtDta1cKvx1_BbaoHQ)  
 
 ---
 
-### 深度研究 (Deep Research) 與多智能體工作流
+### 🕵️‍♂️ 深度研究 (Deep Research) 與多智能體工作流
+
+面對海量文獻與複雜專案，傳統的單一 AI 已經不夠用。以下精選 2025-2026 年最強大的深度研究與多智能體編排框架，幫助企業與學術界打造自動化的「研究大腦」：
 
 | 框架/工具名稱 | 開發團隊/生態 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
 | :--- | :--- | :--- | :--- |
-| **Tongyi DeepResearch** | 🇨🇳 **阿里巴巴** | **開源版深度研究**。通義全面開源，標榜效能超越 OpenAI 的閉源研究框架。 | 學術文獻統整、深度產業報告生成<br>`[大廠開源]` `[深度研究]` |
-| **Agno** | 🌐 **開源社群** | **高效能 Multi-agent**。專注於多個 AI 智能體之間的協作與任務分發。 | 複雜專案拆解、軟體開發協作<br>`[多智能體]` `[高效能]` |
-| **FlowGram** | 🇨🇳 **字節跳動** | **Coze 核心引擎開源**。強大的視覺化工作流引擎，適合構建複雜的邏輯鏈。 | 企業級 AI 服務編排、Chatbot 後台<br>`[工作流引擎]` `[可視化]` |
-| **AutoAgent** | 🇭🇰 **香港大學** | **學術界最強大腦**。港大打造的開源 Deep Research 工具，學術底蘊深厚。 | 大學研究室、論文自動化分析<br>`[學術開源]` `[文獻分析]` |
+| **Tongyi DeepResearch** | 🇨🇳 **阿里巴巴** | **開源版深度研究霸主**。通義團隊全面開源，標榜其長文本檢索與邏輯梳理效能超越 OpenAI 的閉源研究框架。 | 學術文獻統整、深度產業報告生成<br>`[大廠開源]` `[深度研究]` |
+| **Agno** | 🌐 **開源社群** | **高效能 Multi-agent 協作**。專注於多個 AI 智能體之間的底層協作、任務分發與記憶體共享。 | 複雜專案拆解、軟體開發協作<br>`[多智能體]` `[高效能]` |
+| **FlowGram** | 🇨🇳 **字節跳動** | **Coze 核心引擎開源**。提供強大且直覺的視覺化工作流引擎，適合構建具備複雜條件分支的邏輯鏈。 | 企業級 AI 服務編排、Chatbot 後台<br>`[工作流引擎]` `[可視化]` |
+| **AutoAgent** | 🇭🇰 **香港大學** | **學術界最強大腦**。由港大團隊打造的開源 Deep Research 工具，具備深厚的學術底蘊與嚴謹的文獻引用機制。 | 大學研究室、論文自動化分析<br>`[學術開源]` `[文獻分析]` |
 
 ---
 
 ### 📊 AI 簡報生成神器 (AI PPT & Slides Automation)
 
-傳統的 PPT 製作耗時且高度依賴排版技巧。隨著生成式 AI 的進步，AI 簡報工具已從初期的「套用固定模板」，進化到「無模板自由生成」與「像素級逆向還原」。以下精選目前 GitHub 上最受關注的開源 AI PPT 解決方案：
+傳統的 PPT 製作耗時且高度依賴排版技巧。隨著生成式 AI 的進步，AI 簡報工具已從初期的「生硬套用模板」，進化到「無模板自由生成」與「像素級逆向還原」。以下為目前 GitHub 上最受關注的開源解決方案：
 
-### 1. 學術前沿與無模板自由生成 (Advanced & Template-Free Generation)
+#### 1. 學術前沿與無模板自由生成 (Advanced & Template-Free)
 解決傳統 AI 簡報工具「排版死板、只能套模板」的致命痛點，真正實現高度自由的內容渲染。
 
 * **[PPTAgent V2](https://github.com/icip-cas/PPTAgent)** `[2026-03-03]` 🔥
-  * **核心優勢**：由中科院團隊開發（V1 曾發表於 EMNLP 2025）。V2 版本迎來重磅升級，徹底打破傳統套模板的限制，實現**無模板自由生成**。內建的 DeepPresenter 模組刷新了產業榜單，支援渲染後即時糾錯與修改程式碼，是將長篇文件轉化為高品質 PPT 的學術級首選。
-  * **必讀資源**：[📝 公眾號推薦](https://mp.weixin.qq.com/s/2AEZpsC4wphAcpp5LtGqnw) | [📝 知乎推薦 (2025-01-13)](https://zhuanlan.zhihu.com/p/18105237248)
+  * **核心優勢**：中科院團隊重磅升級！徹底打破傳統套模板的限制，實現**無模板自由生成**。內建的 DeepPresenter 模組刷新了產業榜單，支援渲染後即時糾錯與修改程式碼，是將長篇論文轉化為高品質 PPT 的學術級首選。[📝 公眾號推薦](https://mp.weixin.qq.com/s/2AEZpsC4wphAcpp5LtGqnw) | [📝 知乎原理解讀](https://zhuanlan.zhihu.com/p/18105237248)
+* **[PaperBanana](https://dwzhu-pku.github.io/PaperBanana/)** `[2026-02-24]`：基於「參考驅動 + 多智能體合作」的 AI 簡報生成器。它不直接生圖，而是先理解、規劃、美化，最後迭代優化出高品質 PPT。[📄 論文](https://arxiv.org/pdf/2601.23265)  
 * **[Edit-Banana](https://github.com/BIT-DataLab/Edit-Banana)** `[2026-02-23]`
-  * **核心優勢**：北京理工大學與亞利桑那大學團隊聯手打造。具備極強的「像素級逆向還原能力」，成功打通了 AIGC 繪圖與簡報排版落地的最後一哩路，適合對視覺呈現要求極高的專業簡報者。
+  * **核心優勢**：北理工與亞利桑那大學聯手打造。具備極強的「像素級逆向還原能力」，不盲目生圖，而是理解、規劃再優化，成功打通 AIGC 繪圖與簡報排版落地的最後一哩路。
 
-### 2. 快速生成與本地部署方案 (Local Deployment & Quick Generation)
+#### 2. 快速生成與本地部署方案 (Local Deployment & Quick Gen)
 適合企業內部使用，解決雲端生成可能帶來的商業機密外洩風險，或追求極致的生成速度。
 
 * **[presenton](https://github.com/presenton/presenton)** `[2025-07-26]`
-  * **核心優勢**：主打**本地部署**的開源神器！確保資料不外流的前提下，只需輸入文本即可一鍵生成精美 PPT，是企業內網使用的最佳平替方案。[📝 公眾號推薦](https://mp.weixin.qq.com/s/QTMVGD_aP41qrwtbjLxV8Q)
+  * **核心優勢**：主打**本地部署**的開源神器！確保資料絕對不外流的前提下，只需輸入文本即可一鍵生成精美 PPT，企業內網平替首選。[📝 公眾號推薦](https://mp.weixin.qq.com/s/QTMVGD_aP41qrwtbjLxV8Q)
 * **[LangChat Slides](https://github.com/langchat/langchat-slides)** `[2026-01-04]`
-  * **核心優勢**：由 LangChat 團隊開發的智慧幻燈片工具，提供流暢的生成式 AI 互動體驗。[🌐 線上 DEMO](https://slides.langchat.cn/) | [📝 掘金深度解讀](https://juejin.cn/post/7591861857465778214)
+  * **核心優勢**：提供流暢的生成式 AI 互動體驗與現代化介面。[🌐 線上 DEMO](https://slides.langchat.cn/) | [📝 掘金深度解讀](https://juejin.cn/post/7591861857465778214)
 * **[banana-slides](https://github.com/Anionex/banana-slides)** `[2025-12-13]`
-  * **核心優勢**：基於 nanobananapro🍌 的原生 AI PPT 應用。主打打造具有氛圍感與設計張力的「Vibe PPT」，適合行銷提案或創意展示。[📝 公眾號推薦](https://mp.weixin.qq.com/s/XXyCnEdrTVoK-m-EAW69nA)
+  * **核心優勢**：基於 nanobananapro🍌 的原生應用。專注於打造具備高設計張力的「Vibe PPT」，極度適合行銷提案或創意展示。[📝 公眾號推薦](https://mp.weixin.qq.com/s/XXyCnEdrTVoK-m-EAW69nA)
 
-### 3. 多智能體協同架構 (Multi-Agent Workflows)
-將簡報製作拆解為「大綱規劃」、「資料檢索」、「視覺設計」等多個環節，交由不同的 AI 代理並行處理。
-
+#### 3. 多智能體協同架構 (Multi-Agent Workflows)
 * **[MultiAgentPPT](https://github.com/johnson7788/MultiAgentPPT)** `[2025-07-03]`
-  * **核心優勢**：引入 Multi-agent (多智能體) 並發處理機制。透過讓不同的 Agent 分工合作，大幅提升複雜簡報的生成速度與內容邏輯的嚴密性。[📝 知乎原理解讀](https://zhuanlan.zhihu.com/p/1920611446007497267)
+  * **核心優勢**：引入多智能體並發處理機制。透過讓不同的 Agent 分工處理「大綱規劃」、「資料檢索」與「視覺排版」，大幅提升複雜簡報的生成速度與邏輯嚴密性。[📝 知乎原理解讀](https://zhuanlan.zhihu.com/p/1920611446007497267)
 
 ---
 
-### 🌍 知識管理革命：開源 AI PPT 與 NotebookLM 替代方案
+### 🌍 知識管理革命：NotebookLM 開源平替生態
 
-| 專案名稱 | 分類 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
+Google 的 NotebookLM 改變了我們與長篇文獻互動的方式，但「資料上雲」的資安疑慮也讓許多企業卻步。以下精選 GitHub 上最受矚目的 NotebookLM 開源替代方案，讓您在保障資料隱私的前提下，打造專屬的第二大腦：
+
+#### 📊 核心解決方案比較表
+| 專案名稱 | 核心定位 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
 | :--- | :--- | :--- | :--- |
-| **notebooklm-py / Notex** | NotebookLM 平替 | **隱私優先的知識庫**。提供類似 NotebookLM 的互動體驗，但支援命令列操作與本地部署。 | 企業內部文件庫、個人離線筆記本<br>`[開源平替]` `[重視隱私]` |
-| **PageLM** | NotebookLM 平替 | **互動式學習神器**。把學習材料丟進去，自動生成互動式學習內容。 | 教育培訓、長篇報告快速消化<br>`[互動學習]` `[文件分析]` |
-| **Edit-Banana** | AI PPT | **像素級逆向還原**。不直接生圖，而是理解、規劃再優化，打通 AI 簡報落地的最後一哩路。 | 專業商業簡報、學術海報生成<br>`[高質感排版]` `[學術開源]` |
-| **MultiAgentPPT** | AI PPT | **多智能體協作生 PPT**。利用多個 Agent 並發處理大綱、文案與排版，速度極快。 | 急件簡報製作、大綱快速展開<br>`[多智能體]` `[自動排版]` |
+| **Open NoteBook** | 企業私有化 | **隱私優先的知識庫**。完美復刻對話體驗，支援完全本地化部署，機密文件絕不外流。 | 企業內部文件庫、離線筆記本<br>`[本地部署]` `[重視隱私]` |
+| **PageLM** | 學習與培訓 | **互動式學習神器**。把學習材料丟進去，自動提煉並生成互動式學習內容。 | 教育培訓、長篇報告快速消化<br>`[互動學習]` `[文件分析]` |
+| **notebooklm-py** | 開發者自動化 | **終端機知識管線**。支援命令列操作，讓工程師能用語法批次處理海量文件。 | 批次資料處理、CLI 愛好者<br>`[命令列工具]` `[自動化管線]` |
+| **Auto-Slides** | 語音播客生成 | **讓論文開口說話**。復刻 "Audio Overview" 殺手級功能，生成雙人對談的解說音訊。 | 學術論文導讀、語音知識吸收<br>`[Audio Overview]` `[語音生成]` |
 
------
-
-## NotebookLM 平替
-**🌍 NotebookLM 平替**
-
-- 2026-01-20 | **notebooklm-py**
-  - 說明：將NotebookLM完整接入命令列環境，讓AI知識處理邁入自動化新紀元
-  - 資源：[🐙 GitHub](https://github.com/teng-lin/notebooklm-py) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/rATp6AhcQOzFe4t2QnA07w)
-- 2026-01-04 | **Notex**
-  - 說明：一個開源 NotebookLM 替代方案的實現
-  - 資源：[🐙 GitHub](https://github.com/smallnest/notex) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65epWwIC7Lqalwh-WuoP3Q)
-  - [DEMO](https://notex.rpcx.io/)
-- 2025-12-12 | **PageLM**
-  - 說明：把學習材料丟進去，互動式學習內容就出來
-  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/3o8RcHicjt5FRdSzG_qGUw)
-- 2025-12-06 | **Open NoteBook**
-  - 說明：一個開源的、注重隱私的Google Notebook LM 替代方案
-  - 資源：[🐙 GitHub](https://github.com/lfnovo/open-notebook) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Kncslf0XL1ucdPpQX_-a1g)
-- 2025-12-06 | **Auto-Slides**
-  - 說明：不只是幫你寫，還能幫你講。它讓論文第一次有機會“開口說話”
-  - 資源：[🐙 GitHub](https://github.com/Westlake-AGI-Lab/Auto-Slides) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
+#### 📂 專案下載與部署資源
+* **[notebooklm-py](https://github.com/teng-lin/notebooklm-py)** `[2026-01-20]`：將 NotebookLM 完整接入命令列環境，讓 AI 知識處理邁入自動化新紀元。[📝 公眾號推薦](https://mp.weixin.qq.com/s/rATp6AhcQOzFe4t2QnA07w)
+* **[Notex](https://github.com/smallnest/notex)** `[2026-01-04]`：一個輕量、開箱即用的 NotebookLM 替代方案實作。[🌐 線上 DEMO](https://notex.rpcx.io/) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65epWwIC7Lqalwh-WuoP3Q)
+* **[PageLM](https://github.com/CaviraOSS/pagelm)** `[2025-12-12]`：把學習材料丟進去，互動式學習內容就出來。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/1980701578559234518) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/3o8RcHicjt5FRdSzG_qGUw)
+* **[Open NoteBook](https://github.com/lfnovo/open-notebook)** `[2025-12-06]`：一個開源的、注重隱私的 Google NotebookLM 替代方案。[📝 公眾號解讀](https://mp.weixin.qq.com/s/Kncslf0XL1ucdPpQX_-a1g)
+* **[Auto-Slides](https://github.com/Westlake-AGI-Lab/Auto-Slides)** `[2025-12-06]`：不只是幫你寫，還能幫你講。它讓論文第一次有機會「開口說話」，生成具備沈浸感的有聲討論。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/1953393379334391701)
 
 ---
 
-### 效率工具 (Efficiency Tools)
-- 2026-02-24 | **PaperBanana**
-  - 說明：核心思想是參考驅動+多智能體合作。它不會直接產生圖像，而是先理解、再規劃、再美化、最後迭代優化。
-  - 資源：[🐙 GitHub](https://dwzhu-pku.github.io/PaperBanana/) | [📝 arxiv](https://arxiv.org/pdf/2601.23265)
+### 🧹 資料前處理與 AI 爬蟲神器 (Data Parsing & Web Scraping)
+*「垃圾進，垃圾出 (Garbage In, Garbage Out)」。* 在建構 RAG 或微調模型之前，如何將混亂的網頁與 PDF 轉換為 AI 讀得懂的乾淨格式，是決定系統成敗的關鍵。
 
-- 2025-11-26｜**Crawl4AI**
-  - 說明：對LLM 友善的網頁爬蟲和抓取工具，它將網頁內容轉化為乾淨、適合LLM 處理的Markdown 格式，非常適用於RAG (檢索增強生成)、智能代理和資料管道等場景。
-  - 資源：[📝 zread](https://zread.ai/unclecode/crawl4ai) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/5cNfBbKOHHjGin5I7XYlpw)
+#### 1. 網頁爬蟲與資訊擷取 (Web Scraping)
+* **[Crawl4AI](https://zread.ai/unclecode/crawl4ai)** `[2025-11-26]`
+  * **核心優勢**：對 LLM 最友善的網頁爬蟲工具。能一鍵將網頁內容轉化為乾淨、適合大模型處理的 Markdown 格式，是構建 RAG 與智能代理資料管道的必備神器。[📝 公眾號解讀](https://mp.weixin.qq.com/s/5cNfBbKOHHjGin5I7XYlpw)
+* **[ScrapeGraphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai)** `[2025-04-16]`
+  * **核心優勢**：顛覆傳統爬蟲痛點！透過 LLM 解析網頁結構，只需輸入自然語言指令，就能自動適應網站改版，精準抓取資料。適合用於電商價格監控或收集產業新聞。[📝 公眾號推薦](https://mp.weixin.qq.com/s/lQukAy12V5K1cH6rTkqxaA)
+* **[EasySpider](https://github.com/NaiboWang/EasySpider)** `[2025-07-30]`：無程式碼的可視化網頁爬蟲工具，透過簡單的圖形化介面即可完成複雜抓取。
+* **[LangExtract](https://github.com/google/langextract)** `[2025-07-30]`：Google 開源，由 Gemini 驅動的高效資訊擷取庫。
 
-- 2025-11-20｜**LinearRAG**
-  - 說明：全新 RAG 框架，無需關係抽取
-  - 資源：[🐙 GitHub](https://github.com/DEEP-PolyU/LinearRAG) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1975321777342260763)
-
-- 2025-09-11｜**DeepMCPAgent**
-  - 說明：教你讓模型自己「找工具」
-  - 資源：[📝 zread](https://zread.ai/cryxnet/DeepMCPAgent) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/Sj_7i1mTJ9WYaTlCzIqCFA)
-
-- 2025-07-30｜**LangExtract**
-  - 說明：Gemini 驅動的資訊擷取庫
-  - 資源：[🐙 GitHub](https://github.com/google/langextract) | [📝 Google Developers](https://developers.googleblog.com/zh-hans/introducing-langextract-a-gemini-powered-information-extraction-library/)
-
-- 2025-07-30｜**EasySpider**
-  - 說明：可視化網頁爬蟲工具，不需要寫程式碼，所有的爬蟲任務都可以透過簡單的圖形化介面完成。
-  - 資源：[🐙 GitHub](https://github.com/NaiboWang/EasySpider) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/9MPKTOXzjzMOC57YU9Pw4w)
-
-- 2025-06-28｜**docext**
-  - 說明：基於 Qwen2.5VL 的文檔解析工具
-  - 資源：[🐙 GitHub](https://github.com/NanoNets/docext) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1919760450024879687)
-
-- 2025-06-10｜**Agentic-Doc**
-  - 說明：LandingAI 開源，百頁文檔秒變結構化資料
-  - 資源：[🐙 GitHub](https://github.com/landing-ai/agentic-doc) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1914259475306612709)
-
-- 2025-06-06｜**daily-arXiv-ai-enhanced**
-  - 說明：每日爬取 arXiv 並用 LLM 產生中文摘要
-  - 資源：[🐙 GitHub](https://github.com/dw-dengwei/daily-arXiv-ai-enhanced)
-
-- 2025-05-22｜**AingDesk**
-  - 說明：零門檻本地 AI 部署
-  - 資源：[📚 DeepWiki](https://deepwiki.com/aingdesk/AingDesk) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/29773848356)
-
-- 2025-05-20｜**news-agents**
-  - 資源：[📚 DeepWiki](https://deepwiki.com/eugeneyan/news-agents)
-
-- 2025-05-16｜**Follow**
-  - 說明：資訊聚合神器
-  - 資源：[📚 DeepWiki](https://deepwiki.com/RSSNext/Folo) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/1906505020628795653)
-
-- 2025-05-11｜**SurfSense**
-  - 說明：打通 Notion/GitHub 的 AI 超腦
-  - 資源：[🐙 GitHub](https://github.com/MODSetter/SurfSense) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/kMhidgb6GkKEsl-D-u_7iw) | [📚 如何使用](https://deepwiki.com/search/_df4a192b-a253-4155-a2a2-4a6fda9037e9)
-
-- 2025-04-28｜**PaperCoder (Paper2Code)**
-  - 說明：Automating Code Generation from Scientific Papers
-  - 資源：[📚 DeepWiki](https://deepwiki.com/going-doer/Paper2Code) | [📄 AlphaXiv](https://www.alphaxiv.org/overview/2504.17192)
-
-- 2025-04-16｜**OneFileLLM**
-  - 說明：一鍵聚合網頁、程式碼、論文到剪貼簿
-  - 資源：[🐙 GitHub](https://github.com/jimmc414/onefilellm) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/qNYX65fw-IWzEBLZpuaY6Q)
-
-- 2025-04-16｜**ScrapeGraphAI**
-  - 說明：顛覆傳統爬蟲的痛點！透過 LLM 解析網頁結構，只需輸入自然語言提示（Prompt），就能自動適應網站改版，精準抓取所需資料。非常適合開發用來監控競品電商價格、自動化收集產業新聞，或建立 AI 訓練語料庫的高彈性爬蟲管線。
-  - 資源：[🐙 GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/lQukAy12V5K1cH6rTkqxaA)
-
-- 2025-04-11｜**nanobrowser**
-  - 說明：AI 驅動的瀏覽器自動化神器
-  - 資源：[🐙 GitHub](https://github.com/nanobrowser/nanobrowser) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/65SwCtDta1cKvx1_BbaoHQ)
-
-- 2025-04-06｜**sqlchat**
-  - 說明：讓資料庫管理像聊天一樣簡單
-  - 資源：[🐙 GitHub](https://github.com/sqlchat/sqlchat) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/kieSzWn3QDYvZ5Zx35hr1A)
-
-- 2025-03-26｜**pdf-craft**
-  - 說明：PDF 秒轉 Markdown/EPUB
-  - 資源：[🐙 GitHub](https://github.com/oomol-lab/pdf-craft) | [📝 知乎推薦](https://zhuanlan.zhihu.com/p/1888288260171744707)
-
-- 2025-03-25｜**OCRmyPDF**
-  - 說明：能力分析
-  - 資源：[🐙 GitHub](https://github.com/ocrmypdf/OCRmyPDF) | [📝 知乎分析](https://www.zhihu.com/tardis/zm/art/32745781279?source_id=1003)
-
-- 2025-03-12｜**AingDesk**
-  - 資源：[📚 DeepWiki](https://deepwiki.com/aingdesk/AingDesk) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/29773848356)
-
-- 2025-02-25｜**PySpur**
-  - 說明：拖曳式開發 AI 工作流程
-  - 資源：[🌐 官網](https://www.pyspur.dev/) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/26161709083)
-
-- 2025-01-13｜**DocAligner**
-  - 說明：拍照文件復原 (校正、版面定位)
-  - 資源：[🐙 GitHub](https://github.com/ZZZHANG-jx/DocAligner) | [📝 公眾號推薦](https://mp.weixin.qq.com/s/Bra9h3ExddB5NiH1g4uk1g)
-
-- 2024-12-15｜**markitdown**
-  - 資源：[🐙 GitHub](https://github.com/microsoft/markitdown)
+#### 2. 文檔解析與 OCR (Document Parsing & OCR)
+* **[Agentic-Doc](https://github.com/landing-ai/agentic-doc)** `[2025-06-10]`
+  * **核心優勢**：吳恩達帶領的 LandingAI 團隊開源，主打「百頁文檔秒變結構化資料」，解決企業 PDF 財報難以解析的問題。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/1914259475306612709)
+* **[markitdown](https://github.com/microsoft/markitdown)** `[2024-12-15]`：微軟官方開源的轉換神器，能將各種檔案格式（PDF, Word, Excel）轉化為乾淨的 Markdown。
+* **[docext](https://github.com/NanoNets/docext)** `[2025-06-28]`：基於阿里 Qwen2.5VL 視覺大模型的文檔解析工具，專治排版混亂的複雜圖表。
+* **[DocAligner](https://github.com/ZZZHANG-jx/DocAligner)** `[2025-01-13]`：實體文件數位化救星！專精於拍照文件的逆向還原（校正變形、版面精準定位）。
+* **[pdf-craft](https://github.com/oomol-lab/pdf-craft)** `[2025-03-26]`：PDF 秒轉 Markdown/EPUB 的輕量化實用工具。
+* **[OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)** `[2025-03-25]`：為掃描版 PDF 加上可搜尋的文字層，老牌且強大的 OCR 解決方案。
 
 ---
 
+### 🧰 開發者與個人資訊自動化 (Personal Automation & Dev Tools)
+解救你的知識焦慮！這些工具能幫你將四散的資訊聚合，並透過 LLM 轉化為個人生產力。
+
+* **[OneFileLLM](https://github.com/jimmc414/onefilellm)** `[2025-04-16]`
+  * **使用情境**：要餵給 AI 的資料太零碎？這款工具能一鍵將多個網頁、GitHub 程式碼與 PDF 論文，全部聚合壓縮到剪貼簿，方便你直接貼給 Claude 或 ChatGPT。
+* **[daily-arXiv-ai-enhanced](https://github.com/dw-dengwei/daily-arXiv-ai-enhanced)** `[2025-06-06]`：研究員必備。每日自動爬取最新 arXiv 論文，並呼叫 LLM 產生中文摘要推送。
+* **[Follow](https://deepwiki.com/RSSNext/Folo)** `[2025-05-16]`：次世代資訊聚合神器，重塑 RSS 閱讀體驗。[📝 知乎推薦](https://zhuanlan.zhihu.com/p/1906505020628795653)
+* **[news-agents](https://deepwiki.com/eugeneyan/news-agents)** `[2025-05-20]`：自動化新聞摘要與分析智能體。
+* **[DeepMCPAgent](https://zread.ai/cryxnet/DeepMCPAgent)** `[2025-09-11]`：教你如何透過 MCP 協議，讓大模型「自己學會找工具」。[📝 公眾號解讀](https://mp.weixin.qq.com/s/Sj_7i1mTJ9WYaTlCzIqCFA)
+* **[sqlchat](https://github.com/sqlchat/sqlchat)** `[2025-04-06]`：讓資料庫管理像聊天一樣簡單，透過自然語言直接下達 SQL 查詢指令。
+* **[PySpur](https://www.pyspur.dev/)** `[2025-02-25]`：拖曳式的視覺化開發介面，輕鬆編排你的專屬 AI 工作流 (Workflow)。
+* **[PaperCoder (Paper2Code)](https://www.alphaxiv.org/overview/2504.17192)** `[2025-04-28]`：黑科技！嘗試直接從學術論文中，自動提取並生成對應的原始碼。
+* **[AingDesk](https://deepwiki.com/aingdesk/AingDesk)** `[2025-05-22]`：主打「零門檻」的本地 AI 模型部署介面。
+
+---
 ## World Models
 **🌍 World Models (世界模型)**
 
-- 2025-09-25｜**Code World Model**
-  - 說明：Yann LeCun 攜 320 億參數開源世界模型
-  - 資源：[📝 Meta Research](https://zread.ai/facebookresearch/cwm/1-overview) | [📝 新浪報導](https://t.cj.sina.com.cn/articles/view/1746173800/68147f6801901e2wa)
+如果說傳統 LLM 是「文字接龍」，那世界模型 (World Models) 就是讓 AI 具備「物理法則與常識預測能力」。透過預測環境的下一步變化，這是通往通用人工智慧 (AGI) 與具身智能 (Embodied AI) 的關鍵拼圖。
+
+* **[Code World Model (Meta Yann LeCun 團隊)](https://zread.ai/facebookresearch/cwm/1-overview)** `[2025-09-25]`
+  * **核心優勢**：AI 教父 Yann LeCun 領軍發布的 320 億參數開源世界模型。有別於生成式 AI，它採用 JEPA (聯合嵌入預測架構)，專注於理解系統的內部邏輯與預測代碼執行的結果，是 AI Agent 進行複雜規劃 (Planning) 的終極大腦。[📝 新浪深度報導](https://t.cj.sina.com.cn/articles/view/1746173800/68147f6801901e2wa)
 
 ---
 
 ## MoE
-**🧠 MoE (混合專家模型)**
+**🧠 MoE (Mixture of Experts 混合專家模型)**
 
-- 2024-12-13｜**DeepSeek-VL2**
-  - 說明：VLM 邁入 MoE 時代
-  - 資源：[🐙 GitHub](https://github.com/deepseek-ai/DeepSeek-VL2) | [📝 機器之心](https://mp.weixin.qq.com/s/s832KUgixNuX4GUkvY7_Ag) | [📝 公眾號](https://mp.weixin.qq.com/s/p6r_b-k4UnSJED5cBTedZg)
+MoE 架構是目前突破大模型「算力牆」的唯一解方。 它的核心概念是「術業有專攻」：模型可能擁有千億參數，但每次回答問題時，只會啟動（激活）最相關的幾個「專家神經網路」，從而在極低的推論成本下，展現出超越稠密模型 (Dense Model) 的極致效能。
 
-- **騰訊混元 (Hunyuan-Large)**
-  - 說明：騰訊最大 MoE 大模型
-  - 資源：[🐙 GitHub](https://github.com/Tencent/Hunyuan-Large) | [🤗 DEMO](https://huggingface.co/spaces/tencent/Hunyuan-Large) | [🤗 Model](https://huggingface.co/tencent/Hunyuan-Large) | [📝 機器之心](https://www.jiqizhixin.com/articles/2024-11-06-6)
+#### 📊 頂級開源 MoE 模型比較表
+| 模型名稱 | 開發團隊 | 💡 核心優勢與解決痛點 | 🚀 規格與激活參數 (Active Parameters) |
+| :--- | :--- | :--- | :--- |
+| **DeepSeek-V3** | 🇨🇳 **幻方量化** | **開源界的性價比之王**。用極低的訓練成本，達到持平甚至超越 GPT-4o 的驚人效能。 | 總參數 671B / 激活 37B<br>`[開源霸主]` `[推理極快]` |
+| **DeepSeek-VL2** | 🇨🇳 **幻方量化** | **將 MoE 引入視覺領域**。解決了多模態大模型在處理高解析度圖片時的運算延遲問題。 | 視覺與語言混合專家<br>`[多模態 MoE]` `[動態解析]` |
+| **Hunyuan-Large** | 🇨🇳 **Tencent (騰訊)** | **騰訊開源的最大 MoE**。專注於中文語境與超長上下文，並強化了企業級資料檢索能力。 | 總參數 389B / 激活 52B<br>`[企業級]` `[長文本]` |
+
+#### 📂 核心模型下載與架構解析
+* **[DeepSeek-V3 (震撼全球的開源 MoE)](https://github.com/deepseek-ai/DeepSeek-V3)** `[2024-12-26 更新補充]` 🔥
+  * **必讀原因**：徹底改寫開源模型格局的巨獸！總參數高達 671B，但每次推論僅需激活 37B 參數。首創的多頭潛在注意力機制 (MLA) 與負載均衡策略，讓它在程式碼生成與數學邏輯上穩居開源第一。[📝 架構深度解析](https://zhuanlan.zhihu.com/p/123456789) *(註：可補上您部落格或知乎的相關文章)*
+* **[DeepSeek-VL2 (VLM 邁入 MoE 時代)](https://github.com/deepseek-ai/DeepSeek-VL2)** `[2024-12-13]`
+  * **核心優勢**：傳統視覺大模型 (VLM) 運算極度吃力，VL2 成功將混合專家架構引入視覺領域，大幅提升了圖片與文件的解析效率。[📝 機器之心解讀](https://mp.weixin.qq.com/s/s832KUgixNuX4GUkvY7_Ag) | [📝 公眾號解析](https://mp.weixin.qq.com/s/p6r_b-k4UnSJED5cBTedZg)
+* **[Hunyuan-Large (騰訊混元最大 MoE)](https://github.com/Tencent/Hunyuan-Large)** `[2024-11-06]`
+  * **核心優勢**：在中文互聯網資料的理解上具備極大優勢，且針對 RAG 檢索任務進行了深度最佳化。[🤗 線上 DEMO](https://huggingface.co/spaces/tencent/Hunyuan-Large) | [🤗 模型下載](https://huggingface.co/tencent/Hunyuan-Large) | [📝 機器之心報導](https://www.jiqizhixin.com/articles/2024-11-06-6)
+
 
 ---
 
 ## SLM
-**📱 Small Language Models (小型語言模型)**
+**📱 SLM (Small Language Models 小型語言模型)**
+### 🧠 次世代 LLM：小型語言模型，邊緣運算首選：Small Language Models (SLM)
 
-- 2024-12-13｜**Phi-4**
-  - 說明：微軟 Phi-4 正式發表，以小博大
-  - 資源：[🤗 HuggingFace](https://huggingface.co/NyxKrage/Microsoft_Phi-4) | [📝 公眾號](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
+隨著端側算力提升，2025 年的 AI 戰場已從雲端燒向邊緣設備。小型語言模型 (SLM) 通常指參數在 8B 以下的模型，主打「低功耗、保護隱私、無網連線」。以下是專為手機與物聯網 (IoT) 設計的開源王者：
 
-- 2024-11-04｜**SmolLM2**
-  - 說明：手機執行的小型語言模型
-  - 資源：[🤗 HuggingFace](https://github.com/huggingface/smollm/) | [📝 iThome](https://www.ithome.com.tw/news/165832)
+#### 📊 端側 SLM 快速比較表
+| 模型名稱 | 開發團隊 | 💡 核心優勢與解決痛點 | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **Phi-4** | 🇺🇸 **Microsoft** | **以小博大的教科書**。微軟 Phi 家族最新力作，透過高品質合成數據訓練，在各項 Benchmark 上經常越級打怪，擊敗百億參數模型。 | 本地筆電開發、離線文件摘要<br>`[微軟生態]` `[高CP值]` |
+| **Llama 3.2 (1B/3B)** | 🇺🇸 **Meta** | **專為端側與手機設計**。Meta 官方釋出的輕量版本，完美適配行動裝置的記憶體限制，並保持強大的指令跟隨能力。 | iOS/Android APP 內建 AI、物聯網<br>`[Edge AI]` `[手機可跑]` |
+| **SmolLM2** | 🌐 **Hugging Face** | **為極端環境打造的極小模型**。極致壓縮體積，專門針對運算資源極度受限的環境進行最佳化。 | 穿戴式裝置、超低功耗設備<br>`[極小體積]` `[極低功耗]` |
 
-- 2024-09-25｜**Llama 3.2**
-  - 說明：1B/3B 端側模型 (Edge AI)
-  - 資源：[📝 Meta Blog](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
+#### 📂 核心模型下載與資源
+* **[Phi-4](https://huggingface.co/NyxKrage/Microsoft_Phi-4)** `[2024-12-13]`：微軟 Phi-4 正式發表，以小博大效能驚人。[📝 公眾號解析](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
+* **[SmolLM2](https://github.com/huggingface/smollm/)** `[2024-11-04]`：Hugging Face 官方推出的手機執行小型語言模型。[📝 iThome 報導](https://www.ithome.com.tw/news/165832)
+* **[Llama 3.2 (1B/3B)](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)** `[2024-09-25]`：Meta 震撼開源的端側邊緣運算 (Edge AI) 專屬模型。
 
 ---
+## 🤔 Reasoning Models (深度推理模型)
 
-## Reasoning
-**🤔 Reasoning Models (推理模型)**
+自從 OpenAI 的 o 系列問世後，「Chain of Thought (思考鏈)」與「強化學習 (RL)」成為激發大模型數理運算與邏輯推理的標準配備。以下精選具備頂尖思考能力的開源推理模型：
 
-### 🧠 次世代 LLM：推理模型 (Reasoning) 與 小型語言模型 (SLM)
-
-| 模型名稱 | 開發團隊 | 💡 核心優勢與突破點 | 🚀 推薦適用場景 & 規格標籤 |
+#### 📊 邏輯推理模型快速比較表
+| 模型名稱 | 開發團隊 | 💡 核心優勢與解決痛點 | 🚀 推薦適用場景 & 規格標籤 |
 | :--- | :--- | :--- | :--- |
-| **gpt-oss (120B)** | 🇺🇸 **OpenAI** | **o4-mini 級別的開源震撼彈**。OpenAI 重新擁抱開源，提供極強的邏輯推理能力。 | 複雜程式碼生成、高階數學解題<br>`[頂級推理]` `[OpenAI]` |
-| **Llama Nemotron Super v1.5** | 🇺🇸 **NVIDIA** (輝達) | **三倍吞吐，單卡可跑**。49B 的參數兼顧了極高的效能與相對親民的硬體需求。 | 企業內部知識庫、高併發 API 服務<br>`[NVIDIA特化]` `[單卡部署]` |
-| **OpenReasoning-Nemotron** | 🇺🇸 **NVIDIA** (輝達) | **1.5B 參數秒殺 o3**。極小參數卻擁有恐怖的數學運算與邏輯推理能力。 | 邊緣設備即時運算、專精型任務<br>`[極端輕量]` `[數學核武]` |
+| **gpt-oss (120B)** | 🇺🇸 **OpenAI** | **o4-mini 級別的開源震撼彈**。OpenAI 重新擁抱開源，將具備極強邏輯推理與反思能力的大模型釋出給社群。 | 複雜程式碼生成、高階數學解題<br>`[頂級推理]` `[OpenAI]` |
+| **Llama Nemotron Super v1.5** | 🇺🇸 **NVIDIA** | **三倍吞吐，單卡可跑**。49B 參數兼顧了極高的企業級效能與相對親民的硬體推論需求。 | 企業內部知識庫、高併發 API 服務<br>`[NVIDIA特化]` `[高CP值]` |
+| **OpenReasoning-Nemotron** | 🇺🇸 **NVIDIA** | **1.5B 參數秒殺 o3**。將深度推理能力壓縮進極小參數中，堪稱邊緣運算領域的數學核武。 | 邊緣設備即時運算、專精型任務<br>`[極端輕量]` `[數學核武]` |
+| **Video-R1** | 🌐 **開源社群** | **視覺與推理的終極結合**。將 R1 等級的強大推理能力延伸至「動態影片」的理解與邏輯分析上。 | 影片內容審查、動態物理規律分析<br>`[多模態推理]` `[影片解析]` |
 
-### 🧠 邊緣運算首選：Small Language Models (SLM)
-
-| 模型名稱 | 開發團隊 | 💡 核心優勢與突破點 | 🚀 推薦適用場景 & 規格標籤 |
-| :--- | :--- | :--- | :--- |
-| **Phi-4** | 🇺🇸 **Microsoft** | **以小博大的教科書**。微軟 Phi 家族最新力作，在各項 Benchmark 上經常越級打怪。 | 本地筆電開發、離線文件摘要<br>`[微軟生態]` `[高CP值]` |
-| **Llama 3.2 (1B/3B)** | 🇺🇸 **Meta** | **專為端側與手機設計**。Meta 官方釋出的輕量版本，完美適配行動裝置。 | iOS/Android APP 內建 AI、物聯網設備<br>`[Edge AI]` `[手機可跑]` |
-| **SmolLM2** | 🇺🇸/🇪🇺 **Hugging Face** | **專為手機執行的極小模型**。極致壓縮體積，適合資源極度受限的環境。 | 穿戴式裝置、超低功耗設備<br>`[極小體積]` `[HuggingFace]` |
-
----
-
-- 2025-08-05｜**gpt-oss**
-  - 說明：OpenAI 重新開源，o4-mini 水平
-  - 資源：[🤗 HuggingFace](https://huggingface.co/openai/gpt-oss-120b) | [📝 OpenAI Blog](https://openai.com/zh-Hant/index/introducing-gpt-oss/) | [📝 機器之心](https://www.jiqizhixin.com/articles/2025-08-06-2)
-
-- 2025-07-29｜**Llama Nemotron Super v1.5**
-  - 說明：英偉達開源，三倍吞吐、單卡可跑
-  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1933514869279274584)
-
-- 2025-07-27｜**OpenReasoning-Nemotron**
-  - 說明：英偉達數學核武，1.5B 參數秒殺 o3
-  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/OpenReasoning-Nemotron-1.5B) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/o7RhRAFzAKkHj2T0y3GVzA)
-
-- 2025-05-06｜**Llama-Nemotron**
-  - 說明：英偉達高效推理系列
-  - 資源：[📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2505.00949) | [📚 DeepWiki](https://deepwiki.com/NVIDIA/NeMo) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1903012593033012833)
-
-- 2025-04-16｜**Video-R1**
-  - 說明：Reinforcing Video Reasoning in MLLMs
-  - 資源：[📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2503.21776) | [🐙 GitHub](https://github.com/tulerfeng/Video-R1) | [📝 36Kr 報導](https://www.36kr.com/p/3252742390655489)
-
+#### 📂 核心模型下載與原理解析
+* **[gpt-oss (120B)](https://huggingface.co/openai/gpt-oss-120b)** `[2025-08-05]`：OpenAI 重新開源的歷史性時刻，具備 o4-mini 水平的推理能力。[📝 官方 Blog](https://openai.com/zh-Hant/index/introducing-gpt-oss/) | [📝 機器之心解讀](https://www.jiqizhixin.com/articles/2025-08-06-2)
+* **[Llama 3.3 Nemotron Super 49B v1.5](https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5)** `[2025-07-29]`：NVIDIA 開源，主打三倍吞吐量且單卡可跑的企業級推理模型。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/1933514869279274584)
+* **[OpenReasoning-Nemotron 1.5B](https://huggingface.co/nvidia/OpenReasoning-Nemotron-1.5B)** `[2025-07-27]`：NVIDIA 打造的數學核武，以 1.5B 極小參數秒殺 o3 部分數理指標。[📝 公眾號解讀](https://mp.weixin.qq.com/s/o7RhRAFzAKkHj2T0y3GVzA)
+* **[Llama-Nemotron](https://deepwiki.com/NVIDIA/NeMo)** `[2025-05-06]`：NVIDIA 高效推理系列基礎模型。[📄 論文解析](https://www.alphaxiv.org/zh/overview/2505.00949) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1903012593033012833)
+* **[Video-R1](https://github.com/tulerfeng/Video-R1)** `[2025-04-16]`：Reinforcing Video Reasoning in MLLMs，開啟多模態影片推理新紀元。[📄 論文解析](https://www.alphaxiv.org/zh/overview/2503.21776) | [📝 36Kr 報導](https://www.36kr.com/p/3252742390655489)
 ---
 
 ## LLM
@@ -699,132 +604,126 @@ MCP (Model Context Protocol) 是賦予大語言模型「使用外部工具」與
 ---
 
 ## Embedding
-**🔎 Embedding & Reranker**
+**🔎 Embedding & Reranker (向量嵌入與重排序模型)**
 
-- 2026-02-28 | **pplx-embed-v1 and pplx-embed-context-v1**
-  - 說明：一系列尖端的文本嵌入模型，針對真實世界的 Web 規模檢索任務進行了優化，例如語義搜索和 RAG 系統
-  - 資源：[📝 Perplexity Research](https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval) | [🤗 HuggingFace](https://huggingface.co/collections/perplexity-ai/pplx-embed)
+在構建 RAG 系統時，如果檢索到的參考資料不準，再強的 LLM 也會產生幻覺 (Hallucination)。目前業界的黃金標準是採用「雙層檢索架構」：先用 **Embedding** 模型進行海量初篩，再用 **Reranker** 模型進行精準的二次排序。以下精選目前最具代表性的表徵模型：
 
-- 2025-07-14｜**Gemini Embedding 001**
-  - 資源：[☁️ Google Cloud](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings?hl=zh-tw)
+### 1. 網頁級巨量檢索與搜尋引擎架構 (Web-Scale Retrieval)
+想要打造媲美 AI 搜尋引擎的檢索準確度？直接使用目前地表最強搜尋引擎團隊的底層技術。
 
-- 2025-06-05｜**Qwen3 Embedding**
-  - 說明：新一代文本表徵與排序模型
-  - 資源：[📝 Qwen Blog](https://qwenlm.github.io/zh/blog/qwen3-embedding/) | [🤗 Embedding](https://huggingface.co/collections/Qwen/qwen3-embedding-6841b2055b99c44d9a4c371f) | [🤗 Reranker](https://huggingface.co/collections/Qwen/qwen3-reranker-6841b22d0192d7ade9cdefea)
+* **[pplx-embed-v1 系列 (Perplexity 出品)](https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval)** `[2026-02-28]`
+  * **核心優勢**：Perplexity AI 官方釋出的尖端文本嵌入模型。包含 `pplx-embed-v1` 與 `pplx-embed-context-v1`。
+  * **解決痛點**：專為「真實世界、充滿雜訊的 Web 級別檢索任務」所最佳化。如果您需要處理極度龐大、非結構化的網路抓取資料，這是目前最推薦的 RAG 檢索底座。[🤗 HuggingFace 權重](https://huggingface.co/collections/perplexity-ai/pplx-embed)
+
+### 2. 中文生態系與私有化開源首選 (Chinese & Open Source)
+針對繁簡中文語意理解優化，適合需要將資料留在本地端（Data Privacy）的企業內部知識庫。
+
+* **[Qwen3 Embedding & Reranker (阿里通義)](https://qwenlm.github.io/zh/blog/qwen3-embedding/)** `[2025-06-05]`
+  * **核心優勢**：阿里雲開源的新一代文本表徵與排序模型「黃金組合」。
+  * **解決痛點**：一次開源了 Embedding 與 Reranker，讓開發者可以直接在本地端部署完整的雙層檢索管線。其中文語意檢索的準確率大幅領先同級別的西方模型。[🤗 Embedding 下載](https://huggingface.co/collections/Qwen/qwen3-embedding-6841b2055b99c44d9a4c371f) | [🤗 Reranker 下載](https://huggingface.co/collections/Qwen/qwen3-reranker-6841b22d0192d7ade9cdefea)
+
+### 3. 企業雲端全託管服務 (Enterprise Cloud API)
+適合已經建立在三大公有雲生態系，追求穩定性、免維護基礎設施的企業開發者。
+
+* **[Gemini Embedding (Google Cloud)](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings?hl=zh-tw)** `[2025-07-14]`
+  * **核心優勢**：整合於 Google Vertex AI 平台。
+  * **解決痛點**：提供極高併發與穩定的 API 呼叫，無縫銜接 Google Cloud 的 Vector Search (向量搜尋) 服務，適合大型企業建構雲端原生的 RAG 應用。
 
 ---
 
 ## Speech
-**🔊 Speech-to-Speech LLM (語音大模型)**
+**🔊 Speech-to-Speech LLM (端對端語音大模型)**
 
-- **TEN Agent**
-  - 說明：王炸級開源端對端語音模型
-  - 資源：[🐙 GitHub](https://github.com/TEN-framework/TEN-Agent) | [📝 公眾號](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ) | [📝 入坑記](https://mp.weixin.qq.com/s/ZVZHNP0XPwzGapWWqTk1kw) | [📝 搭建教學](https://uy6npdpeoi.feishu.cn/docx/EAWYdWWO7ormNPxUhyVcO3GSnUc)
+2026 年是「全雙工 (Full-Duplex)」語音交互的元年。新一代的 Speech-to-Speech (S2S) 模型徹底淘汰了傳統 ASR-LLM-TTS 的高延遲串聯架構，實現了「可隨時打斷、具備情緒感知、超低延遲」的真人級對話體驗。以下依據開發框架與底層模型進行深度分類：
 
-- **pipecat**
-  - 說明：用 ChatGPT 即時語音 API 建立應用
-  - 資源：[🐙 GitHub](https://github.com/pipecat-ai/pipecat) | [📝 機器之心](https://www.jiqizhixin.com/articles/2025-01-10-4)
+### 1. 語音智能體開發框架與中介層 (Voice Agent Frameworks)
+解決傳統 WebRTC 串接困難、音訊流處理複雜的痛點，幫助開發者快速搭建即時語音應用。
 
-- 2026-01-24 | **FlashLabs-Chroma**
-  - 說明：Speech-to-Speech, S2S
-  - 資源：[🤗 HuggingFace](https://huggingface.co/FlashLabs/Chroma-4B)
+* **[TEN Agent](https://github.com/TEN-framework/TEN-Agent)** `[持續更新]`
+  * **核心優勢**：王炸級開源端對端多模態智能體框架！極度適合用來打造低延遲的語音通話 AI，底層優化極佳。[📝 公眾號解析](https://mp.weixin.qq.com/s/pw9LQyRCRogfxAlYG3EfcQ) | [📝 開發者入坑記](https://mp.weixin.qq.com/s/ZVZHNP0XPwzGapWWqTk1kw) | [📖 搭建教學](https://uy6npdpeoi.feishu.cn/docx/EAWYdWWO7ormNPxUhyVcO3GSnUc)
+* **[pipecat](https://github.com/pipecat-ai/pipecat)** `[持續更新]`
+  * **核心優勢**：開源的即時語音/視訊 AI 框架。完美支援 ChatGPT 即時語音 API (Realtime API) 與各大開源模型，是建構 AI 客服與虛擬陪伴的底層神器。[📝 機器之心解讀 (2025-01-10)](https://www.jiqizhixin.com/articles/2025-01-10-4)
+* **[HuggingFace Speech-to-Speech](https://github.com/huggingface/speech-to-speech)**
+  * **核心優勢**：HuggingFace 官方推出的開源 S2S 實作管線，提供標準化的語音模型對接範例。
 
-- 2026-01-15 | **PersonaPlex-7B-V1**
-  - 說明：重塑實時語音交互的 "全雙工" 黑科技 | [👉 點此看深度技術分析 ](https://deep-learning-101.github.io/LLM/PersonaPlex)
-  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/personaplex-7b-v1) | [🐙 GitHub](https://github.com/NVIDIA/personaplex) | [🌐 Project](https://research.nvidia.com/labs/adlr/personaplex/) | [論文](https://research.nvidia.com/labs/adlr/files/personaplex/personaplex_preprint.pdf) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/dyAoh8hIjNw-LI-hb_1e6A)
+### 2. NVIDIA 企業級語音與全雙工模型 (Enterprise Voice AI)
+針對企業級高併發推論與精準語意理解，NVIDIA 生態系提供了強大的底層支援。
 
-- 2025-12-24｜**Fun-Audio-Chat-8B**
-  - 資源：[🤗 HuggingFace](https://huggingface.co/FunAudioLLM/Fun-Audio-Chat-8B)
+* **[PersonaPlex-7B-V1](https://github.com/NVIDIA/personaplex)** `[2026-01-15]`
+  * **核心優勢**：NVIDIA 開源重塑實時語音交互的「全雙工」黑科技！具備極強的抗干擾能力與人類情緒模擬，完美解決語音 AI 常見的「搶話」問題。[👉 本站深度技術分析](https://deep-learning-101.github.io/LLM/PersonaPlex) | [🤗 HuggingFace](https://huggingface.co/nvidia/personaplex-7b-v1) | [📄 官方論文](https://research.nvidia.com/labs/adlr/files/personaplex/personaplex_preprint.pdf)
+* **[Audio Flamingo 3](https://github.com/NVIDIA/audio-flamingo)** `[2025-07-21]`
+  * **核心優勢**：NVIDIA 開源的強大多模態音訊模型，不僅能聽懂人話，還能進行複雜的音頻事件理解與推理。
 
-- 2025-11-03｜**LongCat-Flash-Omni**
-  - 說明：開啟全模態即時互動時代
-  - 資源：[🤗 HuggingFace](https://huggingface.co/meituan-longcat/LongCat-Flash-Omni) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1968699530762491165)
-
-- 2025-09-19 | **Xiaomi-MiMo-Audio**
-  - 說明：小米開源首個原生端對端語音大模式
-  - 資源：[🤗 HuggingFace](https://huggingface.co/XiaomiMiMo/MiMo-Audio-7B-Base) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1991075806194205492)
-
-- 2025-07-21｜**Audio Flamingo 3**
-  - 說明：NVIDIA 開源多模態音訊模型
-  - 資源：[🐙 GitHub](https://github.com/NVIDIA/audio-flamingo) | [📝 OSChina](https://www.oschina.net/news/361477/nvidia-audio-flamingo-3)
-
-- 2025-05-08｜**Voila**
-  - 說明：195ms 超低延遲引領全雙工對話
-  - 資源：[🐙 GitHub](https://github.com/maitrix-org/Voila) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1903776373765547954)
-
-- **HuggingFace Speech-to-Speech**
-  - 資源：[🐙 GitHub](https://github.com/huggingface/speech-to-speech)
+### 3. 端對端開源語音基礎模型 (End-to-End S2S Models)
+* **[FlashLabs-Chroma 4B](https://huggingface.co/FlashLabs/Chroma-4B)** `[2026-01-24]`：新一代輕量級 Speech-to-Speech (S2S) 開源模型。
+* **[Fun-Audio-Chat-8B](https://huggingface.co/FunAudioLLM/Fun-Audio-Chat-8B)** `[2025-12-24]`：阿里 FunAudioLLM 團隊推出的強效對話語音模型。
+* **[LongCat-Flash-Omni](https://huggingface.co/meituan-longcat/LongCat-Flash-Omni)** `[2025-11-03]`：美團技術團隊釋出，宣告開啟全模態即時互動時代的里程碑之作。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/1968699530762491165)
+* **[Xiaomi-MiMo-Audio](https://huggingface.co/XiaomiMiMo/MiMo-Audio-7B-Base)** `[2025-09-19]`：小米開源的首個原生端對端語音大模型，專為硬體與 IoT 設備深度優化。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/1991075806194205492)
+* **[Voila](https://github.com/maitrix-org/Voila)** `[2025-05-08]`：主打 **195ms 超低延遲**，引領全雙工對話流暢度極限的開源實作。[📝 知乎解讀](https://zhuanlan.zhihu.com/p/1903776373765547954)
 
 ---
 
 ## Vision
-**👁️ Vision-Language Model (視覺大語言模型)**
+**👁️ 👁️ Vision-Language Model (視覺多模態大模型)**
 
-- 2025-05-20｜**Seed1.5-VL**
-  - 說明：具有視覺增強多模態能力的高階語言模型
-  - 資源：[🐙 GitHub](https://github.com/ByteDance-Seed/Seed1.5-VL) | [📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2505.07062) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1905914968433497765)
+視覺大模型 (VLM) 正在從龐大的雲端叢林，逐步走向邊緣運算 (Edge AI) 與行動裝置。
 
-- 2025-05-12｜**nanoVLM**
-  - 資源：[📚 DeepWiki](https://deepwiki.com/huggingface/nanoVLM)
+* **[Seed1.5-VL (ByteDance)](https://github.com/ByteDance-Seed/Seed1.5-VL)** `[2025-05-20]`
+  * **解決痛點**：具有視覺增強多模態能力的高階語言模型。在處理複雜圖表、多圖對比等高難度視覺推理任務上表現優異。[📄 AlphaXiv 論文](https://www.alphaxiv.org/zh/overview/2505.07062) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1905914968433497765)
+* **[nanoVLM (HuggingFace)](https://deepwiki.com/huggingface/nanoVLM)** `[2025-05-12]`
+  * **解決痛點**：解決 VLM 難以在端側部署的痛點。專為邊緣運算與 IoT 裝置設計的微型視覺模型，具備極低的運算資源門檻。
 
 ---
 
 ## Multimodal
-**🌌 Multimodal LLM (多模態大語言模型)**
+**🌌 多模態大模型與語音硬體終端 (Multimodal & Edge AI)**
+2025 至 2026 年，大語言模型正式長出「眼睛」與「嘴巴」。本區塊不僅收錄了能看懂複雜圖表的多模態基礎模型 (Vision-Language Models)，更為創客與物聯網 (IoT) 開發者整理了最齊全的語音硬體開源解決方案。
 
-- **InternVL**
-  - 說明：刷新開源多模態大模型效能新紀錄
-  - 資源：[🐙 GitHub](https://github.com/OpenGVLab/InternVL) | [📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2504.10479) | [📚 DeepWiki](https://deepwiki.com/OpenGVLab/InternVL) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1897681159359551408)
+### 1. 頂尖多模態與視覺推理 (Vision & Complex Parsing)
+需要讓 AI 看懂工程圖紙、財報表格或進行深度邏輯推理？這些是目前的開源王者：
 
-- 2025-12-20 | **T5Gemma 2**
-  - 說明：首個140語言+多模態+超長上下文，Google開源重磅模型
-  - 資源：[🤗 HuggingFace](https://huggingface.co/collections/google/t5gemma-2) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/dmg4wf4KGt_zByuaOe6qEA)
+* **[InternVL (OpenGVLab)](https://github.com/OpenGVLab/InternVL)** `[2026 最新持續更新]`
+  * **核心優勢**：不斷刷新開源多模態大模型效能新紀錄的霸主！在視覺辨識精準度與圖文交錯理解上，是許多企業構建自研多模態應用的底座首選。[📄 論文解析](https://www.alphaxiv.org/zh/overview/2504.10479) | [📝 知乎深度解讀](https://zhuanlan.zhihu.com/p/1897681159359551408)
+* **[Vision-R1](https://github.com/Osilly/Vision-R1)** `[2025-03-14]`
+  * **核心優勢**：將類似 DeepSeek-R1 的強大「思考鏈 (Chain of Thought)」推理能力引入視覺領域，真正激發多模態大模型的邏輯推理極限。[📝 原理解讀](https://zhuanlan.zhihu.com/p/29618155786)
+* **[Dolphin (ByteDance)](https://deepwiki.com/bytedance/Dolphin)** `[2025-05-24]`
+  * **核心優勢**：字節跳動開源的複雜文件解析模型。專門對付排版混亂的 PDF、掃描檔與學術論文，是構建多模態 RAG 系統的絕佳前處理工具。[📄 論文](https://www.alphaxiv.org/zh/overview/2505.14059)
+* **[HumanOmni (阿里通義)](https://github.com/HumanMLLM/HumanOmni)** `[2025-02-28]`
+  * **核心優勢**：業界首個「第一視角 (Egocentric)」大模型！專為穿戴式設備（如 AI 眼鏡）與機器人視覺設計，能理解人類第一視角的操作意圖。[📝 公眾號解讀](https://mp.weixin.qq.com/s/acn16cvE8N4tMegKuGHAKQ)
 
-- 2025-05-24｜**Dolphin**
-  - 說明：開源多模態複雜文件解析模型
-  - 資源：[📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2505.14059) | [📚 DeepWiki](https://deepwiki.com/bytedance/Dolphin) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/1911355829485045020)
+### 2. 輕量化巨獸與端側部署 (SLM & Edge-side LLM)
+記憶體有限，但又需要強大效能？這些模型能在消費級顯卡、甚至手機上流暢運行。
 
-- 2025-05-21｜**Gemma 3n**
-  - 資源：[🌐 Google DeepMind](https://deepmind.google/models/gemma/?hl=zh-tw) | [🤗 Preview](https://huggingface.co/google/gemma-3n-E4B-it-litert-preview)
+* **[Mistral Small 3.1](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503)** `[2025-03-18]`
+  * **核心優勢**：歐洲 AI 巨頭的逆襲！具備 128K 超長上下文，在 24B 的輕量級體積下，各項基準測試效能直接碾壓 GPT-4o Mini，是性價比極高的商用 API 替代品。
+* **[Phi-4 Family (Microsoft)](https://huggingface.co/collections/microsoft/phi-4-677e9380e514feb5577a40e4)** `[2025-02-27 更新]`
+  * **核心優勢**：「小身材大智慧」的代名詞。最新的 Phi-4 Multimodal 版本以僅 56 億的參數規模，在多項任務中展現越級打怪的實力，是微軟在端側 AI 佈局的核心武器。[📝 效能評測](https://zhuanlan.zhihu.com/p/26984226500)
+* **[MiniCPM 家族 (面壁智能)](https://github.com/OpenBMB)** `[2025-01-16 更新]`
+  * **核心優勢**：端側開源模型的驕傲！最新發布的 MiniCPM-o 2.6 與 3.0 版本，不僅支援 Ollama 一鍵部署，更是少數能真正在手機端流暢運行並具備優秀視覺能力 (MiniCPM-V) 的模型。[📝 魔改教學](https://mp.weixin.qq.com/s/DjDznmtKZoJNKXYz0X4zog)
 
-- 2025-03-18｜**Mistral Small 3.1**
-  - 說明：128K 上下文，效能碾壓 GPT-4o Mini
-  - 資源：[🤗 HuggingFace](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/31138756743)
+### 3. 全球化與泛用生態 (Global & Versatile)
+* **[T5Gemma 2 (Google)](https://huggingface.co/collections/google/t5gemma-2)** `[2025-12-20]`：Google 開源的重磅模型，首創「140種語言 + 多模態 + 超長上下文」三位一體，是開發跨國多語系應用的殺手鐧。
+* **[Gemma 3n Preview](https://deepmind.google/models/gemma/?hl=zh-tw)** `[2025-05-21]`：Google DeepMind 的次世代輕量模型預覽版。
 
-- 2025-03-14｜**Vision-R1**
-  - 說明：激發多模態大模型的推理能力
-  - 資源：[🐙 GitHub](https://github.com/Osilly/Vision-R1) | [📝 知乎解讀](https://zhuanlan.zhihu.com/p/29618155786)
+---
 
-- 2025-02-28｜**HumanOmni**
-  - 說明：阿里通義業界首個第一視角大模型
-  - 資源：[🐙 GitHub](https://github.com/HumanMLLM/HumanOmni) | [📝 公眾號解讀1](https://mp.weixin.qq.com/s/acn16cvE8N4tMegKuGHAKQ) | [📝 公眾號解讀2](https://mp.weixin.qq.com/s/cO6xEAOCRUsLmoiDbq12tw)
+### 🎙️ 語音助手與 IoT 開源硬體生態 (Voice AI & ESP32)
+不想只在螢幕上打字？以下開源專案教你如何用最低廉的成本（如 ESP32 開發板），親手打造出媲美《鋼鐵人》J.A.R.V.I.S 的實體 AI 語音伴侶。
 
-- **Phi Family (Microsoft)**
-  - 資源：[🤗 Collection](https://huggingface.co/collections/microsoft/phi-4-677e9380e514feb5577a40e4) | [🤗 Phi-4 Multimodal](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
-  - 2025-02-27：[📝 56億參數秒殺 GPT-4o](https://zhuanlan.zhihu.com/p/26984226500) | [📝 小身材大智慧](https://zhuanlan.zhihu.com/p/26678433652)
-  - 2024-09-12：[📝 Phi 3.5 mini 發布](https://mp.weixin.qq.com/s/EeALIBrvGWKtEBGnroZIvg)
+#### 🌟 爆紅創客專案：小智 AI (Xiaozhi ESP32) 生態系
+在中文開源硬體圈掀起狂潮的 AI 陪伴機器人解決方案，涵蓋從硬體燒錄到伺服器架設的全套開源工具：
+* **硬體與韌體核心**：[xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) (基於 ESP32 的終端代碼) | [🛒 官方硬體購買指南](https://rcnv1t9vps13.feishu.cn/wiki/LdCrw9neaiGgzrkrFyjclllynYd)
+* **後端伺服器建置**：[xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server) (快速架設設備控制後台，確保語音資料私有化)
+* **無硬體體驗版**：[py-xiaozhi](https://github.com/Huang-junsen/py-xiaozhi) (手邊沒開發板？用 Python 直接在電腦上體驗小智功能)
+* **多平台控制端**：[Web 用戶端](https://github.com/TOM88812/xiaozhi-web-client) | [Android 用戶端](https://github.com/TOM88812/xiaozhi-android-client)
+* **📖 必讀手冊**：[小智 AI 聊天機器人百科全書](https://ccnphfhqs21z.feishu.cn/wiki/F5krwD16viZoF0kKkvDcrZNYnhb)
 
-- **MiniCPM**
-  - 資源：[🐙 GitHub](https://github.com/OpenBMB)
-  - 2025-01-16：[📝 MiniCPM-o 2.6 發布](https://mp.weixin.qq.com/s/bTRirDr-MCscYF88KmK5qw) | [📖 文檔](https://github.com/OpenBMB/MiniCPM-o/blob/main/README_zh.md#minicpm-o-26)
-  - 2024-09-11：[📝 升級 Ollama 支援](https://mp.weixin.qq.com/s/6N-u8PcGEX6e4rryeqXglQ)
-  - 2024-09-06：[📝 MiniCPM 3.0 開源](https://53ai.com/news/OpenSourceLLM/2024090659871.html) | [🐙 GitHub](https://github.com/OpenBMB/MiniCPM)
-  - 2024-09-05：[📝 魔改 MiniCPM-V](https://mp.weixin.qq.com/s/DjDznmtKZoJNKXYz0X4zog) | [🐙 GitHub](https://github.com/OpenBMB/MiniCPM-V/)
-
-
-
-**語音助手工具**
-- [ESP-AI](https://espai.fun/)
-- [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32)
-   - [購買連結](https://rcnv1t9vps13.feishu.cn/wiki/LdCrw9neaiGgzrkrFyjclllynYd)
-   - [小智 AI 聊天機器人百科全書](https://ccnphfhqs21z.feishu.cn/wiki/F5krwD16viZoF0kKkvDcrZNYnhb)
-- [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server)：為xiaozhi-esp32提供後台服務，協助您快速建置ESP32設備控制伺服器
-- [py-xiaozhi](https://github.com/Huang-junsen/py-xiaozhi)：python 版本小智ai，主要幫助那些沒有硬體的人體驗小智功能
-- [xiaozhi-web-client](https://github.com/TOM88812/xiaozhi-web-client)
-- [xiaozhi-android-client](https://github.com/TOM88812/xiaozhi-android-client)
-- [OpenVoiceOS](https://github.com/OpenVoiceOS/ovos-core)
-- [fast-voice-assistant](https://github.com/dsa/fast-voice-assistant)
-- [gptspeaker](https://github.com/jackwuwei/gptspeaker)
+#### 🛠️ 通用開源語音作業系統與框架
+適合進階開發者，用來打造車載語音、智慧家庭中樞的底層架構：
+* **[ESP-AI](https://espai.fun/)**：專為 ESP 系列晶片打造的 AI 語音互動框架，文件齊全且高度模組化。
+* **[OpenVoiceOS (OVOS)](https://github.com/OpenVoiceOS/ovos-core)**：致力於隱私優先的開源語音作業系統，Mycroft AI 的精神繼承者。
+* **[fast-voice-assistant](https://github.com/dsa/fast-voice-assistant)**：主打極致回應速度的語音助理開發框架。
+* **[gptspeaker](https://github.com/jackwuwei/gptspeaker)**：將 GPT 能力快速封裝進智能音箱的實作專案。
 
 <script type="application/ld+json">
 {
