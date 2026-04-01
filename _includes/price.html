@@ -1,0 +1,67 @@
+## ✨LLM API Platform Price Comparison
+
+### **總體戰略比較：三大公有雲 AI 平台**  ~ 2025年08月08日
+
+| 特性 | **Google Cloud (GCP)** | **Microsoft Azure** | **Amazon Web Services (AWS)** |
+| :--- | :--- | :--- | :--- |
+| **主要 GenAI 平台** | **Vertex AI** | **Azure OpenAI Service** | **Amazon Bedrock** |
+| **平台核心理念** | **AI 技術創新者** | **企業服務整合者** | **中立的雲端市集** |
+| **旗艦/代表性模型** | **Gemini 系列 (2.5 Pro)** | **OpenAI 模型系列 (GPT-4o)** | **Anthropic Claude 系列** |
+| **"私有通道"安全技術** | **VPC Service Controls** | **Private Endpoint** | **Interface VPC Endpoint** |
+| **計費模式 (安全性)** | **服務啟用免費** | **端點按小時計費** + **數據按 GB 計費** | **端點按小時計費** + **數據按 GB 計費** |
+| **個人體驗** | **Gemin無敵+Cloude等模型** | **只有Open AI** | **就是少了 Gemini** |
+
+### **自行架設 GPU VM 每小時預估費用**  ~ 2025年08月08日
+
+* **台灣計價：** (美元費用 x 當期匯率) + 5% 營業稅
+* **基準：** 以下價格均以**美國東部 (US East) 或美國中部 (US Central)** 的主要資料中心為基準，這是行業內最常用於比較定價的區域。
+* **定價模式：** 均採用 **「按需 (On-Demand)」** 定價，不包含任何預留或長期承諾折扣。
+* **幣別：** 均為**美元 (USD, $)**。
+
+| GPU 型號 | **[Google Cloud (GCP)](https://cloud.google.com/compute/gpus-pricing?hl=zh_tw)** | **Microsoft Azure** | **Amazon Web Services (AWS)** |
+| :--- | :--- | :--- | :--- |
+| **[NVIDIA T4](https://cloud.google.com/compute/gpus-pricing?hl=zh_tw#section-1)** | **每小時:** **$0.35**<br>**每個月:** **$255.5**<br>承諾1年:**$0.22/$160.60** |  |  |
+| **NVIDIA P4** | **每小時:** **$0.60**<br>**每個月:** **$438.00**<br>承諾1年:**$0.378/$275.94**  |  |  |
+| **NVIDIA V100** | **每小時:** **$2.48**<br>**每個月:** **$1810.40**<br>承諾1年:**$1.562/$1140.26**  | **每小時:** **~$3.07** | **每小時:** **~$3.06** |
+| **[NVIDIA A100](https://cloud.google.com/compute/docs/accelerator-optimized-machines?hl=zh-tw#a2-vms)** | **實例:** `a2-highgpu-1g` (1x A100)<br>**每小時:** **~$4.45** | **實例:** `Standard_ND96asr_v4` (8x A100)<br>**每小時/每顆:** **~$4.21**<br>(整機 ~$33.68/hr) | **實例:** `p4d.24xlarge` (8x A100)<br>**每小時/每顆:** **~$4.09**<br>(整機 ~$32.77/hr) |
+| **[NVIDIA H100](https://cloud.google.com/compute/docs/accelerator-optimized-machines?hl=zh-tw#a3-vms)** | **實例:** `a3-highgpu-8g` (8x H100)<br>**每小時/每顆:** **~$8.37**<br>(整機 ~$66.95/hr) | **實例:** `Standard_ND H100 v5` (8x H100)<br>**每小時/每顆:** **~$8.59**<br>(整機 ~$68.75/hr) | **實例:** `p5.48xlarge` (8x H100)<br>**每小時/每顆:** **~$12.26**<br>(整機 ~$98.08/hr) |
+
+## 💰 2026 主流大語言模型 (LLM) API 價格與場景選型指南  ~ 2026年03月31日
+
+在開發 AI Agent 或 RAG 系統時，選擇合適的 API 不僅關乎智商，更關乎「燒錢的速度」。以下我們將主流 API 依據 **「頂尖前沿 (Frontier)」** 與 **「高性價比 (Cost-Effective)」** 兩大陣營進行深度比較。
+
+> **💡 成本優化提示 (Context Caching)**：目前如 Gemini、DeepSeek 與 Claude 等平台皆已全面支援「上下文快取」。若您的系統需頻繁輸入相同背景知識（如超長系統提示詞、PDF 財報），實際輸入成本可再降低 50% ~ 90%。
+
+### 🏆 1. 頂尖前沿模型 (Frontier Models)
+*適用場景：企業級複雜邏輯決策、極高難度程式碼生成、無容錯率的學術分析。*{% include ai-share.html %}
+
+| 平台與模型 | 輸入費用<br>(USD/1M Tokens) | 輸出費用<br>(USD/1M Tokens) | 上下文窗口 | 模態支援 | 💡 核心優勢與適用場景 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **OpenAI o1** | $15.00 | $60.00 | 200K | 圖像、文字 | **地表最強深度思考**。內建隱藏推理鏈，適合數學解題與頂級演算法生成。 |
+| **Gemini 2.5 Pro** | $1.25 (≤128K)<br>$2.50 (>128K) | $5.00 (≤128K)<br>$10.00 (>128K) | 2M | 全模態 (影音圖文) | **超長文本與多模態霸主**。原生支援高達 200 萬 Token，適合塞入整本書或整部電影進行分析。 |
+| **Claude 3.5 Sonnet** | $3.00 | $15.00 | 200K | 圖像、文字 | **工程師的最愛**。寫 Code 準確率與防幻覺能力極高，是開發 AI 軟體工程師 (Devin 平替) 的首選 API。 |
+| **Grok-3** | $3.00 | $15.00 | 131K | 文字 | **即時資訊守門員**。結合 X (Twitter) 的即時數據，適合做金融市場監控與社群聲量分析。 |
+| **百度文心一言 4.0** | 約 $16.50 | 約 $41.30 | 32K | 圖像、文字 | **最懂中國市場**。針對中國互聯網知識庫深度特化，企業落地中國市場的必備合規選項。 |
+
+---
+
+### 🚀 2. 高性價比與端側模型 (Cost-Effective & Fast Models)
+*適用場景：高頻率 API 呼叫、網頁爬蟲資料清洗、多智能體 (Multi-Agent) 的子任務節點。*
+
+| 平台與模型 | 輸入費用<br>(USD/1M Tokens) | 輸出費用<br>(USD/1M Tokens) | 最大速率限制 (RPM) | 💡 核心優勢與適用場景 |
+| :--- | :--- | :--- | :--- | :--- |
+| **DeepSeek-Reasoner (R1)** | $0.55 | $2.19 | 不公開 | **開源性價比核彈**。以不到 OpenAI o1 三十分之一的價格，提供同等級的深度思考 (CoT) 能力。 |
+| **DeepSeek-Chat (V3)** | $0.14 (快取)<br>$0.27 (無快取) | $1.10 | 不公開 | **海量資料處理首選**。極致便宜且速度極快，非常適合用來做網頁爬蟲的 Markdown 格式清洗。 |
+| **OpenAI o3-mini** | $1.10 | $4.40 | 不公開 | **快速邏輯推理**。低成本的思考模型，適合做 RAG 系統中的 Reranker (重排序) 或邏輯判斷節點。 |
+| **Gemini 2.0 Flash** | $0.10 | $0.40 | 2,000 RPM | **企業級高併發王者**。便宜、極速、且提供超高 API 限流 (Rate Limit)，適合大流量的 B2C 應用程式。 |
+| **Qwen-Plus (通義)** | $0.40 | $1.20 | 不公開 | **中文性價比優選**。阿里開源體系的商用 API 版，中文語意理解流暢，支援 131K 長文本。 |
+
+---
+
+### ❓ 常見問題：開發者該如何挑選 API？ (FAQ)
+
+**Q: 如果我要做一個「幫忙讀幾百頁 PDF 財報」的 AI Agent，該選誰？**
+A: 推薦使用 **Gemini 2.5 Pro** 或 **Gemini 2.0 Flash**。因為財報包含大量表格與超長文本，Gemini 提供高達 2M 的上下文視窗，且具備優秀的 Context Caching (快取) 機制，能把每次詢問的成本壓到最低。
+
+**Q: 如果我要做一個「自動幫我寫 Code 並修 Bug」的助理？**
+A: **Claude 3.5 Sonnet** 是目前業界公認的 Coding 王者；如果追求極致的邏輯解題且預算充足，可以使用 **OpenAI o1**；如果預算有限，**DeepSeek-Reasoner (R1)** 絕對是性價比最高的選擇。
