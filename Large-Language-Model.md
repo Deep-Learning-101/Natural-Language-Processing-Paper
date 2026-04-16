@@ -672,8 +672,13 @@ MoE 架構是目前突破大模型「算力牆」的唯一解方。 它的核心
 
 * **[PersonaPlex-7B-V1](https://github.com/NVIDIA/personaplex)** `[2026-01-15]`
   * **核心優勢**：NVIDIA 開源重塑實時語音交互的「全雙工」黑科技！具備極強的抗干擾能力與人類情緒模擬，完美解決語音 AI 常見的「搶話」問題。[👉 本站深度技術分析](https://deep-learning-101.github.io/LLM/PersonaPlex) | [🤗 HuggingFace](https://huggingface.co/nvidia/personaplex-7b-v1) | [📄 官方論文](https://research.nvidia.com/labs/adlr/files/personaplex/personaplex_preprint.pdf)
-* **[Audio Flamingo 3](https://github.com/NVIDIA/audio-flamingo)** `[2025-07-21]`
-  * **核心優勢**：NVIDIA 開源的強大多模態音訊模型，不僅能聽懂人話，還能進行複雜的音頻事件理解與推理。
+
+* **[[Audio Flamingo Next (AF-Next)]](https://github.com/NVIDIA/audio-flamingo)** `[2026-04-13]` 🔥
+  * **核心優勢**：**NVIDIA 次世代全開源語音大模型，首創「時間錨定推理鏈 (Temporal Audio CoT)」。** 採用 Qwen-2.5-7B 為語言骨幹，透過百萬小時網際網路規模數據訓練。其最大創舉是捨棄傳統 RoPE，改用 **RoTE (旋轉時間嵌入)** 來直接建模音訊時間語意，將上下文一舉擴展至 128K。在長音訊理解與多模態推理指標上，強勢擊敗 Gemini-2.5-Pro 與 Phi-4-mm。
+  * **解決痛點 / 推薦場景**：**徹底終結傳統模型「無法跨時間段聚合證據」與「長音訊泛化力差」的痛點。** 官方貼心釋出三大特化變體：**Instruct** (適合通用對話 QA)、**Think** (適合高難度音訊邏輯推理，能精準給出推理時間戳) 以及 **Captioner** (適合精細字幕與長摘要)。是企業建構 Podcast 深度分析系統、智慧會議大腦、與複雜音樂/聲學事件理解 Agent 的最強開源底座。
+  * **資源**：[🐙 GitHub](https://github.com/NVIDIA/audio-flamingo) | [📄 論文](https://arxiv.org/abs/2604.10905) | [🌐 專案主頁](https://afnext-umd-nvidia.github.io/) | [🤗 HF 權重 (Instruct版)](https://huggingface.co/nvidia/audio-flamingo-next-hf)
+  * **[Audio Flamingo 3](https://github.com/NVIDIA/audio-flamingo)** `[2025-07-21]`
+    * **核心優勢**：NVIDIA 開源的強大多模態音訊模型，不僅能聽懂人話，還能進行複雜的音頻事件理解與推理。
 
 ### 3. 端對端開源語音基礎模型 (End-to-End S2S Models)
 * **[FlashLabs-Chroma 4B](https://huggingface.co/FlashLabs/Chroma-4B)** `[2026-01-24]`：新一代輕量級 Speech-to-Speech (S2S) 開源模型。
