@@ -723,6 +723,11 @@ MoE 架構是目前突破大模型「算力牆」的唯一解方。 它的核心
 ### 1. 頂尖多模態與視覺推理 (Vision & Complex Parsing)
 需要讓 AI 看懂工程圖紙、財報表格或進行深度邏輯推理？這些是目前的開源王者：
 
+* **[[Qwen3.5-Omni]](https://modelscope.cn/studios/Qwen/Qwen3.5-Omni-Demo)** `[2026-04]` 🔥
+  * **核心優勢**：**首款實現「視聽直覺編程」的原生全模態統一體**。採用 Hybrid Attention MoE 架構，支援 256k 超長上下文，能一次吞下 10 小時音訊或 400 秒影片。
+  * **解決痛點 / 推薦場景**：打破了傳統 Agent 「只能看文字」或「音畫不同步」的限制。模型能邊看影片邊聽需求，直接寫出對應的自動化程式碼，是開發**工業級多模態自主代理程式**的首選。
+  * **資源**：[🐙 ModelScope](https://modelscope.cn/studios/Qwen/Qwen3.5-Omni-Demo) | [📄 論文](https://arxiv.org/abs/2604.15804v1) | [📝 官方解讀](https://arxiv.org/abs/2604.15804v1)
+
 * **[InternVL (OpenGVLab)](https://github.com/OpenGVLab/InternVL)** `[2026 最新持續更新]`
   * **核心優勢**：不斷刷新開源多模態大模型效能新紀錄的霸主！在視覺辨識精準度與圖文交錯理解上，是許多企業構建自研多模態應用的底座首選。[📄 論文解析](https://www.alphaxiv.org/zh/overview/2504.10479) | [📝 知乎深度解讀](https://zhuanlan.zhihu.com/p/1897681159359551408)
 * **[Vision-R1](https://github.com/Osilly/Vision-R1)** `[2025-03-14]`
