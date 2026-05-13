@@ -577,8 +577,16 @@ MoE 架構是目前突破大模型「算力牆」的唯一解方。 它的核心
 | **SmolLM2** | 🌐 **Hugging Face** | **為極端環境打造的極小模型**。極致壓縮體積，專門針對運算資源極度受限的環境進行最佳化。 | 穿戴式裝置、超低功耗設備<br>`[極小體積]` `[極低功耗]` |
 
 #### 📂 核心模型下載與資源
+
+* **[[ELF (Embedded Language Flows)]](https://github.com/lillian039/ELF)** `[2026-05]` 🔥 `[擴散語言模型]` `[何愷明團隊]` `[非自迴歸]`
+  * **核心優勢**：**打破 GPT 自迴歸霸權的連續擴散語言模型神作，僅 105M 參數達成驚人生成品質！** 由何愷明團隊重磅推出，徹底捨棄傳統 Next-token prediction 路線，首創將文字 Token 映射為連續 Embedding 並採用 Flow Matching 技術進行去噪。它完美融合了圖像生成領域的 CFG (Classifier-Free Guidance) 技術，在僅需 45B 訓練 Token 與 32 步極速採樣的條件下，生成困惑度壓低至 24，效能強勢輾壓傳統離散擴散模型。
+  * **解決痛點 / 推薦場景**：**完美解決了傳統大模型「逐字生成延遲高」與「極度依賴海量訓練資料 (通常需 500B+)」的致命痛點。** 透過「連續到底、最後一步離散化」的極簡架構，大幅降低了訓練算力與推論開銷。極度適合部署於**資源受限的邊緣運算設備 (Edge AI)**，並在**機器翻譯**與**文本摘要**等條件生成 (Conditional Generation) 任務中，作為低算力、高效能的次世代微型語言模型 (SLM) 首選。
+  * **資源**：[🐙 GitHub](https://github.com/lillian039/ELF) | [📄 論文](https://arxiv.org/pdf/2605.10938)
+
 * **[Phi-4](https://huggingface.co/NyxKrage/Microsoft_Phi-4)** `[2024-12-13]`：微軟 Phi-4 正式發表，以小博大效能驚人。[📝 公眾號解析](https://mp.weixin.qq.com/s/uny1VUt7vk_ZU6hCH0EDGg)
+
 * **[SmolLM2](https://github.com/huggingface/smollm/)** `[2024-11-04]`：Hugging Face 官方推出的手機執行小型語言模型。[📝 iThome 報導](https://www.ithome.com.tw/news/165832)
+
 * **[Llama 3.2 (1B/3B)](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)** `[2024-09-25]`：Meta 震撼開源的端側邊緣運算 (Edge AI) 專屬模型。
 
 ---
