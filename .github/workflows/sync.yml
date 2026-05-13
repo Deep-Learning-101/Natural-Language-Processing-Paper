@@ -35,7 +35,8 @@ jobs:
         uses: dorny/paths-filter@v3
         id: filter
         with:
-          base: ${{ github.event.before }}
+          base: ${{ github.event.before || github.ref }}
+          head: ${{ github.sha }}
           filters: |
             readme:
               - 'README.md'
@@ -50,30 +51,30 @@ jobs:
 
       # 步驟 2：執行選擇性同步
       - name: Selective Sync
+        working-directory: sub-repo
         run: |
           # 1. 只有 README 更新時才處理 NLP 核心
           if [ "${{ steps.filter.outputs.readme }}" == 'true' ]; then
             echo "Syncing NLP README..."
-            cp sub-repo/README.md main-repo/Natural-Language-Processing.md
+            cp README.md ../main-repo/Natural-Language-Processing.md
           fi
 
           # 2. 只有 LLM 檔案存在且更新時才處理
-          if [ "${{ steps.filter.outputs.llm }}" == 'true' ] && [ -f "sub-repo/Large-Language-Model.md" ]; then
+          if [ "${{ steps.filter.outputs.llm }}" == 'true' ] && [ -f "Large-Language-Model.md" ]; then
             echo "Syncing LLM Core..."
-            cp sub-repo/Large-Language-Model.md main-repo/Large-Language-Model.md
+            cp Large-Language-Model.md ../main-repo/Large-Language-Model.md
           fi
 
           # 3. 只有 ai-share.html 修改時才同步 _includes
           if [ "${{ steps.filter.outputs.includes }}" == 'true' ]; then
             echo "Syncing _includes (ai-share.html)..."
-            mkdir -p main-repo/_includes
-            cp sub-repo/_includes/ai-share.html main-repo/_includes/ai-share.html
+            mkdir -p ../main-repo/_includes
+            cp _includes/ai-share.html ../main-repo/_includes/ai-share.html
           fi
 
-          # 4. 只有子目錄變動時才執行鏡像同步[cite: 1]
+          # 4. 只有子目錄變動時才執行鏡像同步
           if [ "${{ steps.filter.outputs.assets }}" == 'true' ] || [ "${{ steps.filter.outputs.images }}" == 'true' ]; then
             echo "Syncing sub-directories (DeepKE, ERNIE-Layout, images)..."
-            cd sub-repo
             find . -maxdepth 1 -type d ! -name "." ! -name ".github" ! -name ".git" ! -name "_includes" | while read dir; do
               mkdir -p "../main-repo/$dir"
               cp -a "$dir/." "../main-repo/$dir/"
@@ -81,8 +82,8 @@ jobs:
           fi
 
       - name: Commit and Push
+        working-directory: main-repo
         run: |
-          cd main-repo
           ORIGINAL_MSG="${{ github.event.head_commit.message }}"
           AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
           AUTHOR_EMAIL="${{ github.event.head_commit.author.email }}"
