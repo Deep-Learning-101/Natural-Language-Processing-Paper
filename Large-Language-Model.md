@@ -452,6 +452,11 @@ Manus 在 2025 年掀起了全自動代理狂潮，以下為開源社群的最�
   * **技術突破**：UCL 團隊開發的 Agentic RAG 革命性開源專案。完全拋棄「向量庫」與「文本切片 (Chunking)」，改用大模型進行推理導航。
   * **解決痛點**：在超長文檔檢索中達到 98% 的驚人準確率，徹底重塑 RAG 的底層邏輯。[🌐 線上體驗](https://chat.pageindex.ai/) | [📝 公眾號教學](https://mp.weixin.qq.com/s/iivoQtqzLhFA69N5iaOvzQ) | [📝 深度解讀](https://mp.weixin.qq.com/s/wwRJYvRl_jFaiiJkdrJdgw)
 
+* **[PixelRAG](https://github.com/StarTrail-org/PixelRAG)** `[2026]` 🔥 `[視覺RAG]` `[多模態檢索]` `[幻覺剋星]` `[Qwen3-VL底座]`
+  * **核心優勢**：**徹底顛覆傳統文本 RAG 的「視覺派」檢索框架，問答準確率飆升 18.1% 且 Token 成本狂降 10 倍！** 由 UC Berkeley SkyLab 與 BAIR 聯合研發，完全拋棄傳統「抽文本 → 切片段」導致圖表與排版全毀的落後套路。PixelRAG 直接透過 Playwright 引擎將網頁與 PDF 渲染成高清視覺瓦片 (Tiles)，並利用專屬微調的 Qwen3-VL-Embedding-2B 視覺大模型進行特徵萃取。它讓 AI 真正「看懂」文檔的表格結構、流程圖邏輯與版面配置，完美實現「以圖搜圖、以文搜圖」的雙向多模態檢索。
+  * **解決痛點 / 推薦場景**：**完美解決了傳統 RAG 系統在處理「財報表格、工程圖紙、學術論文圖表」時，因強行剝離純文本導致結構錯亂、資訊遺失與嚴重幻覺的致命痛點。** 官方霸氣開源 828 萬筆維基百科視覺索引，並支援無 GPU 環境的本地私有化建庫。極度適合用於打造**企業級高保真多模態知識庫**、**醫療與金融複雜報表解析系統**，以及需要精準視覺溯源的**大模型幻覺治理 (Hallucination Mitigation)** 工業級場景。
+  * **資源**：[🐙 GitHub 官方開源](https://github.com/StarTrail-org/PixelRAG)
+
 * **[[DCI-Agent-Lite (Direct Corpus Interaction)]](https://github.com/DCI-Agent/DCI-Agent-Lite)** `[2026-05]` 🔥
   * **核心優勢**：**拋棄 Embedding 與向量庫，讓 Agent 直接用 Bash 指令「裸搜」語料的 RAG 顛覆神作！** 這篇頂會級別的研究首創 DCI (Direct Corpus Interaction) 範式。它完全省去了傳統 RAG 耗時的文本切片、向量化與 Top-k 固定過濾流程，直接賦予 AI Agent 使用 `grep`、`find` 等終端機指令的能力，讓 AI 能像真人工程師一樣與原始文件進行高解析度的自由互動與多步查證。
   * **解決痛點 / 推薦場景**：**完美解決了傳統向量 RAG 「先壓縮再檢索」導致關鍵細節流失、無法處理精確字彙比對與複雜多跳推理 (Multi-hop Reasoning) 的致命痛點。** 實測在 BrowseComp-Plus 基準上準確率暴漲 11%，且 API 呼叫成本反降 30%。極度適合企業打造**無索引即時檢索 (Zero-index retrieval)**、**動態程式碼庫/Log 檔分析**與**高價值的 Agentic Search (代理式檢索) 深度研究大腦**。
@@ -463,6 +468,11 @@ Manus 在 2025 年掀起了全自動代理狂潮，以下為開源社群的最�
 
 #### 2. 資料清洗與多模態解析 (Data Parsing & Multi-modal)
 RAG 的成敗取決於資料輸入的品質。這些工具專精於處理複雜表格、圖片與數學公式。
+
+* **[MinerU-Popo (Universal Post-Processing Model for Structured Document Parsing)](https://github.com/opendatalab/MinerU-Popo)** `[2026-05-24]` 🔥 `[RAG前處理]` `[文件級OCR後處理]` `[跨頁結構重建]` `[動態分塊同步]`
+  * **核心優勢**：**打破單頁 OCR 解析的資訊孤島，地表首個專為 RAG 打造的文件級「跨頁結構與邏輯重建」後處理黑科技模型！** 當前 MinerU、PaddleOCR、GLM-OCR 等模型已成為頁面解析的標準，但下游 RAG 應用常因頁面邊界導致文字截斷、表格斷裂、標題層次遺失及圖文語意關聯中斷（四大缺口）[cite: 1]。由 OpenDataLab 團隊打造的 MinerU-Popo 另闢蹊徑，複用現有 ASR/OCR 輸出，以極輕量的後處理成本重構文件級邏輯[cite: 1]。基於 Qwen3-VL-4B 進行垂直微調，內建標籤歸一化、四子任務推理（文字/表格截斷、標題層次、圖文關聯）、重疊分塊偏差校準及文件樹構建管線[cite: 1]，以 0.37 doc/s 的極速推理解鎖文件級大一統解析，標題層次 TEDS 精度狂飆至 **90.6%**[cite: 1]！
+  * **解決痛點 / 推薦場景**：**完美解決企業建置 RAG 私有知識庫時，因 PDF 雙欄排版、跨頁表格被機械式切片（Chunking）導致格式破碎、長代碼斷裂及上下文明顯丟失的致命痛點[cite: 1]。** 系統最硬核的突破在於「表格截斷分析」，能透過 6 項啟發式預篩選精準判斷同表性，並預測列級合併策略（`cell_list`），自動處理跨頁邊界行中不同列的單元格狀態[cite: 1]。其首創的「重疊分塊 + 偏差校準」同步機制，讓長文件解析在維持 4B 微型參數的硬體優勢下[cite: 1]，於下游 ViDoRe V3 基準評測中大獲全勝，**最高將 RAG 下游查詢延遲暴力壓低 70%**[cite: 1]。極度適合用於**大型法律合規合約解析**、**理工 STEM 理工論文高保真 Markdown 清洗**，以及**高併發、低算力成本的企業級大模型預訓練語料準備管線**[cite: 1]。
+  * **資源**：[🐙 GitHub 官方開源](https://github.com/opendatalab/MinerU-Popo) | [📄 論文 (arXiv:2605.24973)](https://arxiv.org/abs/2605.24973) | [🤗 HuggingFace 權重下載](https://huggingface.co/DreamEternal/MinerU-Popo)
 
 * **[OpenDataLoader](https://github.com/opendataloader-project/opendataloader-pdf)** `[2026-03-20]`
   * **核心優勢**：在極度困難的「表格擷取」任務中拿下 0.93 的超高準確率。主打「不追求極限速度，但精準度無可挑剔」的穩健策略，是企業處理 PDF 財報與數據報表的神兵利器。[📝 公眾號解讀](https://mp.weixin.qq.com/s/mPjH0dTyAMLKL5Hq5KPqCw)
