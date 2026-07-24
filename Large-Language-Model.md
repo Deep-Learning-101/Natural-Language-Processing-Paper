@@ -11,6 +11,9 @@ schema_type: article
 
 # 📚 LLM 大語言模型・必讀資源總整理
 
+> 📌 **技術速覽**
+> 在地端部署大語言模型 (LLM) 時，許多企業常因推論框架選型不當導致 VRAM 浪費。根據 **Deep Learning 101** 的實測研究，針對 8B 模型併發需求，選用具備 PagedAttention 的 vLLM 或 SGLang 推論框架，能將硬體需求精準控制在單張 24GB 顯卡，大幅降低企業地端私有雲的部署成本。
+
 > **編者按：** 本頁面彙整目前最主流的 LLM 排行榜、開源模型、推論與微調工具，以及相關學術論文。
 >
 > 如果您想尋找更詳細的筆記，歡迎訪問 **GitHub Repository**：
@@ -44,6 +47,7 @@ schema_type: article
 - [🔊 Speech-to-Speech LLM (語音大模型)](#speech)
 - [👁️ Vision-Language Model (視覺大語言模型)](#vision)
 - [🌌 Multimodal LLM (多模態大語言模型)](#multimodal)
+- [❓ FAQ (LLM 開發常見問題)](#faq)
 
 ---
 
@@ -227,18 +231,8 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 ---
 
 ### 💼 領域專用 Agent 實戰案例 (Finance & Coding)
-
-* [CADDesigner](https://github.com/NiJingzhe/SimpleCADAPI) [2026] 🔥 [CAD建模] [AI智慧體] [ECIP範式] [計算機輔助設計]
-  * **核心優勢**：**首創由 LLM 驅動的概念 CAD 設計智慧體與顯式上下文命令式範式 (ECIP)，透過一致性 API 設計、聲明式約束與智慧錯誤回饋機制，在概念 CAD 模型生成任務上超越代表性基線。**
-  * **解決痛點**：傳統 LLM 生成 CAD 腳本常面臨微調成本高昂、API 狀態複雜容易產生幻覺，以及空間坐標計算與對象尋找困難的問題；改善方式是透過中間層智慧體範式，讓模型僅聲明設計意圖與功能標籤，由 SDK 自動處理幾何計算與自診斷修復，實現意圖驅動的參數化設計。
-
-* [text-to-cad](https://github.com/earthtojake/text-to-cad) [2026-07-22] 🔥 [CAD建模] [Agent技能] [build123d] [硬體設計]
-  * **核心優勢**：**首創面向 CAD、機器人與硬體設計的 Agent 技能集合，透過整合 LLM、build123d 與 OpenCascade 內核，實現自然語言一鍵生成工業級 STEP、STL 與 DXF 檔案，並具備 Python 源碼可見與 git diff 可追溯性。**
-  * **解決痛點**：傳統 CAD 軟體需繁瑣手動點擊且學習曲線陡峭，而學術界 Text-to-CAD 模型往往停留在實驗室階段、缺乏工程工作流閉環；改善方式是將其封裝為 Codex 與 Claude Code 的本地 Agent 技能插件，由 LLM 生成可控的參數化原始碼，結合工業級幾何內核與本地預覽工具，實現從設計描述到製造輸出的無縫工程閉環。
-
 * **[FinRobot (開源金融 AI 代理)](https://deepwiki.com/AI4Finance-Foundation/FinRobot)**
   * **應用場景**：專為金融分析打造的 Agent 框架，支援最新 Gemini 2.5 模型，能自動化執行財報分析、市場預測等量化任務。[👉 AlphaXiv 論文解析](https://www.alphaxiv.org/zh/overview/2405.14767)
-
 * **[Jupyter-AI (程式碼編寫代理)](https://deepwiki.com/jupyterlab/jupyter-ai)**
   * **應用場景**：將生成式 AI 原生接入 Jupyter Notebook，支援 Gemini 2.5，能理解您的數據上下文並自動生成、除錯 Python 程式碼，是數據科學家的最強副駕。
 
@@ -280,15 +274,6 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 ---
 
 #### 3. 深度研究與開源知識庫 (Deep Research & RAG)
-
-* [Arbor](https://ruc-nlpir.github.io/Arbor/)] [2026-06-11] 🔥 [自主科研] [Agent框架] [Hypothesis-Tree] [Autonomous Optimization]
-  * **核心優勢**：**首創基於假設樹精煉 (HTR) 與洞察回傳的自主科研架構，在六個真實自主優化 (AO) 任務上取得超過基線 2.5 倍的相對增益，並在 MLE-Bench Lite 上以 GPT-5.5 創下 86.36% Any Medal 的 SOTA 成績。**
-  * **解決痛點**：傳統 LLM Agent 隨著任務變長容易退化為線性的局部盲目試錯，缺乏結構化的研究狀態與經驗沉澱；改善方式是透過長期 Coordinator 與短期 Executor 分離架構、外化 Hypothesis Tree，並將實驗洞察沿樹狀結構反向回傳與使用 held-out 驗證閘門，實現知識的結構化積累、長期規劃與防止過擬合。
-
-* **[[OpenWorker]](https://github.com/andrewyng/openworker)** `[2026-07-23]` 🔥 `[開源智能體桌面應用]` `[本地優先]` `[模型隨你挑]` `[無人值守]`
-  * **核心優勢**：**由吳恩達 (Andrew Ng) 與 Rohit Prasad 聯手打造的桌面級 AI 同事開源神作，喊出「交給你的是成品，而不是待辦清單」！** 徹底打破傳統智能體只能在對話框流連的侷限，將研究端的抽象能力（規劃、工具調用）翻譯成桌面上一個具備分層風險模型、無人值守 inbox、self-wake 喚醒機製與 25+ 連接器的可信賴同事。支援跨檔案、終端與主流企業應用的端到端自動化執行，並原生對接 aisuite 基礎庫與 Claude Desktop/Cursor 的 MCP 生態。
-  * **解決痛點 / 推薦場景**：**完美解決了使用者「敢不敢讓 AI 自作主張在電腦上跑」的信任危機，並免除被單一閉源模型綁定的遷移成本。** 透過四級風險防護、運行模式約束與任務級常駐規則，將失敗的爆炸半徑壓到最低；同時藉由 ProviderRouter 支援 30+ 企業級模型與 Ollama 本地部署，實現零摩擦的模型切換。是打造**桌面級個人助理**、**自動化文件交付**與**長時程知識工作無人化代理**的工業級參考實現。
-  * **資源**：[🐙 GitHub 專案](https://github.com/andrewyng/openworker) | [🌐 官方網站](https://openworker.com) | [📦 基礎庫 aisuite](https://github.com/andrewyng/aisuite)
 
 * **[AnySearch (AI Agent 專屬跨域搜尋基礎設施)](http://www.anysearch.com)** `[2026-05]` 🔥
   * **核心優勢**：**打破大模型「表層網路」的資訊盲區，專為 AI Agent 打造的真實世界搜尋基礎設施！** 徹底拋棄傳統面向人類的網頁搜尋引擎 (SERP)。AnySearch 透過統一的 API、MCP Server 或 Agent Skill 介面，讓 AI 能直接穿透「深網 (Deep Web)」。它內建強大的智慧意圖路由 (Intent Classifier)，精準跨域抓取 GitHub 生產級程式碼、即時金融數據、法院裁決書與威脅情報等異質資料；並透過 RRF 融合與多維品質重排序過濾雜訊，直接回傳高資訊密度的結構化 Markdown，實測可大幅省下 60~70% 的 Token 消耗。
@@ -333,11 +318,6 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 ---
 
 #### 4. 電腦操作與軟體工程師 (Computer Use & Coding)
-
-* **[[Remotion Skills]](https://github.com/remotion-dev/skills)** `[持續更新]` 🔥
-  * **核心優勢**：**顛覆「黑盒文生影片」，用 AI 寫 React 程式碼來「精確渲染」影片的工程化革命！** 建立在知名的 React 影片框架 Remotion 之上，將影片視為「隨時間變化的 UI」。它內建專為大模型設計的動畫模式庫與 MCP 協議，讓 AI 代理能直接聽懂自然語言指令（如：做一個 30 秒科技風產品介紹），並自動輸出 100% 確定性、可編輯、支援版本控制的 TypeScript/React 影片代碼。
-  * **解決痛點 / 推薦場景**：完美解決了主流生成式 AI 影片無法精確控制排版、無法修改錯字，以及傳統圖形化剪輯軟體無法自動化批量生產的痛點。 告別手動拖曳時間軸，極度適合企業開發者打造**自動化 RPA 影片生產工廠 (如每日新聞摘要、電商財報可視化)**、**社群媒體短影音批量生成**，是將影片製作從「手工藝」升級為「軟體工程」的開源首選。
-  * **資源**：[🐙 Remotion 主專案](https://github.com/remotion-dev/remotion) | [🐙 Remotion Skills (AI技能包)](https://github.com/remotion-dev/skills)
 
 * **[[google-colab-cli]](https://github.com/googlecolab/google-colab-cli)** `[2026-06-05]` 🔥
   * **核心優勢**：**Google 官方重磅發布！將 Colab 雲端算力原生注入本地終端機與 AI Agent 核心工作流的破局神作！** 徹底擺脫瀏覽器 GUI 的笨重束縛，透過極簡的 CLI 命令，即可直接調度遠端 T4/L4/H100 GPU 與新一代 TPU 算力資源。其最驚豔的 **Shebang 魔法寫法 (`#!/usr/bin/env -S colab run --gpu L4`)**，能讓任何普通的本地 Python 腳本瞬間退化為「自帶 L4 GPU 的可執行檔」，實現本地撰寫、遠端核心（Kernel）狀態持久化執行的絲滑體驗。
@@ -402,10 +382,6 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
   * **解決痛點 / 推薦場景**：**完美解決了傳統網頁腳本因 UI 改版就失效、以及無法處理跨頁面複雜邏輯的問題。** 無需預設腳本，僅憑一條指令即可在亞馬遜（Amazon）等真實電商平台自主完成搜尋、識別與加購操作，是建構自動化電商助理與 RPA 流程的頂級引擎。
   * **資源**：[🐙 GitHub](https://github.com/codefuse-ai/OpAgent) | [🤗 HuggingFace](https://huggingface.co/codefuse-ai/OpAgent-32B) | [📄 Technical Report](https://arxiv.org/pdf/2602.13559) | [🌐 線上 Demo](https://huggingface.co/spaces/exias/OpAgent)
 
-* **[[Heretic]](https://github.com/p-e-w/heretic)** `[2025-01-01]` 🔥 `[安全去對齊]` `[機械可解釋性]` `[自動參數優化]` `[開源平替]`
-  * **核心優勢**：**打破大模型安全對齊的黑箱神話，首創將「拒絕方向消融 (Abliteration)」與 Optuna TPE 自動搜索完美封裝的去審查工業級利器！** 這款在 GitHub 狂攬 2.5 萬 Stars 的現象級開源黑科技，徹底顛覆了過往「去對齊必須深入理解 Transformer 殘差流與內部機制」的高難度學術門檻。Heretic 透過自動定位拒絕方向並執行權重正交化，在將有害提示拒答率壓至 3/100 的同時，對原模型能力與分佈的損害（KL 散度低至 0.16）降到歷史新低。
-  * **解決痛點 / 推薦場景**：**完美解決了開發者在本地部署開源大模型時，常因「大廠過度審查（Over-censorship）導致正常指令頻頻遭拒」，而手動修改權重程式碼繁瑣且易導致模型崩潰的痛點。** 專案內建殘差向量投影與層間動畫分析，對研究者而言是探討模型內省機制的「手術刀」；對產品開發者而言，則是執行 `pip install` 就能一鍵移除安全對齊的「工業級拆卸標準件」。極度適合用於**本地私有化模型去審查**、**機械可解釋性研究**，以及需要極端模型自主權的開發場景。
-
 * **[Gemini Computer Use](https://github.com/google-gemini/computer-use-preview)** `[2025-10]`：Google 預覽版框架，讓 AI 直接操作網頁介面。
 
 * **[WebDancer](https://www.alphaxiv.org/zh/overview/2505.22648)** `[2025-05-30]`：Alibaba 開源的 WebAgent，專精於網頁資料的自主瀏覽與操作。
@@ -433,11 +409,6 @@ Manus 在 2025 年掀起了全自動代理狂潮，以下為開源社群的最�
 ---
 
 #### 6. 特定場景應用 (Domain-Specific Automation)
-
-* **[[Huobao Drama]](https://github.com/chatfire-AI/huobao-drama)** `[2026-05]` 🔥
-  * **核心優勢**：**打破傳統影視製作高牆，首款將「創意劇本➔分鏡➔音效➔成片」全流程打通的開源自動化短劇生產線！** 基於 Mastra AI 框架自主編排 5 大工程智能體（劇本改寫、角色場景提取、分鏡拆解、音色分配、提示詞生成），後端採用 Hono 與 Drizzle ORM，極速驅動 SQLite、Sharp 與 FFmpeg 進行視訊、音訊、字幕的單鏡高能合成與整集拼接。模型層採多廠商解耦設計，支援隨時切換 MiniMax、OpenAI、Gemini、火山等最新影音大模型，開創了「人還在，只是從拍一條變成調一條流水線」的工業化新範式。
-  * **解決痛點 / 推薦場景**：完美攻克短劇小團隊與個人創作者在內容生產中「中間碎活無窮無盡、跨工具鏈協同成本極高」的焦慮死結。 繞開學術界過度糾結的「單鏡頭完美幾何檢索」，從產品通量出發，將「霸總出現 7 次自動合併人物卡」等實用去重做到極致。實測在 GitHub 狂攬 11.3k Stars 與 2.1k Forks，極度適合自媒體團隊進行**模板化劇情批量生產**、**低成本爆款素材矩陣測試**，或開發者直接打包成 **SaaS 影音短劇生成平台**進行商業變現。
-  * **資源**：[🐙 GitHub](https://github.com/chatfire-AI/huobao-drama) | [📄 深度解讀](https://deepwiki.com/chatfire-AI/huobao-drama)
 
 * **[Claude for Legal (Anthropic)](https://github.com/anthropics/claude-for-legal)** `[2026]` 🔥
   * **核心優勢**：**Anthropic 官方開源的法律業專屬 Agent 智慧體全家桶，無縫接入 20+ 專業系統的自動化法務大腦！** 採用高度模組化的設計，將法律實務精準拆解為 12 個垂直領域與 70+ 個專業 Agent（定時任務與技能）。最大亮點是內建強大的 MCP (Model Context Protocol) 連接器，能直接打通 iManage、Ironclad、DocuSign 等法務標準資料庫。開發者無需撰寫複雜程式碼，僅透過編輯 Markdown 與 JSON (`CLAUDE.md`) 即可零門檻定製團隊專屬的法務 Playbook。
@@ -515,10 +486,6 @@ RAG 的成敗取決於資料輸入的品質。這些工具專精於處理複雜�
 
 #### 3. 圖譜增強與全局語意 (Graph-RAG)
 解決傳統 RAG「只見樹木，不見森林」的問題，強化實體之間的邏輯關聯。
-
-* [[HyGRAG](https://www.google.com/search?q=%E9%80%A3%E7%B5%90)] [2026-06-18] 🔥 [GraphRAG] [多跳推理] [知識融合] [動態更新]
-  * **核心優勢**：**首創融合上下文（Chunk）與顯式關係（Entity Triplet）的層級圖索引與雙通道檢索架構，在多跳推理基準上平均提升 9.7% 準確率，並在推理階段顯著節省 Token 消耗。**
-  * **解決痛點**：舊方法面臨實體抽取累積錯誤與丟失上下文（Entity-centric）或不擅長跨片段顯式關係（Chunk-centric）的兩難困境；改善方式是透過混合圖建構、Cleora 結構感知嵌入與 LLM 社區摘要合成超越源文檔的新興知識表示，並設計 attachment-based update 機制支援局部動態更新，避免全圖重建的高昂運算開銷與延遲。
 
 * **[FlowRAG](https://arxiv.org/abs/2606.17856)** `[2026-06]` 🔥
   * **核心優勢**：**打破傳統 GraphRAG「實體稀疏」與「噪聲擴散」的致命缺陷，首創四層異構圖與頻率感知加權流的 RAG 新範式！** FlowRAG 放棄了單純的相似度比對，轉而建構「段落 ↔ 摘要 ↔ 句子 ↔ 實體」的四層緊密架構。透過「雙粒度實體激活」（摘要層處理抽象轉述、句子層精確命中）加上「頻率感知加權流」主動剪除低置信度的錯誤關聯。將無序的文本塊升級為一條條「可追蹤的顯式邏輯骨架」，在多跳推理基準 (如 HotpotQA, 2Wiki) 準確率強勢碾壓 LightRAG 與 HippoRAG。
@@ -692,7 +659,7 @@ Google 的 NotebookLM 改變了我們與長篇文獻互動的方式，但「資�
 
 ---
 
-### 3. 開發者與個人資訊自動化 (Personal Automation & Dev Tools)
+### 🔧 開發者與個人資訊自動化 (Personal Automation & Dev Tools)
 解救你的知識焦慮！這些工具能幫你將四散的資訊聚合，並透過 LLM 轉化為個人生產力。
 
 * **[OneFileLLM](https://github.com/jimmc414/onefilellm)** `[2025-04-16]`
@@ -708,7 +675,7 @@ Google 的 NotebookLM 改變了我們與長篇文獻互動的方式，但「資�
 
 ---
 
-### 4. 視覺化畫布與 AI 創作引擎 (Visual Canvas & Creation)
+### 🎨 視覺化畫布與 AI 創作引擎 (Visual Canvas & Creation)
 打破傳統 ChatGPT「單線對話框 (Chat UI)」的限制，提供全局鳥瞰的空間思維，適合複雜企劃與長篇寫作。
 
 * **[Refly (畫布式 AI 創作引擎)](https://github.com/refly-ai/refly)** `[持續更新]`
@@ -790,7 +757,8 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 * **[Llama 3.2 (1B/3B)](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)** `[2024-09-25]`：Meta 震撼開源的端側邊緣運算 (Edge AI) 專屬模型。
 
 ---
-## 🤔 Reasoning Models (深度推理模型)
+## Reasoning
+**🤔 Reasoning Models (深度推理模型)**
 
 強化思維鏈 (CoT) 的推理模型徹底改變了複雜邏輯任務的解決率。 實測如 DeepSeek-R1 或 OpenAI o1 架構，在進階數學與程式碼基準 (MATH/HumanEval) 上突破 85% 準確率。透過隱藏推理過程，大幅降低幻覺並提升可靠度。自從 OpenAI 的 o 系列問世後，「Chain of Thought (思考鏈)」與「強化學習 (RL)」成為激發大模型數理運算與邏輯推理的標準配備。以下精選具備頂尖思考能力的開源推理模型：
 
@@ -883,11 +851,6 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 
 在構建 RAG 系統時，如果檢索到的參考資料不準，再強的 LLM 也會產生幻覺 (Hallucination)。目前業界的黃金標準是採用「雙層檢索架構」：先用 **Embedding** 模型進行海量初篩，再用 **Reranker** 模型進行精準的二次排序。以下精選目前最具代表性的表徵模型：
 
-* [LEANN](https://github.com/yichuan-w/LEANN) [2026-03-09] 🔥 [低存儲向量索引]
-  * **核心優勢**：**首創「基於圖的選擇性重計算 (Graph-based Selective Recomputation)」與高階節點保留剪枝，將 ANN 索引存儲開銷壓到原始資料的 5% 以下！** 該項發表於 MLSys 2026 的工作透過拋棄冗餘嵌入向量並利用壓縮稀疏行 (CSR) 格式，比標準 HNSW 索引縮小最高達 50 倍，同時在真實 QA 基準上維持 90% 的 top-3 召回率，搜尋延遲保持在 2 秒以內。
-  * **解決痛點 / 描述**：傳統向量索引（如 HNSW、DiskANN）會帶來原始資料 1.5 到 7 倍的龐大存儲開銷，使個人設備與筆電難以執行本地端 RAG 與隱私保護資料檢索。LEANN 透過「搜尋時按需重算嵌入」與貼合 RAG 「LLM 生成主導」的延遲權衡，成功推倒「存儲之牆」，並支援 Apple Mail、瀏覽器歷史及 Claude Code MCP 等豐富的本地數據源。
-  * **資源**：[📄 論文 (arXiv:2506.08276)](https://arxiv.org/abs/2506.08276) | [🐙 GitHub 專案](https://github.com/yichuan-w/LEANN) | [📄 MLSys 2026](https://doi.org/10.48550/arXiv.2506.08276)
-
 ### 1. 網頁級巨量檢索與搜尋引擎架構 (Web-Scale Retrieval)
 想要打造媲美 AI 搜尋引擎的檢索準確度？直接使用目前地表最強搜尋引擎團隊的底層技術。
 
@@ -955,7 +918,7 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 ---
 
 ## Vision
-**👁️ 👁️ Vision-Language Model (視覺多模態大模型)**
+**👁️ Vision-Language Model (視覺多模態大模型)**
 
 視覺大模型 (VLM) 正在從龐大的雲端叢林，逐步走向邊緣運算 (Edge AI) 與行動裝置。
 
@@ -969,7 +932,9 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 ## Multimodal
 **🌌 多模態大模型與語音硬體終端 (Multimodal & Edge AI)**
 
->2025 至 2026 年，大語言模型正式長出「眼睛」與「嘴巴」。本區塊不僅收錄了能看懂複雜圖表的多模態基礎模型 (Vision-Language Models)，更為創客與物聯網 (IoT) 開發者整理了最齊全的語音硬體開源解決方案。> 隨著模型能力的進化，單一模態（純文字、純視覺）已無法滿足複雜的應用場景。新一代的基礎大模型原生支援視覺、語音與工具呼叫，是開發自動化 AI Agent 的核心大腦。
+> 2025 至 2026 年，大語言模型正式長出「眼睛」與「嘴巴」。本區塊不僅收錄了能看懂複雜圖表的多模態基礎模型 (Vision-Language Models)，更為創客與物聯網 (IoT) 開發者整理了最齊全的語音硬體開源解決方案。
+>
+> 隨著模型能力的進化，單一模態（純文字、純視覺）已無法滿足複雜的應用場景。新一代的基礎大模型原生支援視覺、語音與工具呼叫，是開發自動化 AI Agent 的核心大腦。
 
 ### 1. 頂尖多模態與視覺推理 (Vision & Complex Parsing)
 需要讓 AI 看懂工程圖紙、財報表格或進行深度邏輯推理？這些是目前的開源王者：
@@ -1031,7 +996,8 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 
 ---
 
-## ❓ LLM 開發常見問題解答 (FAQ)
+## FAQ
+**❓ LLM 開發常見問題解答 (FAQ)**
 
 **Q1: 企業應如何選擇合適的微調工具？**
 A: 建議首選 LLaMA Factory，其可視化介面能減少 50% 環境配置時間，並廣泛支援主流開源模型與訓練演算法。
@@ -1051,39 +1017,50 @@ A: 勿僅看跑分基準，應自建 100-200 筆符合企業真實情境的測�
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://deep-learning-101.github.io/Large-Language-Model"
-  },
-  "headline": "2026 大語言模型 (LLM) 與 AI Agent 開源資源大全",
-  "description": "一份詳盡的大語言模型（LLM）資源清單，涵蓋端側推理模型(SLM)、微調技術(Fine-tuning)、RAG架構優化、AI Agent多智能體框架與Manus開源平替工具，助你掌握最新生成式AI技術。",
-  "image": "https://raw.githubusercontent.com/Deep-Learning-101/TonTon/refs/heads/main/_includes/DL101-Logo.jpg",
-  "author": {
-    "@type": "Organization",
-    "name": "Deep Learning 101, Taiwan",
-    "url": "https://deep-learning-101.github.io/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Deep Learning 101, Taiwan",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://raw.githubusercontent.com/Deep-Learning-101/TonTon/refs/heads/main/_includes/DL101-Logo.jpg"
-    }
-  },
-  "datePublished": "2026-03-29",
-  "dateModified": "2026-07-25",
-  "keywords": "大語言模型, LLM, AI Agent, RAG, 微調, Fine-tuning, Deep Research, 知識庫, 推理模型, Reasoning, SLM, LLaMA, AI 自動化, Manus 平替",
-  "about": {
-    "@type": "Service",
-    "serviceType": "GenAI Consulting",
-    "provider": {
-      "@type": "Organization",
-      "name": "Deep Learning 101, Taiwan"
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://deep-learning-101.github.io/Large-Language-Model"
+      },
+      "headline": "2026 大語言模型 (LLM) 與 AI Agent 開源資源選型指南",
+      "description": "2026 最強大語言模型與 AI Agent 開發指南。彙整 RAG 防幻覺實作、vLLM 推理框架選型、SLM 端側小模型與 LLaMA Factory 零程式碼微調資源。",
+      "image": "https://raw.githubusercontent.com/Deep-Learning-101/TonTon/refs/heads/main/_includes/DL101-Logo.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "TonTon Huang Ph.D.",
+        "url": "https://twman.org/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deep Learning 101, Taiwan",
+        "url": "https://deep-learning-101.github.io/"
+      }
     },
-    "name": "生成式 AI 諮詢 (GenAI Consulting)",
-    "description": "提供關於大語言模型（LLM）的專業諮詢服務，包含模型微調、應用開發、框架選擇與技術導入。"
-  }
+      "datePublished": "2026-03-29",
+      "dateModified": "2026-07-25",
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "地端部署 8B LLM，該如何選擇推論框架以節省 VRAM？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "針對中小型企業併發需求，選用具備 PagedAttention 技術的 vLLM 或 SGLang 推論框架，能將 8B 模型記憶體需求精準控制在單張 24GB 顯卡，大幅降低硬體採購成本。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "企業地端微調 (Fine-tuning) 開源大模型有哪些推薦工具？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "推薦採用 LLaMA Factory 或 Unsloth 等零程式碼/高效能微調工具，結合 LoRA 或 QLoRA 技術，能以極低的算力成本完成特定業務語境的模型對齊。"
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
