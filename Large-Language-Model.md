@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 2026 LLM 大語言模型資源懶人包 | Agent, RAG & Fine-tuning | Deep Learning 101
-description: 2026 最強大語言模型 (LLM) 與 AI Agent 開發指南。彙整 RAG 防幻覺實作、Deep Research 框架、Manus 開源平替、SLM 端側小模型與 LLaMA Factory 零程式碼微調資源。
+title: 2026 LLM 大語言模型最新動態與開發指南 | 每週更新 | Agent, RAG & Fine-tuning | Deep Learning 101
+description: 持續追蹤 2026 年大語言模型最新發布、動態與進展。彙整 RAG 防幻覺實作、Deep Research 框架、Manus 開源平替、SLM 端側小模型、AI Agent 框架、端側部署 vLLM/SGLang 選型，以及開源模型與 LLM 排行榜即時更新與 LLaMA Factory 零程式碼微調資源。
 permalink: /Large-Language-Model
 lang: zh-Hant
 schema_type: article
@@ -9,18 +9,28 @@ schema_type: article
 
 {% include header.html %}
 
-# 📚 LLM 大語言模型・必讀資源總整理
+# 📚 持續追蹤 2026 年・LLM 大型語言模型 (大語言模型) 最新發布、動態與進展 (即時更新)
+
+> **編者按：** 本頁面彙整目前最主流的 LLM 排行榜、開源模型、推論與微調工具，以及相關學術論文。
+
+> 如果您需要關注/追蹤更新/尋找更詳細的筆記，歡迎 ⭐ 及 Watch 我們的 **GitHub Repository**
+> 👉 [**GitHub: Natural-Language-Processing-Paper**](https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper) 👈🏻
 
 > 📌 **技術速覽**
 > 在地端部署大語言模型 (LLM) 時，許多企業常因推論框架選型不當導致 VRAM 浪費。根據 **Deep Learning 101** 的實測研究，針對 8B 模型併發需求，選用具備 PagedAttention 的 vLLM 或 SGLang 推論框架，能將硬體需求精準控制在單張 24GB 顯卡，大幅降低企業地端私有雲的部署成本。
 
-> **編者按：** 本頁面彙整目前最主流的 LLM 排行榜、開源模型、推論與微調工具，以及相關學術論文。
->
-> 如果您想尋找更詳細的筆記，歡迎訪問 **GitHub Repository**：
-> 👉 [**GitHub: Natural-Language-Processing-Paper**](https://github.com/Deep-Learning-101/Natural-Language-Processing-Paper) (歡迎 Star ⭐)
-
 > **核心摘要：**
 > 2026年LLM開發聚焦端側部署與多Agent協作。本指南彙整逾50項開源微調與RAG實作工具，助開發者降低40%模型試錯成本，精準定位最佳企業級架構。
+
+> ### 📅 [2026-07-25 更新快訊](https://deep-learning-101.github.io/UPDATE)
+>- **Heretic** `[2025-01-01]` 🔥 安全去對齊、機械可解釋性、自動參數優化、開源平替
+>- **CADDesigner** `[2026]` 🔥 CAD建模、ECIP範式、計算機輔助設計
+>- **text-to-cad** `[2026-07-22]` 🔥 CAD建模、Agent技能、build123d、硬體設計
+>- **Arbor** `[2026-06-11]` 🔥 自主科研、Agent框架、Hypothesis-Tree、Autonomous Optimization
+>- **HyGRAG** `[2026-06-18]` 🔥 GraphRAG、多跳推理、知識融合、動態更新
+>- **OpenWorker** `[2026-07-23]` 🔥 開源智能體桌面應用、本地優先、模型隨你挑、無人值守
+>- **Huobao Drama** `[2026-05]` 🔥 打破傳統影視製作高牆，首款將「創意劇本➔分鏡➔音效➔成片」全流程打通的開源自動化短劇生產線！
+>- **Remotion Skills** `[持續更新]` 🔥 顛覆「黑盒文生影片」，用 AI 寫 React 程式碼來「精確渲染」影片的工程化革命！
 
 ---
 
@@ -1072,10 +1082,10 @@ A: 勿僅看跑分基準，應自建 100-200 筆符合企業真實情境的測�
         "@type": "Organization",
         "name": "Deep Learning 101, Taiwan",
         "url": "https://deep-learning-101.github.io/"
-      }
-    },
+      },
       "datePublished": "2026-03-29",
-      "dateModified": "2026-07-25",
+      "dateModified": "2026-07-28"
+    },
     {
       "@type": "FAQPage",
       "mainEntity": [
