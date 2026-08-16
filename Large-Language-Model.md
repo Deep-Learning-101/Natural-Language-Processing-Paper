@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 2026 LLM 大語言模型最新動態與開發指南 | 每週更新 | Agent, RAG & Fine-tuning | Deep Learning 101
-description: 持續追蹤 2026 年大語言模型最新發布、動態與進展。彙整 RAG 防幻覺實作、Deep Research 框架、Manus 開源平替、SLM 端側小模型、AI Agent 框架、端側部署 vLLM/SGLang 選型，以及開源模型與 LLM 排行榜即時更新與 LLaMA Factory 零程式碼微調資源。
+title: 2026 LLM 開發完整指南：RAG、Agent 框架與 Fine-tuning 選型攻略
+description: LLM 落地不知從何開始？本指南每週更新，涵蓋 RAG 防幻覺實作、AI Agent 框架比較（LangGraph / AutoGen）、SLM 端側部署與 LoRA 微調入門，一頁掌握 2026大語言模型開發全貌。
 permalink: /Large-Language-Model
 lang: zh-Hant
 schema_type: article
