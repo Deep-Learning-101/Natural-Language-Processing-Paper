@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 2026 LLM 開發完整指南：RAG、Agent 框架與 Fine-tuning 選型攻略
-description: LLM 落地不知從何開始？本指南每週更新，涵蓋 RAG 防幻覺實作、AI Agent 框架比較（LangGraph / AutoGen）、SLM 端側部署與 LoRA 微調入門，一頁掌握 2026大語言模型開發全貌。
+title: 2026 LLM 選型指南：Reasoning 模型 vs MoE，TonTon 評測與企業落地建議
+description: RAG、Agent、Fine-tuning 到底選什麼？本文跳過行銷話術，直接比較 Qwen3、Llama 3.3、Gemini Flash 繁體中文實測，含 SLM 邊緣部署成本估算，以及針對台灣企業的 LLM 選型決策樹。不是資源彙整，是選型判斷。
 permalink: /Large-Language-Model
 lang: zh-Hant
 schema_type: article
@@ -22,7 +22,19 @@ schema_type: article
 > **核心摘要：**
 > 2026年LLM開發聚焦端側部署與多Agent協作。本指南彙整逾50項開源微調與RAG實作工具，助開發者降低40%模型試錯成本，精準定位最佳企業級架構。
 
-> ### 📅 [2026-07-25 更新快訊](https://deep-learning-101.github.io/UPDATE)
+> ### 📅 [2026-08-24 更新快訊](https://deep-learning-101.github.io/UPDATE)
+>- **[DeepTutor](https://github.com/HKUDS/DeepTutor)** `[2026-04]` 🔥 [Agent原生工作區] [終身個性化學習] [三層可審計記憶] [多引擎RAG]
+>- **[DeepCode](https://github.com/HKUDS/DeepCode)** `[2026-08]` 🔥 [Paper2Code] [Agentic Coding] [V2中央廚房] [Text2Web/Text2Backend]
+>- **[deepagents](https://github.com/langchain-ai/deepagents)** `[2026-04]` 🔥 [ClaudeCode開源版] [AgentHarness] [LangGraph上層封裝] [免模型綁定]
+>- **[Scholar Loop](https://github.com/renee-jia/scholar-loop)** `[2026-06-15]` 🔥 [自主科研閉環] [8專職Agent小隊] [防獎勵黑客] [單GPU預算]
+>- **[autoarxiv](https://autoarxiv.org)** `[2026-06]` 🔥 [一鍵論文復現] [autoresearch] [最小化實驗] [環境自動修復]
+>- **[Qwen-Audio-Agent](https://github.com/QwenAudio/qwen-audio-agent)** `[2026-07]` 🔥 [全雙工語音Harness] [非阻塞多任務] [ACP協議生態] [擇時結果回流]
+>- **[jina-reranker-v3.5](https://huggingface.co/collections/jinaai/jina-reranker-v3.5)** `[2026-07]` 🔥 [0.6B極致輕量] [3L2G混合注意力] [結構化數據理解] [長列表顯存優化]
+>- **[Unsloth Desktop](https://unsloth.ai/docs/desktop)** `[2026-08-11]` 🔥 [全端本地AI工作站] [自愈式工具調用] [DeepResearch本地化] [零代碼訓練]
+>- **[Resource2Skill](https://github.com/microsoft/Resource2Skill)** `[2026-06]` 🔥 [Skill工廠] [多模態經驗蒸餾] [分層Skill-Wiki] [微軟開源]
+>- **[AirLLM](https://github.com/lyogavin/airllm)** `[2023]` 🔥 [分層推理Layer-wise] [4GB顯存跑70B] [零精度損失] [mmap按需載入]
+
+> ### 📅 2026-07-25 更新快訊
 >- **Heretic** `[2025-01-01]` 🔥 安全去對齊、機械可解釋性、自動參數優化、開源平替
 >- **CADDesigner** `[2026]` 🔥 CAD建模、ECIP範式、計算機輔助設計
 >- **text-to-cad** `[2026-07-22]` 🔥 CAD建模、Agent技能、build123d、硬體設計
@@ -176,6 +188,11 @@ Nemotron 提供專為企業客製化的極致推理效能。 透過 TensorRT-LLM
 ### 4. 必備微調與蒸餾開源框架 (Frameworks)
 依據您的算力資源與技術背景，挑選最適合的訓練武器：
 
+* **[Unsloth Desktop](https://unsloth.ai/docs/desktop)** `[2026-08-11]` 🔥 `[全端本地AI工作站]` `[自愈式工具調用]` `[DeepResearch本地化]` `[零代碼訓練]` `[Dynamic2.0量化]`
+  * **核心優勢**：**打破工程師命令列門檻，Unsloth 首發僅 40MB 的跨平台原生開源桌面 App，將「本地跑模型、訓模型、Agent 工具鏈」無縫縫合！** 基於 Tauri 打造，支援文字 LLM、擴散影音（FLUX/Wan）、MLX 與語音全模態。首創自愈式工具調用（Self-Healing Tool Calls）將 tool call 準確率提升 50%（XML 洩漏歸零、單輪調用提升至 25 次以上），並配備真沙盒代碼執行環境。內建 Deep Research 研究模式（DuckDuckGo 私有檢索、抓取正文並在產出報告前自動查證矛盾與標註可驗證推斷）。命令列透過 `unsloth start claude --as-subagent` 可一鍵將本地 Dynamic 2.0 GGUF 模型掛為 Claude Code、Codex 的 Subagent 處理批量讀檔與整理日誌；訓練端更支援 500+ 模型 2 倍速、省 70% 顯存的零代碼微調，直接拖入 PDF/CSV 即可透過 Data Recipes 自動生成訓練對，並透過 `--secure` 開啟 Cloudflare 隧道進行安全遠程監控。
+  * **解決痛點 / 推薦場景**：**完美解決了開發者在本地運行 4B~9B 小模型時「Tool Call 格式吐錯導致 Agent 鏈當場中斷」、以及「微調大模型必須寫繁瑣 Python 腳本、手動清洗非結構化資料」的致命痛點。** 解決了商業 API 昂貴 Token 消耗問題（將繁重髒活交由本地模型，主力模型留給核心任務）。極度適合**Windows/Mac/Linux 上不想碰命令列但需本地微調與推論的個人用戶**、**想在 Claude Code/Codex 中節省 Token 成本的開發者**，以及**需將企業內部 PDF 非結構化文檔快速轉化為有出處 QA 訓練對的演算法團隊**。
+  * **資源**：[🌐 官方下載頁](https://unsloth.ai/docs/desktop) | [🐙 GitHub 官方倉庫](https://github.com/unslothai/unsloth) | [📝 中文技術文檔](https://unsloth.ai/docs/zh/desktop) | [📄 Dynamic 2.0 GGUFs 技術報告](https://unsloth.ai/blog/dynamic-v2)
+
 * **[LLaMA Factory (地表最強零代碼微調)](https://github.com/hiyouga/LLaMA-Factory)**
   * **適用場景**：企業快速導入、無深度 AI 背景的開發者。
   * **特色亮點**：提供直覺的 WebUI 介面，支援海量開源模型與多卡平行運算，輕鬆完成 LoRA、SFT 與 RLHF 微調。[👉 中文文檔](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md) | [👉 單卡訓練 Agent 實戰](https://zhuanlan.zhihu.com/p/678989191)
@@ -262,6 +279,17 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 在 Agentic AI 時代，選擇正確的框架能讓開發事半功倍。以下依據「應用場景」精選目前 GitHub 上最活躍、最具生產力的 AI Agent 開源專案：
 
 #### 1. 個人全自動化助理與通用 Agent (Personal & General Assistants)
+
+* **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** `[2026-08-13]` 🔥 `[Agent作業系統]` `[一切皆插件]` `[Cordis內核]` `[受控執行流水線]` `[多提供方接入]`
+  * **核心優勢**：**打破 Agent 應用產品思維，DeepSeek 釋出首個以「一切皆插件 (Everything is a Plugin)」為核心哲學的開源 Agent 基礎設施底座！** 其設計思想源自論文《A Programming Paradigm for Spatiotemporal Composability》，底層依托 Cordis 共享上下文，將模型適配器、工具註冊表、會話日誌、Agent 循環、檔案系統、沙箱、審批策略與 Web UI 全部插件化解耦。系統提供 `web` 與 `headless` 兩種 Profile，僅需 78 行配置即可定義完整運行時；前端憑證採只寫與脫敏引用架構（支援 DeepSeek、Anthropic、OpenAI 及自建 Gateway 多提供方接入），工具呼叫皆經過權限與審批流水線，並支援五級目錄掃描的任務專用指令（Skill）按需動態載入。
+  * **解決痛點 / 推薦場景**：完美解決了傳統成品 Agent 工具「與特定模型/用戶端深度綁定、內部黑盒無法更換底層檔案系統與沙箱，以及全量載入提示詞導致 Token 冗餘浪費」的架構性痛點。 透過將模型視為可替換能力，賦予開發者自由替換模型、檔案系統與沙箱的極致可定製性。極度適合**自建企業內部私有化 Agent 基礎設施與作業系統級工作區**、**需跨模型（DeepSeek/Claude/GPT）無縫切換的進階開發者**，以及**打造受嚴格安全策略與權限審批控制的自動化任務工作流**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/deepseek-ai/deepseek-harness) | [📖 官方文件站](https://deepseek-harness.github.io/deepseek-harness/) | [📦 npm 套件 (@deepseek-ai/dsh)](https://www.npmjs.com/package/@deepseek-ai/dsh) | [🌐 官方產品頁](https://www.deepseek.com/harness/)
+
+* **[Resource2Skill](https://github.com/microsoft/Resource2Skill)** `[2026-06]` 🔥 `[Skill工廠]` `[多模態經驗蒸餾]` `[分層Skill-Wiki]` `[動態缺口補全]` `[微軟開源]`
+  * **核心優勢**：**打破 Agent 技能（Skill）依賴人工手寫的產能瓶頸，微軟聯手 UCSC 與上交大開源首個將多模態人類資源「煉」成可執行技能的自動化工廠！** 論文（arXiv:2606.29538）建立「發現資源 ➔ 經驗蒸餾 ➔ 組織成 Wiki ➔ 選擇組合 ➔ 執行補缺」五步標準流水線；透過 `yt-dlp`、`ffmpeg` 結合 Gemini 提取教學影片的時間序列操作、代碼模式與視覺關鍵幀，組織成結合結構化文字、代碼、視覺範例與來源追溯的分層多模態 Skill Wiki（Hierarchical Multimodal Skill Wiki）。主實驗橫跨 Web、Excel、PPT、Blender、CAD、UE5 與 Reaper 七大領域 28 個比較單元，平均任務成功率從 45.0% 提升至 56.8%（GPT-5.4 於 UE5 任務暴漲 38.2 個百分點，人類盲測偏好率達 85.5%）；更具備在線能力缺口自適應獲取機制，在新能力任務上帶來 21.6 個百分點的增益。
+  * **解決痛點 / 推薦場景**：完美解決了企業與團隊在構建 Agent 時「人工編寫與維護 SKILL.md 成本高昂、散落在教學影片與代碼庫的隱性經驗無法直接復用」，以及「全量注入知識導致上下文爆炸與檢索噪聲干擾」的致命痛點。 實現將成熟操作經驗轉化為可檢索、組合與評測的可執行資產，並在執行時透過層級瀏覽縮小範圍以極致壓縮上下文。極度適合**需持續生產與維運多 Agent 技能庫的平台團隊**、**沉澱海量歷史教學影片與專案資產的企業組織**，以及**高度依賴複雜 GUI/工具鏈與程序性步驟的軟體工程團隊**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/microsoft/Resource2Skill) | [📄 arXiv 論文 (2606.29538)](https://arxiv.org/abs/2606.29538) | [🌐 官方專案頁](https://microsoft.github.io/Resource2Skill/) | [🤗 Hugging Face 資料集](https://huggingface.co/datasets/microsoft/RESOURCE2SKILL) | [🎬 官方專案影片](https://www.youtube.com/watch?v=03gtIwEZX7s)
+
 * **[OpenClaw (原 Moltbot/Clawdbot)](https://openclaw.ai/)** `[2026-01-20]` 🔥 *(2026現象級專案)*
   * **特色**：你電腦上的全天候數位管家。可直接串接 Line、Telegram、WhatsApp 等通訊軟體，接收指令並**實際操作你的電腦**（如整理信箱、操作網頁）。
   * **必讀資源**：
@@ -275,12 +303,16 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
     * [公眾號解讀 2](https://mp.weixin.qq.com/s/1ikfiU_eGnL5FRaPRddA2Q)
     * [知乎解讀](https://zhuanlan.zhihu.com/p/1999109634909303005)
     * [2026年OpenClaw Skills排行榜：Top 20必裝清單](https://mp.weixin.qq.com/s/wCoo-h4dEkxLjZo-lOsVmQ)
+
 * **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** `[2025-06-25]`：將 Google Gemini 轉化為終端機 (Terminal) 開源代理，開發者日常指令輔助利器。
+
 * **[Agent Zero](https://github.com/frdel/agent-zero)** `[2025-06-01]`：主打全能 AI 代理，涵蓋 APP 生成、程式碼編寫與 RAG 應用。
+
 * **[Lemon AI](https://github.com/hexdocom/lemonai)** `[2025-05-28]`：全球首款全端開源通用 AI Agent 框架。
+
 * **[smolagents (Hugging Face 出品)](https://github.com/huggingface/smolagents)** `[2025-01-03]`：主打「程式碼即工具」，只需極少 Python 程式碼就能將任何開源 LLM 轉化為智能體。
 
-  ---
+---
 
 #### 2. 複雜工作流與多智能體編排 (Workflow & Multi-Agent)
 * **[DeerFlow 2.0 (字節跳動)](https://github.com/bytedance/deer-flow/blob/main/README_zh.md)** `[2026-03-26]`：從 Deep Research 升級的 Super Agent Harness，將 sub-agents、memory 和 sandbox 有機組織，能處理極度複雜任務。
@@ -293,6 +325,26 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 ---
 
 #### 3. 深度研究與開源知識庫 (Deep Research & RAG)
+
+* **[DeepTutor](https://github.com/HKUDS/DeepTutor)** `[2026-04]` 🔥 `[Agent原生工作區]` `[終身個性化學習]` `[三層可審計記憶]` `[多引擎RAG]`
+  * **核心優勢**：**打破多工具切換的學習孤島，港大 HKUDS 團隊開源首個將 Chat、Quiz、Research 等六大模式裝進單一運行的 Agent 原生終身學習工作區！** 論文（arXiv:2604.26962）提出結合引用基礎問題輔導與難度校準問題生成的統一框架，並建立 TutorBench 基準。在混合個性化引擎驅動下，平均提升個性化指標 10.8%，加強基礎模型代理推理能力 29.4%。系統搭載可審計的三層記憶架構（L1 Trace / L2 Surface Summary / L3 Synthesis 及 Memory Graph 證據溯源），同時整合 LlamaIndex、PageIndex、GraphRAG 與 LightRAG 等多檢索引擎，支援隨時召喚 CLI 子 Agent（Claude Code/Gemini/Codex 等）與 EduHub 技能擴展。
+  * **解決痛點 / 推薦場景**：**完美解決了自學者與研究人員在 ChatGPT、Notion、刷題 App 與學術搜尋間來回切換導致「學習進度碎片化、上下文斷裂且工具缺乏長期記憶」的致命痛點。** 讓學習從「切換工具」升級為「同一個 AI 內切換模式（Chat / Quiz / Research / Visualize / Solve / Mastery Path）」，並支援直連 Obsidian Vault。極度適合**系統化學習新領域的自學者**、**需自動化文獻調研與論文協作 (Co-Writer) 的研究生/學者**，以及**打造自適應學習路徑的教育者與開發者**。
+  * **資源**：[🐙 GitHub 官方開源](https://github.com/HKUDS/DeepTutor) | [📄 arXiv 論文 (2604.26962)](https://arxiv.org/abs/2604.26962) | [🌐 官方網站](https://deeptutor.info) | [📖 官方文檔](https://docs.deeptutor.info)
+
+* **[Scholar Loop](https://github.com/renee-jia/scholar-loop)** `[2026-06-15]` 🔥 `[自主科研閉環]` `[8專職Agent小隊]` `[防獎勵黑客]` `[單GPU預算]` `[隨時間衰減技能庫]`
+  * **核心優勢**：**打破傳統 AI 只會「讀論文復讀」的局限，首創將博士研究員「讀文獻➔提假設➔跑實驗➔反思➔寫論文」完整循環工程化的自主科研架構！** 系統將科研流程拆解為 Director、Lit Scout、Reasoner、Debate Panel、Funnel、Runner、Reflector、Advisor 及 Writer+Reviewer 等 8 個專職智能體，透過 typed JSON-schema 與共享稽核軌跡（audit trace）協作。底層由平行人口漏斗（Parallel Population Funnel）、自動停止治理器（Self-stopping Governor）、預測-驗證校準（CalibrationLog）與相關性排序情境注入（SkillLibrary）四大確定性支柱支撐。更首創兩階段凍結評分、編輯允許列表、VerifiedRegistry 數字可溯源機制及對抗性作弊引擎（Cheater Engine），在代碼層面徹底杜絕 AI 相互打勾與獎勵黑客（Reward Hacking）作弊問題。
+  * **解決痛點 / 推薦場景**：完美解決了現有 AI 科研助手「僅能單次摘要、缺乏假設驗證與反思閉環」、以及讓 AI 評判 AI 導致「幻覺數據與指標作弊層出不窮」的致命痛點。 內建預算感知的「三層篩選漏斗（Smoke ➔ Verify ➔ Full Run）」讓壞想法在低成本推理階段即被淘汰，並搭配隨時間衰減的技能庫避免過度固守歷史偏見。原生支援真實 PyTorch 運行、提供 108 個單元測試與免 GPU/API Key 的 MockLLM 快速驗證環境。極度適合**算力預算受限但需持續探索新假設的科研團隊與實驗室**、**演算法工程師進行自動化 Baseline 驗證與消融實驗**，以及**打造具備嚴格確定性紀律的次世代 AI 科研 Agent 管線**。
+  * **資源**：[🐙 GitHub 官方開源](https://github.com/renee-jia/scholar-loop)
+
+* **[autoarxiv](https://autoarxiv.org)** `[2026-06]` 🔥 `[一鍵論文復現]` `[autoresearch]` `[最小化實驗]` `[環境自動修復]` `[算力成本預估]`
+  * **核心優勢**：**打破「讀論文容易、跑論文崩潰」的落地高牆，alphaXiv 首創「改一個 URL」即可全自動修復環境並完成單卡最小化復現的 Agent 服務！** 奠基於 Paper2Agent 框架（arXiv:2509.06917），只需將 arXiv 網址中的 `arxiv` 替換為 `autoarxiv`，系統即可自動定位 GitHub 開源代碼庫。AI 智能體能自主閱讀 `README.md` 並分析實驗依賴，將原本需 4 張 H100 等龐大硬體條件自主壓縮為單卡可執行的「最小化復現」方案（包含模型降級、限制訓練步數為 40 步、開啟 LoRA、自動編寫啟動腳本 `run.sh` 與評估摘要 `summarize_eval.py`）。系統即時同步損失曲線與指標面板，驗證初始 Claim 並精準估算完整復現所需的算力與時間成本，更支援用戶接入自有算力基礎設施與自定義 Agent。
+  * **解決痛點 / 推薦場景**：完美解決了機器學習領域中「依賴版本漂移、路徑硬編碼、多卡硬體假設與隱性預處理，導致大量研究代碼在 Setup 階段即報錯死亡、無人能驗證數值」的骨灰級痛點。 實測可將手動排查環境與復現實驗的數小時工作量壓縮至十餘分鐘。極度適合**需快速評估論文代碼真實可用性的科研人員與演算法工程師**、**進行 Baseline 快速初篩與復核的學術團隊**，以及**預先進行 GPU 算力預算評估的企業研發實驗室**。
+  * **資源**：[🌐 autoarxiv 服務入口](https://autoarxiv.org) | [🤖 alphaXiv 官方助手](https://www.alphaxiv.org/assistant) | [📄 Paper2Agent 論文 (arXiv:2509.06917)](https://arxiv.org/abs/2509.06917) | [📝 官方發布公告](https://x.com/askalphaxiv/status/2067593673072877833)
+
+* **[Polaris](https://github.com/ZJU-REAL/Polaris)** `[2026-06]` 🔥 `[全流水線AI科研]` `[Voyage可恢復架構]` `[Human-Gated]` `[ResearchWiki]` `[Elo辯論評審]`
+  * **核心優勢**：**打破問答工具的零碎輔助，浙江大學 ZJU-REAL Lab 開源首個將「文獻調研➔想法生成➔想法評審➔實驗執行➔論文寫作➔論文評審」六階段串聯的端到端科研流水線！** 架構將重活交由確定性代碼（PyMuPDF/pgvector），LLM 僅負責判斷與評審；首創 **Voyage（航程）** 長任務機制，由 Navigator 規劃、Helm 執行與 Sextant 自驗證三循環驅動，支援 Worker 崩潰斷點續傳與預算熔斷。系統整合四大核心模組：**Research Wiki**（每日增量讀取 arXiv、概念網狀鏈接並支援一鍵導出 Obsidian）、**Idea Forge**（多信號差距分析與四維評分）、**Elo Debate**（多 AI 評審員正反辯論錦標賽排序）與 **Experiment Lab**（Fernet 加密 SSH 連接遠端 GPU 自動規劃除錯，GSM8K 實測節省約 68% 上下文 Token）。後端寫作強制對賬真實實驗指標，並在評審端逐條校驗引文存在性，偽造引用直接打回。
+  * **解決痛點 / 推薦場景**：**完美解決了科研人員在「文獻讀不完、實驗調參反覆、論文修改繁瑣」且現有 AI 科研助手「缺乏長流程推進能力、互相打勾造假、崩潰無法恢復」的致命痛點。** 嚴格遵循「流程交接處設置 Human-Gated 人閘」機制，從想法晉級、動用 GPU 預算到確認投稿，關鍵決定權始終留在研究者手中。支援團隊多租戶文獻共享與用量透明管控，並透過 MCP 協議對外暴露文獻與實驗資產。極度適合**高校與科研機構課題組打造可審計、自動化的 AI-for-Science 科研實驗室**、**演算法工程師進行自動化 Baseline 復現與消融實驗**，以及**需高可靠文獻追蹤與論文寫作審核的科研團隊**。
+  * **資源**：[🐙 GitHub 官方開源](https://github.com/ZJU-REAL/Polaris) | [📖 產品與文檔站](https://zju-real.github.io/Polaris/) | [🌐 在線體驗 (訪客模式)](http://101.37.174.109:8080)
 
 * [Arbor](https://ruc-nlpir.github.io/Arbor/)] [2026-06-11] 🔥 [自主科研] [Agent框架] [Hypothesis-Tree] [Autonomous Optimization]
   * **核心優勢**：**首創基於假設樹精煉 (HTR) 與洞察回傳的自主科研架構，在六個真實自主優化 (AO) 任務上取得超過基線 2.5 倍的相對增益，並在 MLE-Bench Lite 上以 GPT-5.5 創下 86.36% Any Medal 的 SOTA 成績。**
@@ -346,6 +398,21 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 ---
 
 #### 4. 電腦操作與軟體工程師 (Computer Use & Coding)
+
+* **[DeepCode](https://github.com/HKUDS/DeepCode)** `[2026-08]` 🔥 `[Paper2Code]` `[Agentic Coding]` `[V2中央廚房]` `[Text2Web/Text2Backend]`
+  * **核心優勢**：**打破「任務流水線」壁壘，港大 HKUDS 團隊升級開源首個打通「論文到生產」的 Agentic Coding 中央廚房！** 專注於結構化文檔適配與「資訊過載 vs. 上下文瓶頸」的信道優化問題，提出 Blueprint 藍圖蒸餾、CodeMem 狀態化代碼記憶、CodeRAG 與 Verification 閉環糾錯四維架構。在 PaperBench 評測上，科研編碼（73.5%）超越 PaperCoder（51.1%），商用 Agent 子集達 84.8%（超越同底座 Cursor/Claude Code 58.7%）。v1.3.0 V2 架構全面統一 Agent 內核與事件協議，支援 CLI/Web/Headless 模式、企業級權限沙箱、專案記憶及多代理並行協作。
+  * **解決痛點 / 推薦場景**：完美解決了開發者在「閱讀複雜論文、寫網頁前端、寫後端服務」時，因各工具管線獨立導致上下文斷裂、以及論文動輒幾十頁造成 LLM 信道飽和「細節錯、接口斷、跑不通」的致命痛點。 實測僅需 15 分鐘即可將 arXiv 論文演算法還原為含測試的可執行 Python 套件，5 分鐘生成能跑的 React + Tailwind 前端後台。極度適合**需將學術論文快速轉化為生產級代碼的研究人員與演算法工程師**、**全端自動化開發團隊**，以及**打造全場景 AI 編程環境的開發者**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/HKUDS/DeepCode) | [📄 arXiv 論文 (2512.07921)](https://arxiv.org/abs/2512.07921) | [📦 v1.3.0 Release Notes](https://community.qtorque.io/HKUDS/DeepCode/releases)
+
+* **[deepagents](https://github.com/langchain-ai/deepagents)** `[2026-04]` 🔥 `[ClaudeCode開源版]` `[AgentHarness]` `[LangGraph上層封裝]` `[免模型綁定]`
+  * **核心優勢**：**打破 Claude Code 封閉綁定與模型鎖定，LangChain 團隊打造首個開箱即用的「Batteries-included Agent Harness」開放框架！** 建立於 LangGraph 之上，將規劃（Planning/`write_todos`）、子代理隔離（Sub-agents/`task`）、檔案系統抽象（Filesystem）、上下文管理、持久化記憶、MCP 接入、人機協作（HITL）、Shell 與技能載入（Skills）等九大能力完全封裝進單一 `create_deep_agent()` 函式中。官方實證僅透過系統提示、工具與 middleware 調優的 Harness 工程（固定 `gpt-5.2-codex` 模型），便讓 CLI 在 Terminal Bench 2.0 基準從 52.8% 提升至 66.5%（排名衝入 Top 5）。支援 Python 與 JS/TS 雙端，並自帶終端程式設計子專案 `dcode`，可無縫介接 GPT-5.5、Claude Sonnet 4.5、Qwen3-Coder 或本地 Ollama。
+  * **解決痛點 / 推薦場景**：**完美解決了開發者想使用類似 Claude Code/Cursor 的全自動終端編程與多代理協作體驗，卻受限於閉源 SaaS 綁定 Claude 模型、無法自訂 Middleware/日誌/沙箱、以及從頭手寫 LangGraph 複雜狀態機耗時費力的致命痛點。** 實測僅需 5 行代碼即可啟動自主規劃、調工具、讀寫檔案與摘要反饋的閉環 Agent，比從頭搭建節省 80% 工作量。極度適合**已在使用 LangGraph 的團隊進行零成本升級**、**自研企業內部私有化 Coding Agent 的工程師**，以及**評估開源替代方案以符合資安合規的技術決策者**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/langchain-ai/deepagents) | [📦 Python 官方文檔](https://docs.langchain.com/oss/python/deepagents/overview) | [💻 Deep Agents Code 文檔](https://docs.langchain.com/oss/javascript/deepagents/code/overview) | [📝 Harness 工程方法論](https://langchain.com/blog/improving-deep-agents-with-harness-engineering)
+
+* **[NVIDIA NeMo Switchyard](https://github.com/NVIDIA-NeMo/Switchyard)** `[2026-03]` 🔥 `[LLM智慧路由層]` `[Rust高效代理]` `[多協議翻譯]` `[CodingAgent解耦]` `[成本驟降74%]`
+  * **核心優勢**：**打破編碼代理對單一閉源模型的深度綁定，NVIDIA NeMo 團隊開源首個 Rust 打造的「鐵路編組站」式 LLM 智慧路由調度層！** 論文（arXiv:2603.20895）提出學習式 Prefill 路由器（Learned Prefill Router），結合 Provider 無關的中性類型與三層抽象（LLM Client / Target / Route），實現 OpenAI Chat、Anthropic Messages 與 OpenAI Responses 三大協議雙向互轉。內建 Random、LLM Classifier、Stage Router（階段路由，依工具 activity 判斷能力級別）與 Escalation Router 四種路由演算法，提供獨立 HTTP 代理（`switchyard-server`）與嵌入式庫（`switchyard-libsy`）雙形態。實測在 LangChain 145 個多輪 Agent 任務中，於 Nemotron 3.5 Lightning 與 Claude Opus 間動態升級，**成本暴力降低 74%**（僅 7% 呼叫打到旗艦模型）；在 Cognition Devin 基準測試中，於 Opus 與 Kimi 間動態分流，準確率維持 2.8% 誤差內且**成本降低 28%**。
+  * **解決痛點 / 推薦場景**：完美解決了 Claude Code、Codex、OpenClaw 等編碼代理「因 API 方言不通被迫綁定閉源高價模型」、「每一步工具呼叫/探索都打到旗艦模型導致速度慢且 Token 成本爆炸」，以及「企業敏感程式碼/IP/主機名容易洩漏出境」的三大落地痛點。 讓 Agent 在本地「說母語 API」，底層卻能無縫將流量路由至本地 vLLM、NVIDIA NIM 或 Ollama。極度適合**自建企業內部私有化 Coding Agent 的基礎設施工程師**、**需大幅壓低多步驟 Agent 工作流 Token 成本的技術團隊**，以及**進行多模型 A/B 測試與效能成本權衡的 AI 系統架構師**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/NVIDIA-NeMo/Switchyard) | [📄 arXiv 論文 (2603.20895)](https://arxiv.org/abs/2603.20895) | [📝 NVIDIA 官方技術部落格](https://developer.nvidia.com/blog/route-ai-agent-workloads-across-models-with-nvidia-nemo-switchyard) | [📖 NeMo Relay 整合文檔](https://docs.nvidia.com/nemo/relay/dev/configure-plugins/switchyard/about)
 
 * **[[google-colab-cli]](https://github.com/googlecolab/google-colab-cli)** `[2026-06-05]` 🔥
   * **核心優勢**：**Google 官方重磅發布！將 Colab 雲端算力原生注入本地終端機與 AI Agent 核心工作流的破局神作！** 徹底擺脫瀏覽器 GUI 的笨重束縛，透過極簡的 CLI 命令，即可直接調度遠端 T4/L4/H100 GPU 與新一代 TPU 算力資源。其最驚豔的 **Shebang 魔法寫法 (`#!/usr/bin/env -S colab run --gpu L4`)**，能讓任何普通的本地 Python 腳本瞬間退化為「自帶 L4 GPU 的可執行檔」，實現本地撰寫、遠端核心（Kernel）狀態持久化執行的絲滑體驗。
@@ -900,7 +967,7 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 ### 1. 網頁級巨量檢索與搜尋引擎架構 (Web-Scale Retrieval)
 想要打造媲美 AI 搜尋引擎的檢索準確度？直接使用目前地表最強搜尋引擎團隊的底層技術。
 
-* **[[Jina Embeddings V5 Omni]](https://huggingface.co/jinaai/jina-embeddings-v5-omni-small)** `[2026-05]` 🔥
+* **[Jina Embeddings V5 Omni](https://huggingface.co/jinaai/jina-embeddings-v5-omni-small)** `[2026-05]` 🔥
   * **核心優勢**：**打破模態孤島的全模態向量化霸主，真正實現圖、文、音、影「大一統」且完全相容舊有文字索引！** 創新採用凍結文字主幹、僅訓練 0.35% 輕量跨模態投影層的黑科技。它不僅單一模型就能原生支援四種模態的混合編碼（如：一句話+一張圖生成單一向量），更做到與前代 `v5-text` 逐位一致 (bit-identical)，讓老用戶升級時**完全免重建龐大的向量資料庫**。
   * **解決痛點 / 推薦場景**：**完美解決傳統多模態 RAG 系統必須同時維護 CLIP (處理圖片) 與 Text Embedding 兩套獨立編碼器及向量空間的致命痛點，大幅降低硬體與維運成本。** 內建 4 種任務 LoRA 適配器（檢索、分類、聚類、匹配），並支援 MRL (Matryoshka) 動態降維技術，允許開發者實作「低維粗篩 → 高維精排」的極致省流管線。是打造**企業級全模態 RAG 知識庫**、**電商跨模態搜圖/搜片系統**，以及支援高併發 **vLLM 部署**的工業級大腦。
   * **資源**：[🐙 HuggingFace 模型權重](https://huggingface.co/jinaai/jina-embeddings-v5-omni-small) | [📄 arXiv 官方論文]()
@@ -912,6 +979,11 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 
 ### 2. 中文生態系與私有化開源首選 (Chinese & Open Source)
 針對繁簡中文語意理解優化，適合需要將資料留在本地端（Data Privacy）的企業內部知識庫。
+
+* **[jina-reranker-v3.5](https://huggingface.co/collections/jinaai/jina-reranker-v3.5)** `[2026-07]` 🔥 `[0.6B極致輕量]` `[3L2G混合注意力]` `[結構化數據理解]` `[長列表顯存優化]` `[垂直領域增強]`
+  * **核心優勢**：**打破 0.6B 小模型性能天花板，Jina AI 推出以「3L2G 混合注意力架構」與三階段自蒸餾徹底重構的列表式（Listwise）重排序神作！** 論文（arXiv:2607.18152）指出其延續 LBNL 一次前向傳播整批文件的特性，將局部滑動窗口（w=1024）與週期性全局注意力結合，使長列表計算複雜度降至線性級 $O(L \cdot w)$，支援 131K 超長上下文，在長文本場景推理速度狂飆 56%。搭配 Struct-IR 數據擾動與 EUR-Lex/AILA 等權威庫補強，在 BEIR 基準拿下 63.20 (nDCG@10) 越級擊敗 7 倍參數量的 Qwen3-Reranker-4B（62.28）；結構化數據理解（Struct-IR）暴漲 24.8%，法律檢索（AILA）指標大幅飆升 11–14 個點。
+  * **解決痛點 / 推薦場景**：**完美解決了傳統 Reranker 面對「長列表全注意力導致顯存爆炸與延遲失控」、「垂直領域（法律/金融/醫療）語言模式特殊導致排序失效」，以及「不懂 JSON 與表格中價格/規格等數值邏輯約束」的三大工業落地致命痛點。** 原生支援 Jina API、Elasticsearch EIS 託管調用，並提供 Docker 一鍵私有化部署與 CC BY-NC 4.0 開源權重。極度適合**企業級 RAG 知識庫長列表精準二階段重排**、**電商/履歷等帶有強數值約束的結構化多條件搜尋**，以及**法律合規與金融醫療垂直檢索管線**。
+  * **資源**：[🤗 Hugging Face 模型合集](https://huggingface.co/collections/jinaai/jina-reranker-v3.5) | [📄 技術報告 (arXiv:2607.18152)](https://arxiv.org/abs/2607.18152) | [💻 Jina AI API](https://jina.ai/reranker/) | [📦 私有化部署 GitHub](https://github.com/jina-ai/jina-on-prem) | [🧙 魔搭 ModelScope](https://modelscope.cn/models/jinaai/jina-reranker-v3.5)
 
 * **[Qwen3 Embedding & Reranker (阿里通義)](https://qwenlm.github.io/zh/blog/qwen3-embedding/)** `[2025-06-05]`
   * **核心優勢**：阿里雲開源的新一代文本表徵與排序模型「黃金組合」。
@@ -1002,12 +1074,22 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 ### 2. 輕量化巨獸與端側部署 (SLM & Edge-side LLM)
 記憶體有限，但又需要強大效能？這些模型能在消費級顯卡、甚至手機上流暢運行。
 
+* **[LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM)** `[2026-04]` 🔥 `[Google端側編排層]` `[跨平台LLM Runtime]` `[MTP解碼加速]` `[WebGPU/NPU支援]` `[多模態輸入]`
+  * **核心優勢**：**打破單機極限與平台碎片化，Google 正式開源經 Chrome 與 Pixel 產品線規模化驗證的端側 LLM 生產級編排層！** 基於 LiteRT（前身 TensorFlow Lite）深度打造，作為統一調度 CPU / GPU / NPU 的 Runtime Orchestrator。系統採用專用 `.litertlm` 格式，結合 XNNPACK、MLDrift kernel 與先進量化（Gemma 4 E2B 靠權重快取在 Apple CPU 上實體記憶體佔用僅 607MB）；更透過 MTP drafter 與主模型共享硬體 IP 執行推測解碼，在 S26 Ultra 上解碼速度達 52 tok/s（加速最高 2.2 倍），WebGPU（M4 Max）達 76 tok/s。原生支援視覺與音訊多模態、OpenAI 風格的 Function Calling 與約束解碼（Constrained Decoding）防止 JSON 解析崩潰，並提供 Python、Kotlin、C++、Swift 及 Web JS 全平台語言綁定。
+  * **解決痛點 / 推薦場景**：完美解決了企業在開發端側 AI 時「同一個模型需為 Android、iOS、瀏覽器 Web 與物聯網樹莓派各自養一支推理工程隊伍維護」、以及「端側小模型多模態與工具調用生態零散」的架構痛點。 克服了以往純推理引擎缺乏生產級編排與約束解碼的限制。極度適合**需將單一模型一次部署至手機 (Android/iOS)、瀏覽器 (WebGPU)、桌面及嵌入式 IoT (如 Raspberry Pi 5) 的跨平台邊緣 AI 應用**、**對資料隱私有嚴格要求的端側多模態離線推論**，以及**打造低延遲端側 Agent 工具調用與結構化輸出管線**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/google-ai-edge/LiteRT-LM) | [🌐 產品官方首頁](https://ai.google.dev/edge/litert-lm) | [🤗 HuggingFace 社群預轉模型庫](https://huggingface.co/litert-community) | [📝 MTP 與跨平台技術部落格](https://ai.google.dev/edge/litert-lm/blog/blazing-fast)
+
 * **[Mistral Small 3.1](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503)** `[2025-03-18]`
   * **核心優勢**：歐洲 AI 巨頭的逆襲！具備 128K 超長上下文，在 24B 的輕量級體積下，各項基準測試效能直接碾壓 GPT-4o Mini，是性價比極高的商用 API 替代品。
 * **[Phi-4 Family (Microsoft)](https://huggingface.co/collections/microsoft/phi-4-677e9380e514feb5577a40e4)** `[2025-02-27 更新]`
   * **核心優勢**：「小身材大智慧」的代名詞。最新的 Phi-4 Multimodal 版本以僅 56 億的參數規模，在多項任務中展現越級打怪的實力，是微軟在端側 AI 佈局的核心武器。[📝 效能評測](https://zhuanlan.zhihu.com/p/26984226500)
 * **[MiniCPM 家族 (面壁智能)](https://github.com/OpenBMB)** `[2025-01-16 更新]`
   * **核心優勢**：端側開源模型的驕傲！最新發布的 MiniCPM-o 2.6 與 3.0 版本，不僅支援 Ollama 一鍵部署，更是少數能真正在手機端流暢運行並具備優秀視覺能力 (MiniCPM-V) 的模型。[📝 魔改教學](https://mp.weixin.qq.com/s/DjDznmtKZoJNKXYz0X4zog)
+
+* **[AirLLM](https://github.com/lyogavin/airllm)** `[2023]` 🔥 `[分層推理Layer-wise]` `[4GB顯存跑70B]` `[零精度損失]` `[端側大模型推理]` `[mmap按需載入]`
+  * **核心優勢**：**打破大模型顯存硬體高牆，首創「分層推理（Layer-wise Inference）」讓 4GB 消費級顯卡即可運行 70B 全精度大模型！** 在不做量化、蒸餾或剪枝的前提下聲稱模型效能零損失，將多層 Transformer 切分為磁碟分片（Layer Shards），推論時依序「載入第 1 層 ➔ 計算 ➔ 從顯存釋放」。70B 模型單層參數約 1.6GB 加上約 30MB KV 快取，全程顯存佔用控制在 4GB 以內；結合 Flash Attention 與記憶體映射檔案（mmap）優化 I/O 與 CUDA 記憶體存取，最高支援在 8GB 顯存跑 405B Llama 3.1、12GB 顯存跑 671B DeepSeek-V3。提供與 Hugging Face Transformers 一致的簡潔呼叫介面。
+  * **解決痛點 / 推薦場景**：完美解決了個人開發者與小團隊「沒有雙 A100 GPU 叢集，完全無法在本地端運行 70B 乃至 671B 旗艦大模型」以及「依賴雲端 API 造成機密資料外流」的致命痛點。 本質上以時間換取空間（NVMe SSD 上推理速度約 1–3 tokens/sec），大幅降低 70B 級別模型的落地門檻。極度適合**個人開發者在單卡遊戲卡或筆電顯卡上進行離線研究與測試**、**小團隊低成本驗證 70B 量級實驗**，以及**重視隱私、無需高頻即時互動的本機批次推理場景**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/lyogavin/airllm) | [📦 PyPI 套件](https://pypi.org/project/airllm) | [📄 相關經典論文 FlexGen (ICML 2023)](https://arxiv.org/abs/2303.06865) | [📝 BAAI 技術介紹](https://hub.baai.ac.cn/view/33278)
 
 ### 3. 全球化與泛用生態 (Global & Versatile)
 * **[Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)** `[2026-04-02]`🔥
