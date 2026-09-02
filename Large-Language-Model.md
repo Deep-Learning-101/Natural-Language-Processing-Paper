@@ -5,6 +5,7 @@ description: RAG、Agent、Fine-tuning 到底選什麼？本文跳過行銷話�
 permalink: /Large-Language-Model
 lang: zh-Hant
 schema_type: article
+tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 ---
 
 {% include header.html %}
@@ -980,10 +981,10 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 ### 2. 中文生態系與私有化開源首選 (Chinese & Open Source)
 針對繁簡中文語意理解優化，適合需要將資料留在本地端（Data Privacy）的企業內部知識庫。
 
-* **[jina-reranker-v3.5](https://huggingface.co/collections/jinaai/jina-reranker-v3.5)** `[2026-07]` 🔥 `[0.6B極致輕量]` `[3L2G混合注意力]` `[結構化數據理解]` `[長列表顯存優化]` `[垂直領域增強]`
+* **[jina-reranker-v3.5](https://huggingface.co/jinaai/jina-reranker-v3.5)** `[2026-07]` 🔥 `[0.6B極致輕量]` `[3L2G混合注意力]` `[結構化數據理解]` `[長列表顯存優化]` `[垂直領域增強]`
   * **核心優勢**：**打破 0.6B 小模型性能天花板，Jina AI 推出以「3L2G 混合注意力架構」與三階段自蒸餾徹底重構的列表式（Listwise）重排序神作！** 論文（arXiv:2607.18152）指出其延續 LBNL 一次前向傳播整批文件的特性，將局部滑動窗口（w=1024）與週期性全局注意力結合，使長列表計算複雜度降至線性級 $O(L \cdot w)$，支援 131K 超長上下文，在長文本場景推理速度狂飆 56%。搭配 Struct-IR 數據擾動與 EUR-Lex/AILA 等權威庫補強，在 BEIR 基準拿下 63.20 (nDCG@10) 越級擊敗 7 倍參數量的 Qwen3-Reranker-4B（62.28）；結構化數據理解（Struct-IR）暴漲 24.8%，法律檢索（AILA）指標大幅飆升 11–14 個點。
   * **解決痛點 / 推薦場景**：**完美解決了傳統 Reranker 面對「長列表全注意力導致顯存爆炸與延遲失控」、「垂直領域（法律/金融/醫療）語言模式特殊導致排序失效」，以及「不懂 JSON 與表格中價格/規格等數值邏輯約束」的三大工業落地致命痛點。** 原生支援 Jina API、Elasticsearch EIS 託管調用，並提供 Docker 一鍵私有化部署與 CC BY-NC 4.0 開源權重。極度適合**企業級 RAG 知識庫長列表精準二階段重排**、**電商/履歷等帶有強數值約束的結構化多條件搜尋**，以及**法律合規與金融醫療垂直檢索管線**。
-  * **資源**：[🤗 Hugging Face 模型合集](https://huggingface.co/collections/jinaai/jina-reranker-v3.5) | [📄 技術報告 (arXiv:2607.18152)](https://arxiv.org/abs/2607.18152) | [💻 Jina AI API](https://jina.ai/reranker/) | [📦 私有化部署 GitHub](https://github.com/jina-ai/jina-on-prem) | [🧙 魔搭 ModelScope](https://modelscope.cn/models/jinaai/jina-reranker-v3.5)
+  * **資源**：[🤗 Hugging Face 模型合集](https://huggingface.co/jinaai/jina-reranker-v3.5) | [📄 技術報告 (arXiv:2607.18152)](https://arxiv.org/abs/2607.18152) | [💻 Jina AI API](https://jina.ai/reranker/) | [🧙 魔搭 ModelScope](https://modelscope.cn/models/jinaai/jina-reranker-v3.5)
 
 * **[Qwen3 Embedding & Reranker (阿里通義)](https://qwenlm.github.io/zh/blog/qwen3-embedding/)** `[2025-06-05]`
   * **核心優勢**：阿里雲開源的新一代文本表徵與排序模型「黃金組合」。
