@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 2026 LLM 選型指南：Reasoning 模型 vs MoE，TonTon 評測與企業落地建議
-description: RAG、Agent、Fine-tuning 到底選什麼？本文跳過行銷話術，直接比較 Qwen3、Llama 3.3、Gemini Flash 繁體中文實測，含 SLM 邊緣部署成本估算，以及針對台灣企業的 LLM 選型決策樹。不是資源彙整，是選型判斷。
+title: LLM 選型實測對決：Qwen3 vs Llama 3.3 vs Gemini Flash，2026 台灣企業版
+description: RAG、Agent、Fine-tuning 到底選哪個模型？Qwen3、Llama 3.3、Gemini Flash 繁體中文實測對比，附 SLM 邊緣部署成本估算與台灣企業選型決策樹。跳過行銷話術，只給選型判斷。
 permalink: /Large-Language-Model
 lang: zh-Hant
 schema_type: article
@@ -23,7 +23,8 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 > **核心摘要：**
 > 2026年LLM開發聚焦端側部署與多Agent協作。本指南彙整逾50項開源微調與RAG實作工具，助開發者降低40%模型試錯成本，精準定位最佳企業級架構。
 
-> ### 📅 [2026-08-24 更新快訊](https://deep-learning-101.github.io/UPDATE)
+> ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
+>- **[OpenMuse](https://github.com/CopilotKit/OpenMuse)** `[2026-09-22]` 🔥 [Meta Muse開源平替] [自託管個人助理] [常開瀏覽器會話] [背景非同步任務] [寫操作人機確認] [MIT協議]
 >- **[DeepTutor](https://github.com/HKUDS/DeepTutor)** `[2026-04]` 🔥 [Agent原生工作區] [終身個性化學習] [三層可審計記憶] [多引擎RAG]
 >- **[DeepCode](https://github.com/HKUDS/DeepCode)** `[2026-08]` 🔥 [Paper2Code] [Agentic Coding] [V2中央廚房] [Text2Web/Text2Backend]
 >- **[deepagents](https://github.com/langchain-ai/deepagents)** `[2026-04]` 🔥 [ClaudeCode開源版] [AgentHarness] [LangGraph上層封裝] [免模型綁定]
@@ -34,8 +35,6 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 >- **[Unsloth Desktop](https://unsloth.ai/docs/desktop)** `[2026-08-11]` 🔥 [全端本地AI工作站] [自愈式工具調用] [DeepResearch本地化] [零代碼訓練]
 >- **[Resource2Skill](https://github.com/microsoft/Resource2Skill)** `[2026-06]` 🔥 [Skill工廠] [多模態經驗蒸餾] [分層Skill-Wiki] [微軟開源]
 >- **[AirLLM](https://github.com/lyogavin/airllm)** `[2023]` 🔥 [分層推理Layer-wise] [4GB顯存跑70B] [零精度損失] [mmap按需載入]
-
-> ### 📅 2026-07-25 更新快訊
 >- **Heretic** `[2025-01-01]` 🔥 安全去對齊、機械可解釋性、自動參數優化、開源平替
 >- **CADDesigner** `[2026]` 🔥 CAD建模、ECIP範式、計算機輔助設計
 >- **text-to-cad** `[2026-07-22]` 🔥 CAD建模、Agent技能、build123d、硬體設計
@@ -280,6 +279,16 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 在 Agentic AI 時代，選擇正確的框架能讓開發事半功倍。以下依據「應用場景」精選目前 GitHub 上最活躍、最具生產力的 AI Agent 開源專案：
 
 #### 1. 個人全自動化助理與通用 Agent (Personal & General Assistants)
+
+* **[Meta Muse](https://ai.meta.com/)** `[2026-09-08]` 🔥 `[目標驅動個人Agent]` `[Muse Secure VM]` `[Sentinel安全守衛]` `[跨端硬體延展]` `[Agentic Commerce]`
+* **核心優勢**：**打破「對話框諮詢顧問＋人工手動執行」的舊範式，Meta 正式發布以獨立數位身份長程接管系統與商業交易的個人 AI Agent 系統！** 核心架構捨棄傳統輕量 API 函數掛載，為每個智能體在雲端分配獨立高隔離度的 **Muse Secure VM**（配備專屬檔案系統、無頭瀏覽器、Bash 終端與網路棧），並引入獨立安全監視體 **Sentinel** 對網路出站流量與高危調用進行即時硬體級攔截與注入防護。在交互端由「提示詞問答」躍遷至「宏觀目標驅動」，獲取授權後可直接穿透 macOS 底層檔案系統、Mail 客戶端、行事曆與備忘錄；並在 Meta Connect 大會上延伸至 Ray-Ban 智慧眼鏡與 Muse Charm 便攜硬體，建構全域無所不在的 Agent 交互層。此外，系統賦予 Agent 專屬電子郵件地址，串接 Walmart、Best Buy、Sephora 等零售通路並綁定 Shop Pay 與 PayPal 實現代客自動化結帳。
+* **解決痛點 / 推薦場景**：徹底解決傳統 LLM+RAG 模式「無狀態單次請求銷毀、僅依賴文字 Guardrail 無法抵禦多步越權攻擊」以及「使用者必須在十幾個視窗間手動切換比對與填單」的工程痛點。 展現了 Agent Runtime 在沙盒隔離、狀態持久化與多步回滾上的生產級架構。同時成為探討「使用者授權不等於平台准入（遭遇 Amazon.com 平台防火牆封鎖阻斷）」 以及「高權限客戶端 0-day 導致權限放大效應（Privilege Amplification）」的指標性案例。極度適合作為**個人全自動化數位管家與長程目標託管系統**、**跨桌面系統原生應用深度整合中樞**，以及**次世代環境式穿戴裝置（智慧眼鏡/便攜硬體）的統一代理層參考實現**。
+* **資源**：[🌐 Meta AI 官方平台](https://ai.meta.com/) | [📱 Meta Connect 產品發布](https://about.meta.com/) | [🛡️ Patrick Wardle 0-day 漏洞揭露研究](https://objective-see.org/)
+
+* **[OpenMuse](https://github.com/CopilotKit/OpenMuse)** `[2026-09-22]` 🔥 `[Meta Muse開源平替]` `[自託管個人助理]` `[常開瀏覽器會話]` `[背景非同步任務]` `[寫操作人機確認]` `[MIT協議]`
+* **核心優勢**：**打破商業閉源 Agent 數據壟斷，CopilotKit 開源首個支援完全二次開發與自託管的個人 AI 助理系統！** 專案採 MIT 協議開源，iOS、Android 與 Web 三端共用單一程式碼庫。系統核心搭載三大生產級基建：**常開 Chromium 瀏覽器**（保留網站登入態無須反覆驗證，並內建「Take control」一鍵人工即時接管機制）、**持久化後台任務引擎**（任務在伺服器端維持進度與執行紀錄，即使關閉應用程式或伺服器重啟也能無痛斷點續傳，避免重複執行）、以及**隔離 Linux 容器終端**（指令上限 30 秒、終端本體不直連外網且全量記錄輸出）。整合 Gmail 與 Google 日曆，原生落實「寫操作強制人機確認」原則；並具備 PDF 表單智慧欄位解析、周期性去重網頁監控與 CSV 帳單支出分析等多任務處理能力。
+* **解決痛點 / 推薦場景**：**完美解決了 Meta Muse 等商業雲端 Agent「資料與控制權完全受制於大公司、無法客製化二次開發」，以及傳統對話機器人「關掉網頁任務即中斷、涉及發信改日曆等寫操作容易誤動作脫韁」的致命痛點。** 提供 Render 與 Railway 一鍵部署模板，大幅簡化自架伺服器門檻。極度適合**注重資料主權與隱私的技術團隊自託管專屬私人助理**、**開發者研究 Agent 中斷恢復與操作審批確認流架構**，以及作為**個人自動化網頁監控、信件檢索與文件處理的開源原型基底**。
+* **資源**：[🐙 GitHub 官方倉庫](https://github.com/CopilotKit/OpenMuse)
 
 * **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** `[2026-08-13]` 🔥 `[Agent作業系統]` `[一切皆插件]` `[Cordis內核]` `[受控執行流水線]` `[多提供方接入]`
   * **核心優勢**：**打破 Agent 應用產品思維，DeepSeek 釋出首個以「一切皆插件 (Everything is a Plugin)」為核心哲學的開源 Agent 基礎設施底座！** 其設計思想源自論文《A Programming Paradigm for Spatiotemporal Composability》，底層依托 Cordis 共享上下文，將模型適配器、工具註冊表、會話日誌、Agent 循環、檔案系統、沙箱、審批策略與 Web UI 全部插件化解耦。系統提供 `web` 與 `headless` 兩種 Profile，僅需 78 行配置即可定義完整運行時；前端憑證採只寫與脫敏引用架構（支援 DeepSeek、Anthropic、OpenAI 及自建 Gateway 多提供方接入），工具呼叫皆經過權限與審批流水線，並支援五級目錄掃描的任務專用指令（Skill）按需動態載入。
