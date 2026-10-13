@@ -24,6 +24,10 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 > 2026年LLM開發聚焦端側部署與多Agent協作。本指南彙整逾50項開源微調與RAG實作工具，助開發者降低40%模型試錯成本，精準定位最佳企業級架構。
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
+
+>- **[OpenMuse](https://github.com/CopilotKit/OpenMuse)** `[2026-09-22]` 🔥 [Meta Muse開源平替] [自託管個人助理] [常開瀏覽器會話] [背景非同步任務] [寫操作人機確認] [MIT協議]
+>- **[OpenBot (CopilotKit)](https://github.com/CopilotKit/OpenBot)** `[2026-08]` 🔥 [企業AI同事] [Agent治理] [審計] [AG-UI] [自建部署]`
+>- **[VISTA: 給多模態 Agent 裝上可回看的無損視覺記憶](https://arxiv.org/abs/2610.02200)** `[2026-10]` 🔥 [AI Agent] [視覺推理] [ARC-AGI-3] [無損視覺記憶] [多模態]`
 >- **[OpenMuse](https://github.com/CopilotKit/OpenMuse)** `[2026-09-22]` 🔥 [Meta Muse開源平替] [自託管個人助理] [常開瀏覽器會話] [背景非同步任務] [寫操作人機確認] [MIT協議]
 >- **[DeepTutor](https://github.com/HKUDS/DeepTutor)** `[2026-04]` 🔥 [Agent原生工作區] [終身個性化學習] [三層可審計記憶] [多引擎RAG]
 >- **[DeepCode](https://github.com/HKUDS/DeepCode)** `[2026-08]` 🔥 [Paper2Code] [Agentic Coding] [V2中央廚房] [Text2Web/Text2Backend]
@@ -247,6 +251,11 @@ Nemotron 提供專為企業客製化的極致推理效能。 透過 TensorRT-LLM
   * **必讀原因**：AI 失控怎麼辦？國際資安權威 OWASP 針對代理式 AI 可能面臨的 Prompt Injection (提示詞注入) 與權限濫用，提供了系統性的防禦與緩解架構 (Mitigations)。
 * **[AI 搜尋引擎的致命傷：引用來源問題 (Citation Problem)](https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php)**
   * **必讀原因**：當 AI 代理負責搜尋與總結時，如何避免侵權與幻覺？本文評測了八大 AI 搜尋引擎，揭露其在新聞與來源引用上的缺陷，是開發檢索代理 (Search Agent) 的重要借鏡。
+* **[VISTA: 給多模態 Agent 裝上可回看的無損視覺記憶](https://arxiv.org/abs/2610.02200)** `[2026-10]` 🔥 `[AI Agent]` `[視覺推理]` `[ARC-AGI-3]` `[無損視覺記憶]` `[多模態]`
+  * **核心優勢**：**不改模型、只改 Harness：ARC-AGI-3 從 40.68 直達滿分 100.00。** MIT 何愷明團隊的三件套：視覺觀察（直接看渲染畫面而非文字網格）、無損視覺記憶（每一幀原始保存、獨立於模型上下文之外）、視覺檢查（模型自主決定回看哪一幀、放大哪個區域，另有 read_pixels 可讀像素 RGB 值）。Claude Opus 5.0 在 25 款公開遊戲全通關，行動數比首玩人類少 57.4%；GPT-5.6 Sol 也達 99.00。論文稱這是首個不靠程序合成、僅憑視覺輸入就達滿分的系統。
+  * **解決痛點 / 推薦場景**：**一次性視覺編碼丟掉的細節，長程推理時要不回來。** 傳統 VLM 把圖編碼一次就丟掉原圖，上下文一滿早期觀察還會被壓縮或刪掉；VISTA 讓模型按需回看、按需放大，把「看什麼、何時回看」變成可推理的動作。消融實驗顯示無損記憶加視覺檢查是最大功臣（70.05 → 94.10）。同一套 Harness 幾乎零改動遷移到 GameWorld（成功率 63.3%，超越新手人類）、BabyVision（41.0% → 63.2%），開源模型 GLM-5.3 Flash 也從 1.89 拉到 66.93。適合**長程交互式視覺任務**、**具身智能**、**遊戲與 GUI Agent** 的 Harness 設計參考。
+  * **資源**：[📄 論文](https://arxiv.org/abs/2610.02200) | [🐙 GitHub](https://github.com/joshhhhhan/VISTA)
+
 
 ---
 
@@ -280,15 +289,27 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 
 #### 1. 個人全自動化助理與通用 Agent (Personal & General Assistants)
 
+* **[nanoMuse](https://github.com/nano-muse/nanoMuse)** `[2026-09]` 🔥 `[個人智能體]` `[跨裝置協作]` `[開源Muse路線]` `[Goals+Routines]` `[Hands螢幕操作]`
+  * **核心優勢**：**手機一句話，電腦接著做：開源個人智能體第一次把「多設備」做成一等公民。** 浙大三位作者發起的獨立社群專案（與 Meta 無關），致敬 Meta Muse 路線：手機 App、桌面端、瀏覽器與中繼全部開源（GPL-3.0）。手機上 `@Mac 編譯一下項目` 就能把任務丟給在線電腦，執行結果與審批卡片送回手機；對話預設跨設備同步（只同步主對話）；Goals＋Routines 做長期目標追蹤與定時任務，每天還生成 Feed。模型可換：社區中繼免費額度（每帳號 ¥10 用量）或自帶 20 家服務商 Key，中繼也可自托管。18 天破千星，最新 1.0.5。
+  * **解決痛點 / 推薦場景**：**雲端 Agent 夠不著你自己的設備，單機 Agent 又走不出那台手機。** Meta Muse 跑在雲 VM，OpenMinis 只活在一台手機；nanoMuse 讓每台設備各跑一個 Agent，經中繼互相委託。沒有 API 的 App 就用 Hands 直接操作螢幕（Android／桌面可，iOS 系統不允許）；刪檔、發送、付款三級審批，密碼驗證碼一律交給用戶。極度適合**手機指揮電腦跑編譯與長任務**、**跨設備的個人自動化**、**想自托管整套個人智能體的人**。
+  * **資源**：[🐙 GitHub](https://github.com/nano-muse/nanoMuse) | [📄 論文](https://arxiv.org/abs/2610.08699) | [🌐 官網](https://nanomuse.cn) | [📖 隱私說明](https://github.com/nano-muse/nanoMuse/blob/main/docs/privacy.md)
+  * **⚠️ 隱私注意**：社區中繼 0.9 起新帳號預設開啟「幫助改進 AI 模型」（保留部分聊天文字與工具調用做訓練），與對話同步是兩個獨立開關，都可在設定裡關閉並刪除已保留數據。
+
 * **[Meta Muse](https://ai.meta.com/)** `[2026-09-08]` 🔥 `[目標驅動個人Agent]` `[Muse Secure VM]` `[Sentinel安全守衛]` `[跨端硬體延展]` `[Agentic Commerce]`
-* **核心優勢**：**打破「對話框諮詢顧問＋人工手動執行」的舊範式，Meta 正式發布以獨立數位身份長程接管系統與商業交易的個人 AI Agent 系統！** 核心架構捨棄傳統輕量 API 函數掛載，為每個智能體在雲端分配獨立高隔離度的 **Muse Secure VM**（配備專屬檔案系統、無頭瀏覽器、Bash 終端與網路棧），並引入獨立安全監視體 **Sentinel** 對網路出站流量與高危調用進行即時硬體級攔截與注入防護。在交互端由「提示詞問答」躍遷至「宏觀目標驅動」，獲取授權後可直接穿透 macOS 底層檔案系統、Mail 客戶端、行事曆與備忘錄；並在 Meta Connect 大會上延伸至 Ray-Ban 智慧眼鏡與 Muse Charm 便攜硬體，建構全域無所不在的 Agent 交互層。此外，系統賦予 Agent 專屬電子郵件地址，串接 Walmart、Best Buy、Sephora 等零售通路並綁定 Shop Pay 與 PayPal 實現代客自動化結帳。
-* **解決痛點 / 推薦場景**：徹底解決傳統 LLM+RAG 模式「無狀態單次請求銷毀、僅依賴文字 Guardrail 無法抵禦多步越權攻擊」以及「使用者必須在十幾個視窗間手動切換比對與填單」的工程痛點。 展現了 Agent Runtime 在沙盒隔離、狀態持久化與多步回滾上的生產級架構。同時成為探討「使用者授權不等於平台准入（遭遇 Amazon.com 平台防火牆封鎖阻斷）」 以及「高權限客戶端 0-day 導致權限放大效應（Privilege Amplification）」的指標性案例。極度適合作為**個人全自動化數位管家與長程目標託管系統**、**跨桌面系統原生應用深度整合中樞**，以及**次世代環境式穿戴裝置（智慧眼鏡/便攜硬體）的統一代理層參考實現**。
-* **資源**：[🌐 Meta AI 官方平台](https://ai.meta.com/) | [📱 Meta Connect 產品發布](https://about.meta.com/) | [🛡️ Patrick Wardle 0-day 漏洞揭露研究](https://objective-see.org/)
+  * **核心優勢**：**打破「對話框諮詢顧問＋人工手動執行」的舊範式，Meta 正式發布以獨立數位身份長程接管系統與商業交易的個人 AI Agent 系統！** 核心架構捨棄傳統輕量 API 函數掛載，為每個智能體在雲端分配獨立高隔離度的 **Muse Secure VM**（配備專屬檔案系統、無頭瀏覽器、Bash 終端與網路棧），並引入獨立安全監視體 **Sentinel** 對網路出站流量與高危調用進行即時硬體級攔截與注入防護。在交互端由「提示詞問答」躍遷至「宏觀目標驅動」，獲取授權後可直接穿透 macOS 底層檔案系統、Mail 客戶端、行事曆與備忘錄；並在 Meta Connect 大會上延伸至 Ray-Ban 智慧眼鏡與 Muse Charm 便攜硬體，建構全域無所不在的 Agent 交互層。此外，系統賦予 Agent 專屬電子郵件地址，串接 Walmart、Best Buy、Sephora 等零售通路並綁定 Shop Pay 與 PayPal 實現代客自動化結帳。
+  * **解決痛點 / 推薦場景**：徹底解決傳統 LLM+RAG 模式「無狀態單次請求銷毀、僅依賴文字 Guardrail 無法抵禦多步越權攻擊」以及「使用者必須在十幾個視窗間手動切換比對與填單」的工程痛點。 展現了 Agent Runtime 在沙盒隔離、狀態持久化與多步回滾上的生產級架構。同時成為探討「使用者授權不等於平台准入（遭遇 Amazon.com 平台防火牆封鎖阻斷）」 以及「高權限客戶端 0-day 導致權限放大效應（Privilege Amplification）」的指標性案例。極度適合作為**個人全自動化數位管家與長程目標託管系統**、**跨桌面系統原生應用深度整合中樞**，以及**次世代環境式穿戴裝置（智慧眼鏡/便攜硬體）的統一代理層參考實現**。
+  * **資源**：[🌐 Meta AI 官方平台](https://ai.meta.com/) | [📱 Meta Connect 產品發布](https://about.meta.com/) | [🛡️ Patrick Wardle 0-day 漏洞揭露研究](https://objective-see.org/)
 
 * **[OpenMuse](https://github.com/CopilotKit/OpenMuse)** `[2026-09-22]` 🔥 `[Meta Muse開源平替]` `[自託管個人助理]` `[常開瀏覽器會話]` `[背景非同步任務]` `[寫操作人機確認]` `[MIT協議]`
-* **核心優勢**：**打破商業閉源 Agent 數據壟斷，CopilotKit 開源首個支援完全二次開發與自託管的個人 AI 助理系統！** 專案採 MIT 協議開源，iOS、Android 與 Web 三端共用單一程式碼庫。系統核心搭載三大生產級基建：**常開 Chromium 瀏覽器**（保留網站登入態無須反覆驗證，並內建「Take control」一鍵人工即時接管機制）、**持久化後台任務引擎**（任務在伺服器端維持進度與執行紀錄，即使關閉應用程式或伺服器重啟也能無痛斷點續傳，避免重複執行）、以及**隔離 Linux 容器終端**（指令上限 30 秒、終端本體不直連外網且全量記錄輸出）。整合 Gmail 與 Google 日曆，原生落實「寫操作強制人機確認」原則；並具備 PDF 表單智慧欄位解析、周期性去重網頁監控與 CSV 帳單支出分析等多任務處理能力。
-* **解決痛點 / 推薦場景**：**完美解決了 Meta Muse 等商業雲端 Agent「資料與控制權完全受制於大公司、無法客製化二次開發」，以及傳統對話機器人「關掉網頁任務即中斷、涉及發信改日曆等寫操作容易誤動作脫韁」的致命痛點。** 提供 Render 與 Railway 一鍵部署模板，大幅簡化自架伺服器門檻。極度適合**注重資料主權與隱私的技術團隊自託管專屬私人助理**、**開發者研究 Agent 中斷恢復與操作審批確認流架構**，以及作為**個人自動化網頁監控、信件檢索與文件處理的開源原型基底**。
-* **資源**：[🐙 GitHub 官方倉庫](https://github.com/CopilotKit/OpenMuse)
+  * **核心優勢**：**打破商業閉源 Agent 數據壟斷，CopilotKit 開源首個支援完全二次開發與自託管的個人 AI 助理系統！** 專案採 MIT 協議開源，iOS、Android 與 Web 三端共用單一程式碼庫。系統核心搭載三大生產級基建：**常開 Chromium 瀏覽器**（保留網站登入態無須反覆驗證，並內建「Take control」一鍵人工即時接管機制）、**持久化後台任務引擎**（任務在伺服器端維持進度與執行紀錄，即使關閉應用程式或伺服器重啟也能無痛斷點續傳，避免重複執行）、以及**隔離 Linux 容器終端**（指令上限 30 秒、終端本體不直連外網且全量記錄輸出）。整合 Gmail 與 Google 日曆，原生落實「寫操作強制人機確認」原則；並具備 PDF 表單智慧欄位解析、周期性去重網頁監控與 CSV 帳單支出分析等多任務處理能力。
+  * **解決痛點 / 推薦場景**：**完美解決了 Meta Muse 等商業雲端 Agent「資料與控制權完全受制於大公司、無法客製化二次開發」，以及傳統對話機器人「關掉網頁任務即中斷、涉及發信改日曆等寫操作容易誤動作脫韁」的致命痛點。** 提供 Render 與 Railway 一鍵部署模板，大幅簡化自架伺服器門檻。極度適合**注重資料主權與隱私的技術團隊自託管專屬私人助理**、**開發者研究 Agent 中斷恢復與操作審批確認流架構**，以及作為**個人自動化網頁監控、信件檢索與文件處理的開源原型基底**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/CopilotKit/OpenMuse)
+
+* **[OpenBot (CopilotKit)](https://github.com/CopilotKit/OpenBot)** `[2026-08]` 🔥 `[企業AI同事]` `[Agent治理]` `[審計]` `[AG-UI]` `[自建部署]`
+  * **核心優勢**：**開源 AI 同事，但先回答安全評審的三個問題：數據去了哪、誰能看什麼、Agent 動過哪些手。** CopilotKit 出品（MIT），每個 Agent 配一台獨立電腦（獨立容器、獨立瀏覽器登錄態、獨立檔案），所有動作只走一個網關：先裁定、再記錄、最後才執行。預設帶通用助理加公司知識問答兩個同事（配置而非代碼），另有 10 個金融崗位角色範本。任意 AG-UI Agent（LangGraph、Mastra、CrewAI、Pydantic AI、Google ADK）都能接入成同事。跑在你自己的機房：Docker Compose 起步，生產用 Helm chart；官方明說這是模板不是產品，無託管版。
+  * **解決痛點 / 推薦場景**：**Agent 進公司最大的阻力不是聰明不聰明，是出了事查不清。** OpenBot 把治理做進底座：策略按工具、意圖、發起人、頁面 URL、命令、檔案等欄位裁定，fail-closed（規則缺失或寫錯一律拒絕）；審計不留「發生了但沒記錄」的路徑；密钥加密保存且永不進日誌；撞上登錄牆可人工接管。它是 OpenMuse 的同門兄弟（個人版走手機 App），兩者共用 AG-UI 協議與 Intelligence 記憶底座，未來可能拼在一起：個人端在手機上跑，重活兒丟給公司這套有治理的機器。極度適合**要在內網落地的企業 Agent 專案**、**需要完整審計軌跡的金融與合規場景**。
+  * **資源**：[🐙 GitHub](https://github.com/CopilotKit/OpenBot) | [🌐 官方頁](https://copilotkit.ai/openbot)
+  * **⚠️ 落地成本**：對話持久化、記憶與自動學習技能來自獨立服務 CopilotKit Intelligence，不在 MIT 許可內；本地 Mac 有免費開發者計畫（30 天許可可續）。Alpha 階段，官方提醒預期粗糙與 bug。
 
 * **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** `[2026-08-13]` 🔥 `[Agent作業系統]` `[一切皆插件]` `[Cordis內核]` `[受控執行流水線]` `[多提供方接入]`
   * **核心優勢**：**打破 Agent 應用產品思維，DeepSeek 釋出首個以「一切皆插件 (Everything is a Plugin)」為核心哲學的開源 Agent 基礎設施底座！** 其設計思想源自論文《A Programming Paradigm for Spatiotemporal Composability》，底層依托 Cordis 共享上下文，將模型適配器、工具註冊表、會話日誌、Agent 循環、檔案系統、沙箱、審批策略與 Web UI 全部插件化解耦。系統提供 `web` 與 `headless` 兩種 Profile，僅需 78 行配置即可定義完整運行時；前端憑證採只寫與脫敏引用架構（支援 DeepSeek、Anthropic、OpenAI 及自建 Gateway 多提供方接入），工具呼叫皆經過權限與審批流水線，並支援五級目錄掃描的任務專用指令（Skill）按需動態載入。
