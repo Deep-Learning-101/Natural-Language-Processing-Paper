@@ -59,6 +59,7 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 ---
 
 ### **文章目錄**
+- [⚡ 快速選型結論（先講答案）](#快速選型結論先講答案)
 - [🏆 排行榜 (Leaderboards)](#leaderboards)
 - [🖥️ NVIDIA Nemotron](#nvidia-nemotron)
 - [🛠️ 微調技術與資源 (Fine-tuning)](#fine-tuning)
@@ -76,6 +77,14 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 - [❓ FAQ (LLM 開發常見問題)](#faq)
 
 ---
+
+## 快速選型結論（先講答案）
+
+- **RAG／知識庫**：Qwen3（中文檢索生態最完整）；想全託管省事選 Gemini Flash，成本低、回應快
+- **AI Agent／工具呼叫**：Gemini Flash（速度與價格優勢）；需要自託管選 Llama 3.3
+- **邊緣／地端部署**：Llama 3.3 8B 級距搭配 vLLM 或 SGLang，單張 24GB 顯卡即可運行
+
+完整比較見下方「主流模型快速比較表」。
 
 ## Leaderboards
 **🏆 LLM 權威排行榜與評測指標 (Leaderboards)**
@@ -1177,6 +1186,12 @@ A: Dify 提供直觀的拖曳式工作流，無須寫程式即可串接 API，�
 
 **Q5: 評估模型效能需要看哪些指標？**
 A: 勿僅看跑分基準，應自建 100-200 筆符合企業真實情境的測試集，並關注 Token 生成速度 (TPS) 以確保使用體驗。
+
+**Q6: 開源 LLM 該怎麼選？**
+A: 先看場景：中文 RAG 優先 Qwen3，需要地端部署與可控性選 Llama 3.3，預算與速度優先則考慮 Gemini Flash 這類託管 API。細節見本頁上方快速選型結論。
+
+**Q7: RAG 場景選哪個模型？**
+A: Embedding 與 Reranker 的影響往往大於生成模型本身。中文場景建議 Qwen3-Embedding 搭配 Qwen3-Reranker，生成端再依延遲與成本需求挑選。
 
 <script type="application/ld+json">
 {
