@@ -25,6 +25,14 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- **[Kimi K3.1 Pro (Moonshot：2.8T／104B MoE 開源權重旗艦，1M 上下文)](https://www.kimi.ai/blog/kimi-k3-1-pro)** `[2026-10-23]` 🔥 `[開源權重]` `[MoE]` `[1M上下文]` `[Agentic Coding]` `[Terminal-Bench]` `[網路安全降級]`
+>- **[Carbon-X (Hugging Face 開放 DNA 對話模型：14.8B／DNA＋文字單一解碼器)](https://huggingface.co/HuggingFaceBio/Carbon-X)** `[2026-10-22]` 🔥 `[DNA]` `[基因變異效應]` `[BioAI]` `[Apache 2.0]` `[6-mer tokenizer]`
+>- **[DeepInfer (DeepSeek 自家生產線開源推論框架：V4.1-Flash serving stack)](https://github.com/deepseek-ai/DeepInfer)** `[2026-10-20]` 🔥 `[推論框架]` `[Speculative Decoding]` `[Apache 2.0]` `[V4.1-Flash]` `[Ascend 950]`
+>- **[HybridAgent (Stanford＋Together AI)](https://arxiv.org/abs/2610.18861)** `[2026-10-18]` 🔥 `[Agent 推理]` `[潛在推理]` `[HybridLink]` `[工具調用]` `[開源權重]` `[MIT]`
+>- **[DeepSeek-V4.1-Flash-1017 (DeepSeek)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)** `[2026-10-17]` 🔥 `[開源權重]` `[MoE]` `[KV Cache 壓縮]` `[Coding Agent]` `[MIT]` `[1M上下文]`
+>- **[Beam 1.0 (Reflection)](https://huggingface.co/reflection/Beam-1.0-501B-A23B)** `[2026-10-16]` 🔥 `[開源權重]` `[MoE]` `[Coding Agent]` `[Apache 2.0]` `[1M上下文]`
+>- **[Muse Spark Open (Meta Superintelligence Labs)](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)** `[2026-10-15]` 🔥 `[開源權重]` `[MoE]` `[原生多模態]` `[Coding Agent]` `[1M上下文]`
+>- **[Scientific Agent Skills (K-Dense)](https://github.com/K-Dense-AI/scientific-agent-skills)** `[2026-10-14]` 🔥
 >- **[H-JEPA (LeCun AMI 世界模型)](https://github.com/kevinghst/H-JEPA)** `[2026-10]` 🔥 `[世界模型]` `[JEPA]` `[分層規劃]` `[視覺規劃]` `[具身智能]`
 >- **[OpenMuse](https://github.com/CopilotKit/OpenMuse)** `[2026-09-22]` 🔥 [Meta Muse開源平替] [自託管個人助理] [常開瀏覽器會話] [背景非同步任務] [寫操作人機確認] [MIT協議]
 >- **[OpenBot (CopilotKit)](https://github.com/CopilotKit/OpenBot)** `[2026-08]` 🔥 [企業AI同事] [Agent治理] [審計] [AG-UI] [自建部署]`
@@ -249,6 +257,45 @@ Nemotron 提供專為企業客製化的極致推理效能。 透過 TensorRT-LLM
 ## AI-Agent
 **🧩 AI Agent 開源框架**
 > 概念說明請見：[避開 AI 代理 (AI Agents) 與 代理式人工智慧 (Agentic AI) 開發陷阱](https://deep-learning-101.github.io/agent)
+
+### 🆕 新模型快訊：前沿開源權重模型
+
+* **[Kimi K3.1 Pro (Moonshot：2.8T／104B MoE 開源權重旗艦，1M 上下文)](https://www.kimi.ai/blog/kimi-k3-1-pro)** `[2026-10-23]` 🔥 `[開源權重]` `[MoE]` `[1M上下文]` `[Agentic Coding]` `[Terminal-Bench]` `[網路安全降級]`
+  * **核心優勢**：**開源權重模型首次逼近閉源前沿天花板：Artificial Analysis Intelligence Index 55 分，僅落後 Claude Opus 5.5 約 2.5 分、領先前任開源冠軍 MiMo-V2.6-Pro 8.8 分。** Kimi K3 的 post-training 升級版：2.8T 總參數／104B active 的 MoE、1M token 上下文、原生多模態輸入；RL 訓練大幅加碼（框架、長上下文推論、rollout 排程、沙盒全面重構）。官方自測：Terminal-Bench 4.0 65.7%（Opus 5.5 66.4%、GPT-6 Astra 58.2%）、Kimi Code Bench 3.0 長程任務 61.2（K3 55.95）、BenchCAD 92.7；Kimi Hallu Bench Hard 聲稱級幻覺率從 K3 的 23.4% 降到 8.3%。API 即刻可用（$2／$10 每百萬 token，快取輸入 $0.2；Highspeed 版 2–3 倍速、雙倍價）；權重承諾 11 月 4 日前釋出，授權尚未公布。
+  * **解決痛點 / 推薦場景**：**解決了「開源模型在 agentic coding 與長程任務上追不上閉源前沿」的痛點。** 舊方法：要 frontier 級 agent coding 只能綁閉源 API（成本失控、資料外送），或接受落後 3 個月的開源權重。甜點區：開閉源差距從 9 月的 104 天壓到 31 天，API 價格降到 K3 的三分之二，權重一出即可自託管與微調。極度適合**要自建 coding agent 壓低成本的團隊**、**需要地端／主權部署的企業**，以及**追蹤開閉源差距的研究者**。附帶亮點是資安設計：Moonshot 主動從 mid-training 與 RL 資料移除網路攻擊相關資料，自家 xdev-bench-hard 上開源版 pass@3 從 90.5% 降到 81.0%，明示「不讓開源權重推進攻擊能力前沿」。
+  * **資源**：[📝 官方技術部落格](https://www.kimi.ai/blog/kimi-k3-1-pro) | [📊 Artificial Analysis 基準報導](https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks) | [📰 開閉源差距分析（ModelCompare）](https://www.modelcompare.ai/blog/china-open-source-ai) | [💻 Kimi API 文件](https://platform.kimi.ai)
+  * **附註（未獨立查證）**：官方基準皆為 Moonshot 自測、第三方尚未獨立複現；launch table 混用了自測與引進分數（implicator.ai 提醒）。權重尚未釋出：extrapolator.ai 稱「已釋出權重」與事實不符。幻覺數字有兩個版本（Hallu Bench Hard 8.3% vs API quickstart 的 6.85%），測試集不同。弱項：Terminal-Bench Science 僅 38.1（GPT-6 Astra 68.1、Opus 5.5 63.3）。xdev-bench-hard 數據來自媒體轉述的官方說法。
+
+* **[DeepInfer (DeepSeek 自家生產線開源推論框架：V4.1-Flash serving stack)](https://github.com/deepseek-ai/DeepInfer)** `[2026-10-20]` 🔥 `[推論框架]` `[Speculative Decoding]` `[Apache 2.0]` `[V4.1-Flash]` `[Ascend 950]`
+  * **核心優勢**：**DeepSeek 把自家生產線的推論引擎整套開源：Apache 2.0，專為 V4.1-Flash 打造的高吞吐 serving stack。** 機制是 DeepSeek 近年系統論文的實戰合體：FlashMLA／DeepGEMM／DeepEP／TileKernels／DeepSelect 等自研 kernels＋TileLang 自訂 kernels；Attention DP／balanced CP、MoE EP＋EPLB 跨晶片平行；DSpark 以信心估計排程驗證的 speculative decoding（預設一次起草 5 個 token）；Decoder SWA bounded replay 只重跑有界後綴、砍掉多餘 prefill 工作；另有零開銷非同步 batch 排程、batch-invariant 推論、確定性採樣、結構化輸出（regex／JSON schema／EBNF）。雙硬體：NVIDIA SM100 與華為 Ascend 950（同場給 Ascend 950 首次前沿實驗室等級的生產背書）。README 明說不含 KV cache 系統、prefill／decode disaggregation 與跨副本負載平衡。血統上 README 承認原本主要基於 vLLM、另受 SGLang 與 TensorRT-LLM 啟發。repo 公開一天衝上 13,667 stars／1,271 forks。
+  * **解決痛點 / 推薦場景**：**解決了「想自建 DeepSeek 等級的低成本推論服務，但開源引擎堆不出同等吞吐」的痛點。** 舊方法：vLLM／SGLang 是通用引擎，MoE 大規模專家平行與快取命中率優化都要自己調；雲端託管則把利潤交給中間商。甜點區：Apache 2.0 可商用自託管、專為 MoE 推論調校的生產級 stack＋batch-invariant 與確定性採樣（評測可複現）。極度適合**要自託管 DeepSeek 模型壓低成本的雲服務商與企業**，以及**研究大規模 MoE 推論系統的研究者**（DSpark 信心驗證、SWA bounded replay 都是可直接讀程式碼學的實作）。
+  * **資源**：[🐙 GitHub：deepseek-ai/DeepInfer](https://github.com/deepseek-ai/DeepInfer)（Apache-2.0；預設 checkpoint 為 HF 的 `deepseek-ai/DeepSeek-V4.1-Flash-1017`）
+  * **附註（未獨立查證）**：DeepSeek 官方說法（deployment Q&A，媒體轉述，我未親驗官方文件）：單集群每天 155 兆 tokens、96% input cache 命中率、平均 TTFT 約 400ms、230 tokens/s（coding 最高 300）；DSpark 減少約 30% draft token 檢查、生產負載吞吐提升 4–7%；SWA bounded replay 幾乎減半 prefill 計算量。皆為官方自報、未經第三方獨立驗證。batch-invariant 推論與確定性採樣僅 NVIDIA 可用、Hopper 等舊架構不支援（媒體轉述）。同場開源的 deepseek-recipe（token 編解碼層、MIT）我未親驗其 repo。repo 建立日 10-16、首次公開 commit 與官方 X 公告皆為 10-20。
+
+* **[HybridAgent (Stanford＋Together AI)](https://arxiv.org/abs/2610.18861)** `[2026-10-18]` 🔥 `[Agent 推理]` `[潛在推理]` `[HybridLink]` `[工具調用]` `[開源權重]` `[MIT]`
+  * **核心優勢**：**讓 LLM agent「在潛在空間默想、在文字模式行動」：內部推理不寫成 token、只在工具調用與最終答案時切回文字；作者自測 11 項基準平均提升 10.4%，token 減少 35.5%–54.7%、推理快 1.8–2.6 倍、成本降 2.7–3.7 倍。** 機制是輕量 HybridLink 模組：把最後一層 hidden state 映射回 input-embedding 空間，單次生成內即可在 latent／text 雙模式間切換；連續 working memory 跨多輪保留混合上下文；每個 latent 思考都可渲染成可讀 pseudo-text 直接檢視。訓練分兩段：HybridSFT 穩定工具整合的混合生成，HybridRL 學會「何時潛在思考、何時文字行動」。客觀指標（作者自測，論文 Table 1 轉述）：GAIA 43.7（8B 版）勝 GPT-5.6 Luna 的 37.9；但 HLE 僅 14.4（Luna 29.0），純推理仍是弱項。論文 10-13 上 arXiv，10-18 登上 HN 首頁引爆 AI 圈討論。
+  * **解決痛點 / 推薦場景**：**解決了「agent 每步 chain-of-thought 都要寫成文字、token 成本隨推理長度線性膨脹」的痛點。** 舊方法：純文字 agent 每步推理都解碼成 token，長任務又慢又貴；純 latent 推理則天生沒有工具調用與可檢視性。甜點區：latent 思考保留完整工具整合（Python＋搜尋跨輪調用）＋中間思考可檢視（稽核友好）＋MIT 全套開源（方法、引擎、SFT／RL 訓練、latent 檢視器、8B／14B 權重、訓練集）。極度適合**要跑大量 agent 任務、被推理成本卡住的團隊**，以及**需要看見 agent 中間思考的合規與研究場景**。
+  * **資源**：📄 論文《Hybrid Reasoning Agents》[arXiv:2610.18861](https://arxiv.org/abs/2610.18861)（CC BY 4.0） | 💻 [GitHub：togethercomputer/HybridAgent](https://github.com/togethercomputer/HybridAgent)（MIT） | 🤗 [HybridAgent-8B-Agentic](https://huggingface.co/togethercomputer/HybridAgent-8B-Agentic)（Qwen3-8B-Base＋HybridSFT＋HybridRL） | 🤗 [HybridAgent-14B-Agentic](https://huggingface.co/togethercomputer/HybridAgent-14B-Agentic)（Qwen3-14B-Base） | 📊 SFT v1/v2、RL 訓練集（見 repo README「Released models and data」）
+  * **附註（未獨立查證）**：GAIA 43.7／HLE 14.4 引自論文 Table 1 的第三方轉述，我未逐項核對論文 PDF；成本 2.7–3.7 倍為論文的模型估算（假設 H100 每小時 $2.50、10% 利用率），不含 prompt prefill 與工具執行成本，非生產實測；所有基準皆為作者自測。HN 首頁數據引自開發者社群轉述。
+
+* **[DeepSeek-V4.1-Flash-1017 (DeepSeek)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)** `[2026-10-17]` 🔥 `[開源權重]` `[MoE]` `[KV Cache 壓縮]` `[Coding Agent]` `[MIT]` `[1M上下文]`
+  * **核心優勢**：**DeepSeek V4.1-Flash 的更新版開放權重 checkpoint：官方公布的 11 項基準全數超越前代，DeepSWE v1.1 拿下 77.0 壓過 Claude Opus 5，是「便宜模型在 coding agent 基準上正面超越旗艦」的代表案例。** 技術主軸是 KV cache 壓縮（技術報告標題即《DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression》）：官方說法是輸出更短、任務執行更快，把「效能：成本 Pareto 前沿」往前推一格。客觀指標（官方模型卡自測）：Terminal-Bench 4.0 42.3（前代 31.2，+11.1）、DeepSWE v1.1 77.0（前代 74.2；Opus 5 為 74.0、GPT-5.6 Sol 73.0）、Automation-Bench 60.5、Agents' Last Exam 35.4、Apex Bench 72.1、Chartography 83.0、BabyVision 92.5；純推理 HLE 42.6 仍落後 Opus 5 的 56.3。
+  * **解決痛點 / 推薦場景**：**解決了「長程 coding agent 的 KV cache 記憶體爆炸＋旗艦模型推理成本失控」的痛點。** 舊方法：跑多輪工具調用的長上下文 agent 時，KV cache 隨序列長度膨脹、部署成本高；Flash 級便宜模型在 terminal／agentic 基準上明顯落後旗艦（前代 Terminal-Bench 4.0 僅 31.2）。甜點區：KV cache 壓縮＋MIT 授權（程式碼與權重皆可商用）＋權重發布當天即上架 Hugging Face＋1M 上下文，小團隊能以低成本自建部署、直接對照官方 API 表現。極度適合**預算有限但要跑長程 coding agent 的團隊**，以及**需要授權乾淨、可地端部署的企業**。
+  * **資源**：[🤗 Hugging Face 權重](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)（FP8 dense＋FP4 experts 量化配置；官方另提供 Rust 工具庫 deepseek-recipe 做 prompt 編碼） | 📄 技術報告《DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression》（模型卡引用格式，尚未見獨立 arXiv 頁）
+  * **附註（未獨立查證）**：架構細節（Causal Encoder-Decoder 稀疏 MoE、552B backbone＋196B Engram 參數、input 激活 8B／output 激活 16B、FP4 主 KV cache 每 token 890 bytes 約前代四分之一、SWA Bounded Replay、API 價格 $0.15/M input）來自技術媒體報導轉述，官方模型卡未載明參數量與 KV bytes 數字；所有基準皆為官方自測、未經第三方獨立驗證。
+
+* **[Beam 1.0 (Reflection)](https://huggingface.co/reflection/Beam-1.0-501B-A23B)** `[2026-10-16]` 🔥 `[開源權重]` `[MoE]` `[Coding Agent]` `[Apache 2.0]` `[1M上下文]`
+  * **核心優勢**：**Reflection 釋出的第一個開放權重模型：501B 總參數、每 token 僅激活 23B 的稀疏 MoE，賣點是 frontier 級推理效率。** 架構：52 層（3 dense＋49 MoE）、256 experts、Gated GQA＋滑動窗口注意力、詞表 152k，上下文 1M tokens（純文字模型）；BF16／FP8／NVFP4 三種精度權重＋推測性解碼 drafter 模型，Day-0 原生支援 Transformers、vLLM、SGLang、Unsloth、Axolotl、NVIDIA Dynamo。客觀指標（官方模型卡自測，temp=0.7／top_p=0.99）：SWEBench Verified 81.6%、Terminal-Bench 2.1 80.1%、LiveCodeBench 88.3%、SWE Bench Pro v2-Hard 76.5%、AIME 2026 97.7%、GPQA Diamond 90.6%、HLE（tools 版）51.1%、MCP Atlas 80.8%、BrowseComp 76.8%。官方主打 token-efficient reasoning：達到領先開源模型同等解題品質只需約三分之一的推理 token。訓練側：RL 階段跑了約 13 億個沙盒環境，並把經驗上游成開源的 OpenEnv 環境標準。
+  * **解決痛點 / 推薦場景**：**解決了「頂級 agentic coding 能力只能從閉源 API 或自訂授權權重取得」的痛點。** 舊方法：前沿 coding agent 能力鎖在閉源 API（成本失控、資料外流），或開源權重的自訂授權（例如 Meta 的 Muse Model License 要求產品標示出處、年營收 2000 萬美元以上的模型即服務另簽約）。甜點區：真・Apache 2.0 權重＋完整官方基準＋商用可用，且官方明示**不禁止蒸餾**（連拿模型輸出訓練別的模型都允許，業界罕見）、微調、量化、合併；附開源終端 agent harness（Mirror CLI：Python 前端＋Rust agent core，支援斷點續跑、多 agent 平行）。極度適合**自建 coding agent 與長程自動化系統的團隊**、**需要合法蒸餾或魔改權重的企業**，以及**需要地端／主權部署的研究機構**（Dell、HPE 合作機房內版本）。
+  * **資源**：[🤗 Hugging Face 權重](https://huggingface.co/reflection/Beam-1.0-501B-A23B)（BF16／FP8／NVFP4＋speculative decoding drafter） | [📢 官方發布公告](https://reflection.ai/blog/beam-is-available) | [🛡️ Beam 安全技術報告](https://reflection.ai/beam-safety-report) | [📖 開發者文件](https://developers.reflection.ai)（含 Mirror CLI）
+  * **附註（未獨立查證）**：二次來源提及的訓練規模（23.8 兆 tokens 預訓練、1 億次以上 RL rollouts、10.5K GB300 訓練 4 週）未見於官方公告頁與模型卡，條目採官方公告的「約 13 億沙盒」數字；技術報告（Technical Report）官方標示 coming，尚未釋出。
+
+* **[Muse Spark Open (Meta Superintelligence Labs)](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)** `[2026-10-15]` 🔥 `[開源權重]` `[MoE]` `[原生多模態]` `[Coding Agent]` `[1M上下文]`
+  * **核心優勢**：**Meta Superintelligence Labs 迄今釋出的最大開放模型：816B 總參數、每 token 僅激活 42B 的原生多模態 MoE。** 架構為 MoE Transformer＋1.8B 感知編碼器：256 experts 每 token top-8 路由、62 層、詞表 202,048；原生支援文字、圖像、影片、音訊輸入（文字輸出），推理時上下文達 1M tokens；獨家 Reasoning Effort 參數（low／medium／high／xhigh，預設 xhigh）控制思考深度。客觀指標（官方自測，對打同級開源權重）：Agentic 類 JobBench 61.8、MCP-Atlas 89.2 居榜首；多模態 ZeroBench 50.0、SimpleVQA 73.6、IntPhys2 68.3 拿第一；知識推理 HLE-Diamond 26.1 第一、GPQA Diamond 89.0；AA Intelligence Index 39 落後中國同級開源模型（GLM 5.3 45、Kimi K3 44、Qwen3.8-2.4T-A95B 40）；安全面 FORTRESS ARS 5.8、StrongREJECT v2 0.5 皆為表中最低（越低越好）。
+  * **解決痛點 / 推薦場景**：**完美解決了「想自建頂級 coding／agentic 系統，卻被迫依賴閉源 API 或授權受限權重」的自主性痛點。** 舊方法：頂級 agentic 能力鎖在閉源 API（資料外流＋帳單失控）；開源權重則多半欠缺原生多模態與長程工具調用能力。甜點區：開放權重＋原生四模態輸入＋1M 上下文＋官方 agentic 基準驗證，BF16／NVFP4 雙精度釋出，SGLang、vLLM、TensorRT-LLM、llama.cpp 生態支援。極度適合**自建 coding agent 與長程自動化系統的團隊**、**需要本地部署頂級推理能力的研究機構**，以及**做合成資料生成與 LLM-as-a-judge 評測的開發者**。硬體門檻誠實揭露：NVFP4 需 700GB VRAM、BF16 需 2TB，官方稱兩台 M5 Ultra Mac Studio 可用 MLX 本地運行。
+  * **資源**：[🤗 Hugging Face 模型卡](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)（BF16／NVFP4 權重，需登入接受授權） | [📄 官方評測技術報告](https://research.meta.ai) | [📖 開發者部署文件](https://dev.meta.ai) | [💬 模型問題回饋](mailto:museoss@meta.com)
+  * **⚠️ 授權注意**：採 Meta 自訂 Muse Model License（非 OSI 開放授權）：產品／服務 UI 須標示 "Built with Muse Spark Open"；年營收逾 2000 萬美元的 Model-as-a-Service 需另與 Meta 簽約；未滿 18 歲不得使用。商用採用前請自行確認條款。
+  * **附註（未獨立查證）**：媒體報導的部署數字（兩台 M5 Ultra Mac Studio、BF16 約 1.6TB／NVFP4 約 530GB）與官方模型卡（700GB／2TB VRAM）不一致，條目採官方數字；Helion kernel、TorchTitan 微調支援、AMD／Intel／Unsloth 更小格式等僅見媒體報導，未在官方模型卡親驗。
 
 ### 🧠 核心概念與必讀文章：看懂 AI Agent 與 Agentic AI
 
@@ -548,6 +595,12 @@ Manus 在 2025 年掀起了全自動代理狂潮，以下為開源社群的最�
 ---
 
 #### 6. 特定場景應用 (Domain-Specific Automation)
+
+* **[Scientific Agent Skills (K-Dense)](https://github.com/K-Dense-AI/scientific-agent-skills)** `[2026-10-14]` 🔥
+  * **核心優勢**：**把通用 AI Agent 直接升級成「AI 科學家」：177 個經過 CI 測試的科學研究程序知識技能，全部 MIT 開源。** 每個技能是一個「程序知識」目錄：版本化、可讀的指令檔＋參考資料＋可執行腳本，Agent 只在任務需要時才載入。覆蓋生物資訊、化學資訊與藥物研發、臨床研究、材料科學、實驗室自動化等 20 個領域，對接 100+ 科學資料庫。遵循 open Agent Skills 標準，支援 Cursor、Claude Code、Codex、Google Antigravity、Pi，也可打包成 Agent Plugin。客觀指標：repo 抓取當日 49,462 star／4,427 fork，CI 對每個技能跑 skill tests＋security scan。
+  * **解決痛點 / 推薦場景**：**完美解決了「通用模型給你能跑的程式碼，卻不保證分析方法在該領域站得住腳」的科學研究痛點。** 舊方法：Agent 自行寫的分析腳本選錯統計檢定、用錯識別碼命名空間、沒附必要免責聲明：看似能跑，實則同行一翻就倒。甜點區：生物資訊、基因組學、藥物虛擬篩選、質譜蛋白質體、臨床證據工作流：技能把「該領域認可的程序選擇」直接寫成可載入的知識。極度適合**做科學計算的個人研究者**（把 Claude Code／Cursor 變成會做 single-cell RNA-seq 或分子對接的助手）、**藥物研發團隊的自動化管線**，以及**需要可重現、可引用分析流程的實驗室**。
+  * **資源**：[🐙 GitHub 官方開源](https://github.com/K-Dense-AI/scientific-agent-skills) | [📄 論文《Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents》(arXiv:2609.00065)](https://arxiv.org/abs/2609.00065)
+`[AI科學家]` `[Agent技能]` `[科學計算]` `[藥物研發]` `[生物資訊]`
 
 * **[[Huobao Drama]](https://github.com/chatfire-AI/huobao-drama)** `[2026-05]` 🔥
   * **核心優勢**：**打破傳統影視製作高牆，首款將「創意劇本➔分鏡➔音效➔成片」全流程打通的開源自動化短劇生產線！** 基於 Mastra AI 框架自主編排 5 大工程智能體（劇本改寫、角色場景提取、分鏡拆解、音色分配、提示詞生成），後端採用 Hono 與 Drizzle ORM，極速驅動 SQLite、Sharp 與 FFmpeg 進行視訊、音訊、字幕的單鏡高能合成與整集拼接。模型層採多廠商解耦設計，支援隨時切換 MiniMax、OpenAI、Gemini、火山等最新影音大模型，開創了「人還在，只是從拍一條變成調一條流水線」的工業化新範式。
@@ -974,6 +1027,11 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
   * **發布時間**：2024-11-23
   * **技術亮點**：被譽為「真・開源模型」。不僅開源權重，更史無前例地公開了完整的「後訓練」配方與數據，對 AI 研究社群貢獻巨大。
   * **資源**：[🐙 GitHub 源碼](https://github.com/allenai/open-instruct) | [🌐 Playground 測試](https://playground.allenai.org/) | [🤗 HuggingFace 模型](https://huggingface.co/allenai) 
+* **[Carbon-X (Hugging Face 開放 DNA 對話模型：14.8B／DNA＋文字單一解碼器)](https://huggingface.co/HuggingFaceBio/Carbon-X)** `[2026-10-22]` 🔥 `[DNA]` `[基因變異效應]` `[BioAI]` `[Apache 2.0]` `[6-mer tokenizer]`
+  * **核心優勢**：**第一個能用日常語言跟 DNA 聊天的開源模型：14.8B decoder-only，從 Qwen3-14B 起手，DNA 與文字共用單一 token 流。** hybrid tokenizer：Qwen3 BPE＋5,515 DNA tokens（4,096 個 6-mer＋1,364 尾段 token＋`<dna></dna><oov>` 標記），DNA 自動偵測標記。302B tokens mid-training（DNA 55%＋英文 20%＋生物文本 15%＋指令 10%），再經 SFT＋兩輪非同步 GRPO（verifiable rewards）。五項 DNA 基準平均 66.7%（無思考模式），比起點 Qwen3-14B 高 27 個百分點、領先所有開源對比模型；逼近 GPT-6.1 Sol（67.5%），推論成本約 1/1,800。編碼區變異效應（BioReason Coding）74.9、下一個鹼基預測（NextBase）39.4 兩項領先全場。bf16 單張 80GB GPU（vLLM）可跑，基因敏感資料可留本地。
+  * **解決痛點 / 推薦場景**：**解決了「基因資料敏感不能上雲、開源模型又看不懂 DNA」的痛點。** 舊方法：frontier API 模型分析 ClinVar 240 萬個未定變異估計 $32K–$4M，且病人基因資料得送出境；通用開源模型在 DNA 任務上幾乎隨機猜。甜點區：Apache 2.0 商用友善，適合**做變異效應判讀、基因功能註解的研究團隊**，以及**想把 DNA 能力包成 agent 工具的人**（官方附 Claude Code／Codex CLI 現成技能＋Inspect 整合）。
+  * **資源**：[🤗 HF 模型卡](https://huggingface.co/HuggingFaceBio/Carbon-X) | [🚀 官方發布頁（訓練配方＋Space）](https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release)
+  * **附註（未獨立查證）**：五基準中 FrontierVEP、NextBase 為 HF 自建；模型卡明言**未經濕實驗室驗證、不可用於臨床決策**；會算錯鹼基座標、會虛構序列功能；splice site（29.8%）與 histone mark（34.6%）仍弱；長 DNA 生成品質退化；llama.cpp／GGUF 不支援（DNA tokenizer 為自訂 Python 程式碼）。
 
 ### 🐉 中文生態系主流模型 (Chinese LLM Ecosystem)
 針對繁體/簡體中文語境優化，理解中文成語、文化背景與特定領域知識的表現遠超多數西方開源模型。
