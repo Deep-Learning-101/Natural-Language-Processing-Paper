@@ -25,6 +25,7 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- * **[Harness² (Google Research)](https://github.com/google-research/harness2)** `[2026-10]` 🔥 `[Agent自我優化]` `[Harness工程]` `[遞歸自我改進]` `[無需Grader]` `[Apache 2.0]`
 >- **[Mistral Large 4 (Le Chonk：1T MoE 開源權重旗艦，預覽後三週強化版，編碼與資安雙主攻)](https://huggingface.co/blog/mistral-large4)** `[2026-10-29]` 🔥 `[1T MoE]` `[開源權重]` `[1M上下文]` `[Agentic Coding]` `[資安防禦]` `[MLA+DSA稀疏注意力]`
 >- **[Gemini 4 Carbon(Google DeepMind：資安＋長程工程最強前沿模型，首批只給資安防禦者)](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/)** `[2026-10-29]` 🔥 `[閉源前沿]` `[資安防禦]` `[長程Agent]` `[Intelligence Index 59]` `[Fairwind限定]` `[對齊強化]`
 >- **[Kanana-2-Embedding(Kakao：韓語檢索專用雙模型，3B＋蒸餾 1.3B，MRL 可調維度)](https://biz.heraldcorp.com/article/10919060)** `[2026-10-29]` 🔥 `[韓語檢索]` `[Embedding]` `[開源權重]` `[MRL可調維度]` `[知識蒸餾]` `[個人化Agent檢索]`
@@ -395,6 +396,11 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 ### 🧩 2026 必備 AI Agent 開源框架與開發工具 (依據應用場景分類)
 
 在 Agentic AI 時代，選擇正確的框架能讓開發事半功倍。以下依據「應用場景」精選目前 GitHub 上最活躍、最具生產力的 AI Agent 開源專案：
+
+* **[Harness² (Google Research)](https://github.com/google-research/harness2)** `[2026-10]` 🔥 `[Agent自我優化]` `[Harness工程]` `[遞歸自我改進]` `[無需Grader]` `[Apache 2.0]`
+  * **核心優勢**：**模型權重不動，效能照樣漲：把「調 harness」本身變成一條會學習的管線。** Harness 是包在模型外的整層配置：system prompt、工具、記憶、編排與護欄。Harness² 的任務級遞歸走對比式 Propose–Probe–Compose：editor 對八個可編輯元件（system prompt、guardrails、memory、tool guidance、subagents、skills、scripts、plugins）提出候選改法，probe 把候選實際在同一任務上跑一遍，composer 從執行行為的差異中挑出真改進、合成新 harness，全程不需要標準答案或外部評分器。第二層 harnessing 級遞歸把每個任務定稿的 harness 與站得住腳的 lessons 存進常駐的 improvement harness，成為下一個任務的編輯起點。遞歸預算用 --k 控制：parallel 同時探 K 個通用加 K 個領域候選，sequential 串行精煉 K 步；執行器預設 OpenCode，可換 Codex。
+  * **解決痛點 / 推薦場景**：**生產環境的任務大多沒有標準答案，傳統獎勵訊號拿不到，harness 只能靠人肉試錯。** 論文（arXiv:2610.14224）與官方實測：GLM-5 與 Gemini 3.5 Flash、四種模型與 harness 配置、對照各自的原廠預設 harness，單步遞歸即全面提升：WorkBuddy-Bench 最高 +11.5 分、JobBench +4.5 分、法律 LAB 部分通過率 +11.8 個百分點，加大 --k 還能再漲。極度適合**企業 Agent 平台的 harness 自動調校**、**無 grader 場景的持續優化**、**研究「配置與權重何者決定 Agent 上限」**。⚠️ 官方 README 自己寫明：執行器網路存取不受限、Codex 沙箱預設關閉、公開 benchmark 的評分 rubric 在網路上可及，評測前須自行加網路限制，否則分數可能被「上網查答案」灌水；且 guardrails 本身就是可編輯元件之一，被污染的 memory 或 skill 等於改寫 Agent 的判斷邏輯，harness 檔案必須進版控並審計每次 diff；repo 亦聲明非 Google 官方支援產品、不在 Google 開源漏洞獎勵範圍。
+  * **資源**：[🐙 GitHub](https://github.com/google-research/harness2) | [📄 論文 (arXiv:2610.14224)](https://arxiv.org/abs/2610.14224) | [🌐 專案頁](https://harness2.github.io)
 
 #### 1. 個人全自動化助理與通用 Agent (Personal & General Assistants)
 
