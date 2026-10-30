@@ -1,7 +1,7 @@
 ---
 layout: default
-title: LLM 選型實測對決：Qwen3 vs Llama 3.3 vs Gemini Flash，2026 台灣企業版
-description: RAG、Agent、Fine-tuning 到底選哪個模型？Qwen3、Llama 3.3、Gemini Flash 繁體中文實測對比，附 SLM 邊緣部署成本估算與台灣企業選型決策樹。跳過行銷話術，只給選型判斷。
+title: 2026 LLM 完整指南：最新模型發布追蹤、排行榜與企業選型實測 (Qwen3、Llama、Gemini、Mistral)
+description: 即時追蹤 2026 年最新 LLM 發布動態與排行榜：Qwen3、Llama、Gemini、Mistral 等模型實測比較，附快速選型結論、RAG 與 AI Agent 選型建議、SLM 邊緣部署成本估算。給台灣開發者與企業的繁體中文選型指南。
 permalink: /Large-Language-Model
 lang: zh-Hant
 schema_type: article
