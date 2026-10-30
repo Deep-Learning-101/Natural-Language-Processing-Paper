@@ -25,6 +25,19 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- **[Mistral Large 4 (Le Chonk：1T MoE 開源權重旗艦，預覽後三週強化版，編碼與資安雙主攻)](https://huggingface.co/blog/mistral-large4)** `[2026-10-29]` 🔥 `[1T MoE]` `[開源權重]` `[1M上下文]` `[Agentic Coding]` `[資安防禦]` `[MLA+DSA稀疏注意力]`
+>- **[Gemini 4 Carbon(Google DeepMind：資安＋長程工程最強前沿模型，首批只給資安防禦者)](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/)** `[2026-10-29]` 🔥 `[閉源前沿]` `[資安防禦]` `[長程Agent]` `[Intelligence Index 59]` `[Fairwind限定]` `[對齊強化]`
+>- **[Kanana-2-Embedding(Kakao：韓語檢索專用雙模型，3B＋蒸餾 1.3B，MRL 可調維度)](https://biz.heraldcorp.com/article/10919060)** `[2026-10-29]` 🔥 `[韓語檢索]` `[Embedding]` `[開源權重]` `[MRL可調維度]` `[知識蒸餾]` `[個人化Agent檢索]`
+>- **[LFM3（Liquid AI：六模型 2B 級端側家族，一個骨幹分出文字／視覺／聲音／全模態／決策）](https://www.liquid.ai/blog/lfm3)** `[2026-10-28]` 🔥 `[三混合架構]` `[端側Agent]` `[256K上下文]` `[開源權重]` `[多模態家族]` `[單GPU微調]`
+>- **[Genie 4（Google DeepMind：原生音訊＋即時轉向的世界模型，Gemini 在迴圈內導引）](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)** `[2026-10-28]` 🔥 `[世界模型]` `[原生音訊]` `[即時轉向]` `[Gemini導引]` `[研究預覽]` `[SynthID]`
+>- **[GPT-6.1 Terra (OpenAI)](https://openai.com)** `[2026-10-26]` 🔥 `[電腦操作]` `[視覺推理]` `[閉源API]` `[成本效率]` `[ChatGPT Work]` `[Codex]`
+>- **[TimeH2O-v1 (H2O.ai)](https://huggingface.co/h2oai/timeh2o-v1)** `[2026-10-26]` 🔥 `[時間序列預測]` `[零樣本]` `[基礎模型]` `[非商業授權]` `[fev-bench]` `[機率預測]`
+>- **[AI21 LIFT-Bench／LIFT-Train（章節錨定指令遵循評測＋防獎勵駭客訓練集）](https://github.com/AI21Labs/lift-bench)** `[2026-10-25]` 🔥 `[指令遵循]` `[RL獎勵]` `[評測基準]` `[Apache-2.0]` `[文件起草]` `[LLM評判]`
+>- **[Microsoft Agensh（無中央編排、1,024 個 coding agent 自組織框架）](https://github.com/microsoft/Agensh)** `[2026-10-24]` 🔥 `[多智能體]` `[無編排]` `[Coding Agent]` `[MIT]` `[ProgramBench]` `[自組織]`
+>- **[Nanbeige4.3-33B（BOSS 直聘實驗室、33B 密集 agentic coding 教師模型、512K 上下文）](https://huggingface.co/Nanbeige/Nanbeige4.3-33B)** `[2026-10-24]` 🔥 `[開源權重]` `[Agentic Coding]` `[Apache-2.0]` `[512K上下文]` `[密集模型]` `[教師模型]`
+>- **[NVIDIA Nemotron 3.5 Bolt E4B 4GB（Gemma 4 E4B 後訓練、4GB 顯存本地語音助手與機器人模型）](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB)** `[2026-10-23]` 🔥 `[開源權重]` `[SLM]` `[端側 Agent]` `[工具呼叫]` `[Jetson]` `[OpenMDW-1.1]`
+>- **[LFM2.5-24B-A2B (Liquid AI)](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B)** `[2026-10-13]` 🔥 `[端側Agent]` `[MoE]` `[純推理模型]` `[工具調用]`
+>- **[context-mode](https://github.com/mksglu/context-mode)** `[2026-10-12]` 🔥 `[ContextWindow優化]` `[MCP伺服器]` `[CodingAgent]` `[會話記憶]`
 >- **[Kimi K3.1 Pro (Moonshot：2.8T／104B MoE 開源權重旗艦，1M 上下文)](https://www.kimi.ai/blog/kimi-k3-1-pro)** `[2026-10-23]` 🔥 `[開源權重]` `[MoE]` `[1M上下文]` `[Agentic Coding]` `[Terminal-Bench]` `[網路安全降級]`
 >- **[Carbon-X (Hugging Face 開放 DNA 對話模型：14.8B／DNA＋文字單一解碼器)](https://huggingface.co/HuggingFaceBio/Carbon-X)** `[2026-10-22]` 🔥 `[DNA]` `[基因變異效應]` `[BioAI]` `[Apache 2.0]` `[6-mer tokenizer]`
 >- **[DeepInfer (DeepSeek 自家生產線開源推論框架：V4.1-Flash serving stack)](https://github.com/deepseek-ai/DeepInfer)** `[2026-10-20]` 🔥 `[推論框架]` `[Speculative Decoding]` `[Apache 2.0]` `[V4.1-Flash]` `[Ascend 950]`
@@ -120,6 +133,12 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
   * **解決痛點 / 推薦場景**：**完美解決了企業在自研或微調大模型時，完整跑完一次 Benchmark 需要耗費數千萬 Token、上千 GPU 小時及高昂 API 成本的致命痛點。** 實測證明，即使將題量壓縮高達 200 倍，仍能維持 95% 的排名一致性。極度適合**企業級大模型快速迭代與 A/B 測試**、**邊緣運算端側模型 (SLM) 效能初篩**，以及需要頻繁進行**安全對齊與微調驗證**的 AI 研發團隊，真正引領產業界邁向「小數據精準評估」的新範式。
   * **資源**：[🐙 GitHub 官方開源](https://github.com/gszfwsb/EssenceBench) | [📄 arXiv 論文 (2510.10457)](https://arxiv.org/abs/2510.10457) | [🤗 Hugging Face 討論區](https://huggingface.co/papers/2510.10457)
   `[評測壓縮]` `[極致降本]` `[精準排序]` `[遺傳演算法]`
+
+* **[AI21 LIFT-Bench／LIFT-Train（章節錨定指令遵循評測＋防獎勵駭客訓練集）](https://github.com/AI21Labs/lift-bench)** `[2026-10-25]` 🔥 `[指令遵循]` `[RL獎勵]` `[評測基準]` `[Apache-2.0]` `[文件起草]` `[LLM評判]`
+  * **核心優勢**：**第一個把「約束綁到文件章節、把任務內容也算進分數」的指令遵循評測：同一套分數既是評測指標、也是 RL 獎勵，專治「獎勵衝頂、任務蒸發」的獎勵駭客。** LIFT-Bench 共 784 個測試任務、10 個切分（短文件約 4 節、長文件約 9 節，各四檔約束密度，外加兩個無大綱的 flat 切分）；LIFT-Train 為同生成管線的 34,258 個訓練任務。任務給主題＋結構大綱，每條約束只對它所屬的章節計分：程式可驗證約束（例如某節用德文、某詞至少出現三次）與 LLM 評判的內容約束（例如該節要追溯到首屆正式錦標賽）合併為單一加權分。評判模型固定為 Gemma-4-31B-it、寫進任務本身，分數只在同一評判下可比。程式碼、資料集與生成管線皆公開（Apache-2.0），任務格式可直接餵 Prime Intellect 的 verifiers 做評測與 RL 訓練。
+  * **解決痛點 / 推薦場景**：**解決了「用 IFEval／IFTrain 式獎勵練指令遵循，模型學會鑽規則、丟掉任務」的痛點。** 舊方法：約束對整篇回應計分、只看規則不看內容，AI21 實測 Qwen2.5-7B 用 IFTrain 做 GRPO，獎勵在第 180 步衝到 1.0，中位數答案卻從 114 詞縮到 18 詞（第 390 步），38% 的高分答案不到 30 詞；要寫辛亥革命另類歷史一章、限制一詞不重複超過四次，模型只回一個字「China」就拿滿分。甜點區：LIFT-Train 訓練下中位數答案維持 390–530 詞，沒有任何高分答案短於 30 詞；flat 切分對照實驗指出關鍵是「獎勵裡有內容」，不是格式差異。極度適合**要做文件起草、長文件指令遵循 RL 的團隊**，以及**懷疑自家獎勵曲線好看、產出卻在縮水的訓練團隊**（AI21 建議：獎勵曲線旁邊一定要同時看答案長度）。附帶發現：17 個模型、每任務 8 採樣的評測中，結構化任務 GPT-5.5 平均 0.96，flat 任務無一超過 0.85、閉源領先者僅 0.65–0.72；GPT-5.5 結構化第一、flat 卻掉到第五，整體平均最好的反而是開源權重的 Kimi K3 與 DeepSeek V4 Pro：拿 flat 榜單挑起草模型會挑錯。
+  * **資源**：[🐙 GitHub 官方倉庫（Apache-2.0）](https://github.com/AI21Labs/lift-bench) | [📝 AI21 官方部落格（2026-10-25 發布）](https://www.ai21.com/blog/lift-bench-blog/) | [📄 arXiv 論文 (2610.28819)](https://arxiv.org/abs/2610.28819) | [🤗 Hugging Face 資料集](https://huggingface.co/datasets/ai21labs/LIFTBench)
+  * **附註（未獨立查證）**：日期以官方部落格發布日 2026-10-25 為準；論文投稿為 10 月 20 日、GitHub 倉庫建立於 10 月 18 日，三者不要混為同一天。所有數字皆為 AI21 自測，未經獨立複現；AI21 自己也提醒，外部評測 AdvancedIF 與 ComplexBench 上的差距很小，應讀為「LIFT-Train 避免退化」而非全面勝出。評判相關數字：305 個人工標註樣本上，未錨定評判幾乎全盤接受（Gemma-4-31B 接受 292 個、實際僅 227 個成立；未錨定 Qwen2.5-32B macro-F1 0.44、約等於永遠答是的 0.43），錨定後提升 11–19 點。實務提醒：README 警告 vf-eval 預設會把執行推上 Prime Intellect 雲端並上傳結果，本地跑要保留 run_eval.sh 的本地旗標；prime-rl 設定段另提到資料集存取需 HF_TOKEN，與主文「公開」說法有出入，實際存取狀態未獨立驗證。
 
 ---
 
@@ -260,6 +279,32 @@ Nemotron 提供專為企業客製化的極致推理效能。 透過 TensorRT-LLM
 
 ### 🆕 新模型快訊：前沿開源權重模型
 
+* **[Mistral Large 4 (Le Chonk：1T MoE 開源權重旗艦，預覽後三週強化版，編碼與資安雙主攻)](https://huggingface.co/blog/mistral-large4)** `[2026-10-29]` 🔥 `[1T MoE]` `[開源權重]` `[1M上下文]` `[Agentic Coding]` `[資安防禦]` `[MLA+DSA稀疏注意力]`
+  * **核心優勢**：**兆參數級旗艦第一次真正可以自己下載回家跑：約 1T 總參數、每 token 只啟動約 49B、1M 上下文，10 月 6 日 API 預覽後又多練三週強化學習才釋出權重，開源模型裡編碼與資安防禦的標竿一次換人。** 多模態多語言 MoE：文字與圖像輸入、文字輸出；72 層解碼器、隱藏維度 6,144、64  attention heads，注意力結合 Multi-head Latent Attention(MLA，壓縮 KV)與 DeepSeek Sparse Attention(DSA)索引器(每 query 最多選 2,048 個 key 位置)，3:1 RoPE/NoPE 交錯、LeRope(YaRN 縮放、每頻率一個可學習乘子)、層間共享 KV；第 1 層為稠密前向網路，其餘 71 層為 MoE(每 token 路由選 128 個專家中的 4 個、另加 1 個共享專家，共 5 個啟動專家)；視覺編碼器為 1.6B Pixtral(30 層、2,048 維、16 heads、14x14 patches)。推理強度分 low/medium/high 三檔、預設 high 且無法關閉。官方變體為 FP8 與 NVFP4(NVFP4 需 Blackwell GPU、FP8 以 8 卡為基準)，另有 Unsloth 與 llama.cpp 團隊的 GGUF 量化；首日即支援 Transformers、vLLM、llama.cpp，另可走 Mistral API、OpenRouter、NVIDIA 端點與 Microsoft Foundry。
+  * **解決痛點 / 推薦場景**：**解決了「最強編碼與資安模型只能用 API：資安事件裡 API 可能拒答、斷線或把敏感程式碼與惡意樣本送出門」的痛點。** 舊方法：閉源 API 在漏洞重現、惡意樣本分析這類「看起來像攻擊」的防禦工作上直接拒絕，或在事件中途收回存取；自架開源模型則在編碼與資安兩項同時掉隊。甜點區：企業與政府自有基礎設施上的編碼 Agent 與資安防禦(漏洞重現再修補、惡意軟體分析、檢測規則撰寫、事件回應)，以及用其軌跡以 TRL 蒸餾出任務專用小模型。API 價格為每百萬 token 輸入 0.70 美元(快取 0.07 美元)、輸出 2.10 美元；授權為 Mistral Ecosystem Open-Weight License(MIT 衍生)：可自由使用、修改、微調與商用，唯一例外是經營 Model-as-a-Service 需另取商用授權。
+  * **量化基準(皆 Mistral 官方自報，尚未有獨立複現；以下為 10 月 29 日釋出權重的強化版數字)**：Terminal-Bench 4.0 為 41%(預覽版 28.3%，提升約 13 個百分點、輸出 token 減少 30%)；Artificial Analysis Coding Agent Index 為 48%，與 GLM-5.3 基本打平、但每任務平均少用 47% token；Cognition FrontierCode 2.0 為 19.7%(開源模型第一)；Artificial Analysis Cyber Index 為 51%；漏洞重現再修補測試 82%(該項次最高分)；Cybench(40 題資安競賽題)93%；Lakera B3 Agent 安全基準攻擊抵抗率 97.1%(預覽版 93.3%)；惡意資安請求拒答率 96.6%；FinWorkBench 金融工作流程 73.3%、BrowseComp 84.5%(預覽 SFT 檢查點為 75%)；內嵌 DSpark 推測解碼草稿頭，官方稱吞吐量最高可提升 1.9 倍。
+  * **資源**：[🤗 Hugging Face 官方部落格(Mistral 合作文)](https://huggingface.co/blog/mistral-large4) | [🤗 HF 權重 Mistral-Large-4-1T-A52B](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B)
+  * **附註(未獨立查證)**：日期以 Mistral 官方 X 公告與多家 10 月 29 日報導為準，落在台北 10 月 29 日窗口；10 月 6 日僅為 API 預覽，本次是權重釋出、且為多練三週的強化版，不可與預覽版混為一則。數字口徑務必分清：Hugging Face 部落格基準段落目前仍刊出預覽版數字(Terminal-Bench 28.3%、舊版 Coding Agent Index 49.8%、B3 93.3%)，與 10 月 29 日強化版(41%、新版 Index 48%、B3 97.1%)不可混用；新舊 Coding Agent Index 評測條件不同，49.8% 與 48% 不能直接比出退步。啟動參數亦有兩種說法：HF 部落格寫約 49B active，模型名稱 A52B 的 52B 為含 embedding 與輸出層的算法，條目以 49B 為主、52B 寫進本附註。完整技術報告官方稱即將發布，查證時尚未見到；所有基準皆為廠商自報，跨家數字宜打折看。
+
+* **[LFM3（Liquid AI：六模型 2B 級端側家族，一個骨幹分出文字／視覺／聲音／全模態／決策）](https://www.liquid.ai/blog/lfm3)** `[2026-10-28]` 🔥 `[三混合架構]` `[端側Agent]` `[256K上下文]` `[開源權重]` `[多模態家族]` `[單GPU微調]`
+  * **核心優勢**：**2B 級小模型第一次把「文字、視覺、聲音、全模態、決策」做成同一個可端側部署的家族：一個骨幹、六種專長，手機與筆電就能跑本地 Agent。** 全部六款皆由 LFM3-1.7B-Base 分支而來：LFM3-1.7B（文字）、LFM3-VL-2B（視覺，首度吃影片輸入）、LFM3-Audio-2B（聲音，18 語）、LFM3-Omni-2B（首款全模態）、d1-2B 與 d1-Omni-2B（決策模型，單次前向輸出帶機率的結構化答案）。骨幹為三混合架構：24 層中 13 層門控短卷積、5 層滑動窗口注意力（256 token 窗口）、6 層全域注意力，另加頭級門控注意力、半 RoPE 與夾心正規化；基底以 22T tokens 預訓練，最後 3.5T tokens 為中段訓練、把上下文拉到 256K tokens。
+  * **解決痛點 / 推薦場景**：**解決了「要本地 Agent 就得上雲或上大模型：雲端有延遲與隱私成本，大模型塞不進手機與邊緣裝置」的痛點。** 舊方法：本地助理只能做簡單指令，複雜工具呼叫與多步驟任務一律回雲端；或硬上 7B 以上模型，手機發熱、筆電風扇全開。甜點區：不需聯網的本地 Agent（信箱分流、行事曆管理、網頁研究、晨間簡報）、單一 GPU 微調出的產業專家（官方示範：約 3,000 張公開照片、單張 A100 微調數小時，風機葉片缺陷分類準確率從不到 10% 拉到 67%）、機器人編排／導航／操作（VL 模型微調的 VLA 在 LIBERO 四套件平均成功率 96.2%）。部署支援 llama.cpp、MLX、vLLM、SGLang、ONNX、Ollama、LM Studio，4 位元量化後文字模型約 1 GB。
+  * **量化基準（皆 Liquid AI 官方自報，尚未有獨立複現）**：文字模型 LFM3-1.7B（1.73B）：29 項基準平均 49.37，勝過自家 LFM2.5-2.6B 的 31.55 與 Qwen3.5-9B 的 47.24；BFCL V4 工具呼叫 71.39、ToolSandbox 80.36、IFEval 指令遵循 96.66、WebArena-Verified 38.42、AutomationBench 41.29、SWE-bench Verified 43.40；裝置端 llama.cpp Q4_0、32K 上下文下解碼速度為同級最快（官方稱比次名快 1.8 至 2.8 倍），128K 上下文 KV 快取僅 1.6 GB（Qwen3.5-4B 為 4.3 GB），單張 NVIDIA B300 以 SGLang BF16 在 1,024 併發下日產 3.6B tokens。視覺模型 LFM3-VL-2B（1.92B）：62 項視覺基準平均 71.4，較 LFM2.5-VL-3B 的 57.6 大升，且與 12B 的 Gemma 4 12B（71.7）幾乎持平、距 GPT-5.6 Luna（73.4）不到 2 分；文件／OCR／圖表 83.9、視覺定位 77.3、介面理解 83.1。聲音模型 LFM3-Audio-2B：英文 ASR 詞錯率 6.2%、UTMOSv2 語音品質 3.8（前代 3.2）、VoiceBench 73.1、首 token 延遲最低 50 毫秒；全模態 LFM3-Omni-2B：Daily-Omni 70.1（Qwen2.5-Omni-7B 為 61.3）。決策模型 d1-2B：Decision Bench 85.2（前代 d1-3B 為 83.6），參數少三分之一反而更強。
+  * **資源**：[🌐 Liquid AI 官方部落格](https://www.liquid.ai/blog/lfm3) | [🤗 Hugging Face 官方部落格整理](https://huggingface.co/blog/LiquidAI/lfm3) | [🤗 HF 模型卡 LFM3-VL-2B（LFM Open License v1.0）](https://huggingface.co/LiquidAI/LFM3-VL-2B)
+  * **附註（未獨立查證）**：日期以官方部落格標示的 2026-10-27（美國日期）為準，按原始戳記換算台北時間為 10-28 凌晨，落在本日窗口；不要只看美國日期就誤判為昨日。授權細節來自 HF 模型卡與次級整理：LFM Open License v1.0，年營收 1,000 萬美元以下可免費商用，超過門檻需另外授權，不等於 Apache-2.0 式完全開放，商用前務必讀授權全文。弱項誠實列出：官方自己也劃線，複雜推理與多步驟程式仍是弱項（Terminal-Bench 2.1 僅 12.92、GPQA Diamond 63.37 落後 Qwen3.5-9B 的 80.40、Humanity's Last Exam 無工具僅 7.17），官方建議搭配搜尋工具使用、不要拿它做重度程式與複雜數學；音訊英文 ASR 6.2% 其實微落後前代的 6.1%，進步主要在語音品質與理解而非辨識率。所有基準皆為 Liquid 自家 harness 自測，截至查證時未見獨立第三方複現，同 harness 比較對自家模型有利，跨家數字宜打折看。
+
+* **[Nanbeige4.3-33B（BOSS 直聘實驗室、33B 密集 agentic coding 教師模型、512K 上下文）](https://huggingface.co/Nanbeige/Nanbeige4.3-33B)** `[2026-10-24]` 🔥 `[開源權重]` `[Agentic Coding]` `[Apache-2.0]` `[512K上下文]` `[密集模型]` `[教師模型]`
+  * **核心優勢**：**33B 密集模型、Apache-2.0 完全開源，專為 agentic coding 與辦公室 cowork 任務而生，實驗室自測在同級開源模型中領先 17–18／20 項，並定位為系列教師模型、先強後蒸餾。** Nanbeige 為中國招聘平台 BOSS 直聘的語言模型實驗室；本模型為 Nanbeige4.3 系列旗艦教師模型，33,118,977,024 參數密集架構（Llama 架構、BF16），524,288 token（512K）上下文，預設開啟思考模式，並同步釋出 Nanbeige4.3-33B-Base 供客製後訓練。部署配方為 SGLang／vLLM 四路張量平行、Qwen3-coder 工具解析，推理任務上下文上限 262,144 token，並建議保持 preserve_thinking 以利多輪工具任務。HF 模型卡自測表（同 harness、最高思考 effort）：Terminal-Bench 2.1 80.9（Qwen3.8-27B 73.0）、DeepSWE 65.5（42.5）、Automation Bench 54.2（38.3）、JobBench 44.8（34.5）、AIME 2026 95.2（94.5）。
+  * **解決痛點 / 推薦場景**：**解決了「30B 級開源模型在 agentic coding 與多步驟辦公協作上追不上同級對手、且好模型多半要等蒸餾小版」的痛點。** 舊方法：要強 agentic 能力得上更大模型或閉源 API，或等別人把能力蒸餾進小模型。甜點區：實驗室明言策略是先做強教師、再把 agentic 能力蒸餾進後續小模型（首發即預告 Nanbeige4.3-3B）；BF16 權重約 66 GB（HF API 登錄儲存量 66,259,989,086 位元組），多卡伺服器可直接以 vLLM／SGLang 部署。極度適合**要自託管 coding agent、且接受 33B 多卡部署成本的團隊**，以及**追蹤中國開源實驗室 agentic 路線的研究者**。先提醒：所有分數皆為實驗室自測，換模型前先在自家 repo 跑一遍。
+  * **資源**：[🤗 Hugging Face 模型卡（Apache-2.0）](https://huggingface.co/Nanbeige/Nanbeige4.3-33B) | [📰 發布整理（MarkTechPost，2026-10-25）](https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/) | [📰 發布整理（Pasquale Pillitteri）](https://pasqualepillitteri.it/en/news/27138/nanbeige-4-3-33b-open-source-en)
+  * **附註（未獨立查證）**：日期以 HF 模型建立時間 2026-10-24T02:49:18Z（台北 10 月 24 日 10:49）為準，昨日簡報漏收、本日補登，不偽稱 10 月 25 日發布；HF 最後修改為 10 月 25 日 11:11Z（台北 19:11），那是更新不是首發。弱項誠實列出：SWE-Bench Pro 60.3 落後 Qwen3.8-27B 的 61.7、GPQA Diamond 89.5 落後 Gemma4-31B 的 91.3、GDPval 84.8 落後 Qwen 的 86.4；Terminal-Bench 4.0 僅 23.8，雖仍領先同級對手（6.3／1.6／0.0），但絕對值低，不宜只看 2.1 版的 80.9。第三方獨立複現目前皆無；4-bit 量化約 20 GB 的說法來自二手報導，未獨立驗證。
+
+* **[NVIDIA Nemotron 3.5 Bolt E4B 4GB（Gemma 4 E4B 後訓練、4GB 顯存本地語音助手與機器人模型）](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB)** `[2026-10-23]` 🔥 `[開源權重]` `[SLM]` `[端側 Agent]` `[工具呼叫]` `[Jetson]` `[OpenMDW-1.1]`
+  * **核心優勢**：**4GB 顯存就能跑的開源對話＋工具呼叫小模型：8B 總參數／4B 有效參數、64K 上下文，NVIDIA 官方實測在角色扮演與指令階層測試上明顯超越同級模型。** 由 Google Gemma 4 E4B-it 僅以強化學習後訓練（RLVR＋RLHF，未做監督微調），主打多輪對話、工具呼叫與輸入 grounding；可切換思考模式，並附 DFlash 推測解碼 drafter。官方 21 項評測中，RoleBench 67.0（Qwen3.5-4B 53.7、Gemma 4 E4B 49.9）、IHEval 84.8（Gemma 4 E4B 67.0）、MultiChallenge 53.1（Qwen3.5-4B 51.8）；RTX 5070 上搭配 DFlash 官方稱最高 272.6 tokens／秒。權重、資料與訓練配方以 OpenMDW-1.1 釋出（商用允許），Hugging Face、Ollama、LM Studio、Unsloth、Jetson AI Lab 皆可取得；Q4_K_M GGUF 檔 6.18 GB，Ollama 一行指令即可跑。
+  * **解決痛點 / 推薦場景**：**解決了「本地語音助手與機器人不想上雲、但 24GB 級模型塞不進邊緣裝置」的痛點。** 舊方法：要本地 agent 不是綁雲端 API（延遲、隱私、斷網即停），就是上 24GB 模型（Bolt 74B）或接受基底 Gemma 4 E4B 較弱的工具表現。甜點區：Jetson Orin Nano 8GB 上即可跑（官方實測 3,000 token 提示、50 token 輸出：4.2GB 顯存、首 token 5.8 秒、15.5 tokens／秒），官方示範 Reachy Mini 機器人由 Bolt E4B 負責對話與動作腳本呼叫、Cosmos 3 Edge 負責視覺。極度適合**要做本地語音助手、互動角色（NPC）、機器人對話的團隊**，以及**只有主流 GeForce 顯卡、想離線跑 agent 的開發者**。附帶提醒：它是純文字模型，不吃圖像與語音輸入，示範中的視覺與語音皆由其他模型負責。
+  * **資源**：[🤗 Hugging Face 模型卡](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB) | [📰 官方發布細節與評測整理（Pasquale Pillitteri，含官方數據表）](https://pasqualepillitteri.it/en/news/26810/nemotron-3-5-bolt-e4b-nvidia-robots-games) | [📰 發布整理（Digest AI）](https://digestai.news/story/nvidia-releases-nemotron-3-5-bolt-e4b-for-local-voice-agents-and-robot)
+  * **附註（未獨立查證）**：官方基準皆為 NVIDIA 自測（BF16 精度），實際下載的 Q4_K_M 量化版分數可能不同；Unsloth 的 Q4_K_M 實測 MultiChallenge 為 55.60（Gemma 4 E4B-it 同量化 39.36），與官方 BF16 表的 53.1／42.1 不同，屬不同精度、不可直接對比。弱項誠實列出：Tau2-Bench 多輪工具 55.1 大幅落後 Qwen3.5-4B 的 75.1、BFCL-v3 68.5 落後 Qwen3.5-4B 的 70.9、64K RULER 87.0 落後 Qwen3.5-4B 的 95.1；Brevity Bench 與 When2Call-MT 兩項官方評測尚未公布、llama.cpp 官方啟動配方仍標示 pending。獨立測試（Atomic Agent，RTX 5090）樣本極小（每模型 18 次），僅供參考：Bolt 12 勝、Gemma 11 勝，推理模式耗時與 token 量暴增。名稱陷阱：Bolt E4B（4GB、純文字、64K）與 Bolt 74B-A9B（24GB、MoE、多模態、256K）是兩個不同模型，勿混淆。官方發布時間為台北 2026-10-23 23:41，屬昨日窗口末段、昨日簡報未收錄，本日補登，日期如實標示。
+
 * **[Kimi K3.1 Pro (Moonshot：2.8T／104B MoE 開源權重旗艦，1M 上下文)](https://www.kimi.ai/blog/kimi-k3-1-pro)** `[2026-10-23]` 🔥 `[開源權重]` `[MoE]` `[1M上下文]` `[Agentic Coding]` `[Terminal-Bench]` `[網路安全降級]`
   * **核心優勢**：**開源權重模型首次逼近閉源前沿天花板：Artificial Analysis Intelligence Index 55 分，僅落後 Claude Opus 5.5 約 2.5 分、領先前任開源冠軍 MiMo-V2.6-Pro 8.8 分。** Kimi K3 的 post-training 升級版：2.8T 總參數／104B active 的 MoE、1M token 上下文、原生多模態輸入；RL 訓練大幅加碼（框架、長上下文推論、rollout 排程、沙盒全面重構）。官方自測：Terminal-Bench 4.0 65.7%（Opus 5.5 66.4%、GPT-6 Astra 58.2%）、Kimi Code Bench 3.0 長程任務 61.2（K3 55.95）、BenchCAD 92.7；Kimi Hallu Bench Hard 聲稱級幻覺率從 K3 的 23.4% 降到 8.3%。API 即刻可用（$2／$10 每百萬 token，快取輸入 $0.2；Highspeed 版 2–3 倍速、雙倍價）；權重承諾 11 月 4 日前釋出，授權尚未公布。
   * **解決痛點 / 推薦場景**：**解決了「開源模型在 agentic coding 與長程任務上追不上閉源前沿」的痛點。** 舊方法：要 frontier 級 agent coding 只能綁閉源 API（成本失控、資料外送），或接受落後 3 個月的開源權重。甜點區：開閉源差距從 9 月的 104 天壓到 31 天，API 價格降到 K3 的三分之二，權重一出即可自託管與微調。極度適合**要自建 coding agent 壓低成本的團隊**、**需要地端／主權部署的企業**，以及**追蹤開閉源差距的研究者**。附帶亮點是資安設計：Moonshot 主動從 mid-training 與 RL 資料移除網路攻擊相關資料，自家 xdev-bench-hard 上開源版 pass@3 從 90.5% 降到 81.0%，明示「不讓開源權重推進攻擊能力前沿」。
@@ -296,6 +341,14 @@ Nemotron 提供專為企業客製化的極致推理效能。 透過 TensorRT-LLM
   * **資源**：[🤗 Hugging Face 模型卡](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)（BF16／NVFP4 權重，需登入接受授權） | [📄 官方評測技術報告](https://research.meta.ai) | [📖 開發者部署文件](https://dev.meta.ai) | [💬 模型問題回饋](mailto:museoss@meta.com)
   * **⚠️ 授權注意**：採 Meta 自訂 Muse Model License（非 OSI 開放授權）：產品／服務 UI 須標示 "Built with Muse Spark Open"；年營收逾 2000 萬美元的 Model-as-a-Service 需另與 Meta 簽約；未滿 18 歲不得使用。商用採用前請自行確認條款。
   * **附註（未獨立查證）**：媒體報導的部署數字（兩台 M5 Ultra Mac Studio、BF16 約 1.6TB／NVFP4 約 530GB）與官方模型卡（700GB／2TB VRAM）不一致，條目採官方數字；Helion kernel、TorchTitan 微調支援、AMD／Intel／Unsloth 更小格式等僅見媒體報導，未在官方模型卡親驗。
+
+### 🆕 新模型快訊：端側 Agent 推理模型
+
+* **[LFM2.5-24B-A2B (Liquid AI)](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B)** `[2026-10-13]` 🔥 `[端側Agent]` `[MoE]` `[純推理模型]` `[工具調用]`
+  * **核心優勢**：**24B 總參數、每 token 僅 2.45B 運算：專為端側 Agent 打造的純推理模型。** 架構沿 LFM2 路線：40 層（30 層雙門控短卷積＋10 層 GQA）、每 MoE 塊 64 experts、top-4 路由；上下文 32K→131K、詞表 65K→128K（非拉丁語系分詞更好）；預訓練拉到約 33T tokens。後訓練五階段是關鍵：SFT→教師專家化→非 Agent／Agent 兩輪多領域在線蒸餾→直接在 OpenClaw、Hermes Agent、Pi、OpenCode 裡做 Agentic RL，讓模型學會各 harness 的工具與互動模式。客觀指標：16 項基準對打 Qwen3.6-35B-A3B／Gemma-4-26B-A4B-it／Nemotron-3.5-Lightning，工具調用類拿下 5 項第一（AutomationBench 27.69 對次佳 8.72、LiveClaw 48.09 對 38.19、BFCLv4 65.01、ToolSandbox 80.71），三項指令遵循基準全拿第一；推理速度 M5 Max 達 184 tok/s、單張 B300 達 21K tok/s。
+  * **解決痛點 / 推薦場景**：**完美解決了「想在本地跑 Agent，卻被迫把資料送上雲端 API」的隱私與成本痛點。** 舊方法：雲端大模型 API 又貴、資料又外流；本地小模型則不會用工具、推理慢到不能當 Agent 用。甜點區：純推理架構（每次回答必先顯式思考）、工具調用原生（Pythonic 函數調用格式）、端側極速（筆電等級硬體互動式調度）。極度適合**隱私敏感的本地自動化 Agent**（在 MacBook／工作站上全天跑 OpenClaw／Hermes）、**斷網或內網環境的智能助手**，以及**不想付雲端 token 帳單的個人開發者**。
+  * **資源**：[🤗 Hugging Face 模型卡](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B)（另有 Base 版／FP8／GGUF／ONNX／MLX-4bit 權重，DSpark 草稿模型即將推出） | [🌐 官方發布部落格](https://www.liquid.ai/blog/lfm2-5-24b-a2b) | [📄 LFM2 架構技術報告 (arXiv:2511.23404)](https://arxiv.org/abs/2511.23404) | [📖 本地 Agent 部署指南](https://docs.liquid.ai)
+  * **⚠️ 授權注意**：open-weight 但採 Liquid 自訂 LFM 1.0 授權（HF 模型卡標示 license:other，非 OSI 開放授權），商用採用前請自行確認條款。
 
 ### 🧠 核心概念與必讀文章：看懂 AI Agent 與 Agentic AI
 
@@ -402,6 +455,12 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 ---
 
 #### 2. 複雜工作流與多智能體編排 (Workflow & Multi-Agent)
+* **[Microsoft Agensh（無中央編排、1,024 個 coding agent 自組織框架）](https://github.com/microsoft/Agensh)** `[2026-10-24]` 🔥 `[多智能體]` `[無編排]` `[Coding Agent]` `[MIT]` `[ProgramBench]` `[自組織]`
+  * **核心優勢**：**把多智能體協調從「主管 agent」搬進基礎設施：沒有中央編排者，1,024 個 worker 照同一條五步迴圈自認領、自驗證、自合併，agent 數量本身成為新的擴展維度。** 每個 worker 非同步跑同一迴圈：蒐集上下文、認領子任務（發 CLAIM、重疊用私訊協調）、動手並及早分享發現、按驗收標準驗證、合併進共享 repo 再重複；迴圈寫在提示詞裡而非執行期程式碼，每個 worker 除 ID 外拿同一份提示。支撐三件套：Gitea 共享工作區（分支、PR、合併衝突）、Mattermost 團隊頻道＋私訊、源自 DeLM 的共享情境板（OBSERVED、FACT、FAIL、CLAIM、PATCH_SUMMARY 五類筆記）。底層接單 agent 框架，實驗用 GitHub Copilot CLI（ACP 會話），論文稱可用輕量轉接器接 Claude Code 等框架。預設單節點 Docker Compose 跑 8 個 worker，6 小時一任務；1,024 agent 實驗為 16 節點 × 64 agent，每 worker 上限輸入 272,000 token、輸出 128,000 token、記憶體 64 GiB。MIT 授權。
+  * **解決痛點 / 推薦場景**：**解決了「主管 agent 成為多智能體瓶頸：規劃、派工、合併全卡在一個人身上，agent 一多就塞車」的痛點。** 舊方法：Claude Code agent teams、Codex 子 agent、Copilot fleet、Kimi Agent Swarm 皆由主管拆解派工，規模一拉大協調成本先爆。甜點區：ProgramBench 最難 5 題（FFmpeg、gromacs、pandoc、PHP-src、ctags，離線從行為重建程式、6 小時預算），GPT-5.6-sol 高推理 effort 下 5 題平均測試通過率從 1 agent 的 19.31% 升到 128 agent 的 28.78%（相對提升約 49%）；pandoc 單題從 33.89%（1 agent）升到 55.06%（1,024 agent），且 128 agent 在 30 分鐘就通過 30%，32 agent 需 60 分鐘、8 agent 需 90 分鐘。極度適合**有硬性時限、任務夠大值得上百 agent 分工的重建／重構任務**，以及**研究「agent 數量擴展律」的團隊**（實驗還觀察到未寫死的自發分工：8 agent 自行協調介面、32 agent 同儕審查、128 agent 固定整合流程、1,024 agent 出現整合者角色並接手失敗任務）。小任務別硬上：1 agent 到 8 agent 平均只加 1.37 點，划不來。
+  * **資源**：[🐙 GitHub 官方倉庫（MIT）](https://github.com/microsoft/Agensh) | [🌐 官方專案頁](https://agens-harness.github.io/project/) | [📄 arXiv 論文 (2609.26781)](https://arxiv.org/abs/2609.26781)
+  * **附註（未獨立查證）**：論文發表於 9 月 22 日，程式碼首版發布於 10 月 24 日（Microsoft Research 作者 Furu Wei 當日 LinkedIn 公告），昨日簡報漏收、本日補登，日期如實標示為 2026-10-24，不偽稱 10 月 25 日發布；MarkTechPost 報導刊於 10 月 24 日（UTC 時間戳為 10 月 25 日凌晨，屬昨日簡報開工後才上線，故漏收）。GPT-6.1-sol 的 pandoc 數字（1 agent 56.19% → 32 agent 79.59%）只出現在 README，不在論文 v1 版內，引用時要分開標示。Token 成本未公布；實跑另需模型 API token 與 ProgramBench v1.2.5，Linux＋Docker Engine＋Compose v2＋systemd＋cgroup v2＋Python 3.11 以上。
+
 * **[DeerFlow 2.0 (字節跳動)](https://github.com/bytedance/deer-flow/blob/main/README_zh.md)** `[2026-03-26]`：從 Deep Research 升級的 Super Agent Harness，將 sub-agents、memory 和 sandbox 有機組織，能處理極度複雜任務。
 * **[Agno](https://zread.ai/agno-agi/agno/)** `[2025-11]`：專注於高效能的多智能體 (Multi-agent) 系統框架。
 * **[Microsoft Agent Framework](https://github.com/microsoft/agent-framework)** `[2025-08-29]`：微軟官方開發套件，專為 .NET 和 Python 開發者設計的企業級工作流。
@@ -581,6 +640,12 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 * **[autoMate](https://github.com/yuruotong1/autoMate)** `[2025-03-11]`：基於 OmniParser 的 AI 自動化 GUI 助手。
 
 * **[OmniParser](https://github.com/microsoft/OmniParser)** `[2024-10-26]`：微軟開源的核心技術，將純視覺輸入轉化為可操作的 UI 元素。
+
+* **[context-mode](https://github.com/mksglu/context-mode)** `[2026-10-12]` 🔥 `[ContextWindow優化]` `[MCP伺服器]` `[CodingAgent]` `[會話記憶]`
+  * **核心優勢**：**把 MCP 工具的原始輸出擋在 context window 之外：AI coding agent 的「上下文節流閥」。** 機制四招：沙箱工具只回傳結果摘要（官方宣稱 315 KB → 5.4 KB，98% 縮減）；SQLite 追蹤所有檔案編輯、git 操作、任務、錯誤與使用者決策，會話壓縮後用 FTS5＋BM25 只取回相關片段；「Think in Code」典式：讓模型寫程式做分析，而非把 50 個檔案讀進 context（官方例：47 次 Read＝700 KB → 1 次 ctx_execute＝3.6 KB）；刻意不強制簡潔寫作風格（官方引 Moonshot 研究：激進的簡潔提示會傷害 coding／reasoning 基準）。客觀指標：GitHub 27,383 star、1,950 fork、2,230 commits，10-12 登上 GitHub trending daily 第 3 名（AI 相關僅次於 REA），支援 Claude Code、Codex、Cursor、GitHub Copilot 等 17 個平台。
+  * **解決痛點 / 推薦場景**：**完美解決了 AI coding agent「用越久越笨」的上下文失血痛點。** 舊方法：每個 MCP 工具呼叫都把原始資料傾倒進 context（一個 Playwright 快照 56 KB、20 個 GitHub issue 59 KB），30 分鐘燒掉 40% 上下文；會話一壓縮，agent 連自己在改哪些檔案都忘了。甜點區：工具輸出沙箱化、會話記憶外置索引、資料處理交給程式碼而非模型閱讀。極度適合**長時間多輪的 AI 結對編程**、**大型 monorepo 的 agent 重構任務**，以及**被 token 帳單刺痛的團隊**。
+  * **資源**：[🐙 GitHub 官方倉庫](https://github.com/mksglu/context-mode)（倉庫根目錄另有 BENCHMARK.md，數字未獨立驗證）
+  * **⚠️ 授權注意**：README 徽章標示 Elastic License v2，但 GitHub 倉庫頁顯示 License: Other（NOASSERTION），兩者不一致，商用採用前請自行確認。
 
 ---
 
@@ -890,6 +955,13 @@ Google 的 NotebookLM 改變了我們與長篇文獻互動的方式，但「資�
 
 世界模型透過物理法則學習，大幅提升空間與時序預測能力。 整合 SORA 等空間預測架構，機器人與自駕決策的模擬誤差率可降低 60% 以上，數據採集成本減少十倍。這是從純文本邁向通用具身智能 (Embodied AI) 的關鍵路徑。如果說傳統 LLM 是「文字接龍」，那世界模型 (World Models) 就是讓 AI 具備「物理法則與常識預測能力」。透過預測環境的下一步變化，這是通往通用人工智慧 (AGI) 與具身智能 (Embodied AI) 的關鍵拼圖。
 
+* **[Genie 4（Google DeepMind：原生音訊＋即時轉向的世界模型，Gemini 在迴圈內導引）](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)** `[2026-10-28]` 🔥 `[世界模型]` `[原生音訊]` `[即時轉向]` `[Gemini導引]` `[研究預覽]` `[SynthID]`
+  * **核心優勢**：**世界模型第一次同時做到「看得到、聽得到、改得到」：畫面即時算、聲音原生出、場景中途還能用一句話改寫。** Genie 4 是 Google DeepMind 的新一代世界模型：輸入一句話或一張圖，即時生成可走進去探索的互動世界，而非一段播完就結束的影片。三大升級皆來自官方部落格：第一，原生音訊，DeepMind 首款即時世界模型原生生成聲音，環境音、音樂與角色即時對話皆與畫面同步生成；第二，即時轉向，模擬進行中可用自然語言改天氣、移鏡頭、加入人物或物件，Gemini 會按場景脈絡調整指令，兩次輸入之間 Gemini 也持續監看並推動場景；第三，Gemini 進迴圈，Gemini Omni 負責錨定真實外觀與物理行為，Gemini 3.8 Flash 擔任迴圈內導引 Agent，逐格觀察、把目標拆成步驟、驗證每步是否完成，遇使用者介入即時改計畫，讓多步驟事件具備因果連貫性；另與 Gemini 4 Argon 連動做機器人模擬實驗（Apptronik Apollo 人形機器人下西洋跳棋的步驟拆解）。
+  * **解決痛點 / 推薦場景**：**解決了「影片生成只能看、世界模型只能靜默探索、想改場景就得重算整段」的痛點。** 舊方法：影片模型產出固定片段，導演想換鏡頭或天氣只能重抽；早期世界模型無聲、人物動作僵硬、場景稍長就失憶。甜點區：影視前期視覺化（同一場景即時多拍、隨改鏡頭與對白）、遊戲與互動體驗原型（有想法先走進可玩原型、再寫引擎程式碼）、歷史照片與災害情境的沉浸式重現、機器人與 Agent 的訓練場景生成（先在想像世界測一遍再上真機）。官方也明言用途邊界：目前是研究預覽，僅受信任測試者可用，之後先到 Google AI Ultra 訂閱戶的 Project Genie 與 Gemini API／AI Studio 早期夥伴，一般使用者需排候補；所有生成影音皆帶 SynthID 浮水印。
+  * **量化基準（官方部落格未給解析度、幀率與基準分數，以下數字來自次級報導，僅供參考）**：據 TechCrunch 報導，場景維持一致的時間約 2 分鐘，為 Genie 3 的約 2 倍（Genie 3 為 1 分鐘、720p、24fps，見次級對照）；官方部落格僅稱「短時間 session 內可維持連貫」，未承諾具體分鐘數。官方坦承的限制比數字更重要：模擬越久、多輪複雜改寫後、或在場景中長途移動時，視覺細節與物件恆存性仍會漂移；複雜物理互動、即時音訊準確度、畫面中可讀文字、空間準確度與長期一致性皆列為持續研究項目。
+  * **資源**：[🌐 Google DeepMind 官方部落格](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)
+  * **附註（未獨立查證）**：日期認定是本則最容易踩錯的邊界，特此標明：官方部落格標示 2026-10-27（美國日期），其 UTC 戳記 10-27 16:00 換算台北時間恰為 10-28 00:00，屬本日窗口起點，故本日收錄、不提前、不延後；頁面另有 10-28 12:01 UTC 的更新紀錄，那是頁面更新不是改寫發布日。無權重、無開源程式碼、無技術報告論文號，不可寫成開源模型；「最逼真、最互動」為執行長 Sundar Pichai 的公開說法，非評測結論。昨日晚間的使用者指定試作（口播稿、封面圖、TTS 音檔）已先行產出，本日正式條目沿用其已查證事實並補上官方部落格親驗細節，試作媒體不另登記台帳。
+
 * **[H-JEPA (LeCun AMI 世界模型)](https://github.com/kevinghst/H-JEPA)** `[2026-10]` 🔥 `[世界模型]` `[JEPA]` `[分層規劃]` `[視覺規劃]` `[具身智能]`
   * **核心優勢**：**LeCun 2022 年畫的分層 JEPA 藍圖，第一次端到端跑通了。** AMI 聯合 NYU、INRIA Paris、Brown：多個動作條件 JEPA 逐層堆疊，每層在自己的表徵空間預測更遠的未來（高層一步對應低層兩步）。規劃由上而下：高層先定粗略路線，預測的中間狀態變成低層的子目標，低層接力細化成原始動作。每層三件套（狀態編碼器、動作編碼器、預測器）端到端共同訓練，用 LeJEPA 的 SIGReg 防表徵坍塌。Visual AntMaze 三層成功率 73%，單層只有 18%，而且規劃算量更少。
   * **解決痛點 / 推薦場景**：**單一表徵空間伺候不了兩種活：低層控制要細節，長程規劃要抽象。** 四足機器人腿姿不同、位置對了，平坦模型會誤判「離目標還很遠」；H-JEPA 的高層自動丟掉腿部姿態這類快變細節、只保留位置與迷宮佈局，目標比對回到對的抽象層級。代碼（MIT）與 84 個預訓練 checkpoint 全開源。極度適合**長程視覺規劃**、**機器人操作**、**世界模型研究**。⚠️ 分層不是越多越好：Push-T 兩層最佳，三四層因短軌跡餓死高層訓練數據反而下降；目前全是仿真加 DROID 離線評測，無真機閉環成績。
@@ -1016,6 +1088,19 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
   * **技術亮點**：在程式碼編寫與深度邏輯分析上常被評為最強王者，以其安全性和極低的幻覺率著稱。
   * **資源**：[📝 機器之心解析](https://www.jiqizhixin.com/articles/2025-08-06-4)
 
+* **[GPT-6.1 Terra (OpenAI)](https://openai.com)** `[2026-10-26]` 🔥 `[電腦操作]` `[視覺推理]` `[閉源API]` `[成本效率]` `[ChatGPT Work]` `[Codex]`
+  * **核心優勢**：**OpenAI 中階主力換代：把電腦操作與視覺推理做成「日常高用量工作」的可負擔選項，旗艦級任務表現、不到旗艦的價格與速度。** 接替 GPT-5.6 Terra，定位在 Luna／Terra／Sol／Astra 產品線的中段：看懂螢幕、跨應用操作、寫提案、讀技術圖、填表單、剪影片。API 模型 id 為 `gpt-6.1-terra`，上下文 1.05M tokens、最大輸出 128K tokens、知識截止 2026-06-01，輸入文字與圖像、輸出文字。標準 API 價為每百萬 tokens 輸入 1 美元、快取輸入 0.05 美元、輸出 5 美元，OpenAI 稱比 GPT-5.6 Terra 與 GPT-6.1 Sol 的標準價低 50%；輸入超過 272K tokens 的請求適用較高的長上下文費率。
+  * **解決痛點 / 推薦場景**：**解決了「旗艦模型做日常電腦雜活又貴又慢、小模型又做不穩」的甜點區問題。** 舊方法：高用量任務（讀發票入帳、跨表單填寫、技術圖判讀）全打到旗艦模型，成本與等待時間隨量暴漲；或用上一代 Terra，錯誤率高、終端任務成功率低。OpenAI 自測數字：Terminal-Bench 4.0 最高推理強度下 50.3%，對比 GPT-5.6 Terra 的 21.5%；Agents' Last Exam 中等強度下比前代高約 15 個百分點，且 OpenAI 稱其表現追平 GPT-6 Astra、每 token 價格僅約十分之一、任務完成速度快 3 倍以上；內部困難提示事實錯誤率從低強度的 53.6% 降到 16.7%，最高強度降到 4.3%。極度適合**ChatGPT Work 與 Codex 裡的高用量日常電腦工作**、**要把 Agent 任務成本壓到可規模化的團隊**。但 OpenAI 自己也劃線：最複雜的程式任務仍建議用 GPT-6.1 Sol 或 Astra，Terra 不是旗艦替代品。
+  * **資源**：[🌐 OpenAI 官方發布（2026-10-26，經多家報導引述）](https://siliconangle.com/2026/10/26/openai-launches-gpt-6-1-terra-for-faster-better-performing-ai-agents-at-half-the-price/) | [📝 價格與基準整理](https://aiweekly.co/alerts/openai-ships-gpt-61-terra-at-15-per-million-half-of-sol) | [📝 報導：Agents' Last Exam 與 Terminal-Bench](https://www.digitaltrends.com/computing/openais-new-gpt-6-1-terra-model-gets-astra-like-results-at-a-fraction-of-the-cost/)
+  * **附註（未獨立查證）**：以上基準皆為 OpenAI 自測，尚未有獨立複現；「快 3 倍以上」為 OpenAI 自家計時結果。可用範圍：ChatGPT Work 與 Codex 的 Plus、Pro、Business、Enterprise、Edu 方案，不在一般 ChatGPT 對話提供；GitHub 另於 UTC 10-26 宣布 Copilot 全面上線，換算台北時間為 10-27 凌晨，不計入本日窗口主項。本條目為閉源 API 模型，不適用「新模型快訊：前沿開源權重模型」H3，故改插頂級閉源商業模型小節。
+
+* **[Gemini 4 Carbon(Google DeepMind：資安＋長程工程最強前沿模型，首批只給資安防禦者)](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/)** `[2026-10-29]` 🔥 `[閉源前沿]` `[資安防禦]` `[長程Agent]` `[Intelligence Index 59]` `[Fairwind限定]` `[對齊強化]`
+  * **核心優勢**：**Google 兩週內第二款 Gemini 4 前沿模型，這次主攻「又長又硬的工程任務＋資安防禦全流程」：找漏洞、驗證可利用性、修到根因三段全拿當下最佳，長程 Agent 可連續跑數天咬住大型程式碼庫的疑難雜症。** 接續兩週前發布的 Gemini 4 Argon，官方定位為「我們最強的模型」；綜合指標 Artificial Analysis Intelligence Index v5.0 以 59 分居首；網頁開發 WebDev Arena 較 Argon 提升 89 Elo、以 1,768 分居第 4。內部團隊實測：生成安全程式碼的成功率較 Argon 提升超過 2 倍；Chrome 團隊稱其生成高品質修補的表現超過另一家實驗室的大型前沿模型 10 倍以上；Wiz 亦稱其在網頁滲透測試基準領先。
+  * **解決痛點 / 推薦場景**：**解決了「資安防禦三段式工作長期斷鏈：找得到漏洞、驗不出能不能利用、修補只貼表面」的痛點。** 舊方法：三段各用不同工具與人力接力，驗證與修補最花時間、且修補常未觸及根因。甜點區：受信資安防禦團隊的漏洞發現、利用驗證與根因修補，以及需連續數天追蹤的大型程式碼庫除錯(官方稱內部團隊已見其跨數天、穿越死胡同持續推進的案例)。但注意取得門檻：本週起僅先開放給一小部分資安防禦者，再逐步擴大到 Fairwind Program 的受信夥伴(該計畫逾 650 個夥伴)；開發者、企業與一般消費者何時可用官方未給日期，僅稱在回饋與護欄迭代後盡快開放。Google 同時參與美國政府的自願性發布前模型測試流程。價格與 Argon 相同：入門價每百萬 token 輸入 2 美元、輸出 10 美元，快取輸入打 95 折；入門期結束後調為 4 美元／20 美元(入門期結束日未公布)。
+  * **量化基準(皆 Google 官方自報，資安三項經官方註明為無護欄下評測，尚未有獨立複現)**：SEC-bench Pro(真實軟體中自主找複雜漏洞)88.2%；ExploitGym(把已揭露漏洞轉為可用 exploit 以驗證風險)54.8%；Collinear CWE-bench(修補到根因)71.0%，三項皆為當下最佳。對齊與誠實面(皆官方內部測試)：Terminal-Bench 4.0 作弊成功率降至 0.0%、作弊嘗試率 0.4%；即時編碼環境中高嚴重度不對齊警示減少近 80%；無根據主張較 Argon 約減半；過度越權減少 26%、服務不足減少 29%；Gray Swan 間接提示注入(IPI)基準攻擊成功率 0.0%(Argon 為 0.7%)。
+  * **資源**：[🌐 Google DeepMind 官方部落格](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/)
+  * **附註(未獨立查證)**：日期邊界特別說明：DeepMind 官方頁面僅標示 2026-10-28(美國日期)，未給精確時刻；次級追蹤站記載該頁發布時刻為 UTC 10-28 17:00、另有 20:03 的說法，換算台北時間皆為 10-29 凌晨約 01:00 至 04:03，落在台北 10 月 29 日窗口，故本日收錄，不提前歸入 10 月 28 日。閉源模型、無權重、無模型卡：查證時 Google 模型卡索引仍列 Argon、公告連結的安全報告亦為 Argon 的 10 月報告(次級報導 mlq.ai 指明)，Carbon 專屬卡片與報告尚未見到，條目不寫成已有。所有基準皆為 Google 自報，跨家數字宜打折看；Chrome「10 倍」與 Wiz 領先皆為官方引述的內部觀察，非公開可複現基準。
+
 ### 🌍 國際開源標竿模型 (Open-Source LLM)
 適合需要將資料留在本地端（Data Privacy）、或者需要自行微調模型以符合特定業務邏輯的技術團隊。
 
@@ -1055,6 +1140,14 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
   * **技術亮點**：主打多模態生成與企業級整合，適合需要與騰訊生態系（如微信小程式）對接的開發者。
   * **資源**：[🌐 騰訊雲混元](https://cloud.tencent.com/product/hunyuan)
 
+### 📈 專用預測基礎模型（時間序列）
+
+* **[TimeH2O-v1 (H2O.ai)](https://huggingface.co/h2oai/timeh2o-v1)** `[2026-10-26]` 🔥 `[時間序列預測]` `[零樣本]` `[基礎模型]` `[非商業授權]` `[fev-bench]` `[機率預測]`
+  * **核心優勢**：**第一個在 fev-bench 拿下第一名的 108M 參數時間序列基礎模型：不針對你的序列訓練，就能直接給出帶不確定性的預測。** 預測時只讀序列歷史，不做訓練或微調，權重不變；支援單變量與帶外生變量（價格、促銷、天氣等會影響序列的外部訊號）的序列，涵蓋金融、醫療、供應鏈、能源等領域。使用方式極輕：`pip install h2ofm` 後 `TimeH2O.from_pretrained("h2oai/timeh2o-v1")`，一次預測同時給中位數點預測與 0.1 至 0.9 共 9 檔分位數，方便直接做區間決策。
+  * **解決痛點 / 推薦場景**：**解決了「每個序列各養一個模型、資料一漂移就得重訓」的預測老問題。** 舊方法：需求、庫存、現金流、能源負載、病患量各建專用模型，維護與重訓成本隨序列數量線性膨脹；新方案：一個預訓練好的通用預測模型零樣本上線，之後有需要再針對自家領域微調成專用版。fev-bench（100 個真實序列預測任務、與季節性 naive 基準比機率準確度）成績：勝率 91.9%、32 個模型中第一，技能分 50.8（預測誤差比基準低 50.8%），領先 Timestral-209M（89.6%）、t0-gamma（88.1%）、TimesFM-3 與 Chronos-2。極度適合**要快速上線多序列預測、又需要不確定性區間的團隊**，以及**想把預測餵給 Agent 當決策依據、而非只給點估計的場景**。
+  * **資源**：[🤗 Hugging Face 模型（h2oai/timeh2o-v1）](https://huggingface.co/h2oai/timeh2o-v1) | [🌐 H2O.ai 官方新聞稿（BusinessWire，2026-10-26）](https://www.businesswire.com/news/home/20261026408387/en/H2O.ais-TimeH2O-Beats-Mistral-Google-and-Amazon-in-Time-Series-Forecasting)
+  * **附註（未獨立查證）**：授權是關鍵差異，務必不要寫成開源模型：HF 模型卡明載 Non-commercial（非商業授權），僅允許內部基準測試，商業預測用途需洽 H2O.ai；新聞稿標題所稱 open-weight 指權重可取得，不等於可商用。時間點：新聞稿發布為 UTC 2026-10-26 15:29，換算台北時間 10-26 23:29，落在昨日窗口內；但 fev-bench 榜單快照日期為 10-23，早於正式發布，代表模型在正式發布前已上榜，榜單時間與發布時間不要混為同一天。所有成績為 H2O.ai 引用的榜單數字，未經獨立複現；訓練資料已排除與 fev-bench、GIFT-Eval、TIME 重疊的資料集，此說法取自 HF 模型卡，未獨立驗證。本檔既有章節無時間序列類別，故以「建議新增章節」方式放在 LLM 小節末，批次合併時再確認位置。
+
 ---
 
 ## Embedding
@@ -1066,6 +1159,13 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
   * **核心優勢**：**首創「基於圖的選擇性重計算 (Graph-based Selective Recomputation)」與高階節點保留剪枝，將 ANN 索引存儲開銷壓到原始資料的 5% 以下！** 該項發表於 MLSys 2026 的工作透過拋棄冗餘嵌入向量並利用壓縮稀疏行 (CSR) 格式，比標準 HNSW 索引縮小最高達 50 倍，同時在真實 QA 基準上維持 90% 的 top-3 召回率，搜尋延遲保持在 2 秒以內。
   * **解決痛點 / 描述**：傳統向量索引（如 HNSW、DiskANN）會帶來原始資料 1.5 到 7 倍的龐大存儲開銷，使個人設備與筆電難以執行本地端 RAG 與隱私保護資料檢索。LEANN 透過「搜尋時按需重算嵌入」與貼合 RAG 「LLM 生成主導」的延遲權衡，成功推倒「存儲之牆」，並支援 Apple Mail、瀏覽器歷史及 Claude Code MCP 等豐富的本地數據源。
   * **資源**：[📄 論文 (arXiv:2506.08276)](https://arxiv.org/abs/2506.08276) | [🐙 GitHub 專案](https://github.com/yichuan-w/LEANN) | [📄 MLSys 2026](https://doi.org/10.48550/arXiv.2506.08276)
+
+* **[Kanana-2-Embedding(Kakao：韓語檢索專用雙模型，3B＋蒸餾 1.3B，MRL 可調維度)](https://biz.heraldcorp.com/article/10919060)** `[2026-10-29]` 🔥 `[韓語檢索]` `[Embedding]` `[開源權重]` `[MRL可調維度]` `[知識蒸餾]` `[個人化Agent檢索]`
+  * **核心優勢**：**韓語 RAG 終於有同級開源檢索模型可用：Kakao 把自家個人化 Agent 的檢索底座一次開源兩顆，韓語同級最強、英語不掉隊，向量維度還能隨服務現場伸縮。** 兩款皆已上架 Hugging Face：Kanana-2-3B-Embedding(3B，由自家小型語言模型 Kanana-2-SLM 轉訓為檢索用途)與 Kanana-2-1.3B-Embedding(1.3B，由 3B 知識蒸餾而來)。兩款皆採用 Matryoshka Representation Learning(MRL)，向量維度可依服務的儲存空間與處理速度放大縮小，開發者不必為不同場景各建一套索引。定位是個人化 Agent 的檢索基礎技術：理解使用者提問意圖與過往對話脈絡，即使關鍵字不完全相同也能找回相關資訊。授權為 Kanana Open License，依授權條款允許商用與研發。
+  * **解決痛點 / 推薦場景**：**解決了「韓語 RAG 檢索先天吃虧：西方通用 embedding 在韓語語意上不夠準，固定維度向量又逼你在儲存成本與檢索精度之間二選一」的痛點。** 舊方法：直接套用英文為主的通用 embedding，韓語查詢召回率偏低；或自建檢索模型，成本與資料門檻都高。甜點區：韓語個人化 Agent 與語意搜尋(客服、內容推薦、企業內部知識庫)、需要同時顧及儲存與速度的檢索服務(MRL 先低維粗篩、再高維精排的管線)。與同節既有的 Qwen3 Embedding(中文生態)互補，不重複。
+  * **量化基準(Kakao 官方說法，查證時未見可引用的數字基準表，詳見附註)**：與同級開源模型(Meta llama-nemotron-embed-1b-v2、阿里 Qwen3-Embedding-4B)對比，兩款在韓語表現為同級最佳、英語表現與對手相當；推論效率高於 Qwen3-Embedding；相較上一代 Kanana embedding 系列，搜尋表現提升、記憶體用量與推論速度皆有數十倍以上的效率進步(官方說法，未給可核對的測試條件)。
+  * **資源**：[📰 韓國先驅報報導(Herald Business，含 Kakao 官方效能圖)](https://biz.heraldcorp.com/article/10919060) | [📰 朝鮮日報英文報導](https://biz.chosun.com/en/en-it/2026/10/29/RCY64EEJIRD4XN4M3AQGDIT5XI/)
+  * **附註(未獨立查證)**：日期以韓媒報導戳記為準：朝鮮日報刊出 2026-10-29 10:00(韓國時間)，換算台北時間同日 09:00，落在台北 10 月 29 日窗口；先驅報韓國時間戳記為 13:05，同日。基準誠實說明：本次查證多家韓媒報導皆只載定性結論(韓語最佳、英語相當、效率數十倍)，未見 MTEB 或韓語檢索基準的數字表，條目不編造分數；使用者若要精確數字，需等 Kakao 模型卡或技術報告公開後補。與台帳既有項目去重說明：2026-10-22 已上線的 Kanana-2-Vision Encoder 是視覺編碼器(426M／98M)，與本則文字檢索 embedding 為不同產品線，不算重複。Hugging Face 模型頁連結查證時未逐字回傳，故資源欄僅列已驗證的報導連結，模型名稱以報導所載為準(Kanana-2-3B-Embedding、Kanana-2-1.3B-Embedding)，批次合併時再補模型卡直連。
 
 ### 1. 網頁級巨量檢索與搜尋引擎架構 (Web-Scale Retrieval)
 想要打造媲美 AI 搜尋引擎的檢索準確度？直接使用目前地表最強搜尋引擎團隊的底層技術。
