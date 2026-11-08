@@ -23,6 +23,16 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 > **核心摘要：**
 > 2026年LLM開發聚焦端側部署與多Agent協作。本指南彙整逾50項開源微調與RAG實作工具，助開發者降低40%模型試錯成本，精準定位最佳企業級架構。
 
+## 快速選型結論（先講答案）
+
+- **RAG／知識庫**：Qwen3（中文檢索生態最完整）；想全託管省事選 Gemini Flash，成本低、回應快
+- **AI Agent／工具呼叫**：Gemini Flash（速度與價格優勢）；需要自託管選 Llama 3.3
+- **邊緣／地端部署**：Llama 3.3 8B 級距搭配 vLLM 或 SGLang，單張 24GB 顯卡即可運行
+
+完整比較見下方「主流模型快速比較表」。
+
+延伸實測：推論框架怎麼選，看 [vLLM、Ollama、SGLang、LLaMA.cpp 選型實測](https://deep-learning-101.github.io/Blog/vLLM-Ollama-SGLang-LLaMAcpp)；台灣模型誰最強，看 [台灣 LLM 實測對決](https://deep-learning-101.github.io/Blog/TW-LLM-Benchmark)；要做 RAG，看 [RAG 完整指南](https://deep-learning-101.github.io/RAG)。
+
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
 >- **[Ripple-65B Preview (Ricursive Intelligence：65B 密集模型，Terminal-Bench 2.1 美國開源權重第一、3,200 萬美元研發成本)](https://huggingface.co/ricursiveAI/Ripple-65B-Preview)** `[2026-11-05]` 🔥 `[開源權重]` `[密集架構]` `[Agentic Coding]` `[Apache-2.0]` `[65B]` `[1M上下文]`
@@ -35,47 +45,7 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 >- * **[Harness² (Google Research)](https://github.com/google-research/harness2)** `[2026-10]` 🔥 `[Agent自我優化]` `[Harness工程]` `[遞歸自我改進]` `[無需Grader]` `[Apache 2.0]`
 >- **[Mistral Large 4 (Le Chonk：1T MoE 開源權重旗艦，預覽後三週強化版，編碼與資安雙主攻)](https://huggingface.co/blog/mistral-large4)** `[2026-10-29]` 🔥 `[1T MoE]` `[開源權重]` `[1M上下文]` `[Agentic Coding]` `[資安防禦]` `[MLA+DSA稀疏注意力]`
 >- **[Gemini 4 Carbon(Google DeepMind：資安＋長程工程最強前沿模型，首批只給資安防禦者)](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/)** `[2026-10-29]` 🔥 `[閉源前沿]` `[資安防禦]` `[長程Agent]` `[Intelligence Index 59]` `[Fairwind限定]` `[對齊強化]`
->- **[Kanana-2-Embedding(Kakao：韓語檢索專用雙模型，3B＋蒸餾 1.3B，MRL 可調維度)](https://biz.heraldcorp.com/article/10919060)** `[2026-10-29]` 🔥 `[韓語檢索]` `[Embedding]` `[開源權重]` `[MRL可調維度]` `[知識蒸餾]` `[個人化Agent檢索]`
->- **[LFM3（Liquid AI：六模型 2B 級端側家族，一個骨幹分出文字／視覺／聲音／全模態／決策）](https://www.liquid.ai/blog/lfm3)** `[2026-10-28]` 🔥 `[三混合架構]` `[端側Agent]` `[256K上下文]` `[開源權重]` `[多模態家族]` `[單GPU微調]`
->- **[Genie 4（Google DeepMind：原生音訊＋即時轉向的世界模型，Gemini 在迴圈內導引）](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)** `[2026-10-28]` 🔥 `[世界模型]` `[原生音訊]` `[即時轉向]` `[Gemini導引]` `[研究預覽]` `[SynthID]`
->- **[GPT-6.1 Terra (OpenAI)](https://openai.com)** `[2026-10-26]` 🔥 `[電腦操作]` `[視覺推理]` `[閉源API]` `[成本效率]` `[ChatGPT Work]` `[Codex]`
->- **[TimeH2O-v1 (H2O.ai)](https://huggingface.co/h2oai/timeh2o-v1)** `[2026-10-26]` 🔥 `[時間序列預測]` `[零樣本]` `[基礎模型]` `[非商業授權]` `[fev-bench]` `[機率預測]`
->- **[AI21 LIFT-Bench／LIFT-Train（章節錨定指令遵循評測＋防獎勵駭客訓練集）](https://github.com/AI21Labs/lift-bench)** `[2026-10-25]` 🔥 `[指令遵循]` `[RL獎勵]` `[評測基準]` `[Apache-2.0]` `[文件起草]` `[LLM評判]`
->- **[Microsoft Agensh（無中央編排、1,024 個 coding agent 自組織框架）](https://github.com/microsoft/Agensh)** `[2026-10-24]` 🔥 `[多智能體]` `[無編排]` `[Coding Agent]` `[MIT]` `[ProgramBench]` `[自組織]`
->- **[Nanbeige4.3-33B（BOSS 直聘實驗室、33B 密集 agentic coding 教師模型、512K 上下文）](https://huggingface.co/Nanbeige/Nanbeige4.3-33B)** `[2026-10-24]` 🔥 `[開源權重]` `[Agentic Coding]` `[Apache-2.0]` `[512K上下文]` `[密集模型]` `[教師模型]`
->- **[NVIDIA Nemotron 3.5 Bolt E4B 4GB（Gemma 4 E4B 後訓練、4GB 顯存本地語音助手與機器人模型）](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB)** `[2026-10-23]` 🔥 `[開源權重]` `[SLM]` `[端側 Agent]` `[工具呼叫]` `[Jetson]` `[OpenMDW-1.1]`
->- **[LFM2.5-24B-A2B (Liquid AI)](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B)** `[2026-10-13]` 🔥 `[端側Agent]` `[MoE]` `[純推理模型]` `[工具調用]`
->- **[context-mode](https://github.com/mksglu/context-mode)** `[2026-10-12]` 🔥 `[ContextWindow優化]` `[MCP伺服器]` `[CodingAgent]` `[會話記憶]`
->- **[Kimi K3.1 Pro (Moonshot：2.8T／104B MoE 開源權重旗艦，1M 上下文)](https://www.kimi.ai/blog/kimi-k3-1-pro)** `[2026-10-23]` 🔥 `[開源權重]` `[MoE]` `[1M上下文]` `[Agentic Coding]` `[Terminal-Bench]` `[網路安全降級]`
->- **[Carbon-X (Hugging Face 開放 DNA 對話模型：14.8B／DNA＋文字單一解碼器)](https://huggingface.co/HuggingFaceBio/Carbon-X)** `[2026-10-22]` 🔥 `[DNA]` `[基因變異效應]` `[BioAI]` `[Apache 2.0]` `[6-mer tokenizer]`
->- **[DeepInfer (DeepSeek 自家生產線開源推論框架：V4.1-Flash serving stack)](https://github.com/deepseek-ai/DeepInfer)** `[2026-10-20]` 🔥 `[推論框架]` `[Speculative Decoding]` `[Apache 2.0]` `[V4.1-Flash]` `[Ascend 950]`
->- **[HybridAgent (Stanford＋Together AI)](https://arxiv.org/abs/2610.18861)** `[2026-10-18]` 🔥 `[Agent 推理]` `[潛在推理]` `[HybridLink]` `[工具調用]` `[開源權重]` `[MIT]`
->- **[DeepSeek-V4.1-Flash-1017 (DeepSeek)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)** `[2026-10-17]` 🔥 `[開源權重]` `[MoE]` `[KV Cache 壓縮]` `[Coding Agent]` `[MIT]` `[1M上下文]`
->- **[Beam 1.0 (Reflection)](https://huggingface.co/reflection/Beam-1.0-501B-A23B)** `[2026-10-16]` 🔥 `[開源權重]` `[MoE]` `[Coding Agent]` `[Apache 2.0]` `[1M上下文]`
->- **[Muse Spark Open (Meta Superintelligence Labs)](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)** `[2026-10-15]` 🔥 `[開源權重]` `[MoE]` `[原生多模態]` `[Coding Agent]` `[1M上下文]`
->- **[Scientific Agent Skills (K-Dense)](https://github.com/K-Dense-AI/scientific-agent-skills)** `[2026-10-14]` 🔥
->- **[H-JEPA (LeCun AMI 世界模型)](https://github.com/kevinghst/H-JEPA)** `[2026-10]` 🔥 `[世界模型]` `[JEPA]` `[分層規劃]` `[視覺規劃]` `[具身智能]`
->- **[OpenMuse](https://github.com/CopilotKit/OpenMuse)** `[2026-09-22]` 🔥 [Meta Muse開源平替] [自託管個人助理] [常開瀏覽器會話] [背景非同步任務] [寫操作人機確認] [MIT協議]
->- **[OpenBot (CopilotKit)](https://github.com/CopilotKit/OpenBot)** `[2026-08]` 🔥 [企業AI同事] [Agent治理] [審計] [AG-UI] [自建部署]`
->- **[VISTA: 給多模態 Agent 裝上可回看的無損視覺記憶](https://arxiv.org/abs/2610.02200)** `[2026-10]` 🔥 [AI Agent] [視覺推理] [ARC-AGI-3] [無損視覺記憶] [多模態]`
->- **[DeepTutor](https://github.com/HKUDS/DeepTutor)** `[2026-04]` 🔥 [Agent原生工作區] [終身個性化學習] [三層可審計記憶] [多引擎RAG]
->- **[DeepCode](https://github.com/HKUDS/DeepCode)** `[2026-08]` 🔥 [Paper2Code] [Agentic Coding] [V2中央廚房] [Text2Web/Text2Backend]
->- **[deepagents](https://github.com/langchain-ai/deepagents)** `[2026-04]` 🔥 [ClaudeCode開源版] [AgentHarness] [LangGraph上層封裝] [免模型綁定]
->- **[Scholar Loop](https://github.com/renee-jia/scholar-loop)** `[2026-06-15]` 🔥 [自主科研閉環] [8專職Agent小隊] [防獎勵黑客] [單GPU預算]
->- **[autoarxiv](https://autoarxiv.org)** `[2026-06]` 🔥 [一鍵論文復現] [autoresearch] [最小化實驗] [環境自動修復]
->- **[Qwen-Audio-Agent](https://github.com/QwenAudio/qwen-audio-agent)** `[2026-07]` 🔥 [全雙工語音Harness] [非阻塞多任務] [ACP協議生態] [擇時結果回流]
->- **[jina-reranker-v3.5](https://huggingface.co/collections/jinaai/jina-reranker-v3.5)** `[2026-07]` 🔥 [0.6B極致輕量] [3L2G混合注意力] [結構化數據理解] [長列表顯存優化]
->- **[Unsloth Desktop](https://unsloth.ai/docs/desktop)** `[2026-08-11]` 🔥 [全端本地AI工作站] [自愈式工具調用] [DeepResearch本地化] [零代碼訓練]
->- **[Resource2Skill](https://github.com/microsoft/Resource2Skill)** `[2026-06]` 🔥 [Skill工廠] [多模態經驗蒸餾] [分層Skill-Wiki] [微軟開源]
->- **[AirLLM](https://github.com/lyogavin/airllm)** `[2023]` 🔥 [分層推理Layer-wise] [4GB顯存跑70B] [零精度損失] [mmap按需載入]
->- **Heretic** `[2025-01-01]` 🔥 安全去對齊、機械可解釋性、自動參數優化、開源平替
->- **CADDesigner** `[2026]` 🔥 CAD建模、ECIP範式、計算機輔助設計
->- **text-to-cad** `[2026-07-22]` 🔥 CAD建模、Agent技能、build123d、硬體設計
->- **Arbor** `[2026-06-11]` 🔥 自主科研、Agent框架、Hypothesis-Tree、Autonomous Optimization
->- **HyGRAG** `[2026-06-18]` 🔥 GraphRAG、多跳推理、知識融合、動態更新
->- **OpenWorker** `[2026-07-23]` 🔥 開源智能體桌面應用、本地優先、模型隨你挑、無人值守
->- **Huobao Drama** `[2026-05]` 🔥 打破傳統影視製作高牆，首款將「創意劇本➔分鏡➔音效➔成片」全流程打通的開源自動化短劇生產線！
->- **Remotion Skills** `[持續更新]` 🔥 顛覆「黑盒文生影片」，用 AI 寫 React 程式碼來「精確渲染」影片的工程化革命！
+>- 👉 **[看全部更新 →](https://deep-learning-101.github.io/UPDATE)**（本頁快訊只列最新 10 則，完整更新紀錄在 UPDATE 頁）
 
 ---
 
@@ -106,14 +76,6 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 - [❓ FAQ (LLM 開發常見問題)](#faq)
 
 ---
-
-## 快速選型結論（先講答案）
-
-- **RAG／知識庫**：Qwen3（中文檢索生態最完整）；想全託管省事選 Gemini Flash，成本低、回應快
-- **AI Agent／工具呼叫**：Gemini Flash（速度與價格優勢）；需要自託管選 Llama 3.3
-- **邊緣／地端部署**：Llama 3.3 8B 級距搭配 vLLM 或 SGLang，單張 24GB 顯卡即可運行
-
-完整比較見下方「主流模型快速比較表」。
 
 ## Leaderboards
 **🏆 LLM 權威排行榜與評測指標 (Leaderboards)**
