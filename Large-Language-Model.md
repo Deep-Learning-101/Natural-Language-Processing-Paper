@@ -340,6 +340,8 @@ Nemotron 提供專為企業客製化的極致推理效能。 透過 TensorRT-LLM
 
 * **[Agentic AI 與 AI Agents 的概念差異解析](https://www.alphaxiv.org/abs/2505.10468)**
   * **必讀原因**：釐清業界最容易混淆的兩個名詞。探討「AI 代理 (AI Agents)」作為單一執行體，與「代理式人工智慧 (Agentic AI)」作為系統性架構的分類學、應用場景與未來挑戰。
+* **[避開 AI Agent 開發陷阱與解決方案 (本站)](https://deep-learning-101.github.io/agent)**
+  * **必讀原因**：概念分清之後看實作面：開發 AI Agent 與 Agentic AI 最常踩的陷阱、安全挑戰與緩解策略，選框架前先讀。
 * **[Agentic AI 的資安威脅與緩解策略 (OWASP 官方指南)](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/)**
   * **必讀原因**：AI 失控怎麼辦？國際資安權威 OWASP 針對代理式 AI 可能面臨的 Prompt Injection (提示詞注入) 與權限濫用，提供了系統性的防禦與緩解架構 (Mitigations)。
 * **[AI 搜尋引擎的致命傷：引用來源問題 (Citation Problem)](https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php)**
