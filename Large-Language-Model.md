@@ -35,16 +35,16 @@ tags: ["LLM", "AI Agent", "RAG", "Fine-tuning"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- **[Gemini Decision 1 (Google：不寫一個字的決策模型，Decisions API 一次判 1,000 題)](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/)** `[2026-11-11]` 🔥 `[決策模型]` `[Jev]` `[閉源API]` `[多模態]` `[AI Agent]`
+>- **[JevEmbed (哈工大深圳 HITsz-TMG：把 Embedding 模型變成決策引擎，繞過 Jev 的 255 候選上限)](https://github.com/HITsz-TMG/JevEmbed)** `[2026-10]` 🔥 `[決策模型]` `[Jev]` `[Embedding]` `[LoRA]` `[Apache-2.0]`
+>- **[Chinese Decision Unified 0.8B (Qiang Yan：一份權重、兩種讀出，中文決策加實體抽取的非生成小模型)](https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b)** `[2026-10]` 🔥 `[決策模型]` `[Jev]` `[NER]` `[資訊抽取]` `[Qwen3.5]` `[Apache-2.0]`
+>- **[DecisionRAG (Cornell × ASAPP：不用檢索器，讓決策模型在文件樹上逐層導航選證據)](https://arxiv.org/abs/2610.35868)** `[2026-10-26]` 🔥 `[RAG]` `[Retriever-Free]` `[決策模型]` `[Jev]` `[階層檢索]`
+>- **[Cangjie Skill 倉頡 (kangarooking：把書、長影片、播客蒸餾成可呼叫的 Agent Skill)](https://github.com/kangarooking/cangjie-skill)** `[2026-04-16]` 🔥 `[書籍蒸餾]` `[Agent Skill]` `[知識資產化]` `[MIT]`
 >- **[llama.cpp v1.0.0 (本地 AI 推論引擎首個穩定版：公開 C API 定版、FP8 KV 快取、MoE 專家快取)](https://github.com/ggml-org/llama.cpp)** `[2026-11-13]` 🔥 `[本地推論]` `[開源框架]` `[語義化版本]` `[MIT]`
 >- **[MetaEncoder v1 (Meta：28B 多模態嵌入加決策模型，Muse Glimmer 解碼器轉編碼器，14 項基準 11 項第一)](https://huggingface.co/facebook/meta-encoder-v1)** `[2026-11-12]` 🔥 `[開源權重]` `[多模態嵌入]` `[決策模型]` `[JevBench]` `[Muse Glimmer]` `[檢索]`
 >- **[Gemini 4 Hydrogen (Google DeepMind：日常 Agent 執行層換代、AA 智慧指數 51 超 Argon，四檔思考加全域上線)](https://blog.google/intl/en-in/products/introducing-gemini-4-hydrogen/)** `[2026-11-12]` 🔥 `[閉源API]` `[Agent執行層]` `[Intelligence Index 51]` `[百萬上下文]` `[四檔思考]` `[Orchestrator]`
 >- **[Perplexity Decider v1.3 (Perplexity：決策模型加 Locate 原文抽取，一次前向回機率加字元偏移，Apache-2.0 開源權重)](https://www.perplexity.ai/hub/blog/perplexity-decider)** `[2026-11-12]` 🔥 `[決策模型]` `[開源權重]` `[Apache-2.0]` `[Locate]` `[Qwen3.8]` `[零輸出token]`
 >- **[Gemini Robotics 2.5 (Google DeepMind：最強 VLA 換代、賓士產線人形機器人分揀 96%、附開源安全基準)](https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/)** `[2026-11-10]` 🔥 `[閉源]` `[VLA]` `[具身智能]` `[工廠實測]` `[推理時安全引導]` `[ASIMOV-Jailbreak]` `[Gemini 4 Argon]`
->- **[Meta Muse Ember (Meta：最小最便宜的 Muse 模型，Haiku 級表現、三分之一任務成本)](https://research.meta.ai/blog/muse-ember)** `[2026-11-09]` 🔥 `[閉源API]` `[成本效率]` `[Agent執行層]` `[Intelligence Index 36]` `[多模態]` `[Muse Wonder Full]`
->- **[Claude Fable 5.2 (Anthropic：最強通用模型換代、AA 智慧指數登頂，降價兩成)](https://www.anthropic.com/claude-fable-and-mythos-5-2)** `[2026-11-09]` 🔥 `[閉源API]` `[Intelligence Index 64.6]` `[長程Agent]` `[降價]` `[Fast Mode]` `[Mythos 5.2]`
->- **[LongCat-2.5 權重釋出 (美團：完整權重以 MIT 授權釋出，208 個 safetensors 分片)](https://huggingface.co/meituan-longcat/LongCat-2.5)** `[2026-11-09]` 🔥 `[開源權重]` `[MIT]` `[權重釋出]` `[長程Agent]` `[1.6T]`
->- **[Ripple-65B Preview (Ricursive Intelligence：65B 密集模型，Terminal-Bench 2.1 美國開源權重第一、3,200 萬美元研發成本)](https://huggingface.co/ricursiveAI/Ripple-65B-Preview)** `[2026-11-05]` 🔥 `[開源權重]` `[密集架構]` `[Agentic Coding]` `[Apache-2.0]` `[65B]` `[1M上下文]`
->- **[Tencent Hy4 (騰訊混元：正式版加視覺與電腦操作，API 先行、權重未出)](https://hunyuan.tencent.com/research/hy4)** `[2026-11-04]` 🔥 `[閉源API]` `[視覺理解]` `[電腦操作]` `[混元]` `[辦公Agent]` `[權重待釋出]`
 >- 👉 **[看全部更新 →](https://deep-learning-101.github.io/UPDATE)**（本頁快訊只列最新 10 則，完整更新紀錄在 UPDATE 頁）
 
 ---
@@ -248,6 +248,15 @@ Nemotron 提供專為企業客製化的極致推理效能。 透過 TensorRT-LLM
 > 概念說明請見：[避開 AI 代理 (AI Agents) 與 代理式人工智慧 (Agentic AI) 開發陷阱](https://deep-learning-101.github.io/agent)
 
 ### 🆕 新模型快訊：前沿開源權重模型
+
+* **[Chinese Decision Unified 0.8B (Qiang Yan：一份權重、兩種讀出，中文決策加實體抽取的非生成小模型)](https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b)** `[2026-10]` 🔥 `[決策模型]` `[Jev]` `[NER]` `[資訊抽取]` `[Qwen3.5]` `[Apache-2.0]`
+  * **核心優勢**：**一個 1.5 GB 的權重檔同時做兩件以前要分開部署的事：中文決策分類與實體抽取，而且兩者都不生成 token。** 骨干是 Qwen3.5-0.8B 加合併後的 LoRA；決策讀出讀最後位置的候選字母 logits 經 softmax 給機率，支援 noul (是/否)、choice (單選)、score (等級期望值) 三種題型；抽取讀出只多一個約 3M 參數的跨度頭 (不到總參數 0.4%)，把原文逐字回顯後對 20 字以內的跨度做類型分類，輸出位置與機率。請求帶 questions 走決策、帶 types 走抽取，兩者都帶時短輸入可在同一次前向一起完成；決策請求格式相容 System One 約定。家族共六個模型：統一版與純決策版各有 0.8B、2B、4B。
+  * **解決痛點 / 推薦場景**：**解決了「分類一個模型、抽取又一個模型」的部署碎片化，以及用生成式 LLM 做分類與抽取又慢又難校準的痛點。** 適合中文場景的工單分類、風險分級、NER、關係與事件抽取：事件抽取可先用決策讀出判斷事件類型、過門檻再用抽取讀出取論元；關係抽取把類型寫成「{主體}的{關係}」直接抽客體。最關鍵的使用紀律是類型說明：模型學的是「按定義找」，每個類型必須附定義與邊界，只給類型名召回會掉到最低，訓練時沒出現過的新類型基本抽不出來。部署注意：決策讀出可走 GGUF／llama.cpp，抽取讀出只有 PyTorch 版。
+  * **量化基準 (作者自測；CJ-Bench 為全量 307,900 條，CJ-IE 為作者內部測試集、非公開榜單)**：決策：統一版 0.8B 準確率 83.46%，不輸純決策版的 83.11% (通用領域還 +1.60)，校準 ECE 1.1%；家族上探：統一版 2B 85.00%、4B 86.86%。抽取 (CJ-IE 35 個來源、精確匹配)：micro P 73.3 / R 55.5 / F1 63.1，性格極保守：簡歷 88.1、地址 85.8 這類結構規整的領域強，社交媒體 Weibo 只剩 37.2；2026-10-31 起預設解碼改用 decision_shift 門檻後，同一測試集為 P 66.7 / R 62.8 / F1 64.7。弱項也明講：score 題型最弱 (57.17%)，法律、金融訓練資料各僅約 2.4 萬條。
+  * **訓練教訓 (本篇最值得借鑑的部分)**：第一版直接在已訓好的決策模型上用抽取資料繼續微調、無舊資料回放，CJ-Bench 從 83.11% 崩到 71.02% (法律 −27.9)。修法是回到原始底座、把 1,304.8 萬條決策資料 (CJ-Dataset) 與 CJ-IE (決策 61.1 萬 + 跨度 57.3 萬條) 混合聯合訓練一個 epoch，選 checkpoint 同時看決策準確率與抽取 F1 (用獨立開發集、從不讀 CJ-Bench)。作者在論文摘要中也明說保留決策能力有代價：比起只顧抽取的版本少了 5.0–10.7 個 F1 (尺寸越大代價越小)，且全部結論來自單次訓練運行。
+  * **資源**：[🤗 HF 模型卡 (權重 Apache-2.0)](https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b) | [📄 arXiv 論文 2610.23170](https://arxiv.org/abs/2610.23170) | [🐙 GitHub (程式碼 MIT)](https://github.com/yanqiangmiffy/chinese-decision) | [🧪 Decision Studio 測試平台](https://github.com/yanqiangmiffy/chinese-decision-studio) | [ModelScope](https://modelscope.cn/models/quincyqiang/chinese-decision-unified-0.8b)
+  * **⚠️ 注意**：權重是 Apache-2.0，但訓練資料授權混雜 (部分來源非商業或授權不明，CJ-IE 本身未公開釋出)，商用前要自行評估資料面風險。僅支援中文、不可用於生成；醫療、法律、金融的輸出不可作為唯一決策依據 (作者明示)。
+  * **附註 (未獨立查證)**：原文提到的 41 GB 資料流式加載 (偏移索引避免多卡讀入時記憶體爆掉) 出自作者的訓練覆盤文章，本次未逐項核對該文，細節見 GitHub 的「統一模型與遺忘修復」說明。CJ-Dataset 與 CJ-Bench 源自 Chinese-Jev (arXiv:2609.36965)，本模型是其口徑的延伸實作。
 
 * **[Perplexity Decider v1.3 (Perplexity：決策模型加 Locate 原文抽取，一次前向回機率加字元偏移，Apache-2.0 開源權重)](https://www.perplexity.ai/hub/blog/perplexity-decider)** `[2026-11-12]` 🔥 `[決策模型]` `[開源權重]` `[Apache-2.0]` `[Locate]` `[Qwen3.8]` `[零輸出token]`
   * **核心優勢**：**決策模型家族的換代加新能力：v1.3 27B（Qwen3.8-27B 微調）與蒸餾版 Flash 4B（Qwen3.5-4B）不生文字、只回機率，一次前向同時回答多道分類、評分與排序題；新加的 Locate 用專屬 span head 直接抽原文片段、附字元起訖偏移與信心分數，決策加證據一次到位。** 架構改動是雙向注意力（v1.3 採「隔離問題」模式：state 看全部問題、每題只看 state 與自己，答案不隨題目增減而漂移）；Locate 另加 `<|locate|>` token、span head 與 LoRA 轉接器，骨幹與決策頭凍結、轉接器不合併、只在 Locate 請求時啟用。問題四型：choice／noul／score／locate，輸出 token 恆為 0；v1.3 需約 49 GiB BF16 權重、Flash 約 8.5 GiB；Decisions API 每百萬輸入 token 0.02／0.01 美元、輸出免費，OpenRouter 免費至 11 月 19 日。
@@ -476,6 +485,14 @@ AI Agent 的強大不在於單打獨鬥，而在於流程設計。以下精選�
 ---
 
 #### 3. 深度研究與開源知識庫 (Deep Research & RAG)
+
+* **[Cangjie Skill 倉頡 (kangarooking：把書、長影片、播客蒸餾成可呼叫的 Agent Skill)](https://github.com/kangarooking/cangjie-skill)** `[2026-04-16]` 🔥 `[書籍蒸餾]` `[Agent Skill]` `[知識資產化]` `[MIT]`
+  * **核心優勢**：**把「讀過」變成「叫得出來用」：不做摘要，而是把一本書的方法論、決策框架、操作規則與清單拆成原子化能力卡，再編譯成 Agent 能在真實情境直接呼叫的 Skill。** 方法論稱 RIA-TV++：先 Adler 式整書理解產出 BOOK_OVERVIEW，5 個 agent 並行提取候選方法論單元，經三重驗證與「晉級門」篩選後以 RIA++ 構造成能力卡，再用 Zettelkasten 方式互連、壓力測試，最後編譯交付，兩種模式：single (單一路由 Skill) 或 pack (路由加多個獨立 Skill)。輸入吃 PDF、EPUB、TXT、字幕與轉寫稿，且明文禁止「憑記憶蒸餾」：沒有文本就停下來索取。官方已預蒸餾多本成品可直接裝：《窮查理寶典》12 個決策與判斷技能、《黃帝內經》22 個、《第一性原理》10 個、《不拘一格》(No Rules Rules) 10 個，各自獨立 repo。支援 OpenClaw、Claude Code、DeepSeek Harness，另有官方網站 cangjie-skill.com 可瀏覽 Skill Pack。
+  * **解決痛點 / 推薦場景**：**解決了「讀完就忘、筆記躺在倉庫裡，遇到問題調用不出來」的痛點。** 傳統 AI 摘要只產生大綱與金句，何時應用仍靠人腦記憶；Cangjie 把書變成常駐的決策工具：職涯選擇時呼叫書中的決策框架比較 offer、寫作時呼叫文案方法論當審稿工具、做判斷時拿認知偏差清單逐項對照。邊界也劃得清楚：它不做書摘、讀後感與作者角色扮演 (那是同生態 nuwa-skill 的領域，它蒸餾的是「人」)。
+  * **量化與狀態 (2026-11-10 查核)**：GitHub 12,658 星、1,493 forks，2026-04-16 建立、查核當日仍在更新；現行 v2.5.0 (2026-09-13 刷新版)，授權 MIT (README 標示)。此為方法論工具、無效能基準數字，品質靠流程內的三重驗證與壓力測試把關，無第三方評測。
+  * **資源**：[🐙 GitHub 官方倉庫 (MIT)](https://github.com/kangarooking/cangjie-skill) | [🌐 官方網站](https://cangjie-skill.com/) | [📦 《窮查理寶典》預蒸餾 Skill 包 (12 個技能)](https://github.com/kangarooking/poor-charlies-almanack-skill) | 同生態：[Reading Pipeline (五層蒸餾、多本書橫向整合)](https://github.com/noahnan-max/reading-pipeline) | [Sansheng Distill (蒸餾成果做成互動 HTML 知識地圖)](https://github.com/sanshengai/sansheng-distill) | [Book Distillation Skill (作者方法論提煉)](https://github.com/macrochen/book-distillation-skill)
+  * **⚠️ 注意**：蒸餾產物是 AI 對原書的再詮釋，可能誤解或過度簡化；涉及投資、健康與重大決策時，關鍵結論要回原書核對。版權上只用合法取得的文本，蒸餾成果不宜公開散布受版權保護的內容。
+  * **附註 (未獨立查證)**：原文的「三步安裝法」(在 WorkBuddy／Codex 建資料夾、提示詞安裝、`npx skills add kangarooking/cangjie-skill`) 未見於官方 README (英／簡中) 與 SKILL.md：官方路徑是下載 Release 包、把 cangjie-skill 目錄裝進支援的 Agent 平台、用 `scripts/cangjie.py doctor` 自檢，再以提示詞餵入文本路徑；`npx skills add` 是通用 skills CLI 的慣例命令，非本專案文件所載。同生態三個項目的規模與主角差距極大 (2026-11-10 星數：Reading Pipeline 8、Sansheng Distill 67、Book Distillation Skill 0 且 2026-04 後未再更新)，原文表格未標示，引用時要留意。
 
 * **[DeepTutor](https://github.com/HKUDS/DeepTutor)** `[2026-04]` 🔥 `[Agent原生工作區]` `[終身個性化學習]` `[三層可審計記憶]` `[多引擎RAG]`
   * **核心優勢**：**打破多工具切換的學習孤島，港大 HKUDS 團隊開源首個將 Chat、Quiz、Research 等六大模式裝進單一運行的 Agent 原生終身學習工作區！** 論文（arXiv:2604.26962）提出結合引用基礎問題輔導與難度校準問題生成的統一框架，並建立 TutorBench 基準。在混合個性化引擎驅動下，平均提升個性化指標 10.8%，加強基礎模型代理推理能力 29.4%。系統搭載可審計的三層記憶架構（L1 Trace / L2 Surface Summary / L3 Synthesis 及 Memory Graph 證據溯源），同時整合 LlamaIndex、PageIndex、GraphRAG 與 LightRAG 等多檢索引擎，支援隨時召喚 CLI 子 Agent（Claude Code/Gemini/Codex 等）與 EduHub 技能擴展。
@@ -732,6 +749,14 @@ Manus 在 2025 年掀起了全自動代理狂潮，以下為開源社群的最�
 
 #### 1. 顛覆傳統：無切塊與 Agentic RAG 架構
 放棄傳統向量資料庫，運用 AI 推理能力進行導航，解決長文檔檢索破碎的問題。
+
+* **[DecisionRAG (Cornell × ASAPP：不用檢索器，讓決策模型在文件樹上逐層導航選證據)](https://arxiv.org/abs/2610.35868)** `[2026-10-26]` 🔥 `[RAG]` `[Retriever-Free]` `[決策模型]` `[Jev]` `[階層檢索]`
+  * **核心優勢**：**把檢索從「比相似度」改成「逐層做決定」：語料先整理成主題→文件→段落的文件樹，決策模型在每一層把候選放進同一份上下文、單次前向計算同時打出相關機率 (不生成任何 token)，只保留高分分支往下走。** 用的是 TypeSafe 的預訓練決策模型 Jev 1.13，未做任何任務微調，查詢時不需要第一階段檢索器、也不用預建向量索引。共享上下文是關鍵設計：候選同場比較，分數才可比，消融實驗顯示同場評分比各自獨立打分高出最多 7.7 分。沒有現成結構的語料 (如維基百科) 離線用 embedding 聚類建樹 (Natural Questions 是 e5-base-v2 聚成 1,000 群、再由 Qwen3-8B 依頁面標題寫群組描述)。
+  * **解決痛點 / 推薦場景**：**解決傳統 RAG 的能力不對等：產生模型再強，也救不回檢索漏掉的證據，而重排器只能重排已召回的候選、無力找回漏檢。** 「語義接近不等於包含答案」正是向量檢索的盲區。適合文件本身有目錄或章節結構、漏檢代價高的知識庫 (客服文件、法規、手冊型語料)。排查邏輯也實用：RAG 答錯先分三層，正確原文沒進候選是召回與路由問題 (DecisionRAG 的主場)、進了但排序太後是重排問題、原文已給還答錯是產生端問題，不要混在一起調。
+  * **量化基準 (論文作者自測，下游固定以 Qwen3.5-27B 讀 top-5 段落作答)**：對上 Qwen3-Embedding-8B 召回 + Qwen3-Reranker-8B 重排的強基線：MultiDoc2Dial R@1 33.6% → 47.4% (+13.8)；Natural Questions (268 萬段落) Hit@1 48.0% → 65.4% (+17.4)。但下游答案增益明顯小於檢索增益：MTRAG 答案正確率 39.4% → 44.1%，NQ 精確匹配 52.4% → 54.2% (GPT-5 重排在 MTRAG 僅 34.0%)。再把向量檢索候選併入最後一輪混合排序還能再推：MTRAG 47.3%、NQ 精確匹配 54.8%、NQ R@10 86.7% → 88.9%。速度與成本 (API)：單次檢索中位 0.68–1.76 秒、0.22–2.33 美分，比逐 token 的生成式導航快 34–145 倍，但慢於純向量檢索 (0.047–0.116 秒)。另有上行訊號：以領域內資料訓練專用 8B 決策模型，MultiDoc2Dial R@1 可達 60.7，反超最佳已發表任務訓練檢索器 5.7 分。
+  * **資源**：[📄 arXiv 論文 2610.35868](https://arxiv.org/abs/2610.35868) (Cornell：Chao Wan、Paul Jünger、Beixi Du、Bodong Liu、Kilian Q. Weinberger；ASAPP：Navaneetha Krishnan 等)
+  * **⚠️ 關鍵限制**：剪枝不可逆是結構性代價：上層分支一旦剪錯，下方正確段落永遠到不了候選集 (NQ 實驗中只保留 1% 群組時 R@10 掉到 63.7%，保留 15% 才追平全量評分)；實務上要留混合路徑 (併入向量檢索候選) 兜底。且語料必須先有可用階層：無結構語料要先付離線聚類與群組描述的建樹成本。
+  * **附註 (未獨立查證)**：主結果建立在閉源權重的 Jev 1.13 (TypeSafe，API 計價)，開放權重決策模型的結果僅在 MultiDoc2Dial 上報告；官方未釋出程式碼 (arXiv 頁面無程式碼連結，2026-10 底多家第三方查核亦未找到官方 repo)，目前無法自行複現。論文為預印本 v1 (2026-10-26)，未經同儕審查。
 
 * **[PageIndex](https://zread.ai/VectifyAI/PageIndex)** `[2026-03-01]` | 授權：MIT
   * **技術突破**：UCL 團隊開發的 Agentic RAG 革命性開源專案。完全拋棄「向量庫」與「文本切片 (Chunking)」，改用大模型進行推理導航。
@@ -1153,6 +1178,14 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
   * **附註 (未獨立查證)**：權重狀態務必分清：官方僅稱「計畫」釋出權重與系統卡，未給日期；截至 11 月 4 日下午，騰訊 HF 帳號上只有 Hy4-preview 及其 FP8 版，正式版權重連結尚不可公開存取，因此本條目歸入頂級閉源商業模型小節，不進開源權重快訊 H3，「最強開源」之說目前只是 API 版宣稱。參數數字：正式版官方未公布參數，770B 為預覽版的 TechNode 數字，不可直接套到正式版。幻覺率有兩組官方數字：12.95% 降到 7.2% 出自混元公眾號原文 (自建測試)，15.76% 降到 5.45% 出自騰訊雲 ADP 官方稿，屬不同測試集、兩組皆第一手；正文採 15.76% 降到 5.45% 一組，引用須標口徑 (詳見發布補記)。美元價目 (約 0.83／2.50 美元) 為次級換算，官方價目以人民幣為準。所有基準皆為廠商自報，跨家數字宜打折看。
   * **發布補記 (2026-11-05 以官方公眾號原文核對)**：幻覺率有兩組官方數字，引用須標口徑：公眾號原文為自建測試 12.95% 降至 7.2% (猜測導致的錯誤率 23.1% 降至 5.6%)，騰訊雲 ADP 官方稿則為 15.76% 降至 5.45%，屬不同測試集，兩組皆第一手。安全開源政策：訓練資料僅納入防禦性網安內容 (PoC 生成、漏洞修復)，剔除漏洞利用、逆向、滲透等攻擊性內容，玄武與科恩實驗室審計結論為進攻性能力未見突出風險；生物安全 Hy-BioExperimentBench 30.4/100，內部專家軌跡審計認為把知識轉成可執行實驗方案的能力有限。價格補充：快取命中每百萬 token 人民幣 0.3 元，TokenHub 刊例價 5 折至 2026-12-31，Hy4 flash 近期上線，下一代 Hy5 已預告再擴大規模。隨附開源：單細胞表征基礎模型 HyCell 與物理場基礎模型 HyPDE；內部 Hyra2.0 工具鏈為 RSI 預備，可自動訓練同架構小模型 (Jev)。金融另有訊兔科技 IRAB 內部評測較 preview 提升 12.03 個百分點。
 
+* **[Gemini Decision 1 (Google：不寫一個字的決策模型，Decisions API 一次判 1,000 題)](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/)** `[2026-11-11]` 🔥 `[決策模型]` `[Jev]` `[閉源API]` `[多模態]` `[AI Agent]`
+  * **核心優勢**：**Google 把「判斷」從「生成」裡正式拆出來賣：Gemini Decision 1 不產生任何 token，單次前向計算就對候選選項打分，回傳校準過的機率與 0–1 置信度，輸出 token 永遠為 0、也不計費。** 三種題型直接沿用 Jev 生態的命名：noul (是非判斷，回成立機率)、choice (2–255 個選項，回正規化機率分布)、score (有序量表，回加權分數與各等級機率)。單次請求最多帶 1,000 個彼此獨立的問題共用同一份輸入材料，材料只計費一次；輸入原生多模態 (文、圖、音、影、PDF，總窗口 262,144 tokens)，沒有額外的轉寫或 OCR 費用。輸入每百萬 token 0.10 美元，端到端延遲 150–250 毫秒 (16K 內文脈絡下，1 題和 100 題幾乎一樣快)，AI Studio 有免費層。
+  * **解決痛點 / 推薦場景**：**解決 Agent 裡最高頻的那類呼叫被迫走生成式模型的浪費：路由分發、工具選擇、政策審核、RAG 結果相關性過濾，本質都是選擇題，卻要逐字生成 JSON、付思考 token 的錢，還拿不到「它到底有幾成把握」。** 有了校準機率就能寫確定性分流 (高於 0.9 自動執行、中間交強模型覆核、低於門檻轉人工)。Google 自家已大規模在用：Gemini Notebook 拿它做即時路由與思考強度分配 (日常問題延遲最多降 40%)、Search 拿它當 MCP 工具的安全防禦層、Stitch 快速畫布與 Labs 的 CC (從 200 多個表情符號選反應) 也都接了。生態支援 OpenRouter、LangChain、Vercel、LiteLLM、Pydantic AI、Pipecat、LiveKit、OpenCode；Vertex AI 版尚待推出。此品類已成三方競逐：TypeSafe Jev 之後，OpenAI 於 2026-10-22 先推出 Decisions API (GPT-6 Luna)，Google 這次是跟進加超越。
+  * **量化基準 (Google 官方自報，圖表經多家媒體讀取一致；尚無獨立複現)**：JevBench Top-1 準確率 92.2%，高於 GPT-6 Luna 90.9%、TypeSafe Jev 1.14 的 90.0% 與 Gemini 3.5 Flash-Lite 86.6%；校準誤差 ECE 0.0250 為四者最低 (Jev 0.0494、Luna 0.0721)。9 項測試多數居首，但 Mind2Web (多模態) 與 When2Call 非第一；價格面官方稱在同一套基準下總成本比 Flash-Lite 走 Interactions API 便宜近 5 倍。獨立面要平衡看：Artificial Analysis 的 Decision Index v2.1 上線時把它列在 18 個模型中的第 9 名。
+  * **資源**：[🌐 Google 官方部落格 (2026-11-11)](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/) | [📰 VentureBeat 報導](https://venturebeat.com/technology/googles-gemini-decision-1-model-scores-up-to-1-000-questions-in-one-api-call) | [📊 CellCog 規格與文件讀解](https://cellcog.ai/blog/gemini-decision-1/)
+  * **⚠️ 注意 (官方 guide 明示)**：不能生成文字、也不能產帶參數的工具呼叫，那些仍走生成式 API；choice 永遠會把機率分完、無一合適也不例外，不要拿「以上皆非」當兜底；使用者輸入可能替自己辯護騙過分類器 (注入風險)，付款等高風險動作要保留二次校驗或人工審核；精確數字與日期比較交給程式碼；閾值要用自有標註資料設定。目前不支援上下文快取與 Batch API，重複送同一份材料會重複計費，僅 v1beta 端點。
+  * **附註 (未獨立查證)**：原文所稱 noul 機率限制在 0.01–0.99、基準總成本 0.88 美元對 4.14 美元兩點，官方部落格與文件轉述中均未見，前者未寫入條目、後者改採官方「便宜近 5 倍」的口徑。
+
 * **[Claude Fable 5.2 (Anthropic：最強通用模型換代、AA 智慧指數登頂，降價兩成)](https://www.anthropic.com/claude-fable-and-mythos-5-2)** `[2026-11-09]` 🔥 `[閉源API]` `[Intelligence Index 64.6]` `[長程Agent]` `[降價]` `[Fast Mode]` `[Mythos 5.2]`
   * **核心優勢**：**Anthropic 最強通用模型換代：同一底層模型、兩種門面，Fable 公開給所有人、Mythos 只給驗證過的資安與生命科學機構；Artificial Analysis Intelligence Index v5 以 64.6 分登頂，輸出快三成、價格降兩成，還多一個最高 2.5 倍速的快速模式。** Fable 與 Mythos 為同一底層模型：Fable 帶強力的資安與生物安全防護，可公開提供；Mythos 放寬部分防護，只開放給通過 Anthropic 生命科學與資安驗證計畫的機構，另可經 Claude Security for Enterprise 使用。標準價每百萬 token 輸入 8 美元、輸出 40 美元，較 5.1 的 10／50 美元降價 20%；選配快速模式 (fast mode) 為 16／80 美元，token 生成速度最高 2.5 倍。官方稱輸出速度較 5.1 快最高 30%，測試者認為溝通比前代更清楚。API 模型 id 為 `claude-fable-5-2`，上線當日即進 Claude 應用、Claude Code、Claude Platform、AWS、Google Cloud、Azure，Cognition 的 Devin Desktop 與 Devin CLI 同日上線；Anthropic 仍建議多數日常程式與知識工作從 Claude Opus 5.5 起手，Fable 留給最有野心、開放式技術工作，也可擔任 Advisor（小模型向它求助）或 Orchestrator（把簡單任務分派給小模型）。
   * **解決痛點 / 推薦場景**：**解決了「旗艦模型愈強、長程任務卻愈貴愈慢：做到一半要人接手、複雜推理還得拆給多個模型」的甜點區問題。** 舊方法：長程自主任務靠外部腳手架硬撐，上下文與多步驟規劃一崩就得人工接手；或把工作拆給多個大小模型，協調成本吃掉省下的錢。甜點區：需要連續數小時咬住的大型程式碼庫遷移與除錯、自主研究與 ML 實驗、機器人控制與硬體設計，以及要把多個 Agent 協調起來的開放式專案。不適合當日常預設：Anthropic 自己劃線，日常工作先用 Opus 5.5；Fable 的資安防護會擋下多數資安相關任務，想做漏洞測試要走 Mythos 的驗證計畫。
@@ -1227,6 +1260,14 @@ SLM 是實現數據絕對隱私與端側斷網運行的首選。 在 8GB 記憶�
 **🔎 Embedding & Reranker (向量嵌入與重排序模型)**
 
 在構建 RAG 系統時，如果檢索到的參考資料不準，再強的 LLM 也會產生幻覺 (Hallucination)。目前業界的黃金標準是採用「雙層檢索架構」：先用 **Embedding** 模型進行海量初篩，再用 **Reranker** 模型進行精準的二次排序。以下精選目前最具代表性的表徵模型：
+
+* **[JevEmbed (哈工大深圳 HITsz-TMG：把 Embedding 模型變成決策引擎，繞過 Jev 的 255 候選上限)](https://github.com/HITsz-TMG/JevEmbed)** `[2026-10]` 🔥 `[決策模型]` `[Jev]` `[Embedding]` `[LoRA]` `[Apache-2.0]`
+  * **核心優勢**：**決策不必靠生成：把狀態和每個候選選項各編成一條向量，用餘弦相似度直接打分，一次 prefill 就給出 Choice (多選一)、Score (等級分級)、Noul (0–1 是非機率) 三種決策。** 相比 Jev 家族讀 LLM 候選字母 logits 的做法，選項不再是字母而是任意文本，架構上不受原生 Jev 格式 255 個候選的上限約束，數百個分類標籤可以直接平鋪打分，不必手動拆分層路由。骨干可換：KaLM-Embedding-V2.5 (0.3B、896 維)、Qwen3-Embedding 0.6B／4B／8B、multilingual-e5-large-instruct (1024 維)；最小 0.3B 即可在 CPU 上跑 (float32、不需要 FlashAttention)。對外提供與 Jev /v1/systemone 相容的 HTTP 介面，可直接接入既有 Jev 生態；本身是一套完整工具包：資料合成、LoRA 微調、機率校準、Playground 一應俱全。第三方獨立實現，非 TypeSafe 官方產品。
+  * **解決痛點 / 推薦場景**：**解決「大量固定分類也要逐字生成、又慢又貴」的痛點。** 客服意圖路由、工單分級、內容標籤、風險初篩這類高頻重複決策，用零點幾 B 的 embedding 模型在本地就能毫秒級回應，不必付閉源 Jev API 或大模型推論的帳。代價要先講清：embedding 模型的語意推理上限低於大 LLM，未微調的底座直接拿來決策只有三成左右準確率，這套框架的價值有一半在隨附的 LoRA 微調管線：用自己的業務資料把模型教會你的分類體系。
+  * **量化基準 (官方發布模型自測，JevEmbed-Data 測試集 66,482 題)**：官方以全量 160 萬題訓練資料 LoRA 微調後發布的合併模型：Qwen3-Embedding-0.6B 版整體準確率 33.79% → 82.30% (Choice 84.53%、Noul 94.38%、Score 等級 69.55%)；KaLM-Embedding-V2.5 版 32.33% → 76.03% (Noul 90.61% 最強、Score 66.17% 最弱)。兩個底座微調前都在三成上下，印證「不微調不能用、微調後堪用」。
+  * **資源**：[🐙 GitHub (Apache-2.0)](https://github.com/HITsz-TMG/JevEmbed) | [🤗 官方微調模型 Qwen3-Embedding-0.6B 版](https://huggingface.co/HIT-TMG/JevEmbed-Qwen3-Embedding-0.6B) | [🤗 KaLM-V2.5 版](https://huggingface.co/HIT-TMG/JevEmbed-KaLM-Embedding-V2.5) | [📖 訓練文件](https://github.com/HITsz-TMG/JevEmbed/blob/main/docs/training.md)
+  * **⚠️ 注意**：候選「數量」放開了，但單一候選「文本長度」仍受骨干 token 上限約束 (如 e5-large 只有 512 tokens)；推論文件未見多卡分流，大骨干加龐大候選集在 CPU 上延遲會明顯上升。訓練資料 (JevEmbed-Data) 來源授權混雜，商用前看其 source report。
+  * **附註 (與原文出入)**：原文引用的小子集實驗 (Open-Jev release-v2-redistributable、79,116 條訓練) 數字 (KaLM 30.24% → 76.68%、Qwen3-Embedding-0.6B 30.73% → 84.06%) 在官方 README、文件與模型卡中均查無出處，且原文的驗證集條數 (3,495) 與官方訓練文件所載 (3,723) 不符；本條目改採官方發布模型在全量資料上的自測數字。「突破 255 上限」為架構特性 (Jev 原生格式的 255 上限見 DecisionRAG 論文)，官方文件未以此為主打宣稱。
 
 * [LEANN](https://github.com/yichuan-w/LEANN) [2026-03-09] 🔥 [低存儲向量索引]
   * **核心優勢**：**首創「基於圖的選擇性重計算 (Graph-based Selective Recomputation)」與高階節點保留剪枝，將 ANN 索引存儲開銷壓到原始資料的 5% 以下！** 該項發表於 MLSys 2026 的工作透過拋棄冗餘嵌入向量並利用壓縮稀疏行 (CSR) 格式，比標準 HNSW 索引縮小最高達 50 倍，同時在真實 QA 基準上維持 90% 的 top-3 召回率，搜尋延遲保持在 2 秒以內。
